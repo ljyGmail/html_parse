@@ -1,0 +1,2188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 11306, 서식버전 : 2.8, 서식변경날짜 : 2023년 12월 29일,<br>
+&nbsp; &nbsp;문서명 : 주요사항보고서(유상증자결정)★</P>
+<P class=section-1><a class='toc' href='11306-TOC.htm#14' name='14' target='toc'>유상증자 결정</a></P><P><br></P><P>★Table-Group aClass=CST_CNT★</P>
+
+<TABLE border=1 width=661>
+<COLGROUP>
+  <COL width=151></COL>
+  <COL width=163></COL>
+  <COL width=320></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=151 height=47 rowspan="2">1. 신주의 종류와 수</TD>
+  <TD width=163 height=17 align="CENTER" valign="TOP">보통주식 (주)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★CST_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=163 height=17 align="CENTER" valign="TOP">기타주식 (주)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★PST_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=323 height=17 colspan="2" valign="TOP">2. 1주당 액면가액 (원)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★FVAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=151 height=47 rowspan="2">3. 증자전 <br>
+&nbsp; &nbsp; 발행주식총수 (주)</TD>
+  <TD width=163 height=17 align="CENTER" valign="TOP">보통주식 (주)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★BFR_CST_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=163 height=17 align="CENTER" valign="TOP">기타주식 (주)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★BFR_PST_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=151 height=190 rowspan="6">4. 자금조달의 목적</TD>
+  <TD width=163 height=17 align="CENTER" valign="TOP">시설자금 (원)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★FND_USE1 |\|선</TD>
+</TR>
+<TR>
+  <TD width=163 height=17 align="CENTER" valign="TOP">영업양수자금 (원)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★FND_USE_SQ |\|선</TD>
+</TR>
+<TR>
+  <TD width=163 height=17 align="CENTER">운영자금 (원)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★FND_USE2 |\|선</TD>
+</TR>
+<TR>
+  <TD width=163 height=17 align="CENTER">채무상환자금 (원)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★FND_USE_RD |\|선</TD>
+</TR>
+<TR>
+  <TD width=163 height=40 align="CENTER">타법인 증권<br>
+취득자금 (원)</TD>
+  <TD width=320 height=40 align="RIGHT">e★ANC_ACQ_AMT |\|선</TD>
+</TR>
+<TR>
+  <TD width=163 height=17 align="CENTER" valign="TOP">기타자금 (원)</TD>
+  <TD width=320 height=17 align="RIGHT" valign="TOP">e★FND_USE3 |\|선</TD>
+</TR>
+<TR>
+  <TD width=323 height=132 colspan="2">5. 증자방식</TD>
+  <TD class=tu width=320 height=132 align="CENTER" valign="TOP">u★CI_MTH |List|L||선<br>
+주주배정증자|1<br>
+주주우선공모증자|2<br>
+일반공모증자|5<br>
+제3자배정증자|6<br>
+주주배정후 실권주 일반공모|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>※ 기타주식에 관한 사항</P><P>★Table-Group aClass=STO_ETC★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=226></COL>
+  <COL width=356></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=226 height=17 valign="TOP">정관의 근거</TD>
+  <TD width=356 height=17 align="LEFT">e★AOI_BAS |V|선</TD>
+</TR>
+<TR>
+  <TD width=226 height=17 valign="TOP">주식의 내용</TD>
+  <TD width=356 height=17 align="LEFT">e★STO_CNT |V|선</TD>
+</TR>
+<TR>
+  <TD width=226 height=17 valign="TOP">기타</TD>
+  <TD width=356 height=17 align="LEFT">e★ETC_CNT |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : 05_상환권및전환권이부여된경우&gt;&gt;</P><P>★Table-Group aClass=TG_RDT_CVT★</P>
+
+<TABLE border=1 width=599>
+<COLGROUP>
+  <COL width=92></COL>
+  <COL width=93></COL>
+  <COL width=145></COL>
+  <COL width=233></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=92 height=160 rowspan="5" align="CENTER">상환에<br>
+관한 사항</TD>
+  <TD width=247 height=17 colspan="2" align="CENTER" valign="TOP">상환조건</TD>
+  <TD width=233 height=17 align="LEFT" valign="TOP">e★RDT_CDT |V|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 colspan="2" align="CENTER" valign="TOP">상환방법</TD>
+  <TD width=233 height=17 align="LEFT" valign="TOP">e★RDT_MTD |V|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 colspan="2" align="CENTER" valign="TOP">상환기간</TD>
+  <TD class=tu width=233 height=17 align="CENTER" valign="TOP">u★RDT_PRD |달력2|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 colspan="2" align="CENTER" valign="TOP">주당 상환가액</TD>
+  <TD width=233 height=17 align="RIGHT" valign="TOP">e★RDT_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=40 colspan="2" align="CENTER" valign="TOP">1년 이내<br>
+상환 예정인 경우</TD>
+  <TD width=233 height=40 align="LEFT">e★RDT_INY1 |V|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=439 rowspan="12" align="CENTER">전환에<br>
+관한 사항</TD>
+  <TD width=247 height=17 colspan="2" align="CENTER">전환비율(%)</TD>
+  <TD width=233 height=17 align="RIGHT">e★EXE_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 colspan="2" align="CENTER">전환가액(원/주)</TD>
+  <TD width=233 height=17 align="RIGHT">e★EXE_PRC |\|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 colspan="2" align="CENTER">전환가액결정방법</TD>
+  <TD width=233 height=17 align="LEFT">e★EXE_FUNC |V|선</TD>
+</TR>
+<TR>
+  <TD width=93 height=100 rowspan="3" align="CENTER">전환에 따라<br>
+발행할 주식</TD>
+  <TD width=145 height=17 align="CENTER">종류</TD>
+  <TD width=233 height=17 align="CENTER">e★CVT_KND |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=17 align="CENTER">주식수</TD>
+  <TD width=233 height=17 align="RIGHT">e★CVT_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=40 align="CENTER">주식총수<br>
+대비 비율(%)</TD>
+  <TD width=233 height=40 align="RIGHT">e★CVT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=93 height=47 rowspan="2" align="CENTER">전환청구기간</TD>
+  <TD width=145 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=233 height=17 align="CENTER" valign="TOP">u★CVT_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=233 height=17 align="CENTER" valign="TOP">u★CVT_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 colspan="2" align="CENTER">전환가액 조정에 관한 사항</TD>
+  <TD width=233 height=17 align="LEFT">e★EXE_REG |V|선</TD>
+</TR>
+<TR>
+  <TD width=93 height=146 rowspan="3" align="CENTER">시가하락에<br>
+따른<br>
+전환가액<br>
+조정</TD>
+  <TD width=145 height=17 align="CENTER">최저 조정가액(원)</TD>
+  <TD width=233 height=17 align="RIGHT">e★MIN_PRC |\|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=17 align="CENTER">최저 조정가액 근거</TD>
+  <TD width=233 height=17 align="LEFT">e★MIN_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=86 align="CENTER">발행당시 전환가액의<br>
+70%미만으로<br>
+조정가능한<br>
+잔여발행한도(원)</TD>
+  <TD width=233 height=86 align="RIGHT">e★CTR_LMT |\|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=17 colspan="3">존속기간(우선주권리의 유효기간)</TD>
+  <TD class=tu width=233 height=17 align="CENTER">u★EXT_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=17 colspan="3">의결권에 관한 사항</TD>
+  <TD width=233 height=17 align="LEFT" valign="TOP">e★VTR_INFO |V|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=17 colspan="3">옵션에 관한 사항</TD>
+  <TD width=233 height=17 align="LEFT" valign="TOP">e★OPT_FCT |V|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=17 colspan="3">이익배당에 관한 사항</TD>
+  <TD width=233 height=17 align="LEFT" valign="TOP">e★DVD_INFO |V|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=40 colspan="3" valign="TOP">기타 약정사항<br>
+(주주간 약정 및 재무약정 사항 등)</TD>
+  <TD width=233 height=40 align="LEFT">e★ETC_CTR_INFO |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 06_상환권이부여된경우&gt;&gt;</P><P>★Table-Group aClass=TG_RDT_RIT★</P>
+
+<TABLE border=1 width=599>
+<COLGROUP>
+  <COL width=140></COL>
+  <COL width=191></COL>
+  <COL width=241></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=140 height=160 rowspan="5" align="CENTER">상환에 관한 사항</TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP">상환조건</TD>
+  <TD width=241 height=17 align="LEFT" valign="TOP">e★RDT_CDT |V|선</TD>
+</TR>
+<TR>
+  <TD width=191 height=17 align="CENTER" valign="TOP">상환방법</TD>
+  <TD width=241 height=17 align="LEFT" valign="TOP">e★RDT_MTD |V|선</TD>
+</TR>
+<TR>
+  <TD width=191 height=17 align="CENTER" valign="TOP">상환기간</TD>
+  <TD class=tu width=241 height=17 align="CENTER" valign="TOP">u★RDT_PRD |달력2|선</TD>
+</TR>
+<TR>
+  <TD width=191 height=17 align="CENTER" valign="TOP">주당 상환가액</TD>
+  <TD width=241 height=17 align="RIGHT" valign="TOP">e★RDT_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=191 height=40 align="CENTER" valign="TOP">1년 이내<br>
+상환 예정인 경우</TD>
+  <TD width=241 height=40 align="LEFT">e★RDT_INY1 |V|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2">의결권에 관한 사항</TD>
+  <TD width=241 height=17 align="LEFT" valign="TOP">e★VTR_INFO |V|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2">이익배당에 관한 사항</TD>
+  <TD width=241 height=17 align="LEFT" valign="TOP">e★DVD_INFO |V|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=40 colspan="2" valign="TOP">기타 약정사항<br>
+(주주간 약정 및 재무약정 사항 등)</TD>
+  <TD width=241 height=40 align="LEFT">e★ETC_CTR_INFO |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 07_전환권이부여된경우&gt;&gt;</P><P>★Table-Group aClass=TG_CVT_RIT★</P>
+
+<TABLE border=1 width=599>
+<COLGROUP>
+  <COL width=92></COL>
+  <COL width=93></COL>
+  <COL width=145></COL>
+  <COL width=233></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=92 height=439 rowspan="12" align="CENTER">전환에<br>
+관한 사항</TD>
+  <TD width=247 height=17 colspan="2" align="CENTER">전환비율(%)</TD>
+  <TD width=233 height=17 align="RIGHT">e★EXE_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 colspan="2" align="CENTER">전환가액(원/주)</TD>
+  <TD width=233 height=17 align="RIGHT">e★EXE_PRC |\|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 colspan="2" align="CENTER">전환가액결정방법</TD>
+  <TD width=233 height=17 align="LEFT">e★EXE_FUNC |V|선</TD>
+</TR>
+<TR>
+  <TD width=93 height=100 rowspan="3" align="CENTER">전환에 따라<br>
+발행할 주식</TD>
+  <TD width=145 height=17 align="CENTER">종류</TD>
+  <TD width=233 height=17 align="CENTER">e★CVT_KND |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=17 align="CENTER">주식수</TD>
+  <TD width=233 height=17 align="RIGHT">e★CVT_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=40 align="CENTER">주식총수<br>
+대비 비율(%)</TD>
+  <TD width=233 height=40 align="RIGHT">e★CVT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=93 height=47 rowspan="2" align="CENTER">전환청구기간</TD>
+  <TD width=145 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=233 height=17 align="CENTER" valign="TOP">u★CVT_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=233 height=17 align="CENTER" valign="TOP">u★CVT_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 colspan="2" align="CENTER">전환가액 조정에 관한 사항</TD>
+  <TD width=233 height=17 align="LEFT">e★EXE_REG |V|선</TD>
+</TR>
+<TR>
+  <TD width=93 height=146 rowspan="3" align="CENTER">시가하락에<br>
+따른<br>
+전환가액<br>
+조정</TD>
+  <TD width=145 height=17 align="CENTER">최저 조정가액(원)</TD>
+  <TD width=233 height=17 align="RIGHT">e★MIN_PRC |\|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=17 align="CENTER">최저 조정가액 근거</TD>
+  <TD width=233 height=17 align="LEFT">e★MIN_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=86 align="CENTER">발행당시 전환가액의<br>
+70%미만으로<br>
+조정가능한<br>
+잔여발행한도(원)</TD>
+  <TD width=233 height=86 align="RIGHT">e★CTR_LMT |\|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=17 colspan="3">존속기간(우선주권리의 유효기간)</TD>
+  <TD class=tu width=233 height=17 align="CENTER">u★EXT_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=17 colspan="3">의결권에 관한 사항</TD>
+  <TD width=233 height=17 align="LEFT" valign="TOP">e★VTR_INFO |V|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=17 colspan="3">옵션에 관한 사항</TD>
+  <TD width=233 height=17 align="LEFT" valign="TOP">e★OPT_FCT |V|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=17 colspan="3">이익배당에 관한 사항</TD>
+  <TD width=233 height=17 align="LEFT" valign="TOP">e★DVD_INFO |V|선</TD>
+</TR>
+<TR>
+  <TD width=348 height=40 colspan="3" valign="TOP">기타 약정사항<br>
+(주주간 약정 및 재무약정 사항 등)</TD>
+  <TD width=233 height=40 align="LEFT">e★ETC_CTR_INFO |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>&lt;&lt;단위서식 : 01_주주배정증자의경우&gt;&gt;</P><P>★Table-Group aClass=STK_ASN_INC★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=117></COL>
+  <COL width=85></COL>
+  <COL width=101></COL>
+  <COL width=70></COL>
+  <COL width=88></COL>
+  <COL width=85></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=117 height=199 rowspan="4">6. 신주 발행가액</TD>
+  <TD width=85 height=47 rowspan="2" align="CENTER">확정발행가</TD>
+  <TD width=101 height=17 align="CENTER" valign="TOP">보통주식 (원)</TD>
+  <TD width=261 height=17 colspan="3" align="RIGHT" valign="TOP">e★CST_ISS_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=101 height=17 align="CENTER" valign="TOP">기타주식 (원)</TD>
+  <TD width=261 height=17 colspan="3" align="RIGHT" valign="TOP">e★PST_ISS_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=85 height=139 rowspan="2" align="CENTER">예정발행가</TD>
+  <TD width=101 height=63 align="CENTER">보통주식 (원)</TD>
+  <TD width=70 height=63 align="RIGHT" valign="TOP">e★PRE_CST_VAL |\|선</TD>
+  <TD width=88 height=63 align="CENTER">확정예정일</TD>
+  <TD class=tu width=85 height=63 align="CENTER" valign="TOP">u★PRE_CST_VAL_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=101 height=63 align="CENTER" valign="TOP">기타주식 (원)</TD>
+  <TD width=70 height=63 align="RIGHT" valign="TOP">e★PRE_PST_VAL |\|선</TD>
+  <TD width=88 height=63 align="CENTER">확정예정일</TD>
+  <TD class=tu width=85 height=63 align="CENTER" valign="TOP">u★PRE_PST_VAL_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">7. 발행가 산정방법</TD>
+  <TD width=261 height=17 colspan="3" align="LEFT" valign="TOP">e★ISS_FUNC |V|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">8. 신주배정기준일</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★ALL_BS_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">9. 1주당 신주배정주식수 (주)</TD>
+  <TD width=261 height=17 colspan="3" align="RIGHT" valign="TOP">e★NEW_ASN_CNT |%|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">10. 우리사주조합원 우선배정비율 (%)</TD>
+  <TD width=261 height=17 colspan="3" align="RIGHT" valign="TOP">e★EMP_ALL_RATE |%|선</TD>
+</TR>
+<TR>
+  <TD width=117 height=107 rowspan="4">11. 청약예정일</TD>
+  <TD width=85 height=47 rowspan="2" align="CENTER">우리<br>
+사주조합</TD>
+  <TD width=101 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★EMP_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=101 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★EMP_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=85 height=47 rowspan="2" align="CENTER">구주주</TD>
+  <TD width=101 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★SH_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=101 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★SH_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">12. 납입일</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★PYM_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">13. 실권주 처리계획</TD>
+  <TD width=261 height=17 colspan="3" align="LEFT" valign="TOP">e★PRC_PLN |V|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">14. 신주의 배당기산일</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★DV_ST_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">15. 신주권교부예정일</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★NST_GV_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">16. 신주의 상장예정일</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★LST_PLN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">17. 대표주관회사(직접공모가 아닌 경우)</TD>
+  <TD width=261 height=17 colspan="3" align="CENTER" valign="TOP">e★CHF_AGN |V|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=63 colspan="3" valign="TOP">18. 신주인수권양도여부</TD>
+  <TD class=tu width=261 height=63 colspan="3" align="CENTER" valign="TOP">u★NST_GV_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=321 height=63 colspan="3" valign="TOP"> &nbsp; - 신주인수권증서의 상장여부</TD>
+  <TD class=tu width=261 height=63 colspan="3" align="CENTER" valign="TOP">u★WRNT_LST_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=321 height=40 colspan="3" valign="TOP"> &nbsp; - 신주인수권증서의 매매 및 매매의 중개를 <br>
+&nbsp; &nbsp; &nbsp; 담당할 금융투자업자 </TD>
+  <TD width=261 height=40 colspan="3" align="CENTER">e★SEC_CRP |V|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">19. 이사회결의일(결정일)</TD>
+  <TD class=tu width=261 height=17 colspan="3" align="CENTER" valign="TOP">u★DRC_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=117 height=47 rowspan="2"> &nbsp; - 사외이사<br>
+&nbsp; &nbsp; &nbsp; 참석여부</TD>
+  <TD width=195 height=17 colspan="2" align="CENTER" valign="TOP">참석 (명)</TD>
+  <TD width=261 height=17 colspan="3" align="CENTER" valign="TOP">e★ATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=195 height=17 colspan="2" align="CENTER" valign="TOP">불참 (명)</TD>
+  <TD width=261 height=17 colspan="3" align="CENTER" valign="TOP">e★NATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=86 colspan="3" valign="TOP"> &nbsp; - 감사(감사위원) 참석여부</TD>
+  <TD class=tu width=261 height=86 colspan="3" align="CENTER" valign="TOP">u★ADT_ATD_YN |List|L||선<br>
+참석|Y<br>
+불참|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=321 height=63 colspan="3" valign="TOP">20. 증권신고서 제출대상 여부</TD>
+  <TD class=tu width=261 height=63 colspan="3" align="CENTER" valign="TOP">u★RPT_SM_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=321 height=17 colspan="3" valign="TOP">21. 제출을 면제받은 경우 그 사유</TD>
+  <TD width=261 height=17 colspan="3" align="LEFT" valign="TOP">e★RPT_SBM |V|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=123 colspan="3" rowspan="3">22. 청약이 금지되는 공매도 거래 기간</TD>
+  <TD width=70 height=63 align="CENTER" valign="TOP">해당여부</TD>
+  <TD class=tu width=182 height=63 colspan="2" align="CENTER" valign="TOP">u★SSL_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=70 height=17 align="CENTER" valign="TOP">시작일</TD>
+  <TD class=tu width=182 height=17 colspan="2" align="CENTER" valign="TOP">u★SSL_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=70 height=17 align="CENTER" valign="TOP">종료일</TD>
+  <TD class=tu width=182 height=17 colspan="2" align="CENTER" valign="TOP">u★SSL_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=321 height=63 colspan="3" valign="TOP">23. 공정거래위원회 신고대상 여부</TD>
+  <TD class=tu width=261 height=63 colspan="3" align="CENTER" valign="TOP">u★TRD_YN |List|L||선<br>
+해당|Y<br>
+미해당|N</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>24. 기타 투자판단에 참고할 사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 02_주주우선공모증자의경우&gt;&gt;</P><P>★Table-Group aClass=STK_PRE_INC★</P>
+
+<TABLE border=1 width=843>
+<COLGROUP>
+  <COL width=117></COL>
+  <COL width=85></COL>
+  <COL width=110></COL>
+  <COL width=172></COL>
+  <COL width=83></COL>
+  <COL width=222></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=117 height=107 rowspan="4">6. 신주 발행가액</TD>
+  <TD width=85 height=47 rowspan="2" align="CENTER">확정발행가</TD>
+  <TD width=110 height=17 align="CENTER">보통주식 (원)</TD>
+  <TD width=495 height=17 colspan="3" align="RIGHT" valign="TOP">e★CST_ISS_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=110 height=17 align="CENTER">기타주식 (원)</TD>
+  <TD width=495 height=17 colspan="3" align="RIGHT" valign="TOP">e★PST_ISS_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=85 height=47 rowspan="2" align="CENTER">예정발행가</TD>
+  <TD width=110 height=17 align="CENTER">보통주식 (원)</TD>
+  <TD width=172 height=17 align="RIGHT" valign="TOP">e★PRE_CST_VAL |\|선</TD>
+  <TD width=83 height=17 align="CENTER">확정예정일</TD>
+  <TD class=tu width=222 height=17 align="CENTER" valign="TOP">u★PRE_CST_VAL_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=110 height=17 align="CENTER">기타주식 (원)</TD>
+  <TD width=172 height=17 align="RIGHT" valign="TOP">e★PRE_PST_VAL |\|선</TD>
+  <TD width=83 height=17 align="CENTER">확정예정일</TD>
+  <TD class=tu width=222 height=17 align="CENTER" valign="TOP">u★PRE_PST_VAL_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3" valign="TOP">7. 발행가 산정방법</TD>
+  <TD width=495 height=17 colspan="3" align="LEFT" valign="TOP">e★ISS_FUNC |V|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3" valign="TOP">8. 신주배정기준일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★ALL_BS_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3" valign="TOP">9. 우리사주조합원 우선배정비율 (%)</TD>
+  <TD width=495 height=17 colspan="3" align="RIGHT" valign="TOP">e★EMP_ALL_RATE |%|선</TD>
+</TR>
+<TR>
+  <TD width=117 height=167 rowspan="6">10. 청약예정일</TD>
+  <TD width=85 height=47 rowspan="2" align="CENTER">우리<br>
+사주조합</TD>
+  <TD width=110 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★EMP_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=110 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★EMP_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=85 height=47 rowspan="2" align="CENTER">구주주</TD>
+  <TD width=110 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★SH_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=110 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★SH_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=85 height=47 rowspan="2" align="CENTER">일반공모</TD>
+  <TD width=110 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★OTH_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=110 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★OTH_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3">11. 납입일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★PYM_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3">12. 신주의 배당기산일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★DV_ST_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3">13. 신주권교부예정일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★NST_GV_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3">14. 신주의 상장 예정일</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★LST_PLN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3">15. 대표주관회사(직접공모가 아닌 경우)</TD>
+  <TD width=495 height=17 colspan="3" align="CENTER" valign="TOP">e★CHF_AGN |V|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3">16. 이사회결의일(결정일)</TD>
+  <TD class=tu width=495 height=17 colspan="3" align="CENTER" valign="TOP">u★DRC_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=117 height=47 rowspan="2"> &nbsp; - 사외이사<br>
+&nbsp; &nbsp; &nbsp; 참석여부</TD>
+  <TD width=204 height=17 colspan="2" align="CENTER">참석 (명)</TD>
+  <TD width=495 height=17 colspan="3" align="CENTER" valign="TOP">e★ATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=204 height=17 colspan="2" align="CENTER">불참 (명)</TD>
+  <TD width=495 height=17 colspan="3" align="CENTER" valign="TOP">e★NATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=86 colspan="3" valign="TOP"> &nbsp; - 감사(감사위원) 참석여부</TD>
+  <TD class=tu width=495 height=86 colspan="3" align="CENTER" valign="TOP">u★ADT_ATD_YN |List|L||선<br>
+참석|Y<br>
+불참|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=330 height=63 colspan="3" valign="TOP">17. 증권신고서 제출대상 여부</TD>
+  <TD class=tu width=495 height=63 colspan="3" align="CENTER" valign="TOP">u★RPT_SM_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=330 height=17 colspan="3" valign="TOP">18. 제출을 면제받은 경우 그 사유</TD>
+  <TD width=495 height=17 colspan="3" align="LEFT" valign="TOP">e★RPT_SBM |V|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=123 colspan="3" rowspan="3">19. 청약이 금지되는 공매도 거래 기간</TD>
+  <TD width=172 height=63 align="CENTER" valign="TOP">해당여부</TD>
+  <TD class=tu width=314 height=63 colspan="2" align="CENTER" valign="TOP">u★SSL_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=172 height=17 align="CENTER" valign="TOP">시작일</TD>
+  <TD class=tu width=314 height=17 colspan="2" align="CENTER" valign="TOP">u★SSL_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=172 height=17 align="CENTER" valign="TOP">종료일</TD>
+  <TD class=tu width=314 height=17 colspan="2" align="CENTER" valign="TOP">u★SSL_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=330 height=63 colspan="3" valign="TOP">20. 공정거래위원회 신고대상 여부</TD>
+  <TD class=tu width=495 height=63 colspan="3" align="CENTER" valign="TOP">u★TRD_YN |List|L||선<br>
+해당|Y<br>
+미해당|N</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>21. 기타 투자판단에 참고할 사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 03_일반공모증자의경우&gt;&gt;</P><P>★Table-Group aClass=OTH_PUB_INC★</P>
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=140></COL>
+  <COL width=76></COL>
+  <COL width=107></COL>
+  <COL width=71></COL>
+  <COL width=159></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=140 height=47 rowspan="2">6. 신주 발행가액</TD>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">보통주식 (원)</TD>
+  <TD width=239 height=17 colspan="2" align="RIGHT" valign="TOP">e★CST_ISS_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">기타주식 (원)</TD>
+  <TD width=239 height=17 colspan="2" align="RIGHT" valign="TOP">e★PST_ISS_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=17 colspan="3" valign="TOP">7. 기준주가에 대한 할인율 또는 할증율 (%)</TD>
+  <TD width=239 height=17 colspan="2" align="RIGHT" valign="TOP">e★DC_RATE |%|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=17 colspan="3" valign="TOP">8. 우리사주조합원 우선배정비율 (%)</TD>
+  <TD width=239 height=17 colspan="2" align="RIGHT" valign="TOP">e★EMP_ALL_RATE |%|선</TD>
+</TR>
+<TR>
+  <TD width=140 height=107 rowspan="4">9. 청약예정일</TD>
+  <TD width=76 height=47 rowspan="2" align="CENTER">우리<br>
+사주조합</TD>
+  <TD width=107 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=239 height=17 colspan="2" align="CENTER" valign="TOP">u★EMP_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=107 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=239 height=17 colspan="2" align="CENTER" valign="TOP">u★EMP_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=76 height=47 rowspan="2" align="CENTER">일반공모</TD>
+  <TD width=107 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=239 height=17 colspan="2" align="CENTER" valign="TOP">u★OTH_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=107 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=239 height=17 colspan="2" align="CENTER" valign="TOP">u★OTH_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=17 colspan="3" valign="TOP">10. 납입일</TD>
+  <TD class=tu width=239 height=17 colspan="2" align="CENTER" valign="TOP">u★PYM_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=17 colspan="3" valign="TOP">11. 신주의 배당기산일</TD>
+  <TD class=tu width=239 height=17 colspan="2" align="CENTER" valign="TOP">u★DV_ST_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=17 colspan="3" valign="TOP">12. 신주권교부예정일</TD>
+  <TD class=tu width=239 height=17 colspan="2" align="CENTER" valign="TOP">u★NST_GV_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=17 colspan="3" valign="TOP">13. 신주의 상장예정일</TD>
+  <TD class=tu width=239 height=17 colspan="2" align="CENTER" valign="TOP">u★LST_PLN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=17 colspan="3" valign="TOP">14. 대표주관회사(직접공모가 아닌 경우)</TD>
+  <TD width=239 height=17 colspan="2" align="CENTER" valign="TOP">e★CHF_AGN |V|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=17 colspan="3" valign="TOP">15. 이사회결의일(결정일)</TD>
+  <TD class=tu width=239 height=17 colspan="2" align="CENTER" valign="TOP">u★DRC_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=140 height=47 rowspan="2"> &nbsp; - 사외이사<br>
+&nbsp; &nbsp; &nbsp; 참석여부</TD>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">참석 (명)</TD>
+  <TD width=239 height=17 colspan="2" align="CENTER" valign="TOP">e★ATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">불참 (명)</TD>
+  <TD width=239 height=17 colspan="2" align="CENTER" valign="TOP">e★NATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=86 colspan="3" valign="TOP"> &nbsp; - 감사(감사위원) 참석여부</TD>
+  <TD class=tu width=239 height=86 colspan="2" align="CENTER" valign="TOP">u★ADT_ATD_YN |List|L||선<br>
+참석|Y<br>
+불참|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=341 height=63 colspan="3" valign="TOP">16. 증권신고서 제출대상 여부</TD>
+  <TD class=tu width=239 height=63 colspan="2" align="CENTER" valign="TOP">u★RPT_SM_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=341 height=17 colspan="3" valign="TOP">17. 제출을 면제받은 경우 그 사유</TD>
+  <TD width=239 height=17 colspan="2" align="LEFT" valign="TOP">e★RPT_SBM |V|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=169 colspan="3" rowspan="3">18. 청약이 금지되는 공매도 거래 기간</TD>
+  <TD width=71 height=63 align="CENTER" valign="TOP">해당여부</TD>
+  <TD class=tu width=159 height=63 align="CENTER" valign="TOP">u★SSL_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=71 height=40 align="CENTER" valign="TOP">시작일</TD>
+  <TD class=tu width=159 height=40 align="CENTER" valign="TOP">u★SSL_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=71 height=40 align="CENTER" valign="TOP">종료일</TD>
+  <TD class=tu width=159 height=40 align="CENTER" valign="TOP">u★SSL_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=341 height=63 colspan="3" valign="TOP">19. 공정거래위원회 신고대상 여부</TD>
+  <TD class=tu width=239 height=63 colspan="2" align="CENTER" valign="TOP">u★TRD_YN |List|L||선<br>
+해당|Y<br>
+미해당|N</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>20. 기타 투자판단에 참고할 사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 04_제3자배정증자의경우&gt;&gt;</P><P>★Table-Group aClass=THD_ASN_INC★</P>
+
+<TABLE border=1 width=905>
+<COLGROUP>
+  <COL width=140></COL>
+  <COL width=191></COL>
+  <COL width=80></COL>
+  <COL width=458></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=140 height=47 rowspan="2">6. 신주 발행가액</TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP">보통주식 (원)</TD>
+  <TD width=547 height=17 colspan="2" align="RIGHT" valign="TOP">e★CST_ISS_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=191 height=17 align="CENTER" valign="TOP">기타주식 (원)</TD>
+  <TD width=547 height=17 colspan="2" align="RIGHT" valign="TOP">e★PST_ISS_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=140 height=47 rowspan="2">7. 기준주가</TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP">보통주식 (원)</TD>
+  <TD width=547 height=17 colspan="2" align="RIGHT" valign="TOP">e★CST_STD_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=191 height=17 align="CENTER" valign="TOP">기타주식 (원)</TD>
+  <TD width=547 height=17 colspan="2" align="RIGHT" valign="TOP">e★PST_STD_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=109 colspan="2" valign="TOP">7-1. 기준주가 산정방법</TD>
+  <TD class=tu width=547 height=109 colspan="2" valign="TOP">u★STD_MTH |List|L||선<br>
+청약일전 과거 제3거래일부터 제5거래일까지의 가중산술평균주가|1<br>
+최소값[이사회결의일 전일을 기산일로 하여 과거 1개월간ㆍ1주일간ㆍ최근일 가중산술평균주가의 단순평균, 최근일 가중산술평균주가]|2<br>
+시가가 형성되지 않은 종목의 평가액|3</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2" valign="TOP">7-2. 기준주가에 대한 할인율 또는 할증율 (%)</TD>
+  <TD width=547 height=17 colspan="2" align="RIGHT" valign="TOP">e★DC_RATE |%|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2" valign="TOP">7-3. 할인율(할증률) 산정 근거</TD>
+  <TD width=547 height=17 colspan="2" align="LEFT" valign="TOP">e★DC_RATE_RS |V|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2" valign="TOP">8. 제3자배정에 대한 정관의 근거</TD>
+  <TD width=547 height=17 colspan="2" align="LEFT" valign="TOP">e★ART_BAS |V|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2" valign="TOP">9. 납입일</TD>
+  <TD class=tu width=547 height=17 colspan="2" align="CENTER" valign="TOP">u★PYM_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2" valign="TOP">10. 신주의 배당기산일</TD>
+  <TD class=tu width=547 height=17 colspan="2" align="CENTER" valign="TOP">u★DV_ST_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2" valign="TOP">11. 신주권교부예정일</TD>
+  <TD class=tu width=547 height=17 colspan="2" align="CENTER" valign="TOP">u★NST_GV_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2" valign="TOP">12. 신주의 상장 예정일</TD>
+  <TD class=tu width=547 height=17 colspan="2" align="CENTER" valign="TOP">u★LST_PLN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=63 colspan="2">13. 현물출자로 인한 우회상장 해당여부</TD>
+  <TD class=tu width=547 height=63 colspan="2" align="CENTER" valign="TOP">u★PIN_BL_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=340 height=63 colspan="2"> &nbsp; - 현물출자가 있는지 여부</TD>
+  <TD class=tu width=547 height=63 colspan="2" align="CENTER" valign="TOP">u★PIN_EXT_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=340 height=86 colspan="2"> &nbsp; - 현물출자 재산 중 주권비상장법인주식이 <br>
+&nbsp; &nbsp; &nbsp; 있는지 여부</TD>
+  <TD class=tu width=547 height=86 colspan="2" align="CENTER" valign="TOP">u★PIN_SLC_YN |List|L||선<br>
+예|Y<br>
+아니오|N<br>
+해당없음|A</TD>
+</TR>
+<TR>
+  <TD width=140 height=70 rowspan="2"> &nbsp; - 납입예정 주식의<br>
+&nbsp; &nbsp; &nbsp; 현물출자 가액</TD>
+  <TD width=191 height=17 align="CENTER">현물출자가액(원)</TD>
+  <TD width=547 height=17 colspan="2" align="CENTER" valign="TOP">e★PIN_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=191 height=40 align="CENTER">당사 최근사업연도 <br>
+자산총액 대비(%)</TD>
+  <TD width=547 height=40 colspan="2" align="CENTER" valign="TOP">e★PIN_AST_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2"> &nbsp; - 납입예정 주식수</TD>
+  <TD width=547 height=17 colspan="2" align="CENTER" valign="TOP">e★PAY_EXP_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=86 colspan="2">14. 우회상장 요건 충족여부</TD>
+  <TD class=tu width=547 height=86 colspan="2" align="CENTER" valign="TOP">u★BL_CON_YN |List|L||선<br>
+예|Y<br>
+아니오|N<br>
+해당없음|A</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2">15. 이사회결의일(결정일)</TD>
+  <TD class=tu width=547 height=17 colspan="2" align="CENTER" valign="TOP">u★DRC_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=140 height=47 rowspan="2"> &nbsp; - 사외이사<br>
+&nbsp; &nbsp; &nbsp; 참석여부</TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP">참석 (명)</TD>
+  <TD width=547 height=17 colspan="2" align="CENTER" valign="TOP">e★ATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=191 height=17 align="CENTER" valign="TOP">불참 (명)</TD>
+  <TD width=547 height=17 colspan="2" align="CENTER" valign="TOP">e★NATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=86 colspan="2" valign="TOP"> &nbsp; - 감사(감사위원) 참석여부</TD>
+  <TD class=tu width=547 height=86 colspan="2" align="CENTER" valign="TOP">u★ADT_ATD_YN |List|L||선<br>
+참석|Y<br>
+불참|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=340 height=63 colspan="2" valign="TOP">16. 증권신고서 제출대상 여부</TD>
+  <TD class=tu width=547 height=63 colspan="2" align="CENTER" valign="TOP">u★RPT_SM_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=340 height=17 colspan="2" valign="TOP">17. 제출을 면제받은 경우 그 사유</TD>
+  <TD width=547 height=17 colspan="2" align="LEFT" valign="TOP">e★RPT_SBM |V|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=123 colspan="2" rowspan="3">18. 청약이 금지되는 공매도 거래 기간</TD>
+  <TD width=80 height=63 align="CENTER" valign="TOP">해당여부</TD>
+  <TD class=tu width=458 height=63 align="CENTER" valign="TOP">u★SSL_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER" valign="TOP">시작일</TD>
+  <TD class=tu width=458 height=17 align="CENTER" valign="TOP">u★SSL_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER" valign="TOP">종료일</TD>
+  <TD class=tu width=458 height=17 align="CENTER" valign="TOP">u★SSL_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=340 height=63 colspan="2" valign="TOP">19. 공정거래위원회 신고대상 여부</TD>
+  <TD class=tu width=547 height=63 colspan="2" align="CENTER" valign="TOP">u★TRD_YN |List|L||선<br>
+해당|Y<br>
+미해당|N</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>20. 기타 투자판단에 참고할 사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 04_01청약일전과거제3거래일부터제5거래일까지의가중산술평균주가&gt;&gt;</P><P>▶기준주가로 청약일전 과거 제3거래일부터 제5거래일까지의 가중산술평균주가를 이용시 다음표를 추가</P><P>★Table-Group aClass=THD_STD_MTH1★</P>
+
+<TABLE class=nb width=601>
+<COLGROUP>
+  <COL width=293></COL>
+  <COL width=290></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=293 height=86 valign="BOTTOM"></TD>
+  <TD class=tu width=290 height=86 align="RIGHT" valign="BOTTOM">u★STOCKWON |List|L||선<br>
+(단위 : 주, 원)|1<br>
+(단위 : 천주, 원)|2<br>
+(단위 : 백만주, 원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=692>
+<COLGROUP>
+  <COL width=180></COL>
+  <COL width=141></COL>
+  <COL width=194></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=180 height=17 align="CENTER">일 자</TH>
+  <TH width=141 height=17 align="CENTER">거래량</TH>
+  <TH width=194 height=17 align="CENTER">거래대금</TH>
+  <TH width=141 height=17 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=180 height=17 align="CENTER">u★BSN_DT1 |달력|선</TD>
+  <TD width=141 height=17 align="RIGHT">e★BSN_AMT1 |P|선</TD>
+  <TD width=194 height=17 align="RIGHT">e★BSN_PRC1 |\|선</TD>
+  <TD width=141 height=17 align="CENTER">청약일전 제5거래일</TD>
+</TR>
+<TR>
+  <TD class=tu width=180 height=17 align="CENTER">u★BSN_DT2 |달력|선</TD>
+  <TD width=141 height=17 align="RIGHT">e★BSN_AMT2 |P|선</TD>
+  <TD width=194 height=17 align="RIGHT">e★BSN_PRC2 |\|선</TD>
+  <TD width=141 height=17 align="CENTER">청약일전 제4거래일</TD>
+</TR>
+<TR>
+  <TD class=tu width=180 height=17 align="CENTER">u★BSN_DT3 |달력|선</TD>
+  <TD width=141 height=17 align="RIGHT">e★BSN_AMT3 |P|선</TD>
+  <TD width=194 height=17 align="RIGHT">e★BSN_PRC3 |\|선</TD>
+  <TD width=141 height=17 align="CENTER">청약일전 제3거래일</TD>
+</TR>
+<TR>
+  <TD width=180 height=40 align="CENTER">합 계</TD>
+  <TD width=141 height=40 align="RIGHT">e★BSN_AMT_TOT |P|선</TD>
+  <TD width=194 height=40 align="RIGHT">e★BSN_PRC_TOT |\|선</TD>
+  <TD width=141 height=40 align="CENTER">-</TD>
+</TR>
+<TR>
+  <TD width=533 height=17 colspan="3">기준주가(가중산술평균주가)</TD>
+  <TD width=141 height=17 align="RIGHT">e★STD_VAL |%|선</TD>
+</TR>
+<TR>
+  <TD width=533 height=17 colspan="3">할인율 또는 할증률 (%)</TD>
+  <TD width=141 height=17 align="RIGHT">e★DC_RATE |%|선</TD>
+</TR>
+<TR>
+  <TD width=533 height=17 colspan="3">발행가액</TD>
+  <TD width=141 height=17 align="RIGHT">e★ISS_VAL |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : 04_02최소값[이사회결의일전일을기산일로하여과거가중산술평균주가의단순평균,최근일가중산술평균주가]&gt;&gt;</P><P>▶기준주가로 최소값[이사회결의일 전일을 기산일로 하여 과거 1개월간ㆍ1주일간ㆍ최근일 가중산술평균주가의 단순평균, 최근일 가중산술평균주가] 이용시 다음표를 추가</P><P>★Table-Group aClass=THD_STD_MTH2★</P>
+
+<TABLE class=nb width=601>
+<COLGROUP>
+  <COL width=293></COL>
+  <COL width=290></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=293 height=86 valign="BOTTOM"></TD>
+  <TD class=tu width=290 height=86 align="RIGHT" valign="BOTTOM">u★STOCKWON |List|L||선<br>
+(단위 : 주, 원)|1<br>
+(단위 : 천주, 원)|2<br>
+(단위 : 백만주, 원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=837>
+<COLGROUP>
+  <COL width=267></COL>
+  <COL width=170></COL>
+  <COL width=177></COL>
+  <COL width=187></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=267 height=40 align="CENTER">구 분</TH>
+  <TH width=170 height=40 align="CENTER">거래량</TH>
+  <TH width=177 height=40 align="CENTER">거래대금</TH>
+  <TH width=187 height=40 align="CENTER">가중산술<br>
+평균주가</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=267 height=17>과거 1개월간의 가중산술평균주가(A)</TD>
+  <TD width=170 height=17 align="RIGHT">e★BSN_AMT_A |P|선</TD>
+  <TD width=177 height=17 align="RIGHT">e★BSN_PRC_A |\|선</TD>
+  <TD width=187 height=17 align="RIGHT">e★AVG_VAL_A |%|선</TD>
+</TR>
+<TR>
+  <TD width=267 height=17>과거 1주일간의 가중산술평균주가(B)</TD>
+  <TD width=170 height=17 align="RIGHT">e★BSN_AMT_B |P|선</TD>
+  <TD width=177 height=17 align="RIGHT">e★BSN_PRC_B |\|선</TD>
+  <TD width=187 height=17 align="RIGHT">e★AVG_VAL_B |%|선</TD>
+</TR>
+<TR>
+  <TD width=267 height=17>최근일 가중산술평균주가(C)</TD>
+  <TD width=170 height=17 align="RIGHT">e★BSN_AMT_C |P|선</TD>
+  <TD width=177 height=17 align="RIGHT">e★BSN_PRC_C |\|선</TD>
+  <TD width=187 height=17 align="RIGHT">e★AVG_VAL_C |%|선</TD>
+</TR>
+<TR>
+  <TD width=632 height=17 colspan="3">(A),(B),(C)의 산술평균주가(D)</TD>
+  <TD width=187 height=17 align="RIGHT">e★AVG_VAL_D |%|선</TD>
+</TR>
+<TR>
+  <TD width=632 height=17 colspan="3">기준주가 : (C)와(D)중 낮은 가액</TD>
+  <TD width=187 height=17 align="RIGHT">e★STD_VAL |%|선</TD>
+</TR>
+<TR>
+  <TD width=632 height=17 colspan="3">할인율 또는 할증률 (%)</TD>
+  <TD width=187 height=17 align="RIGHT">e★DC_RATE |%|선</TD>
+</TR>
+<TR>
+  <TD width=632 height=17 colspan="3">발행가액</TD>
+  <TD width=187 height=17 align="RIGHT">e★ISS_VAL |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : 04_03시가가형성되지않은종목의평가액&gt;&gt;</P><P>▶주권상장법인이 증권시장에서 시가가 형성되어 있지 않은 종목을 발행하고자 하는 경우 다음의 정보를 추가 기재</P><P>★Table-Group aClass=THD_STD_MTH3★</P>
+
+<TABLE class=nb width=601>
+<COLGROUP>
+  <COL width=293></COL>
+  <COL width=290></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=293 height=17 valign="BOTTOM"></TD>
+  <TD width=290 height=17 align="RIGHT" valign="BOTTOM">(단위 : 원, %)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=92></COL>
+  <COL width=45></COL>
+  <COL width=96></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=161 height=40 colspan="2" align="CENTER">거래정지<br>
+관련 정보</TH>
+  <TH width=161 height=40 colspan="2" align="CENTER">기준주가 평가방법</TH>
+  <TH width=92 height=116 rowspan="2" align="CENTER">종가대비<br>
+증감비율<br>
+(B-A)/A*100</TH>
+  <TH width=150 height=40 colspan="2" align="CENTER">외부평가</TH>
+</TR>
+<TR>
+  <TH width=76 height=63 align="CENTER">거래<br>
+정지일</TH>
+  <TH width=76 height=63 align="CENTER">거래정지전<br>
+최종종가<br>
+(A)</TH>
+  <TH width=76 height=63 align="CENTER">평가<br>
+방법</TH>
+  <TH width=76 height=63 align="CENTER">평가<br>
+금액<br>
+(B)</TH>
+  <TH width=45 height=63 align="CENTER">수행<br>
+여부</TH>
+  <TH width=96 height=63 align="CENTER">평가<br>
+기관명</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=76 height=146 rowspan="3" align="CENTER">u★BSN_STOP_DT |달력|선</TD>
+  <TD width=76 height=146 rowspan="3" align="RIGHT">e★BSN_STOP_VAL |\|선</TD>
+  <TD width=76 height=40 align="CENTER">e★EVAL_MTH |V|선</TD>
+  <TD width=76 height=40 align="RIGHT">e★EVAL_PRC |\|선</TD>
+  <TD width=92 height=40 align="RIGHT">e★SE_RATE |%|선</TD>
+  <TD width=45 height=146 rowspan="3" align="CENTER">e★EXT_EVAL_YN |V|선</TD>
+  <TD width=96 height=40 align="CENTER">e★EVAL_ORG |V|선</TD>
+</TR>
+<TR>
+  <TD width=76 height=40 align="CENTER">e★EVAL_MTH |V|선</TD>
+  <TD width=76 height=40 align="RIGHT">e★EVAL_PRC |\|선</TD>
+  <TD width=92 height=40 align="RIGHT">e★SE_RATE |%|선</TD>
+  <TD width=96 height=40 align="CENTER">e★EVAL_ORG |V|선</TD>
+</TR>
+<TR>
+  <TD width=76 height=40 align="CENTER">e★EVAL_MTH |V|선</TD>
+  <TD width=76 height=40 align="RIGHT">e★EVAL_PRC |\|선</TD>
+  <TD width=92 height=40 align="RIGHT">e★SE_RATE |%|선</TD>
+  <TD width=96 height=40 align="CENTER">e★EVAL_ORG |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 12_우선주발행가액산정시기준주가로보통주의최소값이용&gt;&gt;</P><P>▶▶우선주 발행가액 산정 시 기준주가로 보통주의 '최소값[이사회결의일 전일을 기산일로 하여 과거 1개월간ㆍ1주일간ㆍ최근일 가중산술평균주가의 단순평균, 최근일 가중산술평균주가]' 이용시 다음표를 추가</P><P>★Table-Group aClass=THD_STD_PRF★</P>
+
+<TABLE class=nb width=601>
+<COLGROUP>
+  <COL width=293></COL>
+  <COL width=290></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=293 height=86 valign="BOTTOM"></TD>
+  <TD class=tu width=290 height=86 align="RIGHT" valign="BOTTOM">u★STOCKWON |List|L||선<br>
+(단위 : 주, 원)|1<br>
+(단위 : 천주, 원)|2<br>
+(단위 : 백만주, 원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=267></COL>
+  <COL width=99></COL>
+  <COL width=99></COL>
+  <COL width=99></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=267 height=40 align="CENTER">구 분</TH>
+  <TH width=99 height=40 align="CENTER">거래량</TH>
+  <TH width=99 height=40 align="CENTER">거래대금</TH>
+  <TH width=99 height=40 align="CENTER">가중산술<br>
+평균주가</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=267 height=40>과거 1개월간의 가중산술평균주가(A)</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_AMT_A |P|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_PRC_A |\|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★AVG_VAL_A |%|선</TD>
+</TR>
+<TR>
+  <TD width=267 height=40>과거 1주일간의 가중산술평균주가(B)</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_AMT_B |P|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_PRC_B |\|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★AVG_VAL_B |%|선</TD>
+</TR>
+<TR>
+  <TD width=267 height=40>최근일 가중산술평균주가(C)</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_AMT_C |P|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_PRC_C |\|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★AVG_VAL_C |%|선</TD>
+</TR>
+<TR>
+  <TD width=483 height=40 colspan="3">(A),(B),(C)의 산술평균주가(D)</TD>
+  <TD width=99 height=40 align="RIGHT">e★AVG_VAL_D |%|선</TD>
+</TR>
+<TR>
+  <TD width=483 height=40 colspan="3">기준주가 : (C)와(D)중 낮은 가액</TD>
+  <TD width=99 height=40 align="RIGHT">e★STD_VAL |%|선</TD>
+</TR>
+<TR>
+  <TD width=483 height=40 colspan="3">할인율 또는 할증률 (%)</TD>
+  <TD width=99 height=40 align="RIGHT">e★DC_RATE |%|선</TD>
+</TR>
+<TR>
+  <TD width=483 height=40 colspan="3">발행가액</TD>
+  <TD width=99 height=40 align="RIGHT">e★ISS_VAL |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 13_외부평가기관을통해기준주가평가를수행한경우&gt;&gt;</P><P>▶▶외부평가기관을 통해 기준주가 평가를 수행한 경우 아래 사항을 추가 기재</P><P>★Table-Group aClass=THD_EXT_EVAL★</P>
+
+<TABLE class=nb width=970>
+<COLGROUP>
+  <COL width=476></COL>
+  <COL width=476></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=476 height=17 valign="BOTTOM"></TD>
+  <TD width=476 height=17 align="RIGHT" valign="BOTTOM">(단위 : &nbsp;원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=969>
+<COLGROUP>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=221></COL>
+  <COL width=81></COL>
+  <COL width=188></COL>
+  <COL width=188></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=76 height=40 align="CENTER">평가방법</TH>
+  <TH width=76 height=40 align="CENTER">평가기관명</TH>
+  <TH width=76 height=40 align="CENTER">평가일</TH>
+  <TH width=221 height=40 align="CENTER">계산방법</TH>
+  <TH width=81 height=40 align="CENTER">평가 금액</TH>
+  <TH width=188 height=40 align="CENTER">주요 가정</TH>
+  <TH width=188 height=40 align="CENTER">가정<br>
+수립근거</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=76 height=40 align="CENTER">e★EVAL_MTH |V|선</TD>
+  <TD width=76 height=40 align="CENTER">e★EVAL_ORG |V|선</TD>
+  <TD class=tu width=76 height=40 align="CENTER">u★EVAL_DT |달력|선</TD>
+  <TD width=221 height=40 align="LEFT">e★CAL_MTH |V|선</TD>
+  <TD width=81 height=40 align="RIGHT">e★EVAL_PRC |\|선</TD>
+  <TD width=188 height=40 align="LEFT">e★EVAL_SPP |V|선</TD>
+  <TD width=188 height=40 align="LEFT">e★EVAL_SPP_RSN |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 04_02최소값[이사회결의일전일을기산일로하여과거가중산술평균주가의단순평균,최근일가중산술평균주가]&gt;&gt;</P><P>▶기준주가로 최소값[이사회결의일 전일을 기산일로 하여 과거 1개월간ㆍ1주일간ㆍ최근일 가중산술평균주가의 단순평균, 최근일 가중산술평균주가] 이용시 다음표를 추가</P><P>★Table-Group aClass=THD_STD_MTH2★</P>
+
+<TABLE class=nb width=601>
+<COLGROUP>
+  <COL width=293></COL>
+  <COL width=290></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=293 height=86 valign="BOTTOM"></TD>
+  <TD class=tu width=290 height=86 align="RIGHT" valign="BOTTOM">u★STOCKWON |List|L||선<br>
+(단위 : 주, 원)|1<br>
+(단위 : 천주, 원)|2<br>
+(단위 : 백만주, 원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=267></COL>
+  <COL width=99></COL>
+  <COL width=99></COL>
+  <COL width=99></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=267 height=40 align="CENTER">구 분</TH>
+  <TH width=99 height=40 align="CENTER">거래량</TH>
+  <TH width=99 height=40 align="CENTER">거래대금</TH>
+  <TH width=99 height=40 align="CENTER">가중산술<br>
+평균주가</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=267 height=40>과거 1개월간의 가중산술평균주가(A)</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_AMT_A |P|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_PRC_A |\|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★AVG_VAL_A |%|선</TD>
+</TR>
+<TR>
+  <TD width=267 height=40>과거 1주일간의 가중산술평균주가(B)</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_AMT_B |P|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_PRC_B |\|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★AVG_VAL_B |%|선</TD>
+</TR>
+<TR>
+  <TD width=267 height=40>최근일 가중산술평균주가(C)</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_AMT_C |P|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★BSN_PRC_C |\|선</TD>
+  <TD width=99 height=40 align="RIGHT">e★AVG_VAL_C |%|선</TD>
+</TR>
+<TR>
+  <TD width=483 height=40 colspan="3">(A),(B),(C)의 산술평균주가(D)</TD>
+  <TD width=99 height=40 align="RIGHT">e★AVG_VAL_D |%|선</TD>
+</TR>
+<TR>
+  <TD width=483 height=40 colspan="3">기준주가 : (C)와(D)중 낮은 가액</TD>
+  <TD width=99 height=40 align="RIGHT">e★STD_VAL |%|선</TD>
+</TR>
+<TR>
+  <TD width=483 height=40 colspan="3">할인율 또는 할증률 (%)</TD>
+  <TD width=99 height=40 align="RIGHT">e★DC_RATE |%|선</TD>
+</TR>
+<TR>
+  <TD width=483 height=40 colspan="3">발행가액</TD>
+  <TD width=99 height=40 align="RIGHT">e★ISS_VAL |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>★Table-Group aClass=THD_ASN_OBJ★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">【제3자배정 근거, 목적 등】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=291 height=17 align="CENTER">제3자배정 근거가 되는 정관규정</TH>
+  <TH width=291 height=17 align="CENTER">제3자배정 증자의 목적</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=291 height=17 align="LEFT" valign="TOP">e★RULE |V|선</TD>
+  <TD width=291 height=17 align="LEFT" valign="TOP">e★OBJ |V|선</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 align="LEFT" valign="TOP">e★RULE |V|선</TD>
+  <TD width=291 height=17 align="LEFT" valign="TOP">e★OBJ |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>★Table-Group aClass=THD_ASN_LST★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">【제3자배정 대상자별 선정경위, 거래내역, 배정내역 등】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=68></COL>
+  <COL width=68></COL>
+  <COL width=168></COL>
+  <COL width=95></COL>
+  <COL width=74></COL>
+  <COL width=71></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=68 height=63 align="CENTER">제3자배정 대상자</TH>
+  <TH width=68 height=63 align="CENTER">회사 또는<br>
+최대주주와의 관계</TH>
+  <TH width=168 height=63 align="CENTER">선정경위</TH>
+  <TH width=95 height=63 align="CENTER">증자결정 전후 6월이내 거래내역 및 계획</TH>
+  <TH width=74 height=63 align="CENTER">배정주식수 (주)</TH>
+  <TH width=71 height=63 align="CENTER">비 고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=68 height=40 align="LEFT" valign="TOP">e★PART |V|선</TD>
+  <TD width=68 height=40 align="LEFT" valign="TOP">e★RLT |V|선</TD>
+  <TD width=168 height=40 align="LEFT" valign="TOP">e★SLT_JDG |V|선</TD>
+  <TD width=95 height=40 align="LEFT" valign="TOP">e★MNTH |V|선</TD>
+  <TD width=74 height=40 align="RIGHT" valign="TOP">e★ALL_CNT |P|선</TD>
+  <TD width=71 height=40 align="LEFT" valign="TOP">e★ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>&lt;&lt;단위서식 : 09_대상자가최대주주가되는경우(법인)&gt;&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">【제3자배정 대상자 중 법인 또는 단체가 포함된 경우】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17>(1) 법인 또는 단체의 기본정보</TD>
+  <TD width=291 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=THD_ASN_BAS★</P>
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=65></COL>
+  <COL width=64></COL>
+  <COL width=67></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=65 height=70 rowspan="2" align="CENTER">명 칭</TH>
+  <TH width=64 height=70 rowspan="2" align="CENTER">출자자수<br>
+(명)</TH>
+  <TH width=142 height=40 colspan="2" align="CENTER">대표이사<br>
+(대표조합원)</TH>
+  <TH width=141 height=40 colspan="2" align="CENTER">업무집행자<br>
+(업무집행조합원)</TH>
+  <TH width=141 height=40 colspan="2" align="CENTER">최대주주<br>
+(최대출자자)</TH>
+</TR>
+<TR>
+  <TH width=67 height=17 align="CENTER">성명</TH>
+  <TH width=66 height=17 align="CENTER">지분(%)</TH>
+  <TH width=66 height=17 align="CENTER">성명</TH>
+  <TH width=66 height=17 align="CENTER">지분(%)</TH>
+  <TH width=66 height=17 align="CENTER">성명</TH>
+  <TH width=66 height=17 align="CENTER">지분(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=65 height=139 rowspan="2" align="CENTER">e★BAS_NAME |V|필</TD>
+  <TD width=64 height=139 rowspan="2" align="RIGHT">e★BAS_CNT |P|선</TD>
+  <TD width=67 height=63 align="CENTER">e★BAS_NAM1 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT1 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM2 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT2 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM3 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT3 |%|선</TD>
+</TR>
+<TR>
+  <TD width=67 height=63 align="CENTER">e★BAS_NAM1 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT1 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM2 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT2 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM3 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT3 |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=450></COL>
+  <COL width=132></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=450 height=17>(2) 법인 또는 단체의 최근 결산기 주요 재무사항</TD>
+  <TD width=132 height=17 align="RIGHT">(단위 : 백만원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=THD_ASN_FIN★</P>
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=140></COL>
+  <COL width=140></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=141 height=17 align="CENTER">회계연도</TD>
+  <TD width=141 height=17 align="CENTER">e★FIN_YER |V|선</TD>
+  <TD width=140 height=17 align="CENTER">결산기</TD>
+  <TD width=140 height=17 align="CENTER">e★FIN_CLO |V|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자산총계</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_AST |\|선</TD>
+  <TD width=140 height=17 align="CENTER">매출액</TD>
+  <TD width=140 height=17 align="RIGHT">e★FIN_SAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">부채총계</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_DEB |\|선</TD>
+  <TD width=140 height=17 align="CENTER">당기순손익</TD>
+  <TD width=140 height=17 align="RIGHT">e★FIN_PRF |\|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자본총계</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_CAP |\|선</TD>
+  <TD width=140 height=17 align="CENTER">외부감사인</TD>
+  <TD width=140 height=17 align="CENTER">e★FIN_AUD |V|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자본금</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_CAS |\|선</TD>
+  <TD width=140 height=17 align="CENTER">감사의견</TD>
+  <TD width=140 height=17 align="CENTER">e★FIN_OPN |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : 10_대상자가최대주주가되는경우(단체)&gt;&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">【제3자배정 대상자 중 법인 또는 단체가 포함된 경우】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17>(1) 법인 또는 단체의 기본정보</TD>
+  <TD width=291 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=THD_ASN_BAS★</P>
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=65></COL>
+  <COL width=64></COL>
+  <COL width=67></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=65 height=70 rowspan="2" align="CENTER">명 칭</TH>
+  <TH width=64 height=70 rowspan="2" align="CENTER">출자자수<br>
+(명)</TH>
+  <TH width=142 height=40 colspan="2" align="CENTER">대표이사<br>
+(대표조합원)</TH>
+  <TH width=141 height=40 colspan="2" align="CENTER">업무집행자<br>
+(업무집행조합원)</TH>
+  <TH width=141 height=40 colspan="2" align="CENTER">최대주주<br>
+(최대출자자)</TH>
+</TR>
+<TR>
+  <TH width=67 height=17 align="CENTER">성명</TH>
+  <TH width=66 height=17 align="CENTER">지분(%)</TH>
+  <TH width=66 height=17 align="CENTER">성명</TH>
+  <TH width=66 height=17 align="CENTER">지분(%)</TH>
+  <TH width=66 height=17 align="CENTER">성명</TH>
+  <TH width=66 height=17 align="CENTER">지분(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=65 height=139 rowspan="2" align="CENTER">e★BAS_NAME |V|필</TD>
+  <TD width=64 height=139 rowspan="2" align="RIGHT">e★BAS_CNT |P|선</TD>
+  <TD width=67 height=63 align="CENTER">e★BAS_NAM1 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT1 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM2 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT2 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM3 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT3 |%|선</TD>
+</TR>
+<TR>
+  <TD width=67 height=63 align="CENTER">e★BAS_NAM1 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT1 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM2 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT2 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM3 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT3 |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=450></COL>
+  <COL width=132></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=450 height=17>(2) 법인 또는 단체의 최근 결산기 주요 재무사항</TD>
+  <TD width=132 height=17 align="RIGHT">(단위 : 백만원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=THD_ASN_FIN★</P>
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=140></COL>
+  <COL width=140></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=141 height=17 align="CENTER">회계연도</TD>
+  <TD width=141 height=17 align="CENTER">e★FIN_YER |V|선</TD>
+  <TD width=140 height=17 align="CENTER">결산기</TD>
+  <TD width=140 height=17 align="CENTER">e★FIN_CLO |V|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자산총계</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_AST |\|선</TD>
+  <TD width=140 height=17 align="CENTER">매출액</TD>
+  <TD width=140 height=17 align="RIGHT">e★FIN_SAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">부채총계</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_DEB |\|선</TD>
+  <TD width=140 height=17 align="CENTER">당기순손익</TD>
+  <TD width=140 height=17 align="RIGHT">e★FIN_PRF |\|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자본총계</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_CAP |\|선</TD>
+  <TD width=140 height=17 align="CENTER">외부감사인</TD>
+  <TD width=140 height=17 align="CENTER">e★FIN_AUD |V|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자본금</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_CAS |\|선</TD>
+  <TD width=140 height=17 align="CENTER">감사의견</TD>
+  <TD width=140 height=17 align="CENTER">e★FIN_OPN |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17>(3) 투자조합 등 단체의 주요출자자 현황</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=THD_ORG_CTB★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=47 rowspan="2" align="CENTER">설립근거<br>
+법률</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">최근결산기<br>
+재산총액</TH>
+  <TH width=231 height=17 colspan="2" align="CENTER">주요출자자(10% 이상)</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">비고</TH>
+</TR>
+<TR>
+  <TH width=111 height=17 align="CENTER">성명</TH>
+  <TH width=111 height=17 align="CENTER">지분(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=40 align="CENTER">e★CTB_BOE_LAW |V|선</TD>
+  <TD width=111 height=40 align="CENTER">e★CTB_CAP_AMT |\|선</TD>
+  <TD width=111 height=40 align="CENTER">e★CTB_IVT_NM |V|선</TD>
+  <TD width=111 height=40 align="CENTER">e★CTB_IVT_SHA |%|선</TD>
+  <TD width=111 height=40 align="CENTER">e★CTB_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17>(4) 투자조합 등 단체의 대표조합원 등의 다른회사 등기임원 경력</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=THD_ORG_EXC★</P>
+
+<TABLE border=1 width=984>
+<COLGROUP>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=277></COL>
+  <COL width=66></COL>
+  <COL width=239></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=66 height=70 rowspan="2" align="CENTER">성 명</TH>
+  <TH width=427 height=17 colspan="3" align="CENTER">회사 정보</TH>
+  <TH width=389 height=17 colspan="3" align="CENTER">임원 이력</TH>
+  <TH width=66 height=70 rowspan="2" align="CENTER">비고</TH>
+</TR>
+<TR>
+  <TH width=66 height=40 align="CENTER">회사명</TH>
+  <TH width=277 height=40 align="CENTER">상장<br>
+&nbsp;여부</TH>
+  <TH width=66 height=40 align="CENTER">상장<br>
+폐지일</TH>
+  <TH width=239 height=40 align="CENTER">직위</TH>
+  <TH width=66 height=40 align="CENTER">선임일</TH>
+  <TH width=66 height=40 align="CENTER">퇴임일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=66 height=224 align="CENTER">e★EXC_NM |V|선</TD>
+  <TD width=66 height=224 align="CENTER">e★EXC_COP_NM |V|선</TD>
+  <TD class=tu width=277 height=224 align="CENTER">u★EXC_COP_KND |List|L||선<br>
+유가증권|1<br>
+코스닥|2<br>
+코넥스|3<br>
+비상장|4<br>
+-|-</TD>
+  <TD class=tu width=66 height=224 align="CENTER">u★EXC_DLST_DT |달력|선</TD>
+  <TD class=tu width=239 height=224 align="CENTER">u★EXC_POS |List|L||선<br>
+대표이사|1<br>
+이사|2<br>
+감사|3<br>
+-|-</TD>
+  <TD class=tu width=66 height=224 align="CENTER">u★EXC_ELC_DT |달력|선</TD>
+  <TD class=tu width=66 height=224 align="CENTER">u★EXC_RES_DT |달력|선</TD>
+  <TD width=66 height=224 align="CENTER">e★EXC_ECT |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17>(5) 투자조합 등 단체의 대표조합원 등의 다른회사 최대주주 이력</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=THD_ORG_LGSH★</P>
+
+<TABLE border=1 width=795>
+<COLGROUP>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=271></COL>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=81></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=76 height=70 rowspan="2" align="CENTER">성 명</TH>
+  <TH width=441 height=17 colspan="3" align="CENTER">회사 정보</TH>
+  <TH width=161 height=17 colspan="2" align="CENTER">최대주주 이력</TH>
+  <TH width=81 height=70 rowspan="2" align="CENTER">비고</TH>
+</TR>
+<TR>
+  <TH width=76 height=40 align="CENTER">회사명</TH>
+  <TH width=271 height=40 align="CENTER">상장<br>
+여부</TH>
+  <TH width=76 height=40 align="CENTER">상장<br>
+폐지일</TH>
+  <TH width=76 height=40 align="CENTER">시작일</TH>
+  <TH width=76 height=40 align="CENTER">종료일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=76 height=178 align="CENTER">e★LGSH_NM |V|선</TD>
+  <TD width=76 height=178 align="CENTER">e★LGSH_COP_NM |V|선</TD>
+  <TD class=tu width=271 height=178 align="CENTER">u★LGSH_COP_KND |List|L||선<br>
+유가증권|1<br>
+코스닥|2<br>
+코넥스|3<br>
+비상장|4<br>
+-|-</TD>
+  <TD class=tu width=76 height=178 align="CENTER">u★LGSH_DLST_DT |달력|선</TD>
+  <TD class=tu width=76 height=178 align="CENTER">u★LGSH_BGN_DT |달력|선</TD>
+  <TD class=tu width=76 height=178 align="CENTER">u★LGSH_END_DT |달력|선</TD>
+  <TD width=81 height=178 align="CENTER">e★LGSH_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : 11_대상자가최대주주가되지않는경우(비외감법인,비외감단체)&gt;&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">【제3자배정 대상자 중 법인 또는 단체가 포함된 경우】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17>(1) 법인 또는 단체의 기본정보</TD>
+  <TD width=291 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=THD_ASN_BAS★</P>
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=65></COL>
+  <COL width=64></COL>
+  <COL width=67></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=65 height=70 rowspan="2" align="CENTER">명 칭</TH>
+  <TH width=64 height=70 rowspan="2" align="CENTER">출자자수<br>
+(명)</TH>
+  <TH width=142 height=40 colspan="2" align="CENTER">대표이사<br>
+(대표조합원)</TH>
+  <TH width=141 height=40 colspan="2" align="CENTER">업무집행자<br>
+(업무집행조합원)</TH>
+  <TH width=141 height=40 colspan="2" align="CENTER">최대주주<br>
+(최대출자자)</TH>
+</TR>
+<TR>
+  <TH width=67 height=17 align="CENTER">성명</TH>
+  <TH width=66 height=17 align="CENTER">지분(%)</TH>
+  <TH width=66 height=17 align="CENTER">성명</TH>
+  <TH width=66 height=17 align="CENTER">지분(%)</TH>
+  <TH width=66 height=17 align="CENTER">성명</TH>
+  <TH width=66 height=17 align="CENTER">지분(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=65 height=139 rowspan="2" align="CENTER">e★BAS_NAME |V|필</TD>
+  <TD width=64 height=139 rowspan="2" align="RIGHT">e★BAS_CNT |P|선</TD>
+  <TD width=67 height=63 align="CENTER">e★BAS_NAM1 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT1 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM2 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT2 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM3 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT3 |%|선</TD>
+</TR>
+<TR>
+  <TD width=67 height=63 align="CENTER">e★BAS_NAM1 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT1 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM2 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT2 |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★BAS_NAM3 |V|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★BAS_RAT3 |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=450></COL>
+  <COL width=132></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=450 height=17>(2) 법인 또는 단체의 최근 결산기 주요 재무사항</TD>
+  <TD width=132 height=17 align="RIGHT">(단위 : 백만원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=THD_ASN_FIN★</P>
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=140></COL>
+  <COL width=140></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=141 height=17 align="CENTER">회계연도</TD>
+  <TD width=141 height=17 align="CENTER">e★FIN_YER |V|선</TD>
+  <TD width=140 height=17 align="CENTER">결산기</TD>
+  <TD width=140 height=17 align="CENTER">e★FIN_CLO |V|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자산총계</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_AST |\|선</TD>
+  <TD width=140 height=17 align="CENTER">매출액</TD>
+  <TD width=140 height=17 align="RIGHT">e★FIN_SAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">부채총계</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_DEB |\|선</TD>
+  <TD width=140 height=17 align="CENTER">당기순손익</TD>
+  <TD width=140 height=17 align="RIGHT">e★FIN_PRF |\|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자본총계</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_CAP |\|선</TD>
+  <TD width=140 height=17 align="CENTER">외부감사인</TD>
+  <TD width=140 height=17 align="CENTER">e★FIN_AUD |V|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자본금</TD>
+  <TD width=141 height=17 align="RIGHT">e★FIN_CAS |\|선</TD>
+  <TD width=140 height=17 align="CENTER">감사의견</TD>
+  <TD width=140 height=17 align="CENTER">e★FIN_OPN |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 08_제3자배정5회이상정정되는경우&gt;&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">【제3자배정으로서 주요사항보고서가 5회 이상 정정되는 경우】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=TBL_CRT ★</P>
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=225></COL>
+  <COL width=355></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=225 height=17 valign="TOP">정정 사유</TD>
+  <TD width=355 height=17 align="LEFT">e★CRT_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=225 height=17 valign="TOP">향후 계획</TD>
+  <TD width=355 height=17 align="LEFT">e★CRT_PLN |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+</BODY>
+</HTML>

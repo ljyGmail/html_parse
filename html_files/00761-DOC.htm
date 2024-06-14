@@ -1,0 +1,1330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00761, 서식버전 : 3.5, 서식변경날짜 : 2023년 1월 16일,<br>
+&nbsp; &nbsp;문서명 : 연결감사보고서★</P><P><br>
+<br></P><P style="font-size: 18pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; XXX 주식회사와 그 종속회사</P><P><br>
+<br>
+<br>
+<br></P><P style="font-size: 18pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;연 결 재 무 제 표 에 대 한</P>
+<P class=cover-title><a class='toc' href='00761-TOC.htm#27' name='27' target='toc'>감 &nbsp; 사 &nbsp; 보 &nbsp; 고 &nbsp; 서</a></P><P><br>
+<br>
+<br>
+<br>
+<br></P><P>★Table-Group aClass=COVER★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=333></COL>
+  <COL width=249></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=21 colspan="2" align="CENTER" style="font-family: 바탕, sans-serif; font-size: 14pt;">제 XX 기</TD>
+</TR>
+<TR>
+  <TD class=tu width=333 height=17 align="RIGHT">u★PERIODFROM |달력|필</TD>
+  <TD width=249 height=17>부터</TD>
+</TR>
+<TR>
+  <TD class=tu width=333 height=17 align="RIGHT" valign="TOP">u★PERIODTO</TD>
+  <TD width=249 height=17 valign="TOP">까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=333></COL>
+  <COL width=249></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=21 colspan="2" align="CENTER" style="font-family: 바탕, sans-serif; font-size: 14pt;">제 XX 기</TD>
+</TR>
+<TR>
+  <TD width=333 height=17 align="RIGHT">XXXX년 XX월 XX일</TD>
+  <TD width=249 height=17>부터</TD>
+</TR>
+<TR>
+  <TD width=333 height=17 align="RIGHT" valign="TOP">XXXX년 XX월 XX일</TD>
+  <TD width=249 height=17 valign="TOP">까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br>
+<br>
+<br></P><P style="font-size: 18pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 감사인 명칭</P><P><br></P>
+<P class=pgbrk></P>
+<P class=toc>목 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;차</P><P><br></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 61_독립된 감사인의 감사보고서&gt;&gt;</P>
+<P class=section-1><a class='toc' href='00761-TOC.htm#450' name='450' target='toc'>독립된 감사인의 감사보고서</a></P><P><br></P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17 valign="TOP">감사대상회사의 명칭</TD>
+  <TD width=291 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=291 height=17 valign="TOP">XXXX 귀중</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">XXXX년 XX월 XX일</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 16pt;">1. 감사보고서 본문</P><P><br></P><P style="font-size: 16pt;">2. 특기사항</P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">감사인의 주소</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">대표자 명칭</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 62_외부감사인의 감사보고서&gt;&gt;</P>
+<P class=section-1><a class='toc' href='00761-TOC.htm#219' name='219' target='toc'>외부감사인의 감사보고서</a></P><P><br></P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17 valign="TOP">감사대상회사의 명칭</TD>
+  <TD width=291 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=291 height=17 valign="TOP">XXXX 귀중</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">XXXX 년 XX월 XX일</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 16pt;">1. 감사보고서 본문</P><P><br></P><P style="font-size: 16pt;">2. 특기사항</P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">감사인의 주소</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">대표자 명칭</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00761-TOC.htm#69' name='69' target='toc'>(첨부)연 결 재 무 제 표</a></P><P><br>
+<br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=26 align="CENTER" style="font-size: 14pt; font-weight: bold;">XX &nbsp;주식회사</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br>
+<br>
+<br></P><P>★Table-Group aClass=COVER2★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=333></COL>
+  <COL width=249></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=21 colspan="2" align="CENTER" style="font-family: 바탕, sans-serif; font-size: 14pt;">제 XX 기</TD>
+</TR>
+<TR>
+  <TD class=tu width=333 height=17 align="RIGHT">u★PERIODFROM2</TD>
+  <TD width=249 height=17>부터</TD>
+</TR>
+<TR>
+  <TD class=tu width=333 height=17 align="RIGHT" valign="TOP">u★PERIODTO2</TD>
+  <TD width=249 height=17 valign="TOP">까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=333></COL>
+  <COL width=249></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=21 colspan="2" align="CENTER" style="font-family: 바탕, sans-serif; font-size: 14pt;">제 XX 기</TD>
+</TR>
+<TR>
+  <TD width=333 height=17 align="RIGHT">XXXX년 XX월 XX일</TD>
+  <TD width=249 height=17>부터</TD>
+</TR>
+<TR>
+  <TD width=333 height=17 align="RIGHT" valign="TOP">XXXX년 XX월 XX일</TD>
+  <TD width=249 height=17 valign="TOP">까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br>
+<br>
+<br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">"첨부된 연결재무제표는 당사가 작성한 것입니다."</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">XX 주식회사 대표이사 XXX </TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=99></COL>
+  <COL width=383></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=91 height=47 rowspan="2" align="RIGHT" valign="TOP">본점 소재지 : </TD>
+  <TD width=99 height=17 align="CENTER">(도로명주소)</TD>
+  <TD width=383 height=17></TD>
+</TR>
+<TR>
+  <TD width=99 height=17 align="CENTER">(전 &nbsp; 화)</TD>
+  <TD width=383 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 01_연결재무상태표&gt;&gt;</P><P>★Table-Group aClass=LBS-3★</P>
+<P class=table-group><a class='toc' href='00761-TOC.htm#82' name='82' target='toc'>연 결 재 무 상 태 표</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제 XX 기 XXXX년 XX월 XX일 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제 XX 기 XXXX년 XX월 XX일 현재</TD>
+</TR>
+<TR>
+  <TD width=291 height=86 valign="BOTTOM">회사명 : XXXX</TD>
+  <TD class=tu width=291 height=86 align="RIGHT" valign="BOTTOM">u★WON |List|L|1|선<br>
+(단위 : 원)|1<br>
+(단위 : 천원)|2<br>
+(단위 : 백만원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=231></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=231 height=17 align="CENTER">과 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;목</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(당) 기</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(전) 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 04_연결손익계산서&gt;&gt;</P><P>★Table-Group aClass=LIS-2★</P>
+<P class=table-group><a class='toc' href='00761-TOC.htm#868' name='868' target='toc'>연 결 손 익 계 산 서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제XX기 XXXX년 XX월 XX일부터 XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제XX기 XXXX년 XX월 XX일부터 XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=291 height=86 valign="BOTTOM">회사명 : XXXXX</TD>
+  <TD class=tu width=291 height=86 align="RIGHT" valign="BOTTOM">u★WON |List|L|1|선<br>
+(단위 : 원)|1<br>
+(단위 : 천원)|2<br>
+(단위 : 백만원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=231></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=231 height=17 align="CENTER">과 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;목</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(당) 기</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(전) 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 05_연결포괄손익계산서&gt;&gt;</P><P>★Table-Group aClass=LIS-2★</P>
+<P class=table-group><a class='toc' href='00761-TOC.htm#895' name='895' target='toc'>연 결 포 괄 손 익 계 산 서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제XX기 XXXX년 XX월 XX일부터 XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제XX기 XXXX년 XX월 XX일부터 XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=291 height=86 valign="BOTTOM">회사명 : XXXXX</TD>
+  <TD class=tu width=291 height=86 align="RIGHT" valign="BOTTOM">u★WON |List|L|1|선<br>
+(단위 : 원)|1<br>
+(단위 : 천원)|2<br>
+(단위 : 백만원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=231></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=231 height=17 align="CENTER">과 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;목</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(당) 기</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(전) 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 10_연결자본변동표&gt;&gt;</P><P>★Table-Group aClass=LEF-1★</P>
+<P class=table-group><a class='toc' href='00761-TOC.htm#922' name='922' target='toc'>연 결 자 본 변 동 표</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제 XX 기 XXXX년 XX월 XX일부터 &nbsp; XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제 XX 기 XXXX년 XX월 XX일부터 &nbsp; XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=291 height=86 valign="BOTTOM">회사명 : XXXX</TD>
+  <TD class=tu width=291 height=86 align="RIGHT" valign="BOTTOM">u★WON |List|L|1|선<br>
+(단위 : 원)|1<br>
+(단위 : 천원)|2<br>
+(단위 : 백만원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=798>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=84></COL>
+  <COL width=84></COL>
+  <COL width=84></COL>
+  <COL width=84></COL>
+  <COL width=83></COL>
+  <COL width=83></COL>
+  <COL width=83></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=63 align="CENTER">과 &nbsp; &nbsp; 목</TH>
+  <TH width=84 height=63 align="CENTER">자본금</TH>
+  <TH width=84 height=63 align="CENTER">연결<br>
+자본잉여금</TH>
+  <TH width=84 height=63 align="CENTER">연결<br>
+자본조정</TH>
+  <TH width=84 height=63 align="CENTER">연결기타포괄<br>
+손익누계액</TH>
+  <TH width=83 height=63 align="CENTER">연결<br>
+이익잉여금</TH>
+  <TH width=83 height=63 align="CENTER">소수주주<br>
+지분</TH>
+  <TH width=83 height=63 align="CENTER">총 &nbsp; 계</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=40 align="LEFT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="LEFT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="LEFT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="LEFT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="LEFT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="LEFT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="LEFT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=84 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+  <TD width=83 height=17 align="RIGHT">e★</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="LEFT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=84 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+  <TD width=83 height=40 align="RIGHT">e★</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 11_연결현금흐름표-간접법&gt;&gt;</P><P>★Table-Group aClass=LCF-I★</P>
+<P class=table-group><a class='toc' href='00761-TOC.htm#1020' name='1020' target='toc'>연 결 현 금 흐 름 표</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제 XX 기 XXXX년 XX월 XX일부터 &nbsp; XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제 XX 기 XXXX년 XX월 XX일부터 &nbsp; XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=291 height=86 valign="BOTTOM">회사명 : XXXX</TD>
+  <TD class=tu width=291 height=86 align="RIGHT" valign="BOTTOM">u★WON |List|L|1|선<br>
+(단위 : 원)|1<br>
+(단위 : 천원)|2<br>
+(단위 : 백만원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=231></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=231 height=17 align="CENTER">과 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;목</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(당) 기</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(전) 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 12_연결현금흐름표-직접법&gt;&gt;</P><P>★Table-Group aClass=LCF-D★</P>
+<P class=table-group><a class='toc' href='00761-TOC.htm#1047' name='1047' target='toc'>연 결 현 금 흐 름 표</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제 XX 기 XXXX년 XX월 XX일부터 &nbsp; XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제 XX 기 XXXX년 XX월 XX일부터 &nbsp; XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=291 height=86 valign="BOTTOM">회사명 : XXXX</TD>
+  <TD class=tu width=291 height=86 align="RIGHT" valign="BOTTOM">u★WON |List|L|1|선<br>
+(단위 : 원)|1<br>
+(단위 : 천원)|2<br>
+(단위 : 백만원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=231></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=231 height=17 align="CENTER">과 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;목</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(당) 기</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(전) 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=231 height=17 align="LEFT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP">e★</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-2><a class='toc' href='00761-TOC.htm#149' name='149' target='toc'>주석</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER" valign="TOP">XXXX년 XX월 XX일 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 valign="TOP">회사명 : XXXX</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P><br></P><P><br></P><P><br></P><P><br></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 32_연결부속명세서_목차&gt;&gt;</P>
+<P class=section-1><a class='toc' href='00761-TOC.htm#1074' name='1074' target='toc'>연 결 부 속 명 세 서</a></P><P><br></P><P>&lt;&lt;단위서식 : 20_연결부속명세서&gt;&gt;</P>
+<P class=table-group><a class='toc' href='00761-TOC.htm#1082' name='1082' target='toc'>연 결 XXXXX 명 세 서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제XX기 XXXX년 XX월 XX일부터 XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">제XX기 XXXX년 XX월 XX일부터 XXXX년 XX월 XX일까지</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 valign="BOTTOM">회사명 : XXXXX</TD>
+  <TD width=291 height=17 align="RIGHT" valign="BOTTOM">(단위 : 원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=231></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=81></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=231 height=17 align="CENTER">과 &nbsp; &nbsp; &nbsp; &nbsp;목</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(당) 기</TH>
+  <TH width=171 height=17 colspan="2" align="CENTER">제 XX(전) 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=231 height=17 valign="TOP"></TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 50_연결내부회계관리제도감사또는검토의견&gt;&gt;</P>
+<P class=section-1><a class='toc' href='00761-TOC.htm#1109' name='1109' target='toc'>연결 내부회계관리제도 감사 또는 검토의견</a></P><P><br>
+<br></P>
+<P class=section-1><a class='toc' href='00761-TOC.htm#174' name='174' target='toc'>외부감사 실시내용</a></P>
+
+<TABLE class=nb width=758>
+<COLGROUP>
+  <COL width=749></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=749 height=66 style="font-family: 바탕, sans-serif; font-size: 12pt;"><br>
+「주식회사 등의 외부감사에 관한 법률」제18조제3항의 규정에 의하여 외부감사 실시내용을 첨부합니다.<br>
+<br></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=section-2>1. 감사대상업무</P><P>★Table-Group aClass=INS_SUB★</P>
+
+<TABLE border=1 width=601>
+<COLGROUP>
+  <COL width=156></COL>
+  <COL width=152></COL>
+  <COL width=46></COL>
+  <COL width=154></COL>
+  <COL width=48></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=156 height=17 align="CENTER">회 &nbsp; &nbsp; 사 &nbsp; &nbsp; 명</TD>
+  <TD width=427 height=17 colspan="4" align="CENTER">e★SUB_COMPY |V|필</TD>
+</TR>
+<TR>
+  <TD width=156 height=40 align="CENTER">감사대상 사업연도</TD>
+  <TD class=tu width=152 height=40 align="CENTER">u★SUB_PERIODFROM</TD>
+  <TD width=46 height=40 align="CENTER">부터</TD>
+  <TD class=tu width=154 height=40 align="CENTER">u★SUB_PERIODTO</TD>
+  <TD width=48 height=40 align="CENTER">까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-2>2. 감사참여자 구분별 인원수 및 감사시간</P><P>★Table-Group aClass=INS_NUT★</P>
+
+<TABLE class=nb width=952>
+<COLGROUP>
+  <COL width=340></COL>
+  <COL width=594></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=340 height=17 valign="BOTTOM"></TD>
+  <TD width=594 height=17 align="RIGHT">(단위 : 명, 시간)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=952>
+<COLGROUP>
+  <COL width=39></COL>
+  <COL width=97></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+  <COL width=48></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=145 height=100 colspan="2" rowspan="3" align="CENTER">감사참여자<br>
+&nbsp;＼ <br>
+인원수 및 시간</TD>
+  <TD width=105 height=70 colspan="2" rowspan="2" align="CENTER">품질관리<br>
+검토자<br>
+(심리실 등)</TD>
+  <TD width=333 height=17 colspan="6" align="CENTER">감사업무 담당 회계사</TD>
+  <TD width=105 height=70 colspan="2" rowspan="2" align="CENTER">전산감사ㆍ<br>
+세무ㆍ가치평가<br>
+&nbsp;등 전문가</TD>
+  <TD width=105 height=70 colspan="2" rowspan="2" align="CENTER">건설계약 등<br>
+수주산업<br>
+전문가</TD>
+  <TD width=105 height=70 colspan="2" rowspan="2" align="CENTER">합계</TD>
+</TR>
+<TR>
+  <TD width=105 height=40 colspan="2" align="CENTER">담당이사<br>
+(업무수행이사)</TD>
+  <TD width=105 height=40 colspan="2" align="CENTER">등록<br>
+공인회계사</TD>
+  <TD width=105 height=40 colspan="2" align="CENTER">수습<br>
+공인회계사</TD>
+</TR>
+<TR>
+  <TD width=48 height=17 align="CENTER">당기</TD>
+  <TD width=48 height=17 align="CENTER">전기</TD>
+  <TD width=48 height=17 align="CENTER">당기</TD>
+  <TD width=48 height=17 align="CENTER">전기</TD>
+  <TD width=48 height=17 align="CENTER">당기</TD>
+  <TD width=48 height=17 align="CENTER">전기</TD>
+  <TD width=48 height=17 align="CENTER">당기</TD>
+  <TD width=48 height=17 align="CENTER">전기</TD>
+  <TD width=48 height=17 align="CENTER">당기</TD>
+  <TD width=48 height=17 align="CENTER">전기</TD>
+  <TD width=48 height=17 align="CENTER">당기</TD>
+  <TD width=48 height=17 align="CENTER">전기</TD>
+  <TD width=48 height=17 align="CENTER">당기</TD>
+  <TD width=48 height=17 align="CENTER">전기</TD>
+</TR>
+<TR>
+  <TD width=145 height=86 colspan="2" align="CENTER">투입 인원수</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_QLT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_QLT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_ACT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_ACT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_ACR_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_ACR_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_ACP_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_ACP_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_EXP_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_EXP_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_COT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_COT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_TOT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★NUM_TOT_LA |P|선</TD>
+</TR>
+<TR>
+  <TD width=39 height=284 rowspan="3" align="CENTER">투입시간</TD>
+  <TD width=97 height=86 align="CENTER">분ㆍ반기검토</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_QLT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_QLT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_ACT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_ACT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_ACR_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_ACR_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_ACP_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_ACP_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_EXP_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_EXP_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_COT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_COT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_TOT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMA_TOT_LA |P|선</TD>
+</TR>
+<TR>
+  <TD width=97 height=86 align="CENTER">감사</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_QLT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_QLT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_ACT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_ACT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_ACR_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_ACR_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_ACP_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_ACP_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_EXP_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_EXP_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_COT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_COT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_TOT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMY_TOT_LA |P|선</TD>
+</TR>
+<TR>
+  <TD width=97 height=86 align="CENTER">합계</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_QLT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_QLT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_ACT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_ACT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_ACR_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_ACR_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_ACP_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_ACP_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_EXP_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_EXP_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_COT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_COT_LA |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_TOT_TH |P|선</TD>
+  <TD width=48 height=86 align="RIGHT">e★TMT_TOT_LA |P|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-2>3. 주요 감사실시내용</P><P>★Table-Group aClass=INS_CONT★</P>
+
+<TABLE border=1 width=1207>
+<COLGROUP>
+  <COL width=145></COL>
+  <COL width=152></COL>
+  <COL width=28></COL>
+  <COL width=149></COL>
+  <COL width=53></COL>
+  <COL width=22></COL>
+  <COL width=53></COL>
+  <COL width=180></COL>
+  <COL width=148></COL>
+  <COL width=187></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=145 height=17 align="CENTER">구 &nbsp;분</TD>
+  <TD width=1044 height=17 colspan="9" align="CENTER">내 &nbsp; 역</TD>
+</TR>
+<TR>
+  <TD width=145 height=47 rowspan="2" align="CENTER">전반감사계획<br>
+(감사착수단계)</TD>
+  <TD width=152 height=17 align="CENTER">수행시기</TD>
+  <TD width=341 height=17 colspan="5" align="CENTER">e★PLN_TIM |V|선</TD>
+  <TD width=180 height=17 align="CENTER">e★PLN_DAY |P|선</TD>
+  <TD width=344 height=17 colspan="2">일</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 align="CENTER">주요내용</TD>
+  <TD width=883 height=17 colspan="8" align="LEFT">e★PLN_CNT |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=482 rowspan="5" align="CENTER">현장감사<br>
+주요내용</TD>
+  <TD width=347 height=47 colspan="3" rowspan="2" align="CENTER">수행시기</TD>
+  <TD width=335 height=17 colspan="4" align="CENTER">투입인원</TD>
+  <TD width=344 height=47 colspan="2" rowspan="2" align="CENTER">주요 감사업무 수행내용</TD>
+</TR>
+<TR>
+  <TD width=84 height=17 colspan="2" align="CENTER">상주</TD>
+  <TD width=242 height=17 colspan="2" align="CENTER">비상주</TD>
+</TR>
+<TR>
+  <TD width=152 height=132 align="CENTER">e★PLC_TIM |V|선</TD>
+  <TD width=28 height=132 align="RIGHT">e★PLC_DAY |P|선</TD>
+  <TD width=149 height=132 align="CENTER">일</TD>
+  <TD width=53 height=132 align="RIGHT">e★PLC_RSD |P|선</TD>
+  <TD width=22 height=132 align="CENTER">명</TD>
+  <TD width=53 height=132 align="RIGHT">e★PLC_NSD |P|선</TD>
+  <TD width=180 height=132 align="CENTER">명</TD>
+  <TD width=344 height=132 colspan="2" align="LEFT">e★PLC_CNT |V|선</TD>
+</TR>
+<TR>
+  <TD width=152 height=132 align="CENTER">e★PLC_TIM |V|선</TD>
+  <TD width=28 height=132 align="RIGHT">e★PLC_DAY |P|선</TD>
+  <TD width=149 height=132 align="CENTER">일</TD>
+  <TD width=53 height=132 align="RIGHT">e★PLC_RSD |P|선</TD>
+  <TD width=22 height=132 align="CENTER">명</TD>
+  <TD width=53 height=132 align="RIGHT">e★PLC_NSD |P|선</TD>
+  <TD width=180 height=132 align="CENTER">명</TD>
+  <TD width=344 height=132 colspan="2" align="LEFT">e★PLC_CNT |V|선</TD>
+</TR>
+<TR>
+  <TD width=152 height=132 align="CENTER">e★PLC_TIM |V|선</TD>
+  <TD width=28 height=132 align="RIGHT">e★PLC_DAY |P|선</TD>
+  <TD width=149 height=132 align="CENTER">일</TD>
+  <TD width=53 height=132 align="RIGHT">e★PLC_RSD |P|선</TD>
+  <TD width=22 height=132 align="CENTER">명</TD>
+  <TD width=53 height=132 align="RIGHT">e★PLC_NSD |P|선</TD>
+  <TD width=180 height=132 align="CENTER">명</TD>
+  <TD width=344 height=132 colspan="2" align="LEFT">e★PLC_CNT |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=77 rowspan="3" align="CENTER">재고자산실사(입회)</TD>
+  <TD width=152 height=17 align="CENTER">실사(입회)시기</TD>
+  <TD width=341 height=17 colspan="5" align="CENTER">e★STK_TIM |V|선</TD>
+  <TD width=180 height=17 align="CENTER">e★STK_DAY |P|선</TD>
+  <TD width=344 height=17 colspan="2">일</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 align="CENTER">실사(입회)장소</TD>
+  <TD width=883 height=17 colspan="8" align="LEFT">e★STK_PNT |V|선</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 align="CENTER">실사(입회)대상</TD>
+  <TD width=883 height=17 colspan="8" align="LEFT">e★STK_TAG |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=77 rowspan="3" align="CENTER">금융자산실사(입회)</TD>
+  <TD width=152 height=17 align="CENTER">실사(입회)시기</TD>
+  <TD width=341 height=17 colspan="5" align="CENTER">e★FIN_TIM |V|선</TD>
+  <TD width=180 height=17 align="CENTER">e★FIN_DAY |P|선</TD>
+  <TD width=344 height=17 colspan="2">일</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 align="CENTER">실사(입회)장소</TD>
+  <TD width=883 height=17 colspan="8" align="LEFT">e★FIN_PNT |V|선</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 align="CENTER">실사(입회)대상</TD>
+  <TD width=883 height=17 colspan="8" align="LEFT">e★FIN_TAG |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=116 rowspan="2" align="CENTER">외부조회</TD>
+  <TD width=152 height=86 align="CENTER">금융거래조회 </TD>
+  <TD class=tu width=186 height=86 colspan="2" align="CENTER">u★ASK_FIN |List|L||선<br>
+O|O<br>
+X|X<br>
+-|-</TD>
+  <TD width=146 height=86 colspan="3" align="CENTER">채권채무조회</TD>
+  <TD class=tu width=180 height=86 align="CENTER">u★ASK_DEB |List|L||선<br>
+O|O<br>
+X|X<br>
+-|-</TD>
+  <TD width=148 height=86 align="CENTER">변호사조회</TD>
+  <TD class=tu width=187 height=86 align="CENTER">u★ASK_LAW |List|L||선<br>
+O|O<br>
+X|X<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 align="CENTER">기타조회</TD>
+  <TD width=883 height=17 colspan="8" align="LEFT">e★ASK_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=47 rowspan="2" align="CENTER">지배기구와의<br>
+커뮤니케이션</TD>
+  <TD width=152 height=17 align="CENTER">커뮤니케이션 횟수</TD>
+  <TD width=186 height=17 colspan="2" align="CENTER">e★COM_NUM |P|선</TD>
+  <TD width=688 height=17 colspan="6">회</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 align="CENTER">수행시기</TD>
+  <TD width=883 height=17 colspan="8" align="LEFT">e★COM_TIM |V|선</TD>
+</TR>
+<TR>
+  <TD width=145 height=47 rowspan="2" align="CENTER">외부전문가 활용</TD>
+  <TD width=152 height=17 align="CENTER">감사 활용 내용</TD>
+  <TD width=883 height=17 colspan="8" align="LEFT">e★EXT_CNT |V|선</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 align="CENTER">수행시기</TD>
+  <TD width=341 height=17 colspan="5" align="CENTER">e★EXT_SPE |V|선</TD>
+  <TD width=180 height=17 align="CENTER">e★EXT_DAY |P|선</TD>
+  <TD width=344 height=17 colspan="2">일</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-2>4. 감사(감사위원회)와의 커뮤니케이션</P><P>★Table-Group aClass=INS_COMM★</P>
+
+<TABLE border=1 width=669>
+<COLGROUP>
+  <COL width=40></COL>
+  <COL width=136></COL>
+  <COL width=114></COL>
+  <COL width=144></COL>
+  <COL width=190></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=40 height=17 align="CENTER">구분</TH>
+  <TH width=136 height=17 align="CENTER">일자</TH>
+  <TH width=114 height=17 align="CENTER">참석자</TH>
+  <TH width=144 height=17 align="CENTER">방식</TH>
+  <TH width=190 height=17 align="CENTER">주요 논의 내용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=40 height=86 align="CENTER">e★COMM_NO |P|선</TD>
+  <TD class=tu width=136 height=86 align="CENTER">u★COMM_DATE |달력|선</TD>
+  <TD width=114 height=86 align="CENTER">e★COMM_ATTN |V|선</TD>
+  <TD width=144 height=86 align="LEFT">e★COMM_WAY |V|선</TD>
+  <TD width=190 height=86 align="LEFT">e★COMM_DIS |V|선</TD>
+</TR>
+<TR>
+  <TD width=40 height=86 align="CENTER">e★COMM_NO |P|선</TD>
+  <TD class=tu width=136 height=86 align="CENTER">u★COMM_DATE |달력|선</TD>
+  <TD width=114 height=86 align="CENTER">e★COMM_ATTN |V|선</TD>
+  <TD width=144 height=86 align="LEFT">e★COMM_WAY |V|선</TD>
+  <TD width=190 height=86 align="LEFT">e★COMM_DIS |V|선</TD>
+</TR>
+<TR>
+  <TD width=40 height=86 align="CENTER">e★COMM_NO |P|선</TD>
+  <TD class=tu width=136 height=86 align="CENTER">u★COMM_DATE |달력|선</TD>
+  <TD width=114 height=86 align="CENTER">e★COMM_ATTN |V|선</TD>
+  <TD width=144 height=86 align="LEFT">e★COMM_WAY |V|선</TD>
+  <TD width=190 height=86 align="LEFT">e★COMM_DIS |V|선</TD>
+</TR>
+<TR>
+  <TD width=40 height=86 align="CENTER">e★COMM_NO |P|선</TD>
+  <TD class=tu width=136 height=86 align="CENTER">u★COMM_DATE |달력|선</TD>
+  <TD width=114 height=86 align="CENTER">e★COMM_ATTN |V|선</TD>
+  <TD width=144 height=86 align="LEFT">e★COMM_WAY |V|선</TD>
+  <TD width=190 height=86 align="LEFT">e★COMM_DIS |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>&lt;&lt;단위서식 : 70_감사인의중요성금액&gt;&gt;</P>
+<P class=section-2>5. 감사인의 중요성 금액</P>
+
+<TABLE class=nb width=630>
+<COLGROUP>
+  <COL width=621></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=621 height=90 valign="TOP" style="font-family: 바탕, sans-serif; font-size: 12pt;">※ '중요성'은 감사인이 감사를 계획하고 수행하며 감사의견을 형성하는 전반적인 감사 과정에서 적용되는 기준으로, 재무제표 왜곡표시가 개별적 또는 집합적으로 중요한지 여부를 결정할 때에는 양적 측면 뿐만 아니라 상황에 따른 질적 특성을 고려하여 이루어집니다. 감사대상 회사에 대해 적용한 중요성 기준은 다음과 같습니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=617>
+<COLGROUP>
+  <COL width=608></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=608 height=17 align="RIGHT">(단위 : 천원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=INS_IMPT_CON★</P>
+
+<TABLE border=1 width=617>
+<COLGROUP>
+  <COL width=156></COL>
+  <COL width=136></COL>
+  <COL width=136></COL>
+  <COL width=153></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=156 height=17 align="CENTER">구분</TH>
+  <TH width=136 height=17 align="CENTER">당기</TH>
+  <TH width=136 height=17 align="CENTER">전기</TH>
+  <TH width=153 height=17 align="CENTER">판단근거</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=156 height=40 align="CENTER">재무제표 전체 중요성</TD>
+  <TD width=136 height=40 align="CENTER">e★CRT_TTL_IMPT |V|필</TD>
+  <TD width=136 height=40 align="CENTER">e★PRV_TTL_IMPT |V|선</TD>
+  <TD width=153 height=40 align="CENTER">e★TTL_IMPT_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=156 height=40 align="CENTER">수행 중요성</TD>
+  <TD width=136 height=40 align="CENTER">e★CRT_CMT_IMPT |V|필</TD>
+  <TD width=136 height=40 align="CENTER">e★PRV_CMT_IMPT |V|선</TD>
+  <TD width=153 height=40 align="CENTER">e★CMT_IMPT_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=156 height=63 align="CENTER">특정 거래유형과<br>
+계정잔액 및 공시에<br>
+대한 중요성</TD>
+  <TD width=136 height=63 align="CENTER">e★CRT_TRD_IMPT |V|필</TD>
+  <TD width=136 height=63 align="CENTER">e★PRV_TRD_IMPT |V|선</TD>
+  <TD width=153 height=63 align="CENTER">e★TRD_IMPT_RSN |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P><br></P>
+</BODY>
+</HTML>

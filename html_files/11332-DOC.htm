@@ -1,0 +1,542 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 11332, 서식버전 : 1.5, 서식변경날짜 : 2023년 12월 29일,<br>
+&nbsp; &nbsp;문서명 : 주요사항보고서(자기주식 취득 결정)★</P>
+<P class=section-1><a class='toc' href='11332-TOC.htm#15' name='15' target='toc'>자기주식 취득 결정</a></P><P><br></P><P>★Table-Group aClass=TBL_ACQ_STK★</P>
+
+<TABLE border=1 width=832>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=158></COL>
+  <COL width=92></COL>
+  <COL width=189></COL>
+  <COL width=71></COL>
+  <COL width=177></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=258 height=47 colspan="2" rowspan="2">1. 취득예정주식(주)</TD>
+  <TD width=92 height=17 align="CENTER" valign="TOP">보통주식</TD>
+  <TD width=455 height=17 colspan="3" align="RIGHT" valign="TOP">e★ACQ_OSTK |P|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=17 align="CENTER" valign="TOP">기타주식</TD>
+  <TD width=455 height=17 colspan="3" align="RIGHT" valign="TOP">e★ACQ_ESTK |P|선</TD>
+</TR>
+<TR>
+  <TD width=258 height=47 colspan="2" rowspan="2">2. 취득예정금액(원)</TD>
+  <TD width=92 height=17 align="CENTER" valign="TOP">보통주식</TD>
+  <TD width=455 height=17 colspan="3" align="RIGHT" valign="TOP">e★ACQ_OSTK_PRC |\|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=17 align="CENTER" valign="TOP">기타주식</TD>
+  <TD width=455 height=17 colspan="3" align="RIGHT" valign="TOP">e★ACQ_ESTK_PRC |\|선</TD>
+</TR>
+<TR>
+  <TD width=258 height=47 colspan="2" rowspan="2">3. 취득예상기간</TD>
+  <TD width=92 height=17 align="CENTER" valign="TOP">시작일</TD>
+  <TD class=tu width=455 height=17 colspan="3" align="CENTER" valign="TOP">u★ACQ_BGN |달력|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=17 align="CENTER" valign="TOP">종료일</TD>
+  <TD class=tu width=455 height=17 colspan="3" align="CENTER" valign="TOP">u★ACQ_END |달력|선</TD>
+</TR>
+<TR>
+  <TD width=258 height=47 colspan="2" rowspan="2">4. 보유예상기간</TD>
+  <TD width=92 height=17 align="CENTER" valign="TOP">시작일</TD>
+  <TD class=tu width=455 height=17 colspan="3" align="CENTER" valign="TOP">u★HLD_BGN |달력|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=17 align="CENTER" valign="TOP">종료일</TD>
+  <TD class=tu width=455 height=17 colspan="3" align="CENTER" valign="TOP">u★HLD_END |달력|선</TD>
+</TR>
+<TR>
+  <TD width=359 height=17 colspan="3" valign="TOP">5. 취득목적</TD>
+  <TD width=455 height=17 colspan="3" align="LEFT">e★ACQ_PPS |V|선</TD>
+</TR>
+<TR>
+  <TD width=359 height=17 colspan="3" valign="TOP">6. 취득방법</TD>
+  <TD width=455 height=17 colspan="3" align="LEFT">e★ACQ_MTH |V|선</TD>
+</TR>
+<TR>
+  <TD width=359 height=17 colspan="3" valign="TOP">7. 위탁투자중개업자</TD>
+  <TD width=455 height=17 colspan="3" align="LEFT">e★CI_BRK |V|선</TD>
+</TR>
+<TR>
+  <TD width=91 height=107 rowspan="4">8. 취득 전<br>
+&nbsp; 자기주식<br>
+&nbsp; 보유현황</TD>
+  <TD width=158 height=47 rowspan="2" align="CENTER">배당가능이익<br>
+범위 내 취득(주)</TD>
+  <TD width=92 height=17 align="CENTER" valign="TOP">보통주식</TD>
+  <TD width=189 height=17 align="RIGHT" valign="TOP">e★HLD_OSTK |P|선</TD>
+  <TD width=71 height=17 align="CENTER" valign="TOP">비율(%)</TD>
+  <TD width=177 height=17 align="RIGHT" valign="TOP">e★HLD_OSTK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=17 align="CENTER" valign="TOP">기타주식</TD>
+  <TD width=189 height=17 align="RIGHT" valign="TOP">e★HLD_ESTK |P|선</TD>
+  <TD width=71 height=17 align="CENTER" valign="TOP">비율(%)</TD>
+  <TD width=177 height=17 align="RIGHT" valign="TOP">e★HLD_ESTK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=158 height=47 rowspan="2" align="CENTER">기타취득(주)</TD>
+  <TD width=92 height=17 align="CENTER" valign="TOP">보통주식</TD>
+  <TD width=189 height=17 align="RIGHT" valign="TOP">e★EG_OSTK |P|선</TD>
+  <TD width=71 height=17 align="CENTER" valign="TOP">비율(%)</TD>
+  <TD width=177 height=17 align="RIGHT" valign="TOP">e★EG_OSTK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=17 align="CENTER" valign="TOP">기타주식</TD>
+  <TD width=189 height=17 align="RIGHT" valign="TOP">e★EG_ESTK |P|선</TD>
+  <TD width=71 height=17 align="CENTER" valign="TOP">비율(%)</TD>
+  <TD width=177 height=17 align="RIGHT" valign="TOP">e★EG_ESTK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=359 height=17 colspan="3" valign="TOP">9. 취득결정일</TD>
+  <TD class=tu width=455 height=17 colspan="3" align="CENTER" valign="TOP">u★ACQ_DATE |달력|선</TD>
+</TR>
+<TR>
+  <TD width=258 height=47 colspan="2" rowspan="2"> &nbsp; - 사외이사참석여부</TD>
+  <TD width=92 height=17 align="CENTER" valign="TOP">참석(명)</TD>
+  <TD width=455 height=17 colspan="3" align="RIGHT" valign="TOP">e★ATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=17 align="CENTER" valign="TOP">불참(명)</TD>
+  <TD width=455 height=17 colspan="3" align="RIGHT" valign="TOP">e★NATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=359 height=86 colspan="3" valign="TOP"> &nbsp; - 감사(사외이사가 아닌 감사위원)참석여부</TD>
+  <TD class=tu width=455 height=86 colspan="3" align="CENTER" valign="TOP">u★ADT_ATD_YN |List|L||선<br>
+참석|Y<br>
+불참|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=258 height=47 colspan="2" rowspan="2">10. 1일 매수 주문수량 한도</TD>
+  <TD width=92 height=17 align="CENTER" valign="TOP">보통주식</TD>
+  <TD width=455 height=17 colspan="3" align="RIGHT" valign="TOP">e★BUY_OSTK_LMT |P|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=17 align="CENTER" valign="TOP">기타주식</TD>
+  <TD width=455 height=17 colspan="3" align="RIGHT" valign="TOP">e★BUY_ESTK_LMT |P|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>11. 기타 투자판단에 참고할 사항</P><P><br></P><P><br></P><P>★Table-Group aClass=TBL_ACQ_LMT★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">【자기주식 취득금액 한도】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=609>
+<COLGROUP>
+  <COL width=144></COL>
+  <COL width=208></COL>
+  <COL width=230></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=361 height=17 colspan="2" align="CENTER">항 &nbsp;목</TH>
+  <TH width=230 height=17 align="CENTER">금 &nbsp;액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=144 height=210 rowspan="5" valign="TOP">1. 직전사업연도 말<br>
+&nbsp; &nbsp;현재 상법상<br>
+&nbsp; &nbsp;배당가능이익<br>
+&nbsp; &nbsp;한도</TD>
+  <TD width=208 height=17 valign="TOP">가. 순자산액</TD>
+  <TD width=230 height=17 align="RIGHT" valign="TOP">e★AST_AMT |\|선</TD>
+</TR>
+<TR>
+  <TD width=208 height=17 valign="TOP">나. 자본금의 액</TD>
+  <TD width=230 height=17 align="RIGHT" valign="TOP">e★CPT_AMT |\|선</TD>
+</TR>
+<TR>
+  <TD width=208 height=67 valign="TOP">다. 직전 사업연도까지 적립된<br>
+&nbsp; &nbsp; 자본준비금과 이익준비금의 &nbsp; &nbsp;합계액</TD>
+  <TD width=230 height=67 align="RIGHT" valign="TOP">e★BSUM_CPT_PRF |\|선</TD>
+</TR>
+<TR>
+  <TD width=208 height=40 valign="TOP">라. 대통령령이 정하는<br>
+&nbsp; &nbsp; 미실현이익</TD>
+  <TD width=230 height=40 align="RIGHT" valign="TOP">e★URLZ_PRF |\|선</TD>
+</TR>
+<TR>
+  <TD width=208 height=17 align="CENTER" valign="TOP">소계(가-나-다-라)</TD>
+  <TD width=230 height=17 align="RIGHT" valign="TOP">e★DST_PRF_LMT |\|선</TD>
+</TR>
+<TR>
+  <TD width=361 height=17 colspan="2" valign="TOP">2. 직전 사업연도말 이후 자기주식 취득금액</TD>
+  <TD width=230 height=17 align="RIGHT" valign="TOP">e★ACQ_PRC |\|선</TD>
+</TR>
+<TR>
+  <TD width=361 height=42 colspan="2" valign="TOP">3. 직전 사업연도말 이후 정기주주총회에서 결의된 <br>
+&nbsp; &nbsp;이익배당금액 및 관련 이익준비금</TD>
+  <TD width=230 height=42 align="RIGHT">e★GM_PRF |\|선</TD>
+</TR>
+<TR>
+  <TD width=361 height=40 colspan="2" valign="TOP">4. 직전 사업연도말 이후 이사회에서 결의된<br>
+&nbsp; &nbsp;분기ㆍ중간배당금액 및 관련 이익준비금</TD>
+  <TD width=230 height=40 align="RIGHT">e★BD_PRF |\|선</TD>
+</TR>
+<TR>
+  <TD width=361 height=17 colspan="2" valign="TOP">5. 신탁계약의 계약금액 </TD>
+  <TD width=230 height=17 align="RIGHT" valign="TOP">e★TC_PRC |\|선</TD>
+</TR>
+<TR>
+  <TD width=361 height=42 colspan="2" valign="TOP">6. 직전 사업연도말 이후 자기주식 처분시 <br>
+&nbsp; &nbsp;처분주식의 취득원가 (이동평균법 적용)</TD>
+  <TD width=230 height=42 align="RIGHT">e★SEL_STK_FAC |\|선</TD>
+</TR>
+<TR>
+  <TD width=361 height=17 colspan="2" align="CENTER">자기주식 취득금액 한도(1-2-3-4-5+6)</TD>
+  <TD width=230 height=17 align="RIGHT" valign="TOP">e★ACQ_PRC_LMT |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br></P><P>★Table-Group aClass=TBL_OWN_STK★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">【자기주식 취득 결정 전 자기주식 보유현황】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE class=nb width=765>
+<COLGROUP>
+  <COL width=756></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD class=tu width=756 height=86 align="RIGHT" valign="BOTTOM">u★STOCK |List|L||선<br>
+(단위 : 주)|1<br>
+(단위 : 천주)|2<br>
+(단위 : 백만주)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=1712>
+<COLGROUP>
+  <COL width=53></COL>
+  <COL width=59></COL>
+  <COL width=114></COL>
+  <COL width=90></COL>
+  <COL width=215></COL>
+  <COL width=215></COL>
+  <COL width=219></COL>
+  <COL width=209></COL>
+  <COL width=211></COL>
+  <COL width=237></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=244 height=47 colspan="3" rowspan="2" align="CENTER">취득방법</TH>
+  <TH width=90 height=47 rowspan="2" align="CENTER">주식의 종류</TH>
+  <TH width=215 height=47 rowspan="2" align="CENTER">기초수량</TH>
+  <TH width=661 height=17 colspan="3" align="CENTER">변동 수량</TH>
+  <TH width=211 height=47 rowspan="2" align="CENTER">기말수량</TH>
+  <TH width=237 height=47 rowspan="2" align="CENTER">비고</TH>
+</TR>
+<TR>
+  <TH width=215 height=17 align="CENTER">취득(+)</TH>
+  <TH width=219 height=17 align="CENTER">처분(-)</TH>
+  <TH width=209 height=17 align="CENTER">소각(-)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=53 height=407 rowspan="14" align="CENTER">배당<br>
+가능<br>
+이익<br>
+범위<br>
+이내<br>
+취득</TD>
+  <TD width=59 height=227 rowspan="8" align="CENTER">직접<br>
+취득</TD>
+  <TD width=114 height=47 rowspan="2" align="CENTER">장내 <br>
+직접 취득</TD>
+  <TD width=90 height=17 align="CENTER">보통주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★DI_OSTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★DI_OSTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★DI_OSTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★DI_OSTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★DI_OSTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★DI_OSTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=90 height=17 align="CENTER">기타주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★DI_ESTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★DI_ESTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★DI_ESTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★DI_ESTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★DI_ESTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★DI_ESTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=114 height=47 rowspan="2" align="CENTER">장외<br>
+직접 취득</TD>
+  <TD width=90 height=17 align="CENTER">보통주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★DO_OSTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★DO_OSTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★DO_OSTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★DO_OSTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★DO_OSTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★DO_OSTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=90 height=17 align="CENTER">기타주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★DO_ESTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★DO_ESTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★DO_ESTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★DO_ESTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★DO_ESTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★DO_ESTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=114 height=47 rowspan="2" align="CENTER">공개매수</TD>
+  <TD width=90 height=17 align="CENTER">보통주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★DP_OSTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★DP_OSTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★DP_OSTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★DP_OSTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★DP_OSTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★DP_OSTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=90 height=17 align="CENTER">기타주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★DP_ESTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★DP_ESTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★DP_ESTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★DP_ESTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★DP_ESTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★DP_ESTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=114 height=47 rowspan="2" align="CENTER">소계(a)</TD>
+  <TD width=90 height=17 align="CENTER">보통주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★DSUM_OSTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★DSUM_OSTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★DSUM_OSTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★DSUM_OSTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★DSUM_OSTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★DSUM_OSTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=90 height=17 align="CENTER">기타주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★DSUM_ESTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★DSUM_ESTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★DSUM_ESTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★DSUM_ESTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★DSUM_ESTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★DSUM_ESTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=59 height=167 rowspan="6" align="CENTER">신탁<br>
+계약에 의한<br>
+취득</TD>
+  <TD width=114 height=47 rowspan="2" align="CENTER">수탁자 보유물량</TD>
+  <TD width=90 height=17 align="CENTER">보통주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★TF_OSTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★TF_OSTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★TF_OSTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★TF_OSTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★TF_OSTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★TF_OSTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=90 height=17 align="CENTER">기타주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★TF_ESTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★TF_ESTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★TF_ESTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★TF_ESTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★TF_ESTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★TF_ESTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=114 height=47 rowspan="2" align="CENTER">현물보유물량</TD>
+  <TD width=90 height=17 align="CENTER">보통주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★TS_OSTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★TS_OSTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★TS_OSTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★TS_OSTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★TS_OSTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★TS_OSTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=90 height=17 align="CENTER">기타주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★TS_ESTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★TS_ESTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★TS_ESTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★TS_ESTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★TS_ESTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★TS_ESTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=114 height=47 rowspan="2" align="CENTER">소계(b)</TD>
+  <TD width=90 height=17 align="CENTER">보통주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★TSUM_OSTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★TSUM_OSTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★TSUM_OSTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★TSUM_OSTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★TSUM_OSTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★TSUM_OSTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=90 height=17 align="CENTER">기타주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★TSUM_ESTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★TSUM_ESTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★TSUM_ESTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★TSUM_ESTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★TSUM_ESTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★TSUM_ESTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=244 height=47 colspan="3" rowspan="2" align="CENTER">기타 취득(c)</TD>
+  <TD width=90 height=17 align="CENTER">보통주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★EG_OSTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★EG_OSTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★EG_OSTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★EG_OSTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★EG_OSTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★EG_OSTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=90 height=17 align="CENTER">기타주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★EG_ESTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★EG_ESTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★EG_ESTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★EG_ESTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★EG_ESTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★EG_ESTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=244 height=47 colspan="3" rowspan="2" align="CENTER">총 계(a+b+c)</TD>
+  <TD width=90 height=17 align="CENTER">보통주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★TOT_OSTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★TOT_OSTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★TOT_OSTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★TOT_OSTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★TOT_OSTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★TOT_OSTK_NOTE |V|선</TD>
+</TR>
+<TR>
+  <TD width=90 height=17 align="CENTER">기타주식</TD>
+  <TD width=215 height=17 align="RIGHT">e★TOT_ESTK_BGN |P|선</TD>
+  <TD width=215 height=17 align="RIGHT">e★TOT_ESTK_ACQ |P|선</TD>
+  <TD width=219 height=17 align="RIGHT">e★TOT_ESTK_TRD |P|선</TD>
+  <TD width=209 height=17 align="RIGHT">e★TOT_ESTK_RTM |P|선</TD>
+  <TD width=211 height=17 align="RIGHT">e★TOT_ESTK_END |P|선</TD>
+  <TD width=237 height=17 align="LEFT">e★TOT_ESTK_NOTE |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P><br></P>
+</BODY>
+</HTML>

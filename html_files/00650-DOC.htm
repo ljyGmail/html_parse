@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00650, 서식버전 : 2.7, 서식변경날짜 : 2023년 12월 29일,<br>
+&nbsp; &nbsp;문서명 : 공개매수신고서★</P>
+<P class=cover-title><a class='toc' href='00650-TOC.htm#13' name='13' target='toc'>공 개 매 수 신 고 서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=441></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=141 height=40 valign="TOP"><br>
+<br></TD>
+  <TD width=441 height=40 align="RIGHT" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP">금융위원회 귀중</TD>
+  <TD width=441 height=17 align="RIGHT" valign="TOP">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 valign="TOP"><br>
+<br></TD>
+  <TD width=441 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP">공 &nbsp;개 &nbsp;매 &nbsp;수 &nbsp;자</TD>
+  <TD width=441 height=17 valign="TOP">성 &nbsp;명</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP">주 &nbsp;소 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;전화번호</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 valign="TOP"><br>
+<br></TD>
+  <TD width=441 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP">대 &nbsp; &nbsp; &nbsp; 리 &nbsp; &nbsp; &nbsp; 인</TD>
+  <TD width=441 height=17 valign="TOP">성 &nbsp;명</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP">주 &nbsp;소 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;전화번호</TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" valign="TOP"><br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" valign="TOP">공개매수신고서 및 공개매수설명서의 열람 장소<br>
+&nbsp;</TD>
+</TR>
+<TR>
+  <TD width=141 height=63 valign="TOP">가. 공개매수신고서<br>
+<br></TD>
+  <TD width=441 height=63 valign="TOP"><br>
+ㆍ금융위(금감원) 전자공시시스템 : dart.fss.or.kr<br>
+ㆍ한국거래소 전자공시시스템 :　kind.krx.co.kr</TD>
+</TR>
+<TR>
+  <TD width=141 height=86 valign="TOP">나. 공개매수설명서<br>
+<br></TD>
+  <TD width=441 height=86 valign="TOP"><br>
+ㆍ금융위(금감원) 전자공시시스템 : dart.fss.or.kr<br>
+ㆍ한국거래소 전자공시시스템 :　kind.krx.co.kr<br>
+ㆍ공개매수사무취급자 : ( &nbsp; &nbsp; &nbsp; &nbsp;)의 본점과 지점, 그 밖의 영업소</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00650-TOC.htm#61' name='61' target='toc'>&lt;요약정보&gt;</a></P><P>&lt;&lt;단위서식 : 01_요약정보(발행회사가복수의결권주식을발행하지않은경우)&gt;&gt;</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=74></COL>
+  <COL width=109></COL>
+  <COL width=145></COL>
+  <COL width=236></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=192 height=116 colspan="2" rowspan="2" align="CENTER">공개매수자</TD>
+  <TD width=390 height=40 colspan="2" valign="TOP"> ㆍ성명 : &nbsp; &nbsp;<br>
+&nbsp;□ 회사 □ 개인 □ 회사가 아닌 법인ㆍ단체 □ 외국인</TD>
+</TR>
+<TR>
+  <TD width=390 height=63 colspan="2" valign="TOP"> ㆍ대상회사와의 관계<br>
+&nbsp;□ 대상회사 본인 □ 대상회사의 최대주주 또는 임원 <br>
+&nbsp;□ 대상회사의 계열사 □ 기타(제3자 등)</TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER">공개매수 대상회사명</TD>
+  <TD width=390 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=192 height=83 colspan="2" align="CENTER" valign="TOP">공개매수 목적</TD>
+  <TD width=390 height=83 colspan="2" valign="TOP"> □ 경영권안정 □ M&amp;A □ 지주회사요건충족 □ 상장폐지 <br>
+&nbsp;□ 기타<br>
+&nbsp; &nbsp;- 내용:</TD>
+</TR>
+<TR>
+  <TD width=192 height=97 colspan="2" rowspan="3" align="CENTER">공개매수대상 주식등</TD>
+  <TD width=145 height=17 align="CENTER" valign="TOP">주식등의 종류</TD>
+  <TD width=236 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=145 height=37 align="CENTER" valign="TOP">매수 예정 수량(비율)</TD>
+  <TD width=236 height=37 align="RIGHT" valign="TOP">(발행주식총수의 &nbsp;%)</TD>
+</TR>
+<TR>
+  <TD width=145 height=17 align="CENTER" valign="TOP">매수 가격</TD>
+  <TD width=236 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">공개매수조건</TD>
+  <TD width=390 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">공개매수기간</TD>
+  <TD width=390 height=17 colspan="2" align="CENTER" valign="TOP"> . &nbsp;. &nbsp;. &nbsp;- &nbsp;. &nbsp;. &nbsp;.(결제일: &nbsp; &nbsp; &nbsp; &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=74 height=107 rowspan="4" align="CENTER">보유주식등</TD>
+  <TD width=109 height=47 rowspan="2" align="CENTER">신고서 제출일 <br>
+현재</TD>
+  <TD width=145 height=17 align="CENTER" valign="TOP">보유 수량</TD>
+  <TD width=236 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=145 height=17 align="CENTER" valign="TOP">보유 비율</TD>
+  <TD width=236 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=109 height=47 rowspan="2" align="CENTER">공개매수후<br>
+(예정)</TD>
+  <TD width=145 height=17 align="CENTER" valign="TOP">보유 수량</TD>
+  <TD width=236 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=145 height=17 align="CENTER" valign="TOP">보유 비율</TD>
+  <TD width=236 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">사무취급자</TD>
+  <TD width=390 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : 02_요약정보(발행회사가복수의결권주식을발행한경우)&gt;&gt;</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=74></COL>
+  <COL width=109></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=90></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=192 height=162 colspan="2" rowspan="2" align="CENTER">공개매수자</TD>
+  <TD width=390 height=63 colspan="4" valign="TOP"> ㆍ성명 : &nbsp; &nbsp;<br>
+&nbsp;□ 회사 □ 개인 □ 회사가 아닌 법인ㆍ단체 □ 외국인</TD>
+</TR>
+<TR>
+  <TD width=390 height=86 colspan="4" valign="TOP"> ㆍ대상회사와의 관계<br>
+&nbsp;□ 대상회사 본인 □ 대상회사의 최대주주 또는 임원 <br>
+&nbsp;□ 대상회사의 계열사 □ 기타(제3자 등)</TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER">공개매수 대상회사명</TD>
+  <TD width=390 height=17 colspan="4" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=192 height=86 colspan="2" align="CENTER" valign="TOP">공개매수 목적</TD>
+  <TD width=390 height=86 colspan="4" valign="TOP"> □ 경영권안정 □ M&amp;A □ 지주회사요건충족 □ 상장폐지 <br>
+&nbsp;□ 기타<br>
+&nbsp; &nbsp;- 내용:</TD>
+</TR>
+<TR>
+  <TD width=192 height=123 colspan="2" rowspan="3" align="CENTER">공개매수대상 주식등</TD>
+  <TD width=91 height=40 align="CENTER" valign="TOP">주식등의 종류</TD>
+  <TD width=290 height=40 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=91 height=40 align="CENTER" valign="TOP">매수 예정 수량(비율)</TD>
+  <TD width=290 height=40 colspan="3" align="RIGHT" valign="TOP">(발행주식총수의 &nbsp;%)</TD>
+</TR>
+<TR>
+  <TD width=91 height=17 align="CENTER" valign="TOP">매수 가격</TD>
+  <TD width=290 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">공개매수조건</TD>
+  <TD width=390 height=17 colspan="4" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">공개매수기간</TD>
+  <TD width=390 height=17 colspan="4" align="CENTER" valign="TOP"> . &nbsp;. &nbsp;. &nbsp;- &nbsp;. &nbsp;. &nbsp;.(결제일: &nbsp; &nbsp; &nbsp; &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=74 height=199 rowspan="4" align="CENTER">보유주식등</TD>
+  <TD width=109 height=93 rowspan="2" align="CENTER">신고서 제출일 <br>
+현재</TD>
+  <TD width=91 height=40 align="CENTER">주식 등 보유<br>
+수량</TD>
+  <TD width=91 height=40 align="CENTER"></TD>
+  <TD width=91 height=40 align="CENTER">의결권<br>
+보유수</TD>
+  <TD width=90 height=40 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=91 height=40 align="CENTER">주식 등 보유<br>
+비율</TD>
+  <TD width=91 height=40 align="CENTER"></TD>
+  <TD width=91 height=40 align="CENTER">의결권<br>
+보유비율</TD>
+  <TD width=90 height=40 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=109 height=93 rowspan="2" align="CENTER">공개매수후<br>
+(예정)</TD>
+  <TD width=91 height=40 align="CENTER">주식 등 보유<br>
+수량</TD>
+  <TD width=91 height=40 align="CENTER"></TD>
+  <TD width=91 height=40 align="CENTER">의결권<br>
+보유수</TD>
+  <TD width=90 height=40 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=91 height=40 align="CENTER">주식 등 보유<br>
+비율</TD>
+  <TD width=91 height=40 align="CENTER"></TD>
+  <TD width=91 height=40 align="CENTER">의결권<br>
+보유비율</TD>
+  <TD width=90 height=40 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=192 height=17 colspan="2" align="CENTER" valign="TOP">사무취급자</TD>
+  <TD width=390 height=17 colspan="4" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00650-TOC.htm#68' name='68' target='toc'>Ⅰ. 공개매수자 및 그 특별관계자에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00650-TOC.htm#71' name='71' target='toc'>1. 공개매수자 및 그 특별관계자에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00650-TOC.htm#74' name='74' target='toc'>2. 공개매수 중개인 또는 주선인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00650-TOC.htm#77' name='77' target='toc'>3. 공개매수자의 주식등의 보유지분 및 거래내역</a></P><P><br></P>
+<P class=section-1><a class='toc' href='00650-TOC.htm#80' name='80' target='toc'>Ⅱ. 공개매수 대상회사에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00650-TOC.htm#83' name='83' target='toc'>1. 공개매수 대상회사의 개황</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00650-TOC.htm#86' name='86' target='toc'>2. 대상 주식등의 거래상황</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00650-TOC.htm#89' name='89' target='toc'>3. 공개매수자와 공개매수 대상회사간의 거래</a></P><P><br></P>
+<P class=section-1><a class='toc' href='00650-TOC.htm#92' name='92' target='toc'>Ⅲ. 공개매수의 목적 및 장래계획</a></P><P><br>
+<br></P>
+<P class=section-1><a class='toc' href='00650-TOC.htm#95' name='95' target='toc'>Ⅳ. 공개매수의 조건</a></P><P><br>
+<br></P>
+<P class=section-1><a class='toc' href='00650-TOC.htm#98' name='98' target='toc'>Ⅴ. 공개매수 응모방법과 공개매수사무취급에 관한 사항</a></P><P><br>
+<br></P>
+<P class=section-1><a class='toc' href='00650-TOC.htm#101' name='101' target='toc'>Ⅵ. 공개매수에 필요한 자금과 그 조성에 관한 사항</a></P><P><br>
+<br></P>
+<P class=section-1><a class='toc' href='00650-TOC.htm#104' name='104' target='toc'>Ⅶ. 공개매수자와의 사전협의 등에 관한 사항</a></P><P><br>
+<br></P><P><br></P>
+</BODY>
+</HTML>

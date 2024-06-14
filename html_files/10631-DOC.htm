@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 10631, 서식버전 : 1.9, 서식변경날짜 : 2023년 10월 20일,<br>
+&nbsp; &nbsp;문서명 : 간이투자설명서(집합투자증권)★</P>
+<P class=cover-title><a class='toc' href='10631-TOC.htm#11' name='11' target='toc'>간이투자설명서</a></P><P>★Table-Group aClass=TBL_FUND★</P>
+
+<TABLE class=nb width=624>
+<COLGROUP>
+  <COL width=386></COL>
+  <COL width=97></COL>
+  <COL width=93></COL>
+  <COL width=12></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=492 height=17 colspan="2" align="RIGHT">(작성기준일 : </TD>
+  <TD width=93 height=17 align="CENTER"> &nbsp; &nbsp;. &nbsp; . &nbsp; .</TD>
+  <TD width=12 height=17>)</TD>
+</TR>
+<TR>
+  <TD width=615 height=17 colspan="4" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=386 height=63 align="RIGHT">e★FUND_NAME |V|필</TD>
+  <TD width=97 height=63 align="RIGHT">(펀드 코드 :</TD>
+  <TD width=93 height=63 align="CENTER">e★FUND_CODE |AAAAA|필</TD>
+  <TD width=12 height=63>)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=624>
+<COLGROUP>
+  <COL width=45></COL>
+  <COL width=45></COL>
+  <COL width=45></COL>
+  <COL width=45></COL>
+  <COL width=44></COL>
+  <COL width=44></COL>
+  <COL width=293></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=313 height=44 colspan="6" style="font-size: 13pt; background-color: #ff1418; font-weight: bold;"> 투자위험등급<br>
+&nbsp;<SPAN style="color: #ffffff;">1등급</SPAN>[ 매우 높은 위험 ]</TD>
+  <TD width=293 height=150 rowspan="3"><SPAN style="font-weight: bold;">ОО자산운용(주)는 이 투자신탁의 </SPAN><SPAN style="font-size: 13pt; line-height: 1.6em; color: #ff0000; font-weight: bold;">실제 수익률 변동성</SPAN><SPAN style="font-size: 13pt; line-height: 1.6em; font-weight: bold;"></SPAN><SPAN style="font-weight: bold;">을 감안하여 </SPAN><SPAN style="color: #ff0000; font-weight: bold;">O등급</SPAN><SPAN style="font-weight: bold;">으로 분류하였습니다.</SPAN></TD>
+</TR>
+<TR>
+  <TD width=45 height=17 align="CENTER" style="background-color: #ff1418; font-weight: bold;">1</TD>
+  <TD width=45 height=17 align="CENTER" style="background-color: #ffbf28;">2</TD>
+  <TD width=45 height=17 align="CENTER" style="background-color: #ffff00;">3</TD>
+  <TD width=45 height=17 align="CENTER" style="color: #ffffff; background-color: #008000;">4</TD>
+  <TD width=44 height=17 align="CENTER" style="color: #ffffff; background-color: #77bbff;">5</TD>
+  <TD width=44 height=17 align="CENTER" style="color: #ffffff; background-color: #004080;">6</TD>
+</TR>
+<TR>
+  <TD width=45 height=63 align="CENTER" style="color: #ff1418; font-weight: bold;">매우<br>
+높은<br>
+위험</TD>
+  <TD width=45 height=63 align="CENTER" style="color: #ffbf28;">높은<br>
+위험</TD>
+  <TD width=45 height=63 align="CENTER" style="color: #dddd00;">다소<br>
+높은<br>
+위험</TD>
+  <TD width=45 height=63 align="CENTER" style="color: #008000;">보통<br>
+위험</TD>
+  <TD width=44 height=63 align="CENTER" style="color: #00aeee;">낮은<br>
+위험</TD>
+  <TD width=44 height=63 align="CENTER" style="color: #004080;">매우<br>
+낮은<br>
+위험</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>이 요약정보는 ○○○○의 투자설명서의 내용 중 중요사항을 발췌ㆍ요약한 핵심정보를 담고 있습니다. 따라서 자세한 정보가 필요하신 경우에는 <SPAN style="color: #ff0000; font-weight: bold;">동 집합투자증권을 매입하기 이전에 투자설명서를 반드시 참고하시기 바랍니다.</SPAN></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 1_본문-PDF파일첨부&gt;&gt;</P>
+<P class=section-1><a class='toc' href='10631-TOC.htm#77' name='77' target='toc'>[ 본 문 ]</a></P><P>&lt;&lt;단위서식 : 2_본문-직접작성&gt;&gt;</P>
+<P class=section-1><a class='toc' href='10631-TOC.htm#83' name='83' target='toc'>[요약정보]</a></P><P>★Table-Group aClass=TBL_SMR★</P>
+
+<TABLE border=1 width=622>
+<COLGROUP>
+  <COL width=155></COL>
+  <COL width=150></COL>
+  <COL width=83></COL>
+  <COL width=198></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=155 height=17 align="CENTER">투자목적 및 전략</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">분류</TD>
+  <TD width=449 height=17 colspan="3" align="LEFT">e★FUND_KND |V|필</TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">투자비용</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=40 align="CENTER">투자실적추이<br>
+(연평균수익률)</TD>
+  <TD width=449 height=40 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">운용전문인력</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=224 align="CENTER">투자자<br>
+유의사항</TD>
+  <TD width=449 height=224 colspan="3">ㆍ<SPAN style="color: #ff0000; font-weight: bold;">집합투자증권은 「예금자보호법」에 따라 예금보험공사가 보호하지 않는 실적배당상품으로 투자원금의 손실이 발생할 수 있으므로 투자에 신중을 기하여 주시기 바랍니다.</SPAN><br>
+ㆍ<SPAN style="color: #ff0000; font-weight: bold;">금융위원회가 투자설명서의 기재사항이 진실 또는 정확하다는 것을 인정하거나 그 증권의 가치를 보증 또는 승인하지 아니함을 유의하시기 바랍니다.</SPAN><br>
+ㆍ<br>
+ㆍ<br>
+ㆍ<br>
+ㆍ</TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">주요투자 위험</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">매입 방법</TD>
+  <TD width=150 height=17></TD>
+  <TD width=83 height=47 rowspan="2" align="CENTER">환매<br>
+방법</TD>
+  <TD width=198 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">환매수수료</TD>
+  <TD width=150 height=17></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">기준가</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">과세</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">전환절차 및 방법</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">집합투자업자</TD>
+  <TD width=449 height=17 colspan="3" align="LEFT">e★FUND_TRD |V|선</TD>
+</TR>
+<TR>
+  <TD width=155 height=40 align="CENTER">모집기간</TD>
+  <TD width=150 height=40></TD>
+  <TD width=83 height=40 align="CENTER">모집ㆍ매출<br>
+총액</TD>
+  <TD width=198 height=40></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">효력발생일</TD>
+  <TD width=150 height=17></TD>
+  <TD width=83 height=17 align="CENTER">존속 기간</TD>
+  <TD width=198 height=17></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">판매회사</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">참조</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=155 height=17 align="CENTER">집합투자기구의 종류</TD>
+  <TD width=449 height=17 colspan="3"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10631-TOC.htm#159' name='159' target='toc'>[집합투자기구 공시 정보 안내]</a></P><P><br></P><P><br></P>
+</BODY>
+</HTML>

@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00780, 서식버전 : 1.0, 서식변경날짜 : 2019년 2월 12일,<br>
+&nbsp; &nbsp;문서명 : 감사인의중요성금액(사업보고서 제출법인)★</P>
+<P class=section-1><a class='toc' href='00780-TOC.htm#13' name='13' target='toc'>감사인의 중요성 금액</a></P>
+
+<TABLE class=nb width=619>
+<COLGROUP>
+  <COL width=610></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=610 height=17 align="CENTER">(사업보고서제출 대상법인 - 별도제출용, 대외공시를 원하지 않는 경우)</TD>
+</TR>
+<TR>
+  <TD width=610 height=90 style="font-family: 바탕, sans-serif; font-size: 12pt;"><br>
+「외부감사 및 회계 등에 관한 규정」 제19조제1항의 규정에 의하여 감사인의 중요성 금액을 첨부합니다. <br>
+<br></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=section-2>1. 감사대상업무</P><P>★Table-Group aClass=INS_SUB★</P>
+
+<TABLE border=1 width=619>
+<COLGROUP>
+  <COL width=211></COL>
+  <COL width=133></COL>
+  <COL width=44></COL>
+  <COL width=145></COL>
+  <COL width=41></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=211 height=17 align="CENTER">회 &nbsp; &nbsp; 사 &nbsp; &nbsp; 명</TD>
+  <TD width=390 height=17 colspan="4" align="CENTER">e★SUB_COMPY |V|필</TD>
+</TR>
+<TR>
+  <TD width=211 height=40 align="CENTER">감사대상 사업연도</TD>
+  <TD class=tu width=133 height=40 align="CENTER">u★SUB_PERIODFROM |달력|필</TD>
+  <TD width=44 height=40 align="CENTER">부터</TD>
+  <TD class=tu width=145 height=40 align="CENTER">u★SUB_PERIODTO</TD>
+  <TD width=41 height=40 align="CENTER">까지</TD>
+</TR>
+<TR>
+  <TD width=211 height=155 align="CENTER">감사대상 회사 법인구분</TD>
+  <TD class=tu width=390 height=155 colspan="4" align="CENTER">u★CRP_RGS_CLS |List|L|P|선<br>
+유가증권시장주권상장법인|P<br>
+코스닥시장주권상장법인|A<br>
+코넥스시장주권상장법인|X<br>
+사업보고서제출비상장주식회사|U<br>
+기타비상장주식회사|B<br>
+유한회사|L</TD>
+</TR>
+<TR>
+  <TD width=211 height=63 align="CENTER">연결재무제표 작성여부</TD>
+  <TD class=tu width=390 height=63 colspan="4" align="CENTER">u★CSD_FS_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2>2. 감사인의 중요성 금액</P>
+
+<TABLE class=nb width=630>
+<COLGROUP>
+  <COL width=621></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=621 height=90 valign="TOP" style="font-family: 바탕, sans-serif; font-size: 12pt;">※ '중요성'은 감사인이 감사를 계획하고 수행하며 감사의견을 형성하는 전반적인 감사 과정에서 적용되는 기준으로, 재무제표 왜곡표시가 개별적 또는 집합적으로 중요한지 여부를 결정할 때에는 양적 측면 뿐만 아니라 상황에 따른 질적 특성을 고려하여 이루어집니다. 감사대상 회사에 대해 적용한 중요성 기준은 다음과 같습니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=617>
+<COLGROUP>
+  <COL width=608></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=608 height=18 style="font-family: 바탕, sans-serif; font-size: 12pt;">- 재무제표</TD>
+</TR>
+<TR>
+  <TD width=608 height=17 align="RIGHT">(단위 : 천원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=INS_IMPT★</P>
+
+<TABLE border=1 width=617>
+<COLGROUP>
+  <COL width=156></COL>
+  <COL width=136></COL>
+  <COL width=136></COL>
+  <COL width=153></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=156 height=17 align="CENTER">구분</TH>
+  <TH width=136 height=17 align="CENTER">당기</TH>
+  <TH width=136 height=17 align="CENTER">전기</TH>
+  <TH width=153 height=17 align="CENTER">판단근거</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=156 height=40 align="CENTER">재무제표 전체 중요성</TD>
+  <TD width=136 height=40 align="CENTER">e★CRT_TTL_IMPT |V|필</TD>
+  <TD width=136 height=40 align="CENTER">e★PRV_TTL_IMPT |V|선</TD>
+  <TD width=153 height=40 align="CENTER">e★TTL_IMPT_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=156 height=40 align="CENTER">수행 중요성</TD>
+  <TD width=136 height=40 align="CENTER">e★CRT_CMT_IMPT |V|필</TD>
+  <TD width=136 height=40 align="CENTER">e★PRV_CMT_IMPT |V|선</TD>
+  <TD width=153 height=40 align="CENTER">e★CMT_IMPT_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=156 height=63 align="CENTER">특정 거래유형과<br>
+계정잔액 및 공시에<br>
+대한 중요성</TD>
+  <TD width=136 height=63 align="CENTER">e★CRT_TRD_IMPT |V|필</TD>
+  <TD width=136 height=63 align="CENTER">e★PRV_TRD_IMPT |V|선</TD>
+  <TD width=153 height=63 align="CENTER">e★TRD_IMPT_RSN |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>&lt;&lt;단위서식 : 1_연결재무제표&gt;&gt;</P>
+
+<TABLE class=nb width=617>
+<COLGROUP>
+  <COL width=608></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=608 height=18 style="font-family: 바탕, sans-serif; font-size: 12pt;">- 연결재무제표</TD>
+</TR>
+<TR>
+  <TD width=608 height=17 align="RIGHT">(단위 : 천원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=INS_IMPT_CON★</P>
+
+<TABLE border=1 width=617>
+<COLGROUP>
+  <COL width=156></COL>
+  <COL width=136></COL>
+  <COL width=136></COL>
+  <COL width=153></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=156 height=17 align="CENTER">구분</TH>
+  <TH width=136 height=17 align="CENTER">당기</TH>
+  <TH width=136 height=17 align="CENTER">전기</TH>
+  <TH width=153 height=17 align="CENTER">판단근거</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=156 height=40 align="CENTER">재무제표 전체 중요성</TD>
+  <TD width=136 height=40 align="CENTER">e★CRT_TTL_IMPT |V|필</TD>
+  <TD width=136 height=40 align="CENTER">e★PRV_TTL_IMPT |V|선</TD>
+  <TD width=153 height=40 align="CENTER">e★TTL_IMPT_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=156 height=40 align="CENTER">수행 중요성</TD>
+  <TD width=136 height=40 align="CENTER">e★CRT_CMT_IMPT |V|필</TD>
+  <TD width=136 height=40 align="CENTER">e★PRV_CMT_IMPT |V|선</TD>
+  <TD width=153 height=40 align="CENTER">e★CMT_IMPT_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=156 height=63 align="CENTER">특정 거래유형과<br>
+계정잔액 및 공시에<br>
+대한 중요성</TD>
+  <TD width=136 height=63 align="CENTER">e★CRT_TRD_IMPT |V|필</TD>
+  <TD width=136 height=63 align="CENTER">e★PRV_TRD_IMPT |V|선</TD>
+  <TD width=153 height=63 align="CENTER">e★TRD_IMPT_RSN |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-2>3. 보고자</P><P>★Table-Group aClass=INS_REPTER★</P>
+
+<TABLE border=1 width=617>
+<COLGROUP>
+  <COL width=69></COL>
+  <COL width=92></COL>
+  <COL width=160></COL>
+  <COL width=38></COL>
+  <COL width=75></COL>
+  <COL width=44></COL>
+  <COL width=76></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=69 height=63 align="CENTER">담당사원</TD>
+  <TD width=92 height=63 align="CENTER">공인회계사<br>
+등록번호</TD>
+  <TD width=160 height=63 align="CENTER">e★REPTER_NO |V|선</TD>
+  <TD width=38 height=63 align="CENTER">직위</TD>
+  <TD width=75 height=63 align="CENTER">e★REPTER_POS |V|선</TD>
+  <TD width=44 height=63 align="CENTER">성명</TD>
+  <TD width=76 height=63 align="CENTER">e★REPTER_NAME |V|선</TD>
+</TR>
+<TR>
+  <TD width=69 height=17 align="CENTER">연락처</TD>
+  <TD width=530 height=17 colspan="6" align="CENTER">e★REPTER_COTT |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br>
+<br></P>
+</BODY>
+</HTML>

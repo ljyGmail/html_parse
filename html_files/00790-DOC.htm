@@ -1,0 +1,582 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00790, 서식버전 : 3.3, 서식변경날짜 : 2023년 12월 29일,<br>
+&nbsp; &nbsp;문서명 : 감사계약체결보고서★</P>
+<P class=section-1><a class='toc' href='00790-TOC.htm#13' name='13' target='toc'>감사계약체결보고서</a></P><P><br></P>
+
+<TABLE class=nb width=716>
+<COLGROUP>
+  <COL width=707></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=707 height=40 valign="TOP">「주식회사 등의 외부감사에 관한 법률」 제12조제2항 및 같은 법 시행령 제18조제4항에 따라 외부감사계약체결에 관한 사항을 금융감독원장에게 보고합니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>1. 감사인 개황</P><P>★Table-Group aClass=ADTR★</P>
+
+<TABLE border=1 width=718>
+<COLGROUP>
+  <COL width=368></COL>
+  <COL width=332></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=368 height=17> 1-1 &nbsp; 당기 계약체결 감사인명</TD>
+  <TD width=332 height=17 align="CENTER">e★NAME |V-128|필</TD>
+</TR>
+<TR>
+  <TD width=368 height=17> 1-2 &nbsp; 당기 계약체결 감사인 고유번호</TD>
+  <TD width=332 height=17 align="CENTER">e★CIK |CIK|필</TD>
+</TR>
+<TR>
+  <TD width=368 height=17> 1-3 &nbsp; 전기 감사인명</TD>
+  <TD width=332 height=17 align="CENTER">e★PREV_NM |V-128|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+2. 감사대상회사 개황</P><P>★Table-Group aClass=CMPN1★</P>
+
+<TABLE border=1 width=1621>
+<COLGROUP>
+  <COL width=78></COL>
+  <COL width=282></COL>
+  <COL width=182></COL>
+  <COL width=204></COL>
+  <COL width=200></COL>
+  <COL width=207></COL>
+  <COL width=198></COL>
+  <COL width=198></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=369 height=17 colspan="2"> 2-1 &nbsp; 회사명</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★NAME |V-128|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=17 colspan="2"> 2-2 &nbsp; 회사고유번호</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★CIK |CIK|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=17 colspan="2"> 2-3 &nbsp; 법인등록번호</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★CRP_RGS_NO |S-000000-0000000|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=17 colspan="2"> 2-4 &nbsp; 사업자등록번호(본점)</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★BSN_RGS_NO |S-000-00-00000|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=178 colspan="2"> 2-5 &nbsp; 법인 구분</TD>
+  <TD class=tu width=1234 height=178 colspan="6" align="CENTER">u★CRP_RGS_CLS |List|L|P|선<br>
+유가증권시장주권상장법인|P<br>
+코스닥시장주권상장법인|A<br>
+코넥스시장주권상장법인|X<br>
+사업보고서제출비상장법인|U<br>
+공시대상기업집단소속비상장법인|C<br>
+기타비상장주식회사|B<br>
+유한회사|L</TD>
+</TR>
+<TR>
+  <TD width=369 height=63 colspan="2"> &nbsp; 2-5-1 금융회사에 해당 여부</TD>
+  <TD class=tu width=1234 height=63 colspan="6" align="CENTER">u★CRP_FS_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=63 colspan="2"> &nbsp; 2-5-2 대형비상장주식회사에 해당 여부</TD>
+  <TD class=tu width=1234 height=63 colspan="6" align="CENTER">u★CRP_FB_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=78 height=284 rowspan="3">(2-5에서 "사업보고서제출비상장법인"인 경우)</TD>
+  <TD width=282 height=86>2-5-3 &nbsp;채무증권 등의 증권시장 상장 여부</TD>
+  <TD class=tu width=1234 height=86 colspan="6" align="CENTER">u★LST_YN |List|L||선<br>
+예|Y<br>
+아니오|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=282 height=86>2-5-4 &nbsp;주권 또는 채무증권 등의 모집 또는 매출 여부</TD>
+  <TD class=tu width=1234 height=86 colspan="6" align="CENTER">u★SLS_YN |List|L||선<br>
+예|Y<br>
+아니오|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=282 height=86>2-5-5 &nbsp;주권 또는 채무증권 등의 소유자 수가 500인 이상에 해당하는지 여부</TD>
+  <TD class=tu width=1234 height=86 colspan="6" align="CENTER">u★OWNR_CNT_YN |List|L||선<br>
+예|Y<br>
+아니오|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=78 height=116 rowspan="2">(2-5에서 "유한회사"인 경우)</TD>
+  <TD width=282 height=86>2-5-6 주식회사에서 유한회사로 변경여부</TD>
+  <TD class=tu width=1234 height=86 colspan="6" align="CENTER">u★UCH_YN |List|L||선<br>
+예|Y<br>
+아니오|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=282 height=17>2-5-7 변경일자(2-5-6에서 "예"인 경우)</TD>
+  <TD class=tu width=1234 height=17 colspan="6" align="CENTER">u★UCH_DAT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=369 height=17 colspan="2"> 2-6 &nbsp; 대표자명</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★CEO_NM |V-100|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=17 colspan="2"> 2-7 &nbsp; 대표 전화번호</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★PHN_NO |V-30|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=17 colspan="2"> 2-8 &nbsp; 주소</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★ADR |V-100|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=17 colspan="2"> 2-9 &nbsp; 우편번호</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★ZIP_CD |S-00000|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=63 colspan="2"> 2-10 &nbsp;당기 사업연도 결산기 변경 여부</TD>
+  <TD class=tu width=1234 height=63 colspan="6" align="CENTER">u★CHG_ST_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=316 colspan="2"> &nbsp; 2-10-1 &nbsp;결산기 변경 내용(2-10에서 "예"인 경우)</TD>
+  <TD class=tu width=182 height=316 align="CENTER">u★BFR_ST |List|L||선<br>
+-|-<br>
+1|01<br>
+2|02<br>
+3|03<br>
+4|04<br>
+5|05<br>
+6|06<br>
+7|07<br>
+8|08<br>
+9|09<br>
+10|10<br>
+11|11<br>
+12|12</TD>
+  <TD width=204 height=316>월에서</TD>
+  <TD class=tu width=200 height=316 align="CENTER">u★AFT_ST |List|L||선<br>
+-|-<br>
+1|01<br>
+2|02<br>
+3|03<br>
+4|04<br>
+5|05<br>
+6|06<br>
+7|07<br>
+8|08<br>
+9|09<br>
+10|10<br>
+11|11<br>
+12|12</TD>
+  <TD width=621 height=316 colspan="3">월로 변경</TD>
+</TR>
+<TR>
+  <TD width=369 height=63 colspan="2"> 2-11 &nbsp; 당기 사업연도 적용 회계처리기준</TD>
+  <TD class=tu width=1234 height=63 colspan="6" align="CENTER">u★ACCT_STD |List|L||선<br>
+한국채택국제회계기준|K<br>
+일반기업회계기준|C</TD>
+</TR>
+<TR>
+  <TD width=369 height=63 colspan="2"> 2-12 &nbsp; 연결재무제표 작성 여부</TD>
+  <TD class=tu width=1234 height=63 colspan="6" align="CENTER">u★CSD_FS_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=17 colspan="2"> 2-13 &nbsp; 지배주주(특수관계자포함)의 지분율합계 (%)</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★CSH_RT |%|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=17 colspan="2"> &nbsp; 2-13-1 &nbsp;지배주주 중 최대지분 소유자명</TD>
+  <TD width=1234 height=17 colspan="6" align="CENTER">e★LSH_NM |V-128|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=63 colspan="2"> &nbsp; 2-13-2 &nbsp;대표이사와 지배주주와의 특수관계자 해당 여부</TD>
+  <TD class=tu width=1234 height=63 colspan="6" align="CENTER">u★CTN_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=293 colspan="2"> 2-14 &nbsp; 정기주주총회 개최시기</TD>
+  <TD width=604 height=293 colspan="3" align="RIGHT">사업연도 종료 후</TD>
+  <TD class=tu width=207 height=293 align="CENTER">u★OPN_DT |List|L||선<br>
+1|01<br>
+2|02<br>
+3|03<br>
+4|04<br>
+5|05<br>
+6|06<br>
+7|07<br>
+8|08<br>
+9|09<br>
+10|10<br>
+11|11<br>
+12|12</TD>
+  <TD width=405 height=293 colspan="2">월 이내</TD>
+</TR>
+<TR>
+  <TD width=369 height=63 colspan="2"> 2-15 감사위원회의 설치여부</TD>
+  <TD class=tu width=1234 height=63 colspan="6" align="CENTER">u★AUD_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=63 colspan="2"> &nbsp; 2-15-1 감사위원회 설치 대상여부</TD>
+  <TD class=tu width=1234 height=63 colspan="6" align="CENTER">u★AUB_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=116 colspan="2" rowspan="2"> 2-16 과거 6개사업연도 중 감사인 지정 여부</TD>
+  <TD width=182 height=17 align="CENTER">전기</TD>
+  <TD width=204 height=17 align="CENTER">2기전</TD>
+  <TD width=200 height=17 align="CENTER">3기전</TD>
+  <TD width=207 height=17 align="CENTER">4기전</TD>
+  <TD width=198 height=17 align="CENTER">5기전</TD>
+  <TD width=198 height=17 align="CENTER">6기전</TD>
+</TR>
+<TR>
+  <TD class=tu width=182 height=86 align="CENTER">u★AUD_D1_YN |List|L||선<br>
+자유선임|1<br>
+지정|2<br>
+해당없음|-</TD>
+  <TD class=tu width=204 height=86 align="CENTER">u★AUD_D2_YN |List|L||선<br>
+자유선임|1<br>
+지정|2<br>
+해당없음|-</TD>
+  <TD class=tu width=200 height=86 align="CENTER">u★AUD_D3_YN |List|L||선<br>
+자유선임|1<br>
+지정|2<br>
+해당없음|-</TD>
+  <TD class=tu width=207 height=86 align="CENTER">u★AUD_D4_YN |List|L||선<br>
+자유선임|1<br>
+지정|2<br>
+해당없음|-</TD>
+  <TD class=tu width=198 height=86 align="CENTER">u★AUD_D5_YN |List|L||선<br>
+자유선임|1<br>
+지정|2<br>
+해당없음|-</TD>
+  <TD class=tu width=198 height=86 align="CENTER">u★AUD_D6_YN |List|L||선<br>
+자유선임|1<br>
+지정|2<br>
+해당없음|-</TD>
+</TR>
+<TR>
+  <TD width=369 height=63 colspan="2"> 2-17 전기 내부회계관리제도 운영 대상여부</TD>
+  <TD class=tu width=1234 height=63 colspan="6" align="CENTER">u★PRE_INT_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+3. 감사계약 내용</P><P>★Table-Group aClass=CNTR★</P>
+
+<TABLE border=1 width=718>
+<COLGROUP>
+  <COL width=369></COL>
+  <COL width=20></COL>
+  <COL width=24></COL>
+  <COL width=17></COL>
+  <COL width=34></COL>
+  <COL width=33></COL>
+  <COL width=30></COL>
+  <COL width=37></COL>
+  <COL width=32></COL>
+  <COL width=32></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=369 height=63> 3-1 &nbsp; 감사계약 체결 구분</TD>
+  <TD class=tu width=331 height=63 colspan="9" align="CENTER">u★CNTR_CLS |List|L|1|선<br>
+자유수임|1<br>
+증선위지정|2</TD>
+</TR>
+<TR>
+  <TD width=369 height=63> 3-2 &nbsp; 신규 외부감사 대상 해당 여부</TD>
+  <TD class=tu width=331 height=63 colspan="9" align="CENTER">u★NEW_EA_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=86> 3-3 회사의 감사인을 선정한 자</TD>
+  <TD class=tu width=331 height=86 colspan="9" align="CENTER">u★AUD_SEL |List|L||선<br>
+감사위원회|1<br>
+감사|2<br>
+회사|3</TD>
+</TR>
+<TR>
+  <TD width=369 height=63> &nbsp; 3-3-1 감사가 없는 회사에 해당 여부</TD>
+  <TD class=tu width=331 height=63 colspan="9" align="CENTER">u★AUD_NOT_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=63> 3-4 감사인선임위원회 또는 사원총회의 승인 여부</TD>
+  <TD class=tu width=331 height=63 colspan="9" align="CENTER">u★AC_APV_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> 3-5 &nbsp; 감사계약 체결일자</TD>
+  <TD class=tu width=331 height=17 colspan="9" align="CENTER">u★CNTR_DT |달력|필</TD>
+</TR>
+<TR>
+  <TD width=369 height=155> 3-6 &nbsp; 감사대상 사업연도</TD>
+  <TD width=20 height=155 align="CENTER">제</TD>
+  <TD width=24 height=155 align="RIGHT">e★FSY_NO |N-3|필</TD>
+  <TD width=17 height=155 align="CENTER">기</TD>
+  <TD class=tu width=34 height=155 align="CENTER">u★FSY_FROM |달력|필</TD>
+  <TD width=33 height=155 align="CENTER">부터</TD>
+  <TD class=tu width=30 height=155 align="CENTER">u★FSY_TO |달력|필</TD>
+  <TD width=37 height=155 align="CENTER">까지</TD>
+  <TD width=32 height=155 align="RIGHT">e★FSY_PER |P|필</TD>
+  <TD width=32 height=155 align="CENTER">개월</TD>
+</TR>
+<TR>
+  <TD width=369 height=109> 3-7 &nbsp; 주권상장법인의 3개 사업연도 연속감사인 경우 당기감사차수</TD>
+  <TD class=tu width=331 height=109 colspan="9" align="CENTER">u★CNTR_GRD_YR |List|L||선<br>
+1 년차|1<br>
+2 년차|2<br>
+3 년차|3<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=369 height=63> 3-8 &nbsp; 연결재무제표에 대한 감사계약 체결여부</TD>
+  <TD class=tu width=331 height=63 colspan="9" align="CENTER">u★CSD_CNTR_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> 3-9 &nbsp; 감사보수(연결감사보수 포함)</TD>
+  <TD width=249 height=17 colspan="7" align="RIGHT">e★ADT_FEE2 |%|필</TD>
+  <TD width=73 height=17 colspan="2">백만원</TD>
+</TR>
+<TR>
+  <TD width=369 height=63> &nbsp; 3-9-1 &nbsp;연결감사보수 별도구분 여부</TD>
+  <TD class=tu width=331 height=63 colspan="9" align="CENTER">u★CSD_ADT_FEE_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> &nbsp; 3-9-2 &nbsp;연결감사보수(3-9-1에서 "예"인 경우)</TD>
+  <TD width=249 height=17 colspan="7" align="RIGHT">e★CSD_ADT_FEE |%|선</TD>
+  <TD width=73 height=17 colspan="2">백만원</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> 3-10 &nbsp;예상 감사 투입시간</TD>
+  <TD width=331 height=17 colspan="9" align="CENTER">e★EST_TM_TOT |%|선</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> &nbsp; 3-10-1 예상 감사 투입시간 상세내역</TD>
+  <TD width=331 height=17 colspan="9" align="CENTER">e★EST_TM_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> 3-11 &nbsp;시간당 평균 감사보수</TD>
+  <TD width=331 height=17 colspan="9" align="CENTER">e★AUD_FEE_HOUR |%|선</TD>
+</TR>
+<TR>
+  <TD width=369 height=63> 3-12 &nbsp;감사인 선정주체와의 커뮤니케이션 여부</TD>
+  <TD class=tu width=331 height=63 colspan="9" align="CENTER">u★COMU_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> &nbsp; 3-12-1 감사인 선정주체와의 커뮤니케이션 내역</TD>
+  <TD width=331 height=17 colspan="9" align="CENTER">e★COMU_HIS |V|선</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> &nbsp; 3-12-2 표준감사시간</TD>
+  <TD width=331 height=17 colspan="9" align="CENTER">e★COMU_AUD_STD |%|선</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> 3-13 &nbsp;전기 감사 투입시간(예상)</TD>
+  <TD width=331 height=17 colspan="9" align="CENTER">e★BFR_AUD_TM |%|선</TD>
+</TR>
+<TR>
+  <TD width=369 height=40> &nbsp; 3-13-1 전기 감사 투입시간보다 유의하게 증가한 경우 차이 발생 이유</TD>
+  <TD width=331 height=40 colspan="9" align="CENTER">e★BFR_AUD_RSN |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>4. 산업전문성</P><P>★Table-Group aClass=EXPT★</P>
+
+<TABLE border=1 width=718>
+<COLGROUP>
+  <COL width=369></COL>
+  <COL width=331></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=369 height=86> 4-1 감사인의 산업전문성 필요 여부</TD>
+  <TD class=tu width=331 height=86 align="CENTER">u★EXPT_NCS_YN |List|L||선<br>
+필요|Y<br>
+불필요|N<br>
+해당없음|-</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> &nbsp; 4-1-1 회사의 주된 산업</TD>
+  <TD width=331 height=17 align="CENTER">e★EXPT_MAIN_IND |V|선</TD>
+</TR>
+<TR>
+  <TD width=369 height=109> 4-2 감사팀내 산업전문가 유무</TD>
+  <TD class=tu width=331 height=109 align="CENTER">u★EXPT_AUD_YN |List|L||선<br>
+있음|Y<br>
+보완예정|E<br>
+없음|N<br>
+해당없음|-</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> &nbsp; 4-2-1 산업전문가명(등록번호)</TD>
+  <TD width=331 height=17 align="CENTER">e★EXPT_AUD_ID |V|선</TD>
+</TR>
+<TR>
+  <TD width=369 height=17> &nbsp; 4-2-2 추후 보완시기</TD>
+  <TD width=331 height=17 align="CENTER">e★EXPT_AUD_CMPL |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>5. 보고자</P><P>★Table-Group aClass=CPA★</P>
+
+<TABLE border=1 width=718>
+<COLGROUP>
+  <COL width=171></COL>
+  <COL width=152></COL>
+  <COL width=108></COL>
+  <COL width=49></COL>
+  <COL width=58></COL>
+  <COL width=46></COL>
+  <COL width=71></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=171 height=63> 5-1 &nbsp; 담당사원</TD>
+  <TD width=152 height=63 align="CENTER">공인회계사등록번호</TD>
+  <TD width=108 height=63 align="CENTER">e★RGNUM |V-30|필</TD>
+  <TD width=49 height=63 align="CENTER">직위</TD>
+  <TD width=58 height=63 align="CENTER">e★PSTN |V-30|필</TD>
+  <TD width=46 height=63 align="CENTER">성명</TD>
+  <TD width=71 height=63 align="CENTER">e★NAME |V-128|필</TD>
+</TR>
+<TR>
+  <TD width=171 height=17> 5-2 &nbsp; 연락처</TD>
+  <TD width=529 height=17 colspan="6" align="CENTER">e★PHN_NO |V-30|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>6. 감사계약서 첨부</P><P>★Table-Group aClass=RPT_APD★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=491></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=91 height=17 align="CENTER" valign="TOP">설명</TD>
+  <TD width=491 height=17 align="LEFT">e★APD_NOTE |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br>
+<br></P>
+</BODY>
+</HTML>

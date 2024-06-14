@@ -1,0 +1,4199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00636, 서식버전 : 4.2, 서식변경날짜 : 2023년 12월 29일,<br>
+&nbsp; &nbsp;문서명 : 주식등의 대량보유상황보고서(일반)★</P>
+<P class=cover-title><a class='toc' href='00636-TOC.htm#16' name='16' target='toc'>주식등의 대량보유상황보고서</a></P><P>★Table-Group aClass=RPT_RSP_DT★</P>
+
+<TABLE class=nb width=844>
+<COLGROUP>
+  <COL width=290></COL>
+  <COL width=136></COL>
+  <COL width=391></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=835 height=17 colspan="3" align="CENTER">(일반서식 : 자본시장과 금융투자업에 관한 법률 제147조에 의한 보고 중 '경영권에 영향을 주기 위한 목적'의 경우)</TD>
+</TR>
+<TR>
+  <TD width=835 height=63 colspan="3" align="CENTER"><br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=290 height=17>금융위원회 귀중</TD>
+  <TD width=136 height=17>보고의무발생일　 :</TD>
+  <TD class=tu width=391 height=17 align="CENTER">u★RPT_RSP_DT |달력|필</TD>
+</TR>
+<TR>
+  <TD width=290 height=17>한국거래소 귀중</TD>
+  <TD width=136 height=17>보고서작성기준일 :</TD>
+  <TD class=tu width=391 height=17 align="CENTER">u★RPT_REF_DT |달력|필</TD>
+</TR>
+<TR>
+  <TD width=290 height=17></TD>
+  <TD width=136 height=17>보고자 : </TD>
+  <TD width=391 height=17 align="CENTER">e★RPT_RSP_NM |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br></P><P>★Table-Group aClass=SUM_INF★</P>
+
+<TABLE border=1 width=767>
+<COLGROUP>
+  <COL width=201></COL>
+  <COL width=95></COL>
+  <COL width=141></COL>
+  <COL width=294></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=758 height=17 colspan="4" align="CENTER">요약정보</TD>
+</TR>
+<TR>
+  <TD width=201 height=247 align="CENTER">발행회사명</TD>
+  <TD width=95 height=247 align="CENTER">e★CRP_NM |V|필</TD>
+  <TD width=141 height=247 align="CENTER">발행회사와의 관계</TD>
+  <TD class=tu width=294 height=247 align="CENTER">u★FLT_CRP_RLT |List|L||선<br>
+최대주주|10<br>
+주요주주|02<br>
+사실상지배주주|03<br>
+주주|13<br>
+임원(등기)|01<br>
+임원(미등기)|04<br>
+계열회사등|14<br>
+계열회사등 임원|15<br>
+기타|16<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=201 height=109 align="CENTER">보고구분</TD>
+  <TD class=tu width=548 height=109 colspan="3" align="CENTER">u★RPT_DST1 |List|L||선<br>
+신규|1<br>
+변동|2<br>
+변경|3<br>
+변동ㆍ변경|4</TD>
+</TR>
+<TR>
+  <TD width=201 height=123 rowspan="3" align="CENTER">보유주식등의 수 및 보유비율</TD>
+  <TD width=95 height=17 align="CENTER"></TD>
+  <TD width=141 height=17 align="CENTER">보유주식등의 수</TD>
+  <TD width=294 height=17 align="CENTER">보유비율</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">직전 보고서</TD>
+  <TD width=141 height=40 align="CENTER">e★SUM_BMT_CNT |\|선</TD>
+  <TD width=294 height=40 align="CENTER">e★SUM_BMT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">이번 보고서</TD>
+  <TD width=141 height=40 align="CENTER">e★SUM_TMT_CNT |\|필</TD>
+  <TD width=294 height=40 align="CENTER">e★SUM_TMT_RT |%|필</TD>
+</TR>
+<TR>
+  <TD width=201 height=123 rowspan="3" align="CENTER">주요계약체결 주식등의 수 및 비율</TD>
+  <TD width=95 height=17 align="CENTER"></TD>
+  <TD width=141 height=17 align="CENTER">주식등의 수</TD>
+  <TD width=294 height=17 align="CENTER">비율</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">직전 보고서</TD>
+  <TD width=141 height=40 align="CENTER">e★CTR_BMT_CNT |\|선</TD>
+  <TD width=294 height=40 align="CENTER">e★CTR_BMT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">이번 보고서</TD>
+  <TD width=141 height=40 align="CENTER">e★CTR_TMT_CNT |\|선</TD>
+  <TD width=294 height=40 align="CENTER">e★CTR_TMT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=201 height=123 rowspan="3" align="CENTER">의결권의 수 및 보유비율</TD>
+  <TD width=95 height=17 align="CENTER"></TD>
+  <TD width=141 height=17 align="CENTER">의결권의 수</TD>
+  <TD width=294 height=17 align="CENTER">보유비율</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">직전 보고서</TD>
+  <TD width=141 height=40 align="CENTER">e★VR_BMT_CNT |\|선</TD>
+  <TD width=294 height=40 align="CENTER">e★VR_BMT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">이번 보고서</TD>
+  <TD width=141 height=40 align="CENTER">e★VR_TMT_CNT |\|선</TD>
+  <TD width=294 height=40 align="CENTER">e★VR_TMT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=201 height=123 rowspan="3" align="CENTER">주요계약체결 의결권의 수 및<br>
+비율</TD>
+  <TD width=95 height=17 align="CENTER"></TD>
+  <TD width=141 height=17 align="CENTER">의결권의 수</TD>
+  <TD width=294 height=17 align="CENTER">비율</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">직전 보고서</TD>
+  <TD width=141 height=40 align="CENTER">e★CVR_BMT_CNT |\|선</TD>
+  <TD width=294 height=40 align="CENTER">e★CVR_BMT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">이번 보고서</TD>
+  <TD width=141 height=40 align="CENTER">e★CVR_TMT_CNT |\|선</TD>
+  <TD width=294 height=40 align="CENTER">e★CVR_TMT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=201 height=17 align="CENTER">보고사유</TD>
+  <TD width=548 height=17 colspan="3" align="CENTER">e★SUM_CHN_RWN |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 valign="TOP">※ 보고자 본인은 보고서작성기준일 현재 본인과 특별관계자의 주식등의 보유상황을 관련 법규 및 기재상의 주의에 따라 정확하게 작성하였고, 중요한 사항의 허위기재 또는 기재누락이 없음을 확인합니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 01_본문(발행회사가복수의결권주식을발행하지않은경우)&gt;&gt;</P>
+<P class=section-1><a class='toc' href='00636-TOC.htm#132' name='132' target='toc'>제1부 보고의 개요</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#135' name='135' target='toc'>1. 발행회사에 관한 사항</a></P><P>★Table-Group aClass=CRP_NM★</P>
+
+<TABLE border=1 width=684>
+<COLGROUP>
+  <COL width=95></COL>
+  <COL width=248></COL>
+  <COL width=207></COL>
+  <COL width=98></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=95 height=40 align="CENTER">회사명</TD>
+  <TD width=248 height=40 align="LEFT">e★CRP_NM |V|필</TD>
+  <TD width=207 height=40 align="CENTER">회사코드</TD>
+  <TD width=98 height=40 align="CENTER">e★CRP_CD |F-6|필</TD>
+</TR>
+<TR>
+  <TD width=95 height=86 align="CENTER">법인구분</TD>
+  <TD class=tu width=248 height=86 align="CENTER">u★CRP_DST |List|L||선<br>
+유가증권상장법인|1<br>
+코스닥상장법인|2<br>
+코넥스상장법인|3</TD>
+  <TD width=207 height=86 align="CENTER">의결권있는 발행주식 총수(주)</TD>
+  <TD width=98 height=86 align="CENTER">e★FLT_STK_CNT |\|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#157' name='157' target='toc'>2. 대량보유자에 관한 사항</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#159' name='159' target='toc'>가. 보고자</a></P><P>(1) 보고자 개요</P><P>★Table-Group aClass=RPT_DST1★</P>
+
+<TABLE border=1 width=1014>
+<COLGROUP>
+  <COL width=169></COL>
+  <COL width=80></COL>
+  <COL width=247></COL>
+  <COL width=102></COL>
+  <COL width=24></COL>
+  <COL width=338></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=169 height=109 align="CENTER">보고구분</TD>
+  <TD class=tu width=336 height=109 colspan="2" align="CENTER">u★RPT_DST1 |List|L||선<br>
+신규|1<br>
+변동|2<br>
+변경|3<br>
+변동ㆍ변경|4</TD>
+  <TD class=tu width=482 height=109 colspan="3" align="CENTER">u★RPT_DST2 |List|L||선<br>
+개별|1<br>
+연명|2</TD>
+</TR>
+<TR>
+  <TD width=169 height=270 align="CENTER">보고자 구분</TD>
+  <TD class=tu width=336 height=270 colspan="2" align="CENTER">u★CRP_TP |List|L||선<br>
+개인(국내)|D<br>
+개인(외국)|F<br>
+금융기관|K<br>
+투자회사등|A<br>
+국내법인|I<br>
+외국법인|O<br>
+연기금등 전문투자자|Y<br>
+법령상 조합|W<br>
+민법상 조합|C<br>
+기타단체(국내)|N<br>
+기타단체(외국)|U</TD>
+  <TD width=135 height=270 colspan="2" align="CENTER">국 적</TD>
+  <TD width=338 height=270 align="CENTER">e★IFR_NT |V|필</TD>
+</TR>
+<TR>
+  <TD width=514 height=40 colspan="3" align="CENTER">보고자 구분 기재 근거<br>
+(법령상 조합 또는 기타단체로 기재한 경우만 기재)</TD>
+  <TD width=482 height=40 colspan="3" align="CENTER">e★IFR_BASE |V|선</TD>
+</TR>
+<TR>
+  <TD width=169 height=17 align="CENTER">성명(명칭)</TD>
+  <TD width=80 height=17 align="CENTER">한글</TD>
+  <TD width=247 height=17 align="CENTER">e★IFR_NM |V|필</TD>
+  <TD width=102 height=17 align="CENTER">한자(영문)</TD>
+  <TD width=371 height=17 colspan="2" align="CENTER">e★IFR_NM_HJ |V|선</TD>
+</TR>
+<TR>
+  <TD width=169 height=40 align="CENTER">주소(본점소재지)<br>
+[읍ㆍ면ㆍ동까지만 기재]</TD>
+  <TD width=336 height=40 colspan="2" align="CENTER">e★IFR_ADR2 |V|필</TD>
+  <TD width=135 height=40 colspan="2" align="CENTER">생년월일 또는<br>
+사업자등록번호 등</TD>
+  <TD width=338 height=40 align="CENTER">e★IFR_ID |V|필</TD>
+</TR>
+<TR>
+  <TD width=169 height=247 align="CENTER">직업(사업내용)</TD>
+  <TD width=336 height=247 colspan="2" align="CENTER">e★IFR_JOB |V|선</TD>
+  <TD width=135 height=247 colspan="2" align="CENTER">발행회사와의 관계</TD>
+  <TD class=tu width=338 height=247 align="CENTER">u★FLT_CRP_RLT |List|L||선<br>
+최대주주|10<br>
+주요주주|02<br>
+사실상지배주주|03<br>
+주주|13<br>
+임원(등기)|01<br>
+임원(미등기)|04<br>
+계열회사등|14<br>
+계열회사등 임원|15<br>
+기타|16<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=169 height=107 rowspan="4" align="CENTER">업무상 연락처<br>
+및 담당자</TD>
+  <TD width=80 height=17 align="CENTER">소속회사</TD>
+  <TD width=247 height=17 align="CENTER">e★RSP_MAN_ADR2</TD>
+  <TD width=135 height=17 colspan="2" align="CENTER">부서</TD>
+  <TD width=338 height=17 align="CENTER">e★RSP_MAN_DPT |V|선</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">직위</TD>
+  <TD width=247 height=17 align="CENTER">e★RSP_MAN_PST |V|선</TD>
+  <TD width=135 height=17 colspan="2" align="CENTER">전화번호</TD>
+  <TD width=338 height=17 align="CENTER">e★RSP_MAN_PHN2 |V|필</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">성명</TD>
+  <TD width=247 height=17 align="CENTER">e★RSP_MAN |V|필</TD>
+  <TD width=135 height=17 colspan="2" align="CENTER">팩스번호</TD>
+  <TD width=338 height=17 align="CENTER">e★RSP_MAN_FAX |V|필</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">이메일 주소</TD>
+  <TD width=738 height=17 colspan="4" align="CENTER">e★RSP_MAN_EML |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(2) 보고자에 대한 구체적인 사항(법인, 기타단체, 법령상조합, 민법상 조합의 경우 기재)</P><P>★Table-Group aClass=REP_SUB★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=130></COL>
+  <COL width=156></COL>
+  <COL width=117></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">법적성격</TD>
+  <TD width=421 height=17 colspan="3" align="CENTER">e★SUB_CHA |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자산총액<br>
+(또는 운용자산총액)</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_AST |\|선</TD>
+  <TD width=156 height=40 align="CENTER">부채총액</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_DEB |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자본총액</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_CAP |\|선</TD>
+  <TD width=156 height=40 align="CENTER">자본금</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_EQU |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=63 align="CENTER">대표자<br>
+(대표조합원 또는<br>
+업무집행조합원)</TD>
+  <TD width=421 height=63 colspan="3" align="CENTER">e★SUB_REP |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=421 height=40 colspan="3" align="CENTER">e★SUB_DEC |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">최대주주<br>
+(최다출자자)</TD>
+  <TD width=130 height=40 align="CENTER">e★SUB_LAR |V|선</TD>
+  <TD width=156 height=40 align="CENTER">최대주주 지분율(%)<br>
+(최다출자자 출자비율)</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_LRT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : 04-보고자의최대주주가법인,기타단체,법령상조합,민법상조합의경우&gt;&gt;</P><P>【보고자의 최대주주가 법인, 기타단체, 법령상조합, 민법상 조합의 경우】</P><P>★Table-Group aClass=REP_LAR_SUB★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=130></COL>
+  <COL width=156></COL>
+  <COL width=117></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">법적성격</TD>
+  <TD width=421 height=17 colspan="3" align="CENTER">e★SUB_CHA |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자산총액<br>
+(또는 운용자산총액)</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_AST |\|선</TD>
+  <TD width=156 height=40 align="CENTER">부채총액</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_DEB |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자본총액</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_CAP |\|선</TD>
+  <TD width=156 height=40 align="CENTER">자본금</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_EQU |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=63 align="CENTER">대표자<br>
+(대표조합원 또는<br>
+업무집행조합원)</TD>
+  <TD width=421 height=63 colspan="3" align="CENTER">e★SUB_REP |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=421 height=40 colspan="3" align="CENTER">e★SUB_DEC |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">최대주주<br>
+(최다출자자)</TD>
+  <TD width=130 height=40 align="CENTER">e★SUB_LAR |V|선</TD>
+  <TD width=156 height=40 align="CENTER">최대주주 지분율(%)<br>
+(최다출자자 출자비율)</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_LRT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#303' name='303' target='toc'>나. 특별관계자</a></P><P>(1) 특별관계자 개요</P><P>★Table-Group aClass=SPC_NM★</P>
+
+<TABLE border=1 width=1261>
+<COLGROUP>
+  <COL width=28></COL>
+  <COL width=65></COL>
+  <COL width=223></COL>
+  <COL width=208></COL>
+  <COL width=86></COL>
+  <COL width=86></COL>
+  <COL width=160></COL>
+  <COL width=76></COL>
+  <COL width=248></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=28 height=86 align="CENTER">연번</TH>
+  <TH width=65 height=86 align="CENTER">성 명<br>
+(명칭)</TH>
+  <TH width=223 height=86 align="CENTER">구분</TH>
+  <TH width=208 height=86 align="CENTER">보고자와의구체적 관계</TH>
+  <TH width=86 height=86 align="CENTER">생년월일<br>
+또는<br>
+사업자등록<br>
+번호 등</TH>
+  <TH width=86 height=86 align="CENTER">국적</TH>
+  <TH width=160 height=86 align="CENTER">주 &nbsp;소<br>
+(소재지)</TH>
+  <TH width=76 height=86 align="CENTER">직 &nbsp;업<br>
+(사업내용)</TH>
+  <TH width=248 height=86 align="CENTER">발행회사와의 관계</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=28 height=293 align="CENTER">e★SEQ_NO |P|선</TD>
+  <TD width=65 height=293 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD class=tu width=223 height=293 align="CENTER">u★SPC_TP |List|L||선<br>
+개인(국내)|D<br>
+개인(외국)|F<br>
+금융기관|K<br>
+투자회사등|A<br>
+국내법인|I<br>
+외국법인|O<br>
+연기금등 전문투자자|Y<br>
+법령상 조합|W<br>
+민법상 조합|C<br>
+기타단체(국내)|N<br>
+기타단체(외국)|U<br>
+-|-</TD>
+  <TD class=tu width=208 height=293 align="CENTER">u★IFR_RLT |List|L||선<br>
+대표이사|H<br>
+최대주주|I<br>
+임원|J<br>
+주요주주|K<br>
+친인척|F<br>
+계열회사|C<br>
+계열회사 임원|M<br>
+운용펀드|B<br>
+공동보유자|A<br>
+조합원|O<br>
+기타|L<br>
+-|-</TD>
+  <TD width=86 height=293 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=86 height=293 align="CENTER">e★SPC_NT |V|선</TD>
+  <TD width=160 height=293 align="LEFT">e★ADR2 |V|선</TD>
+  <TD width=76 height=293 align="LEFT">e★JOB |V|선</TD>
+  <TD class=tu width=248 height=293>u★FLT_CRP_RLT |List|L||선<br>
+최대주주|10<br>
+주요주주|02<br>
+사실상지배주주|03<br>
+주주|13<br>
+임원(등기)|01<br>
+임원(미등기)|04<br>
+계열회사등|14<br>
+계열회사등 임원|15<br>
+기타|16<br>
+-|-</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">* 주소는 읍ㆍ면ㆍ동까지만 기재</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(2) 특별관계자에 대한 구체적인 사항(법인, 기타단체, 법령상조합, 민법상 조합의 경우 기재)</P><P>★Table-Group aClass=SPE_SUB★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=130></COL>
+  <COL width=156></COL>
+  <COL width=117></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">법적성격</TD>
+  <TD width=421 height=17 colspan="3" align="CENTER">e★SUB_CHA |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자산총액<br>
+(또는 운용자산총액)</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_AST |\|선</TD>
+  <TD width=156 height=40 align="CENTER">부채총액</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_DEB |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자본총액</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_CAP |\|선</TD>
+  <TD width=156 height=40 align="CENTER">자본금</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_EQU |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=63 align="CENTER">대표자<br>
+(대표조합원 또는<br>
+업무집행조합원)</TD>
+  <TD width=421 height=63 colspan="3" align="CENTER">e★SUB_REP |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=421 height=40 colspan="3" align="CENTER">e★SUB_DEC |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">최대주주<br>
+(최다출자자)</TD>
+  <TD width=130 height=40 align="CENTER">e★SUB_LAR |V|선</TD>
+  <TD width=156 height=40 align="CENTER">최대주주 지분율(%)<br>
+(최다출자자 출자비율)</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_LRT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 04-특별관계자의최대주주가법인,기타단체,법령상조합,민법상조합의경우&gt;&gt;</P><P>【특별관계자의 최대주주가 법인, 기타단체, 법령상조합, 민법상 조합의 경우】</P><P>★Table-Group aClass=SPE_LAR_SUB★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=130></COL>
+  <COL width=156></COL>
+  <COL width=117></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">법적성격</TD>
+  <TD width=421 height=17 colspan="3" align="CENTER">e★SUB_CHA |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자산총액<br>
+(또는 운용자산총액)</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_AST |\|선</TD>
+  <TD width=156 height=40 align="CENTER">부채총액</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_DEB |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자본총액</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_CAP |\|선</TD>
+  <TD width=156 height=40 align="CENTER">자본금</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_EQU |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=63 align="CENTER">대표자<br>
+(대표조합원 또는<br>
+업무집행조합원)</TD>
+  <TD width=421 height=63 colspan="3" align="CENTER">e★SUB_REP |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=421 height=40 colspan="3" align="CENTER">e★SUB_DEC |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">최대주주<br>
+(최다출자자)</TD>
+  <TD width=130 height=40 align="CENTER">e★SUB_LAR |V|선</TD>
+  <TD width=156 height=40 align="CENTER">최대주주 지분율(%)<br>
+(최다출자자 출자비율)</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_LRT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#441' name='441' target='toc'>다. 집합투자업자</a></P><P>(보고자 또는 특별관계자가 규정 제3-10조 제2항에 따른 "집합투자기구"인 경우에 한함) <br>
+<br></P><P>(1) 집합투자업자 개요</P><P>★Table-Group aClass=ASST_MNG★</P>
+
+<TABLE border=1 width=660>
+<COLGROUP>
+  <COL width=33></COL>
+  <COL width=71></COL>
+  <COL width=86></COL>
+  <COL width=100></COL>
+  <COL width=59></COL>
+  <COL width=206></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=33 height=40 align="CENTER">연번</TH>
+  <TH width=71 height=40 align="CENTER">명칭</TH>
+  <TH width=86 height=40 align="CENTER">사업자등록<br>
+번호 등</TH>
+  <TH width=100 height=40 align="CENTER">대상 집합<br>
+투자기구</TH>
+  <TH width=59 height=40 align="CENTER">국적</TH>
+  <TH width=206 height=40 align="CENTER">주 &nbsp;소<br>
+(소재지)</TH>
+  <TH width=42 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=33 height=86 align="CENTER">e★SEQ_NO |P|선</TD>
+  <TD width=71 height=86 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=86 height=86 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=100 height=86 align="CENTER">e★TGT_INV |V|선</TD>
+  <TD width=59 height=86 align="CENTER">e★SPC_NT |V|선</TD>
+  <TD width=206 height=86 align="LEFT">e★ADR2 |V|선</TD>
+  <TD width=42 height=86 align="LEFT">e★RMK |V|선</TD>
+</TR>
+<TR>
+  <TD width=33 height=86 align="CENTER">e★SEQ_NO |P|선</TD>
+  <TD width=71 height=86 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=86 height=86 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=100 height=86 align="CENTER">e★TGT_INV |V|선</TD>
+  <TD width=59 height=86 align="CENTER">e★SPC_NT |V|선</TD>
+  <TD width=206 height=86 align="LEFT">e★ADR2 |V|선</TD>
+  <TD width=42 height=86 align="LEFT">e★RMK |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(2) 집합투자업자에 대한 구체적인 사항</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=141 height=17 align="CENTER">법적성격</TD>
+  <TD width=441 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자본금</TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17 align="CENTER">운용자산총액</TD>
+  <TD width=141 height=17></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">대표자</TD>
+  <TD width=441 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=441 height=40 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="CENTER">최대주주<br>
+(법인 대표자)</TD>
+  <TD width=141 height=40></TD>
+  <TD width=141 height=40 align="CENTER">최대주주 지분율</TD>
+  <TD width=141 height=40></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#511' name='511' target='toc'>3. 보유주식등의 수 및 보유비율</a></P><P>★Table-Group aClass=BFR_IFR★</P>
+
+<TABLE border=1 width=820>
+<COLGROUP>
+  <COL width=78></COL>
+  <COL width=118></COL>
+  <COL width=81></COL>
+  <COL width=93></COL>
+  <COL width=93></COL>
+  <COL width=45></COL>
+  <COL width=89></COL>
+  <COL width=53></COL>
+  <COL width=89></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=78 height=70 rowspan="2" align="CENTER"></TH>
+  <TH width=118 height=70 rowspan="2" align="CENTER">보고서<br>
+작성기준일</TH>
+  <TH width=183 height=17 colspan="2" align="CENTER">보고자</TH>
+  <TH width=147 height=17 colspan="2" align="CENTER">주식등</TH>
+  <TH width=151 height=17 colspan="2" align="CENTER">주권</TH>
+  <TH width=89 height=70 rowspan="2" align="CENTER">의결권 있는 발행주식<br>
+총수(주)</TH>
+</TR>
+<TR>
+  <TH width=81 height=40 align="CENTER">본인 성명</TH>
+  <TH width=93 height=40 align="CENTER">특별관계자수</TH>
+  <TH width=93 height=40 align="CENTER">주식등의 수<br>
+(주)</TH>
+  <TH width=45 height=40 align="CENTER">비율<br>
+(%)</TH>
+  <TH width=89 height=40 align="CENTER">주식수<br>
+(주)</TH>
+  <TH width=53 height=40 align="CENTER">비율<br>
+(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=78 height=86 align="CENTER">직전보고서</TD>
+  <TD class=tu width=118 height=86 align="CENTER">u★BFR_RPT_DT |달력|선</TD>
+  <TD width=81 height=86 align="CENTER">e★BFR_IFR |V|선</TD>
+  <TD width=93 height=86 align="RIGHT">e★BFR_RPT_CNT |\|선</TD>
+  <TD width=93 height=86 align="RIGHT">e★BFR_STK_CNT |\|선</TD>
+  <TD width=45 height=86 align="RIGHT">e★BFR_STK_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★BFR_CMT_CNT |\|선</TD>
+  <TD width=53 height=86 align="RIGHT">e★BFR_CMT_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★BFR_STK_CT |\|선</TD>
+</TR>
+<TR>
+  <TD width=78 height=86 align="CENTER">이번보고서</TD>
+  <TD class=tu width=118 height=86 align="CENTER">u★THS_RPT_DT |달력|필</TD>
+  <TD width=81 height=86 align="CENTER">e★THS_IFR |V|필</TD>
+  <TD width=93 height=86 align="RIGHT">e★THS_RPT_CNT |\|선</TD>
+  <TD width=93 height=86 align="RIGHT">e★THS_STK_CNT |\|필</TD>
+  <TD width=45 height=86 align="RIGHT">e★THS_STK_RT |%|필</TD>
+  <TD width=89 height=86 align="RIGHT">e★THS_CMT_CNT |\|선</TD>
+  <TD width=53 height=86 align="RIGHT">e★THS_CMT_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★THS_STK_CT |\|필</TD>
+</TR>
+<TR>
+  <TD width=397 height=86 colspan="4" align="CENTER">증 &nbsp; &nbsp;감</TD>
+  <TD width=93 height=86 align="RIGHT">e★MDF_STK_CNT |\|필</TD>
+  <TD width=45 height=86 align="RIGHT">e★MDF_STK_RT |%|필</TD>
+  <TD width=89 height=86 align="RIGHT">e★MDF_CMT_CNT |\|선</TD>
+  <TD width=53 height=86 align="RIGHT">e★MDF_CMT_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★MDF_STK_CT |\|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#570' name='570' target='toc'>4. 보유목적</a></P><P>★Table-Group aClass=HLD_OBJ_DTL★</P>
+
+<TABLE border=1 width=227>
+<COLGROUP>
+  <COL width=218></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD class=tu width=218 height=109>u★PUR_OWN |List|L||선<br>
+경영권 영향|01<br>
+단순투자|02<br>
+일반투자|03</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 align="LEFT" valign="TOP">e★HLD_OBJ_DTL |O-4|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#587' name='587' target='toc'>5. 변동[변경]사유</a></P><P>★Table-Group aClass=CHN_RSN_DTL★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=97></COL>
+  <COL width=485></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=97 height=17 align="CENTER">변동방법</TD>
+  <TD width=485 height=17 align="LEFT" valign="TOP">e★CHN_HOW |O-4|선</TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">변동사유</TD>
+  <TD width=485 height=17 align="LEFT" valign="TOP">e★CHN_RSN |O-4|선</TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">변경사유</TD>
+  <TD width=485 height=17 align="LEFT" valign="TOP">e★CHN_RSM |O-4|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00636-TOC.htm#607' name='607' target='toc'>제2부 대량보유내역</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#610' name='610' target='toc'>1. 보고자 및 특별관계자별 보유내역</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#612' name='612' target='toc'>가. 주식등의 종류별 보유내역</a></P><P>★Table-Group aClass=CST_CNT1★</P>
+
+<TABLE border=1 width=883>
+<COLGROUP>
+  <COL width=46></COL>
+  <COL width=60></COL>
+  <COL width=93></COL>
+  <COL width=52></COL>
+  <COL width=54></COL>
+  <COL width=59></COL>
+  <COL width=68></COL>
+  <COL width=53></COL>
+  <COL width=64></COL>
+  <COL width=51></COL>
+  <COL width=43></COL>
+  <COL width=29></COL>
+  <COL width=43></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=46 height=169 rowspan="3" align="CENTER">관 계</TH>
+  <TH width=60 height=169 rowspan="3" align="CENTER">성 명<br>
+(명칭)</TH>
+  <TH width=93 height=169 rowspan="3" align="CENTER">생년월일<br>
+또는<br>
+사업자<br>
+등록번호 등</TH>
+  <TH width=648 height=17 colspan="11" align="CENTER">보유주식등의 내역</TH>
+</TR>
+<TR>
+  <TH width=183 height=17 colspan="3" align="CENTER">주 권</TH>
+  <TH width=68 height=139 rowspan="2" align="CENTER">신주<br>
+인수권이<br>
+표시된것</TH>
+  <TH width=53 height=139 rowspan="2" align="CENTER">전환<br>
+사채권</TH>
+  <TH width=64 height=139 rowspan="2" align="CENTER">신주<br>
+인수권부<br>
+사채권</TH>
+  <TH width=51 height=139 rowspan="2" align="CENTER">교환<br>
+사채권</TH>
+  <TH width=43 height=139 rowspan="2" align="CENTER">증권예탁증권</TH>
+  <TH width=29 height=139 rowspan="2" align="CENTER">기타</TH>
+  <TH width=94 height=17 colspan="2" align="CENTER">합 계</TH>
+</TR>
+<TR>
+  <TH width=52 height=109 align="CENTER">의결권<br>
+있는<br>
+주식</TH>
+  <TH width=54 height=109 align="CENTER">의결권<br>
+있는 주식으로<br>
+상환될주식</TH>
+  <TH width=59 height=109 align="CENTER">의결권<br>
+있는 주식으로<br>
+전환될 주식</TH>
+  <TH width=43 height=109 align="CENTER">주수<br>
+(주)</TH>
+  <TH width=42 height=109 align="CENTER">비율<br>
+(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=46 height=109 align="CENTER">보고자</TD>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=68 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=53 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=64 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=46 height=353 rowspan="3" align="CENTER">특별<br>
+관계자</TD>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=68 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=53 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=64 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=68 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=53 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=64 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=68 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=53 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=64 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=217 height=47 colspan="3" rowspan="2" align="CENTER"></TD>
+  <TD width=52 height=47 rowspan="2" align="CENTER">A</TD>
+  <TD width=54 height=17 align="CENTER">a1</TD>
+  <TD width=59 height=17 align="CENTER">a2</TD>
+  <TD width=68 height=17 align="CENTER">B</TD>
+  <TD width=53 height=17 align="CENTER">C</TD>
+  <TD width=64 height=17 align="CENTER">D</TD>
+  <TD width=51 height=17 align="CENTER">E</TD>
+  <TD width=43 height=17 align="CENTER">F</TD>
+  <TD width=29 height=17 align="CENTER">G</TD>
+  <TD width=43 height=47 rowspan="2" align="CENTER"></TD>
+  <TD width=42 height=47 rowspan="2" align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=484 height=17 colspan="8" align="CENTER">H</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>★Table-Group aClass=HLD_RT★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=115></COL>
+  <COL width=154></COL>
+  <COL width=167></COL>
+  <COL width=128></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=115 height=93 rowspan="2" align="CENTER">의결권있는<br>
+발행주식 총수(I)</TH>
+  <TH width=154 height=93 rowspan="2" align="CENTER">보유잠재주식의 수<br>
+(a1+a2+B+C+D+E+F+G=H)</TH>
+  <TH width=304 height=17 colspan="2" align="CENTER">보유비율(%)</TH>
+</TR>
+<TR>
+  <TH width=167 height=63 align="CENTER">주식등의 보유비율<br>
+[A+H / I+H-(E+F+G)※] × 100 </TH>
+  <TH width=128 height=63 align="CENTER">주권의 보유비율<br>
+(A / I) × 100 &nbsp;</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=115 height=40 align="RIGHT" valign="TOP">e★VOT_STK_CNT |\|필</TD>
+  <TD width=154 height=40 align="RIGHT" valign="TOP">e★HLD_STK_CNT |\|선</TD>
+  <TD width=167 height=40 align="RIGHT" valign="TOP">e★HLD_STK_RT |%|선</TD>
+  <TD width=128 height=40 align="RIGHT" valign="TOP">e★HLD_CMT_RT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>※ 교환대상이 주식인 교환사채권, 기초자산이 주식인 증권예탁증권ㆍ파생결합증권 및 자기주식을 교부하는 주식매수선택권 등에 한하여 분모에서 제외하고 보유비율을 산정<br>
+<br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#751' name='751' target='toc'>나. 보유형태별 보유내역</a></P><P>★Table-Group aClass=HLD_STK★</P>
+
+<TABLE border=1 width=754>
+<COLGROUP>
+  <COL width=48></COL>
+  <COL width=47></COL>
+  <COL width=80></COL>
+  <COL width=51></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=60></COL>
+  <COL width=60></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=48 height=86 rowspan="2" align="CENTER">관계</TH>
+  <TH width=47 height=86 rowspan="2" align="CENTER">성명<br>
+(명칭)</TH>
+  <TH width=80 height=86 rowspan="2" align="CENTER">생년월일<br>
+또는<br>
+사업자<br>
+등록번호 등</TH>
+  <TH width=405 height=40 colspan="7" align="CENTER">소유에 준하는 보유(자본시장과 금융투자업에 관한 <br>
+법률 시행령 제142조) 형태</TH>
+  <TH width=129 height=40 colspan="2" align="CENTER">합계</TH>
+</TR>
+<TR>
+  <TH width=51 height=33 align="CENTER">제1호</TH>
+  <TH width=50 height=33 align="CENTER">제2호</TH>
+  <TH width=50 height=33 align="CENTER">제3호</TH>
+  <TH width=50 height=33 align="CENTER">제4호</TH>
+  <TH width=50 height=33 align="CENTER">제5호</TH>
+  <TH width=50 height=33 align="CENTER">제6호</TH>
+  <TH width=50 height=33 align="CENTER">제7호</TH>
+  <TH width=60 height=33 align="CENTER">주수</TH>
+  <TH width=60 height=33 align="CENTER">비율</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=48 height=63 align="CENTER">보고자</TD>
+  <TD width=47 height=63 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=51 height=63 align="RIGHT">e★STK_CNT1 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT2 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT3 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT4 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT5 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT6 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT7 |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_CNT |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=48 height=215 rowspan="3" align="CENTER">특별<br>
+관계자</TD>
+  <TD width=47 height=63 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=51 height=63 align="RIGHT">e★STK_CNT1 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT2 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT3 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT4 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT5 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT6 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT7 |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_CNT |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=47 height=63 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=51 height=63 align="RIGHT">e★STK_CNT1 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT2 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT3 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT4 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT5 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT6 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT7 |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_CNT |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=47 height=63 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=51 height=63 align="RIGHT">e★STK_CNT1 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT2 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT3 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT4 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT5 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT6 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT7 |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_CNT |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_RT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE class=nb width=641>
+<COLGROUP>
+  <COL width=632></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=632 height=339 valign="TOP"><br>
+※ 소유에 준하는 보유(자본시장과 금융투자업에 관한 법률 시행령 제142조)<br>
+<br>
+&nbsp;- 제1호 누구의 명의로든지 자기의 계산으로 주식등을 소유하는 경우<br>
+&nbsp;- 제2호 법률의 규정이나 매매, 그 밖의 계약에 따라 주식등의 인도청구권을 가지는경우<br>
+&nbsp;- 제3호 법률의 규정이나 금전의 신탁계약ㆍ담보계약, 그 밖의 계약에 따라 해당 주식등 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;의 의결권(의결권의 행사를 지시할 수 있는 권한을 포함한다)을 가지는 경우<br>
+&nbsp;- 제4호 법률의 규정이나 금전의 신탁계약ㆍ담보계약ㆍ투자일임계약, 그 밖의 계약에 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 따라 해당 주식등의 취득이나 처분의 권한을 가지는 경우<br>
+&nbsp;- 제5호 주식등의 매매의 일방예약을 하고 해당 매매를 완결할 권리를 취득하는 경우로 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 서 그 권리행사에 의하여 매수인으로서의 지위를 가지는 경우<br>
+&nbsp;- 제6호 주식등을 기초자산으로 하는 법 제5조제1항제2호에 따른 계약상의 권리를 가지 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;는 경우로서 그 권리의 행사에 의하여 매수인으로서의 지위를 가지는 경우<br>
+&nbsp;- 제7호 주식매수선택권을 부여받은 경우로서 그 권리의 행사에 의하여 매수인으로서의<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 지위를 가지는 경우</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 05-민법상조합의조합원출자내역&gt;&gt;</P><P>[조합원 출자 내역]</P><P>★Table-Group aClass=ASS_MBR★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=291 height=17 align="CENTER">특별관계자(조합원) 성명</TH>
+  <TH width=291 height=17 align="CENTER">출자비율(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=291 height=17 align="CENTER">e★ASS_NM |V|필</TD>
+  <TD width=291 height=17 align="RIGHT">e★ASS_RAT |%|필</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 align="CENTER">e★ASS_NM |V|필</TD>
+  <TD width=291 height=17 align="RIGHT">e★ASS_RAT |%|필</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 align="CENTER">e★ASS_NM |V|필</TD>
+  <TD width=291 height=17 align="RIGHT">e★ASS_RAT |%|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#872' name='872' target='toc'>2. 보유주식등에 관한 계약</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#874' name='874' target='toc'>가. 계약 여부</a></P><P>★Table-Group aClass=TRD_RVQ★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">신탁ㆍ담보ㆍ대차ㆍ일임ㆍ장외매매ㆍ공동보유 등 주요계약 체결, 변경 여부</TD>
+</TR>
+<TR>
+  <TD class=tu width=591 height=63 align="CENTER">u★TRD_RVQ_SEL |List|L||필<br>
+있음|Y<br>
+없음|N</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>*주요계약 체결ㆍ변경사실 미보고시 해당 미보고분에 대해 의결권이 제한될 수 있음</P><P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#891' name='891' target='toc'>나. 계약 내용</a></P><P>★Table-Group aClass=TRD_RVL★</P>
+
+<TABLE border=1 width=1263>
+<COLGROUP>
+  <COL width=44></COL>
+  <COL width=70></COL>
+  <COL width=202></COL>
+  <COL width=126></COL>
+  <COL width=321></COL>
+  <COL width=63></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=70></COL>
+  <COL width=50></COL>
+  <COL width=49></COL>
+  <COL width=46></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=44 height=40 align="CENTER">연번</TH>
+  <TH width=70 height=40 align="CENTER">성명<br>
+(명칭)</TH>
+  <TH width=202 height=40 align="CENTER">보고자와의<br>
+관계</TH>
+  <TH width=126 height=40 align="CENTER">생년월일 또는<br>
+사업자등록번호 등</TH>
+  <TH width=321 height=40 align="CENTER">주식등의<br>
+종류</TH>
+  <TH width=63 height=40 align="CENTER">주식등의<br>
+수</TH>
+  <TH width=57 height=40 align="CENTER">계약 <br>
+상대방</TH>
+  <TH width=57 height=40 align="CENTER">계약의<br>
+종류</TH>
+  <TH width=70 height=40 align="CENTER">계약체결<br>
+(변경)일</TH>
+  <TH width=50 height=40 align="CENTER">계약<br>
+기간</TH>
+  <TH width=49 height=40 align="CENTER">비율</TH>
+  <TH width=46 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=44 height=247 align="CENTER">e★SEQ_NO2 |#|선</TD>
+  <TD width=70 height=247 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD class=tu width=202 height=247 align="CENTER">u★IFR_RLT2 |List|L||선<br>
+본인|M<br>
+특수관계인|S<br>
+공동보유자|A<br>
+-|-</TD>
+  <TD width=126 height=247 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD class=tu width=321 height=247 align="CENTER">u★STK_KND |List|L||선<br>
+의결권있는 주식|11<br>
+신주인수권이표시된것|3<br>
+전환사채권|4<br>
+신주인수권부사채권|5<br>
+교환사채권|6<br>
+의결권있는 주식으로 전환될주식|13<br>
+의결권있는 주식으로 상환될주식|12<br>
+증권예탁증권|8<br>
+기타|10<br>
+-|9</TD>
+  <TD width=63 height=247 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=57 height=247 align="CENTER" valign="TOP">e★TRD_RVL |V|선</TD>
+  <TD width=57 height=247 align="CENTER" valign="TOP">e★TRD_KND |V|선</TD>
+  <TD class=tu width=70 height=247 align="CENTER">u★TRD_SIN |달력|선</TD>
+  <TD width=50 height=247 align="CENTER">e★TRD_PRD |V|선</TD>
+  <TD width=49 height=247 align="RIGHT">e★TRD_RT |%|선</TD>
+  <TD width=46 height=247 align="CENTER">e★TRD_RMK |V|선</TD>
+</TR>
+<TR>
+  <TD width=799 height=109 colspan="5" align="CENTER">합계(주식등의 수)</TD>
+  <TD width=63 height=109 align="RIGHT">e★SUM_STK_CNT |\|선</TD>
+  <TD width=261 height=109 colspan="4" align="CENTER">합계(비율)</TD>
+  <TD width=49 height=109 align="RIGHT">e★SUM_TRD_RT |%|선</TD>
+  <TD width=46 height=109 align="CENTER">e★SUM_TRD_RMK |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#957' name='957' target='toc'>다. 주요계약이 담보계약인 경우 추가 기재사항</a></P><P>★Table-Group aClass=SEC_CONT★</P>
+
+<TABLE border=1 width=612>
+<COLGROUP>
+  <COL width=34></COL>
+  <COL width=99></COL>
+  <COL width=94></COL>
+  <COL width=88></COL>
+  <COL width=78></COL>
+  <COL width=86></COL>
+  <COL width=70></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=34 height=40 align="CENTER">연번</TH>
+  <TH width=99 height=40 align="CENTER">주식등의 수</TH>
+  <TH width=94 height=40 align="CENTER">대출금액</TH>
+  <TH width=88 height=40 align="CENTER">채무자</TH>
+  <TH width=78 height=40 align="CENTER">이자율</TH>
+  <TH width=86 height=40 align="CENTER">담보<br>
+유지비율</TH>
+  <TH width=70 height=40 align="CENTER">기타</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=34 height=109 align="CENTER">e★SEQ_NO2 |#|선</TD>
+  <TD width=99 height=109 align="RIGHT">e★SEC_CNT |P|선</TD>
+  <TD width=94 height=109 align="RIGHT">e★SEC_MOY |\|선</TD>
+  <TD width=88 height=109 align="CENTER">e★SEC_DEB |V|선</TD>
+  <TD width=78 height=109 align="RIGHT">e★SEC_INT |%|선</TD>
+  <TD width=86 height=109 align="RIGHT">e★SEC_KEP |%|선</TD>
+  <TD width=70 height=109 align="CENTER">e★SEC_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=34 height=109 align="CENTER">e★SEQ_NO2 |#|선</TD>
+  <TD width=99 height=109 align="RIGHT">e★SEC_CNT |P|선</TD>
+  <TD width=94 height=109 align="RIGHT">e★SEC_MOY |\|선</TD>
+  <TD width=88 height=109 align="CENTER">e★SEC_DEB |V|선</TD>
+  <TD width=78 height=109 align="RIGHT">e★SEC_INT |%|선</TD>
+  <TD width=86 height=109 align="RIGHT">e★SEC_KEP |%|선</TD>
+  <TD width=70 height=109 align="CENTER">e★SEC_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#997' name='997' target='toc'>3. 자기계정 및 고객계정별 보유내역(금융기관에 한함)</a></P><P>★Table-Group aClass=SF_CNS★</P>
+
+<TABLE border=1 width=817>
+<COLGROUP>
+  <COL width=75></COL>
+  <COL width=197></COL>
+  <COL width=98></COL>
+  <COL width=66></COL>
+  <COL width=96></COL>
+  <COL width=61></COL>
+  <COL width=89></COL>
+  <COL width=63></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=75 height=47 rowspan="2" align="CENTER">명칭</TH>
+  <TH width=197 height=47 rowspan="2" align="CENTER">보고자와의<br>
+관계</TH>
+  <TH width=348 height=17 colspan="4" align="CENTER" valign="TOP">계정별 내역</TH>
+  <TH width=161 height=17 colspan="2" align="CENTER" valign="TOP">합 &nbsp;계</TH>
+</TR>
+<TR>
+  <TH width=98 height=17 align="CENTER" valign="TOP">자기계정(주)</TH>
+  <TH width=66 height=17 align="CENTER" valign="TOP">비율(%)</TH>
+  <TH width=96 height=17 align="CENTER" valign="TOP">고객계정(주)</TH>
+  <TH width=61 height=17 align="CENTER" valign="TOP">비율(%)</TH>
+  <TH width=89 height=17 align="CENTER" valign="TOP">계(주)</TH>
+  <TH width=63 height=17 align="CENTER" valign="TOP">비율(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=75 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD class=tu width=197 height=109 align="CENTER">u★IFR_RLT2 |List|L||선<br>
+본인|M<br>
+특수관계인|S<br>
+공동보유자|A<br>
+-|-</TD>
+  <TD width=98 height=109 align="RIGHT">e★SF_CNT |\|선</TD>
+  <TD width=66 height=109 align="RIGHT">e★SF_RT |%|선</TD>
+  <TD width=96 height=109 align="RIGHT">e★CNS_CNT |\|선</TD>
+  <TD width=61 height=109 align="RIGHT">e★CNS_RT |%|선</TD>
+  <TD width=89 height=109 align="RIGHT">e★CNT_SUM |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★RT_SUM |%|선</TD>
+</TR>
+<TR>
+  <TD width=281 height=63 colspan="2" align="CENTER">합 &nbsp;계</TD>
+  <TD width=98 height=63 align="RIGHT">e★SF_CNT_SUM |\|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★SF_RT_SUM |%|선</TD>
+  <TD width=96 height=63 align="RIGHT">e★CNS_CNT_SUM |\|선</TD>
+  <TD width=61 height=63 align="RIGHT">e★CNS_RT_SUM |%|선</TD>
+  <TD width=89 height=63 align="RIGHT">e★ALL_CNT_SUM |\|선</TD>
+  <TD width=63 height=63 align="RIGHT">e★ALL_RT_SUM |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00636-TOC.htm#1053' name='1053' target='toc'>제3부 직전보고일 이후 대량변동 내역</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#1056' name='1056' target='toc'>1. 변동내역 총괄표</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#1058' name='1058' target='toc'>가. 주식등의 변동내역</a></P><P>★Table-Group aClass=CST_CNT2★</P>
+
+<TABLE border=1 width=881>
+<COLGROUP>
+  <COL width=49></COL>
+  <COL width=60></COL>
+  <COL width=93></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=59></COL>
+  <COL width=67></COL>
+  <COL width=51></COL>
+  <COL width=63></COL>
+  <COL width=52></COL>
+  <COL width=39></COL>
+  <COL width=29></COL>
+  <COL width=43></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=49 height=169 rowspan="3" align="CENTER">관 계</TH>
+  <TH width=60 height=169 rowspan="3" align="CENTER">성 명<br>
+(명칭)</TH>
+  <TH width=93 height=169 rowspan="3" align="CENTER">생년월일<br>
+또는<br>
+사업자<br>
+등록번호 등</TH>
+  <TH width=643 height=17 colspan="11" align="CENTER">증감주식등의 내역</TH>
+</TR>
+<TR>
+  <TH width=185 height=17 colspan="3" align="CENTER">주 권</TH>
+  <TH width=67 height=139 rowspan="2" align="CENTER">신주<br>
+인수권이<br>
+표시된것</TH>
+  <TH width=51 height=139 rowspan="2" align="CENTER">전환<br>
+사채권</TH>
+  <TH width=63 height=139 rowspan="2" align="CENTER">신주<br>
+인수권부<br>
+사채권</TH>
+  <TH width=52 height=139 rowspan="2" align="CENTER">교환<br>
+사채권</TH>
+  <TH width=39 height=139 rowspan="2" align="CENTER">증권예탁증권</TH>
+  <TH width=29 height=139 rowspan="2" align="CENTER">기타</TH>
+  <TH width=94 height=17 colspan="2" align="CENTER">합 계</TH>
+</TR>
+<TR>
+  <TH width=54 height=109 align="CENTER">의결권<br>
+있는<br>
+주식</TH>
+  <TH width=54 height=109 align="CENTER">의결권<br>
+있는 주식으로<br>
+상환될주식</TH>
+  <TH width=59 height=109 align="CENTER">의결권<br>
+있는 주식으로<br>
+전환될 주식</TH>
+  <TH width=43 height=109 align="CENTER">주수<br>
+(주)</TH>
+  <TH width=42 height=109 align="CENTER">비율<br>
+(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=49 height=109 align="CENTER">보고자</TD>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=67 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=39 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=49 height=353 rowspan="3" align="CENTER">특별<br>
+관계자</TD>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=67 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=39 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=67 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=39 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=67 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=39 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#1159' name='1159' target='toc'>2. 세부변동내역</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#1161' name='1161' target='toc'>가. 주식등의 세부변동내역</a></P><P>★Table-Group aClass=HLD_MTH★</P>
+
+<TABLE class=nb width=865>
+<COLGROUP>
+  <COL width=856></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=856 height=17 align="RIGHT" valign="BOTTOM">(단위 : 주, 원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=1345>
+<COLGROUP>
+  <COL width=77></COL>
+  <COL width=126></COL>
+  <COL width=81></COL>
+  <COL width=319></COL>
+  <COL width=306></COL>
+  <COL width=72></COL>
+  <COL width=72></COL>
+  <COL width=54></COL>
+  <COL width=43></COL>
+  <COL width=41></COL>
+  <COL width=55></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=77 height=47 rowspan="2" align="CENTER">성명<br>
+(명칭)</TH>
+  <TH width=126 height=47 rowspan="2" align="CENTER">생년월일 또는<br>
+사업자등록번호 등</TH>
+  <TH width=81 height=47 rowspan="2" align="CENTER">변동일*</TH>
+  <TH width=319 height=47 rowspan="2" align="CENTER">취득/처분<br>
+방법</TH>
+  <TH width=306 height=47 rowspan="2" align="CENTER">주식등의<br>
+종류</TH>
+  <TH width=216 height=17 colspan="3" align="CENTER">변동 내역</TH>
+  <TH width=93 height=47 colspan="2" rowspan="2" align="CENTER">취득/처분<br>
+단가**</TH>
+  <TH width=55 height=47 rowspan="2" align="CENTER">비 고</TH>
+</TR>
+<TR>
+  <TH width=72 height=17 align="CENTER">변동전</TH>
+  <TH width=72 height=17 align="CENTER">증감</TH>
+  <TH width=54 height=17 align="CENTER">변동후</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=77 height=1880 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=126 height=1880 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD class=tu width=81 height=1880 align="CENTER">u★MDF_DT |달력|선</TD>
+  <TD class=tu width=319 height=1880 align="CENTER">u★HLD_MTH |List|L||선<br>
+장내매수(+)|01<br>
+장내매도(-)|02<br>
+장외매수(+)|11<br>
+장외매도(-)|12<br>
+CB인수(+)|13<br>
+BW인수(+)|14<br>
+유상신주취득(+)|21<br>
+무상신주취득(+)|23<br>
+제3자배정유상증자(+)|24<br>
+주식배당(+)|25<br>
+실권주인수(+)|27<br>
+신규등록(+)|30<br>
+신규상장(유상취득)(+)|102<br>
+신규상장(무상취득)(+)|103<br>
+신규선임(유상취득)(+)|104<br>
+신규선임(무상취득)(+)|105<br>
+신규주요주주(+)|32<br>
+신규보고(+)|33<br>
+임원퇴임(-)|97<br>
+증여(-)|34<br>
+수증(+)|35<br>
+수증취소(-)|36<br>
+증여취소(+)|37<br>
+피상속(-)|38<br>
+상속(+)|39<br>
+상속포기(-)|40<br>
+전환사채의권리행사(+)|41<br>
+전환등(-)|42<br>
+신주인수권사채의권리행사(+)|43<br>
+전환권등소멸(-)|44<br>
+신주인수권증권의권리행사(+)|45<br>
+합병(-)|46<br>
+합병(+)|47<br>
+공개매수청약(-)|48<br>
+공개매수(+)|49<br>
+매출(-)|50<br>
+대물변제수령(+)|51<br>
+대물변제(-)|52<br>
+교환(+)|53<br>
+교환(-)|54<br>
+차입(+)|55<br>
+대여(-)|56<br>
+교환사채의권리행사(+)|57<br>
+주식매수선택권부여(+)|66<br>
+주식매수선택권부여취소(-)|67<br>
+주식매수선택권행사(+)|68<br>
+주식매수선택권행사(-)|69<br>
+자사주상여금(+)|59<br>
+계열사편입(+)|60<br>
+콜옵션취득(+)|106<br>
+콜옵션권리행사에따른CB취득(+)|107<br>
+콜옵션권리행사에따른주식취득(+)|61<br>
+콜옵션권리행사배정에따른주식처분(-)|62<br>
+풋옵션권리행사에따른주식처분(-)|63<br>
+풋옵션권리행사배정에따른주식취득(+)|64<br>
+계약기간만료|70<br>
+계약중도해지|71<br>
+특별관계해소(-)|75<br>
+자사주펀드가입(+)|77<br>
+자사주펀드해지(-)|78<br>
+신고대량매매(+)|79<br>
+신고대량매매(-)|80<br>
+시간외매매(+)|81<br>
+시간외매매(-)|82<br>
+우선주무배당(+)|83<br>
+우선주배당(+)|84<br>
+주식매수청구권 행사(+)|85<br>
+주식매수청구권 행사(-)|86<br>
+실명전환(+)|87<br>
+실명전환(-)|88<br>
+주식병합|89<br>
+주식분할|90<br>
+담보주식처분권보유|91<br>
+주식소각|92<br>
+출자전환|93<br>
+자본감소|95<br>
+회사분할|96<br>
+행사가액조정|101<br>
+기타(-)|98<br>
+기타(+)|99<br>
+-|-</TD>
+  <TD class=tu width=306 height=1880 align="CENTER">u★STK_KND |List|L||선<br>
+의결권있는 주식|11<br>
+신주인수권이표시된것|3<br>
+전환사채권|4<br>
+신주인수권부사채권|5<br>
+교환사채권|6<br>
+의결권있는 주식으로 전환될주식|13<br>
+의결권있는 주식으로 상환될주식|12<br>
+증권예탁증권|8<br>
+기타|10<br>
+-|9</TD>
+  <TD width=72 height=1880 align="RIGHT">e★BFR_MDF_CNT |\|선</TD>
+  <TD width=72 height=1880 align="RIGHT">e★MDF_SDK_CNT |\|선</TD>
+  <TD width=54 height=1880 align="RIGHT">e★AFR_MDF_CNT |\|선</TD>
+  <TD width=43 height=1880 align="RIGHT">e★HLD_UNT_PRJ |P|선</TD>
+  <TD width=41 height=1880 align="RIGHT">e★HLD_UNT_PRG |V|선</TD>
+  <TD width=55 height=1880 align="CENTER">e★RMK |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>* &nbsp; 증권시장에서 주식등을 매매한 경우에는 그 계약체결일</P><P>** 주식 외의 증권의 경우 해당 증권의 행사(전환ㆍ교환)가액 또는 해당 증권의 권리행사로 취득ㆍ처분하는 주식의 매매단가를 의미하며, ( &nbsp; )의 금액은 해당 증권의 매매단가를 의미</P><P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#1226' name='1226' target='toc'>3. 취득에 필요한 자금등의 조성내역</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#1228' name='1228' target='toc'>(1) 취득자금등의 개요</a></P><P>★Table-Group aClass=PRH_CPT3★</P>
+
+<TABLE class=nb width=666>
+<COLGROUP>
+  <COL width=657></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=657 height=17 align="RIGHT" valign="BOTTOM">(단위 : 원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=666>
+<COLGROUP>
+  <COL width=95></COL>
+  <COL width=138></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=94></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=95 height=40 align="CENTER">성명</TH>
+  <TH width=138 height=40 align="CENTER">생년월일 또는<br>
+사업자등록번호등</TH>
+  <TH width=95 height=40 align="CENTER">자기자금(H)</TH>
+  <TH width=95 height=40 align="CENTER">차입금(I)</TH>
+  <TH width=95 height=40 align="CENTER">기타(J)</TH>
+  <TH width=94 height=40 align="CENTER">계(H+I+J)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=95 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=138 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_CPT |P|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_LN |P|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_AMT |P|선</TD>
+  <TD width=94 height=40 align="RIGHT">e★PRH_SUM |\|선</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=138 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_CPT |P|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_LN |P|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_AMT |P|선</TD>
+  <TD width=94 height=40 align="RIGHT">e★PRH_SUM |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#1270' name='1270' target='toc'>(2) 취득자금등의 조성경위 및 원천</a></P><P>&lt;&lt;단위서식 : 01_자기자금의 경우&gt;&gt;</P>
+<P class=section-4>ㅇ 자기자금의 경우</P><P>★Table-Group aClass=CSE_HA★</P>
+
+<TABLE border=1 width=623>
+<COLGROUP>
+  <COL width=109></COL>
+  <COL width=125></COL>
+  <COL width=362></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=109 height=40 align="CENTER">성명</TH>
+  <TH width=125 height=40 align="CENTER">생년월일 또는<br>
+사업자등록번호등</TH>
+  <TH width=362 height=40 align="CENTER">취득자금등의 조성경위 및 원천</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=109 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=125 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=362 height=40 align="CENTER">e★HA_DTL |V|필</TD>
+</TR>
+<TR>
+  <TD width=109 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=125 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=362 height=40 align="CENTER">e★HA_DTL |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 02_차입금의 경우&gt;&gt;</P>
+<P class=section-4>ㅇ 차입금의 경우</P><P>★Table-Group aClass=CSE_IA★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=147></COL>
+  <COL width=98></COL>
+  <COL width=158></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">차입자</TD>
+  <TD width=147 height=17 align="LEFT" valign="TOP">e★IA_MAN |V|필</TD>
+  <TD width=98 height=17 align="CENTER">차입처</TD>
+  <TD width=158 height=17 align="LEFT" valign="TOP">e★IA_PLA |V|필</TD>
+</TR>
+<TR>
+  <TD width=161 height=17 align="CENTER">차입금액</TD>
+  <TD width=147 height=17 align="LEFT" valign="TOP">e★IA_MOY |\|필</TD>
+  <TD width=98 height=17 align="CENTER">차입기간</TD>
+  <TD width=158 height=17 align="LEFT" valign="TOP">e★IA_PER |V|필</TD>
+</TR>
+<TR>
+  <TD width=161 height=17 align="CENTER">주식등의 담보제공 여부</TD>
+  <TD width=147 height=17 align="LEFT" valign="TOP">e★IA_SEC |V|필</TD>
+  <TD width=98 height=17 align="CENTER">담보 내역</TD>
+  <TD width=158 height=17 align="LEFT" valign="TOP">e★IA_SEB |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 03_기타의 경우&gt;&gt;</P>
+<P class=section-4>ㅇ 기타의 경우</P><P>★Table-Group aClass=CSE_JA★</P>
+
+<TABLE border=1 width=623>
+<COLGROUP>
+  <COL width=109></COL>
+  <COL width=125></COL>
+  <COL width=362></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=109 height=40 align="CENTER">성명</TH>
+  <TH width=125 height=40 align="CENTER">생년월일 또는<br>
+사업자등록번호등</TH>
+  <TH width=362 height=40 align="CENTER">취득자금등의 조성경위 및 원천</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=109 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=125 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=362 height=40 align="CENTER">e★JA_DTL |V|필</TD>
+</TR>
+<TR>
+  <TD width=109 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=125 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=362 height=40 align="CENTER">e★JA_DTL |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 02_본문(발행회사가복수의결권주식을발행한경우)&gt;&gt;</P>
+<P class=section-1><a class='toc' href='00636-TOC.htm#1362' name='1362' target='toc'>제1부 보고의 개요</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#1365' name='1365' target='toc'>1. 발행회사에 관한 사항</a></P><P>★Table-Group aClass=CRP_NM★</P>
+
+<TABLE border=1 width=678>
+<COLGROUP>
+  <COL width=95></COL>
+  <COL width=242></COL>
+  <COL width=207></COL>
+  <COL width=98></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=95 height=40 align="CENTER">회사명</TD>
+  <TD width=242 height=40 align="LEFT">e★CRP_NM |V|필</TD>
+  <TD width=207 height=40 align="CENTER">회사코드</TD>
+  <TD width=98 height=40 align="CENTER">e★CRP_CD |F-6|필</TD>
+</TR>
+<TR>
+  <TD width=95 height=93 rowspan="2" align="CENTER">법인구분</TD>
+  <TD class=tu width=242 height=93 rowspan="2" align="CENTER">u★CRP_DST |List|L||선<br>
+유가증권상장법인|1<br>
+코스닥상장법인|2<br>
+코넥스상장법인|3</TD>
+  <TD width=207 height=40 align="CENTER">의결권있는 발행주식 총수(주)</TD>
+  <TD width=98 height=40 align="CENTER">e★FLT_STK_CNT |\|필</TD>
+</TR>
+<TR>
+  <TD width=207 height=40 align="CENTER">의결권의 총수</TD>
+  <TD width=98 height=40 align="CENTER">e★FLT_VR_CNT |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#1390' name='1390' target='toc'>2. 대량보유자에 관한 사항</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#1392' name='1392' target='toc'>가. 보고자</a></P><P>(1) 보고자 개요</P><P>★Table-Group aClass=RPT_DST1★</P>
+
+<TABLE border=1 width=910>
+<COLGROUP>
+  <COL width=169></COL>
+  <COL width=80></COL>
+  <COL width=213></COL>
+  <COL width=102></COL>
+  <COL width=24></COL>
+  <COL width=268></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=169 height=109 align="CENTER">보고구분</TD>
+  <TD class=tu width=302 height=109 colspan="2" align="CENTER">u★RPT_DST1 |List|L||선<br>
+신규|1<br>
+변동|2<br>
+변경|3<br>
+변동ㆍ변경|4</TD>
+  <TD class=tu width=412 height=109 colspan="3" align="CENTER">u★RPT_DST2 |List|L||선<br>
+개별|1<br>
+연명|2</TD>
+</TR>
+<TR>
+  <TD width=169 height=270 align="CENTER">보고자 구분</TD>
+  <TD class=tu width=302 height=270 colspan="2" align="CENTER">u★CRP_TP |List|L||선<br>
+개인(국내)|D<br>
+개인(외국)|F<br>
+금융기관|K<br>
+투자회사등|A<br>
+국내법인|I<br>
+외국법인|O<br>
+연기금등 전문투자자|Y<br>
+법령상 조합|W<br>
+민법상 조합|C<br>
+기타단체(국내)|N<br>
+기타단체(외국)|U</TD>
+  <TD width=135 height=270 colspan="2" align="CENTER">국 적</TD>
+  <TD width=268 height=270 align="CENTER">e★IFR_NT |V|필</TD>
+</TR>
+<TR>
+  <TD width=480 height=40 colspan="3" align="CENTER">보고자 구분 기재 근거<br>
+(법령상 조합 또는 기타단체로 기재한 경우만 기재)</TD>
+  <TD width=412 height=40 colspan="3" align="CENTER">e★IFR_BASE |V|선</TD>
+</TR>
+<TR>
+  <TD width=169 height=17 align="CENTER">성명(명칭)</TD>
+  <TD width=80 height=17 align="CENTER">한글</TD>
+  <TD width=213 height=17 align="CENTER">e★IFR_NM |V|필</TD>
+  <TD width=102 height=17 align="CENTER">한자(영문)</TD>
+  <TD width=301 height=17 colspan="2" align="CENTER">e★IFR_NM_HJ |V|선</TD>
+</TR>
+<TR>
+  <TD width=169 height=40 align="CENTER">주소(본점소재지)<br>
+[읍ㆍ면ㆍ동까지만 기재]</TD>
+  <TD width=302 height=40 colspan="2" align="CENTER">e★IFR_ADR2 |V|필</TD>
+  <TD width=135 height=40 colspan="2" align="CENTER">생년월일 또는<br>
+사업자등록번호 등</TD>
+  <TD width=268 height=40 align="CENTER">e★IFR_ID |V|필</TD>
+</TR>
+<TR>
+  <TD width=169 height=247 align="CENTER">직업(사업내용)</TD>
+  <TD width=302 height=247 colspan="2" align="CENTER">e★IFR_JOB |V|선</TD>
+  <TD width=135 height=247 colspan="2" align="CENTER">발행회사와의 관계</TD>
+  <TD class=tu width=268 height=247 align="CENTER">u★FLT_CRP_RLT |List|L||선<br>
+최대주주|10<br>
+주요주주|02<br>
+사실상지배주주|03<br>
+주주|13<br>
+임원(등기)|01<br>
+임원(미등기)|04<br>
+계열회사등|14<br>
+계열회사등 임원|15<br>
+기타|16<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=169 height=107 rowspan="4" align="CENTER">업무상 연락처<br>
+및 담당자</TD>
+  <TD width=80 height=17 align="CENTER">소속회사</TD>
+  <TD width=213 height=17 align="CENTER">e★RSP_MAN_ADR2</TD>
+  <TD width=135 height=17 colspan="2" align="CENTER">부서</TD>
+  <TD width=268 height=17 align="CENTER">e★RSP_MAN_DPT |V|선</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">직위</TD>
+  <TD width=213 height=17 align="CENTER">e★RSP_MAN_PST |V|선</TD>
+  <TD width=135 height=17 colspan="2" align="CENTER">전화번호</TD>
+  <TD width=268 height=17 align="CENTER">e★RSP_MAN_PHN2 |V|필</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">성명</TD>
+  <TD width=213 height=17 align="CENTER">e★RSP_MAN |V|필</TD>
+  <TD width=135 height=17 colspan="2" align="CENTER">팩스번호</TD>
+  <TD width=268 height=17 align="CENTER">e★RSP_MAN_FAX |V|필</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">이메일 주소</TD>
+  <TD width=634 height=17 colspan="4" align="CENTER">e★RSP_MAN_EML |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(2) 보고자에 대한 구체적인 사항(법인, 기타단체, 법령상조합, 민법상 조합의 경우 기재)</P><P>★Table-Group aClass=REP_SUB★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=130></COL>
+  <COL width=156></COL>
+  <COL width=117></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">법적성격</TD>
+  <TD width=421 height=17 colspan="3" align="CENTER">e★SUB_CHA |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자산총액<br>
+(또는 운용자산총액)</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_AST |\|선</TD>
+  <TD width=156 height=40 align="CENTER">부채총액</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_DEB |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자본총액</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_CAP |\|선</TD>
+  <TD width=156 height=40 align="CENTER">자본금</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_EQU |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=63 align="CENTER">대표자<br>
+(대표조합원 또는<br>
+업무집행조합원)</TD>
+  <TD width=421 height=63 colspan="3" align="CENTER">e★SUB_REP |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=421 height=40 colspan="3" align="CENTER">e★SUB_DEC |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">최대주주<br>
+(최다출자자)</TD>
+  <TD width=130 height=40 align="CENTER">e★SUB_LAR |V|선</TD>
+  <TD width=156 height=40 align="CENTER">최대주주 지분율(%)<br>
+(최다출자자 출자비율)</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_LRT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : 04-보고자의최대주주가법인,기타단체,법령상조합,민법상조합의경우&gt;&gt;</P><P>【보고자의 최대주주가 법인, 기타단체, 법령상조합, 민법상 조합의 경우】</P><P>★Table-Group aClass=REP_LAR_SUB★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=130></COL>
+  <COL width=156></COL>
+  <COL width=117></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">법적성격</TD>
+  <TD width=421 height=17 colspan="3" align="CENTER">e★SUB_CHA |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자산총액<br>
+(또는 운용자산총액)</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_AST |\|선</TD>
+  <TD width=156 height=40 align="CENTER">부채총액</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_DEB |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자본총액</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_CAP |\|선</TD>
+  <TD width=156 height=40 align="CENTER">자본금</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_EQU |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=63 align="CENTER">대표자<br>
+(대표조합원 또는<br>
+업무집행조합원)</TD>
+  <TD width=421 height=63 colspan="3" align="CENTER">e★SUB_REP |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=421 height=40 colspan="3" align="CENTER">e★SUB_DEC |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">최대주주<br>
+(최다출자자)</TD>
+  <TD width=130 height=40 align="CENTER">e★SUB_LAR |V|선</TD>
+  <TD width=156 height=40 align="CENTER">최대주주 지분율(%)<br>
+(최다출자자 출자비율)</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_LRT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#1536' name='1536' target='toc'>나. 특별관계자</a></P><P>(1) 특별관계자 개요</P><P>★Table-Group aClass=SPC_NM★</P>
+
+<TABLE border=1 width=1301>
+<COLGROUP>
+  <COL width=28></COL>
+  <COL width=65></COL>
+  <COL width=226></COL>
+  <COL width=238></COL>
+  <COL width=86></COL>
+  <COL width=86></COL>
+  <COL width=160></COL>
+  <COL width=76></COL>
+  <COL width=255></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=28 height=86 align="CENTER">연번</TH>
+  <TH width=65 height=86 align="CENTER">성 명<br>
+(명칭)</TH>
+  <TH width=226 height=86 align="CENTER">구분</TH>
+  <TH width=238 height=86 align="CENTER">보고자와의구체적 관계</TH>
+  <TH width=86 height=86 align="CENTER">생년월일<br>
+또는<br>
+사업자등록<br>
+번호 등</TH>
+  <TH width=86 height=86 align="CENTER">국적</TH>
+  <TH width=160 height=86 align="CENTER">주 &nbsp;소<br>
+(소재지)</TH>
+  <TH width=76 height=86 align="CENTER">직 &nbsp;업<br>
+(사업내용)</TH>
+  <TH width=255 height=86 align="CENTER">발행회사와의 관계</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=28 height=293 align="CENTER">e★SEQ_NO |P|선</TD>
+  <TD width=65 height=293 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD class=tu width=226 height=293 align="CENTER">u★SPC_TP |List|L||선<br>
+개인(국내)|D<br>
+개인(외국)|F<br>
+금융기관|K<br>
+투자회사등|A<br>
+국내법인|I<br>
+외국법인|O<br>
+연기금등 전문투자자|Y<br>
+법령상 조합|W<br>
+민법상 조합|C<br>
+기타단체(국내)|N<br>
+기타단체(외국)|U<br>
+-|-</TD>
+  <TD class=tu width=238 height=293 align="CENTER">u★IFR_RLT |List|L||선<br>
+대표이사|H<br>
+최대주주|I<br>
+임원|J<br>
+주요주주|K<br>
+친인척|F<br>
+계열회사|C<br>
+계열회사 임원|M<br>
+운용펀드|B<br>
+공동보유자|A<br>
+조합원|O<br>
+기타|L<br>
+-|-</TD>
+  <TD width=86 height=293 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=86 height=293 align="CENTER">e★SPC_NT |V|선</TD>
+  <TD width=160 height=293 align="LEFT">e★ADR2 |V|선</TD>
+  <TD width=76 height=293 align="LEFT">e★JOB |V|선</TD>
+  <TD class=tu width=255 height=293>u★FLT_CRP_RLT |List|L||선<br>
+최대주주|10<br>
+주요주주|02<br>
+사실상지배주주|03<br>
+주주|13<br>
+임원(등기)|01<br>
+임원(미등기)|04<br>
+계열회사등|14<br>
+계열회사등 임원|15<br>
+기타|16<br>
+-|-</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">* 주소는 읍ㆍ면ㆍ동까지만 기재</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(2) 특별관계자에 대한 구체적인 사항(법인, 기타단체, 법령상조합, 민법상 조합의 경우 기재)</P><P>★Table-Group aClass=SPE_SUB★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=130></COL>
+  <COL width=156></COL>
+  <COL width=117></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">법적성격</TD>
+  <TD width=421 height=17 colspan="3" align="CENTER">e★SUB_CHA |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자산총액<br>
+(또는 운용자산총액)</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_AST |\|선</TD>
+  <TD width=156 height=40 align="CENTER">부채총액</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_DEB |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자본총액</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_CAP |\|선</TD>
+  <TD width=156 height=40 align="CENTER">자본금</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_EQU |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=63 align="CENTER">대표자<br>
+(대표조합원 또는<br>
+업무집행조합원)</TD>
+  <TD width=421 height=63 colspan="3" align="CENTER">e★SUB_REP |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=421 height=40 colspan="3" align="CENTER">e★SUB_DEC |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">최대주주<br>
+(최다출자자)</TD>
+  <TD width=130 height=40 align="CENTER">e★SUB_LAR |V|선</TD>
+  <TD width=156 height=40 align="CENTER">최대주주 지분율(%)<br>
+(최다출자자 출자비율)</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_LRT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 04-특별관계자의최대주주가법인,기타단체,법령상조합,민법상조합의경우&gt;&gt;</P><P>【특별관계자의 최대주주가 법인, 기타단체, 법령상조합, 민법상 조합의 경우】</P><P>★Table-Group aClass=SPE_LAR_SUB★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=130></COL>
+  <COL width=156></COL>
+  <COL width=117></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">법적성격</TD>
+  <TD width=421 height=17 colspan="3" align="CENTER">e★SUB_CHA |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자산총액<br>
+(또는 운용자산총액)</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_AST |\|선</TD>
+  <TD width=156 height=40 align="CENTER">부채총액</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_DEB |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">자본총액</TD>
+  <TD width=130 height=40 align="RIGHT">e★SUB_CAP |\|선</TD>
+  <TD width=156 height=40 align="CENTER">자본금</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_EQU |\|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=63 align="CENTER">대표자<br>
+(대표조합원 또는<br>
+업무집행조합원)</TD>
+  <TD width=421 height=63 colspan="3" align="CENTER">e★SUB_REP |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=421 height=40 colspan="3" align="CENTER">e★SUB_DEC |V|선</TD>
+</TR>
+<TR>
+  <TD width=161 height=40 align="CENTER">최대주주<br>
+(최다출자자)</TD>
+  <TD width=130 height=40 align="CENTER">e★SUB_LAR |V|선</TD>
+  <TD width=156 height=40 align="CENTER">최대주주 지분율(%)<br>
+(최다출자자 출자비율)</TD>
+  <TD width=117 height=40 align="RIGHT">e★SUB_LRT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#1674' name='1674' target='toc'>다. 집합투자업자</a></P><P>(보고자 또는 특별관계자가 규정 제3-10조 제2항에 따른 "집합투자기구"인 경우에 한함) <br>
+<br></P><P>(1) 집합투자업자 개요</P><P>★Table-Group aClass=ASST_MNG★</P>
+
+<TABLE border=1 width=660>
+<COLGROUP>
+  <COL width=33></COL>
+  <COL width=71></COL>
+  <COL width=86></COL>
+  <COL width=100></COL>
+  <COL width=59></COL>
+  <COL width=206></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=33 height=40 align="CENTER">연번</TH>
+  <TH width=71 height=40 align="CENTER">명칭</TH>
+  <TH width=86 height=40 align="CENTER">사업자등록<br>
+번호 등</TH>
+  <TH width=100 height=40 align="CENTER">대상 집합<br>
+투자기구</TH>
+  <TH width=59 height=40 align="CENTER">국적</TH>
+  <TH width=206 height=40 align="CENTER">주 &nbsp;소<br>
+(소재지)</TH>
+  <TH width=42 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=33 height=86 align="CENTER">e★SEQ_NO |P|선</TD>
+  <TD width=71 height=86 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=86 height=86 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=100 height=86 align="CENTER">e★TGT_INV |V|선</TD>
+  <TD width=59 height=86 align="CENTER">e★SPC_NT |V|선</TD>
+  <TD width=206 height=86 align="LEFT">e★ADR2 |V|선</TD>
+  <TD width=42 height=86 align="LEFT">e★RMK |V|선</TD>
+</TR>
+<TR>
+  <TD width=33 height=86 align="CENTER">e★SEQ_NO |P|선</TD>
+  <TD width=71 height=86 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=86 height=86 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=100 height=86 align="CENTER">e★TGT_INV |V|선</TD>
+  <TD width=59 height=86 align="CENTER">e★SPC_NT |V|선</TD>
+  <TD width=206 height=86 align="LEFT">e★ADR2 |V|선</TD>
+  <TD width=42 height=86 align="LEFT">e★RMK |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(2) 집합투자업자에 대한 구체적인 사항</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=141 height=17 align="CENTER">법적성격</TD>
+  <TD width=441 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">자본금</TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17 align="CENTER">운용자산총액</TD>
+  <TD width=141 height=17></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">대표자</TD>
+  <TD width=441 height=17 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="CENTER">의사결정기구<br>
+(의사결정권자)</TD>
+  <TD width=441 height=40 colspan="3"></TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="CENTER">최대주주<br>
+(법인 대표자)</TD>
+  <TD width=141 height=40></TD>
+  <TD width=141 height=40 align="CENTER">최대주주 지분율</TD>
+  <TD width=141 height=40></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#1744' name='1744' target='toc'>3. 보유주식등의 수 및 보유비율</a></P><P>★Table-Group aClass=BFR_IFR★</P>
+
+<TABLE border=1 width=820>
+<COLGROUP>
+  <COL width=78></COL>
+  <COL width=118></COL>
+  <COL width=81></COL>
+  <COL width=93></COL>
+  <COL width=93></COL>
+  <COL width=45></COL>
+  <COL width=89></COL>
+  <COL width=53></COL>
+  <COL width=89></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=78 height=70 rowspan="2" align="CENTER"></TH>
+  <TH width=118 height=70 rowspan="2" align="CENTER">보고서<br>
+작성기준일</TH>
+  <TH width=183 height=17 colspan="2" align="CENTER">보고자</TH>
+  <TH width=147 height=17 colspan="2" align="CENTER">주식등</TH>
+  <TH width=151 height=17 colspan="2" align="CENTER">주권</TH>
+  <TH width=89 height=70 rowspan="2" align="CENTER">의결권 있는 발행주식<br>
+총수(주)</TH>
+</TR>
+<TR>
+  <TH width=81 height=40 align="CENTER">본인 성명</TH>
+  <TH width=93 height=40 align="CENTER">특별관계자수</TH>
+  <TH width=93 height=40 align="CENTER">주식등의 수<br>
+(주)</TH>
+  <TH width=45 height=40 align="CENTER">비율<br>
+(%)</TH>
+  <TH width=89 height=40 align="CENTER">주식수<br>
+(주)</TH>
+  <TH width=53 height=40 align="CENTER">비율<br>
+(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=78 height=86 align="CENTER">직전보고서</TD>
+  <TD class=tu width=118 height=86 align="CENTER">u★BFR_RPT_DT |달력|선</TD>
+  <TD width=81 height=86 align="CENTER">e★BFR_IFR |V|선</TD>
+  <TD width=93 height=86 align="RIGHT">e★BFR_RPT_CNT |\|선</TD>
+  <TD width=93 height=86 align="RIGHT">e★BFR_STK_CNT |\|선</TD>
+  <TD width=45 height=86 align="RIGHT">e★BFR_STK_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★BFR_CMT_CNT |\|선</TD>
+  <TD width=53 height=86 align="RIGHT">e★BFR_CMT_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★BFR_STK_CT |\|선</TD>
+</TR>
+<TR>
+  <TD width=78 height=86 align="CENTER">이번보고서</TD>
+  <TD class=tu width=118 height=86 align="CENTER">u★THS_RPT_DT |달력|필</TD>
+  <TD width=81 height=86 align="CENTER">e★THS_IFR |V|필</TD>
+  <TD width=93 height=86 align="RIGHT">e★THS_RPT_CNT |\|선</TD>
+  <TD width=93 height=86 align="RIGHT">e★THS_STK_CNT |\|필</TD>
+  <TD width=45 height=86 align="RIGHT">e★THS_STK_RT |%|필</TD>
+  <TD width=89 height=86 align="RIGHT">e★THS_CMT_CNT |\|선</TD>
+  <TD width=53 height=86 align="RIGHT">e★THS_CMT_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★THS_STK_CT |\|필</TD>
+</TR>
+<TR>
+  <TD width=397 height=86 colspan="4" align="CENTER">증 &nbsp; &nbsp;감</TD>
+  <TD width=93 height=86 align="RIGHT">e★MDF_STK_CNT |\|필</TD>
+  <TD width=45 height=86 align="RIGHT">e★MDF_STK_RT |%|필</TD>
+  <TD width=89 height=86 align="RIGHT">e★MDF_CMT_CNT |\|선</TD>
+  <TD width=53 height=86 align="RIGHT">e★MDF_CMT_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★MDF_STK_CT |\|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>[의결권 관련]</P><P>★Table-Group aClass=BFR_IFR_MVR★</P>
+
+<TABLE border=1 width=820>
+<COLGROUP>
+  <COL width=78></COL>
+  <COL width=118></COL>
+  <COL width=81></COL>
+  <COL width=93></COL>
+  <COL width=93></COL>
+  <COL width=45></COL>
+  <COL width=89></COL>
+  <COL width=53></COL>
+  <COL width=89></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=78 height=93 rowspan="2" align="CENTER"></TH>
+  <TH width=118 height=93 rowspan="2" align="CENTER">보고서<br>
+작성기준일</TH>
+  <TH width=183 height=40 colspan="2" align="CENTER">보고자</TH>
+  <TH width=147 height=40 colspan="2" align="CENTER">주식등</TH>
+  <TH width=151 height=40 colspan="2" align="CENTER">의결권 있는<br>
+주식</TH>
+  <TH width=89 height=93 rowspan="2" align="CENTER">의결권의<br>
+총수</TH>
+</TR>
+<TR>
+  <TH width=81 height=40 align="CENTER">본인 성명</TH>
+  <TH width=93 height=40 align="CENTER">특별관계자수</TH>
+  <TH width=93 height=40 align="CENTER">의결권 수<br>
+(주)</TH>
+  <TH width=45 height=40 align="CENTER">비율<br>
+(%)</TH>
+  <TH width=89 height=40 align="CENTER">의결권 수<br>
+(주)</TH>
+  <TH width=53 height=40 align="CENTER">비율<br>
+(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=78 height=86 align="CENTER">직전보고서</TD>
+  <TD class=tu width=118 height=86 align="CENTER">u★BFR_RPT_DT |달력|선</TD>
+  <TD width=81 height=86 align="CENTER">e★BFR_IFR |V|선</TD>
+  <TD width=93 height=86 align="RIGHT">e★BFR_RPT_CNT |\|선</TD>
+  <TD width=93 height=86 align="RIGHT">e★BFR_VR_CNT |\|선</TD>
+  <TD width=45 height=86 align="RIGHT">e★BFR_VR_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★BFR_CVR_CNT |\|선</TD>
+  <TD width=53 height=86 align="RIGHT">e★BFR_CVR_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★BFR_VR_CT |\|선</TD>
+</TR>
+<TR>
+  <TD width=78 height=86 align="CENTER">이번보고서</TD>
+  <TD class=tu width=118 height=86 align="CENTER">u★THS_RPT_DT |달력|필</TD>
+  <TD width=81 height=86 align="CENTER">e★THS_IFR |V|필</TD>
+  <TD width=93 height=86 align="RIGHT">e★THS_RPT_CNT |\|선</TD>
+  <TD width=93 height=86 align="RIGHT">e★THS_VR_CNT |\|선</TD>
+  <TD width=45 height=86 align="RIGHT">e★THS_VR_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★THS_CVR_CNT |\|선</TD>
+  <TD width=53 height=86 align="RIGHT">e★THS_CVR_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★THS_VR_CT |\|선</TD>
+</TR>
+<TR>
+  <TD width=397 height=86 colspan="4" align="CENTER">증 &nbsp; &nbsp;감</TD>
+  <TD width=93 height=86 align="RIGHT">e★MDF_VR_CNT |\|선</TD>
+  <TD width=45 height=86 align="RIGHT">e★MDF_VR_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★MDF_CVR_CNT |\|선</TD>
+  <TD width=53 height=86 align="RIGHT">e★MDF_CVR_RT |%|선</TD>
+  <TD width=89 height=86 align="RIGHT">e★MDF_VR_CT |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#1860' name='1860' target='toc'>4. 보유목적</a></P><P>★Table-Group aClass=HLD_OBJ_DTL★</P>
+
+<TABLE border=1 width=246>
+<COLGROUP>
+  <COL width=237></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD class=tu width=237 height=109>u★PUR_OWN |List|L||선<br>
+경영권 영향|01<br>
+단순투자|02<br>
+일반투자|03</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 align="LEFT" valign="TOP">e★HLD_OBJ_DTL |O-4|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#1877' name='1877' target='toc'>5. 변동[변경]사유</a></P><P>★Table-Group aClass=CHN_RSN_DTL★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=97></COL>
+  <COL width=485></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=97 height=17 align="CENTER">변동방법</TD>
+  <TD width=485 height=17 align="LEFT" valign="TOP">e★CHN_HOW |O-4|선</TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">변동사유</TD>
+  <TD width=485 height=17 align="LEFT" valign="TOP">e★CHN_RSN |O-4|선</TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">변경사유</TD>
+  <TD width=485 height=17 align="LEFT" valign="TOP">e★CHN_RSM |O-4|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00636-TOC.htm#1897' name='1897' target='toc'>제2부 대량보유내역</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#1900' name='1900' target='toc'>1. 보고자 및 특별관계자별 보유내역</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#1902' name='1902' target='toc'>가. 주식등의 종류별 보유내역</a></P><P>★Table-Group aClass=CST_CNT1★</P>
+
+<TABLE border=1 width=883>
+<COLGROUP>
+  <COL width=46></COL>
+  <COL width=60></COL>
+  <COL width=93></COL>
+  <COL width=52></COL>
+  <COL width=54></COL>
+  <COL width=59></COL>
+  <COL width=68></COL>
+  <COL width=53></COL>
+  <COL width=64></COL>
+  <COL width=51></COL>
+  <COL width=43></COL>
+  <COL width=29></COL>
+  <COL width=43></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=46 height=169 rowspan="3" align="CENTER">관 계</TH>
+  <TH width=60 height=169 rowspan="3" align="CENTER">성 명<br>
+(명칭)</TH>
+  <TH width=93 height=169 rowspan="3" align="CENTER">생년월일<br>
+또는<br>
+사업자<br>
+등록번호 등</TH>
+  <TH width=648 height=17 colspan="11" align="CENTER">보유주식등의 내역</TH>
+</TR>
+<TR>
+  <TH width=183 height=17 colspan="3" align="CENTER">주 권</TH>
+  <TH width=68 height=139 rowspan="2" align="CENTER">신주<br>
+인수권이<br>
+표시된것</TH>
+  <TH width=53 height=139 rowspan="2" align="CENTER">전환<br>
+사채권</TH>
+  <TH width=64 height=139 rowspan="2" align="CENTER">신주<br>
+인수권부<br>
+사채권</TH>
+  <TH width=51 height=139 rowspan="2" align="CENTER">교환<br>
+사채권</TH>
+  <TH width=43 height=139 rowspan="2" align="CENTER">증권예탁증권</TH>
+  <TH width=29 height=139 rowspan="2" align="CENTER">기타</TH>
+  <TH width=94 height=17 colspan="2" align="CENTER">합 계</TH>
+</TR>
+<TR>
+  <TH width=52 height=109 align="CENTER">의결권<br>
+있는<br>
+주식</TH>
+  <TH width=54 height=109 align="CENTER">의결권<br>
+있는 주식으로<br>
+상환될주식</TH>
+  <TH width=59 height=109 align="CENTER">의결권<br>
+있는 주식으로<br>
+전환될 주식</TH>
+  <TH width=43 height=109 align="CENTER">주수<br>
+(주)</TH>
+  <TH width=42 height=109 align="CENTER">비율<br>
+(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=46 height=109 align="CENTER">보고자</TD>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=68 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=53 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=64 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=46 height=353 rowspan="3" align="CENTER">특별<br>
+관계자</TD>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=68 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=53 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=64 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=68 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=53 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=64 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=68 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=53 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=64 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=217 height=47 colspan="3" rowspan="2" align="CENTER"></TD>
+  <TD width=52 height=47 rowspan="2" align="CENTER">A</TD>
+  <TD width=54 height=17 align="CENTER">a1</TD>
+  <TD width=59 height=17 align="CENTER">a2</TD>
+  <TD width=68 height=17 align="CENTER">B</TD>
+  <TD width=53 height=17 align="CENTER">C</TD>
+  <TD width=64 height=17 align="CENTER">D</TD>
+  <TD width=51 height=17 align="CENTER">E</TD>
+  <TD width=43 height=17 align="CENTER">F</TD>
+  <TD width=29 height=17 align="CENTER">G</TD>
+  <TD width=43 height=47 rowspan="2" align="CENTER"></TD>
+  <TD width=42 height=47 rowspan="2" align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=484 height=17 colspan="8" align="CENTER">H</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>★Table-Group aClass=HLD_RT★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=115></COL>
+  <COL width=154></COL>
+  <COL width=167></COL>
+  <COL width=128></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=115 height=93 rowspan="2" align="CENTER">의결권있는<br>
+발행주식 총수(I)</TH>
+  <TH width=154 height=93 rowspan="2" align="CENTER">보유잠재주식의 수<br>
+(a1+a2+B+C+D+E+F+G=H)</TH>
+  <TH width=304 height=17 colspan="2" align="CENTER">보유비율(%)</TH>
+</TR>
+<TR>
+  <TH width=167 height=63 align="CENTER">주식등의 보유비율<br>
+[A+H / I+H-(E+F+G)※] × 100 </TH>
+  <TH width=128 height=63 align="CENTER">주권의 보유비율<br>
+(A / I) × 100 &nbsp;</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=115 height=40 align="RIGHT" valign="TOP">e★VOT_STK_CNT |\|필</TD>
+  <TD width=154 height=40 align="RIGHT" valign="TOP">e★HLD_STK_CNT |\|선</TD>
+  <TD width=167 height=40 align="RIGHT" valign="TOP">e★HLD_STK_RT |%|선</TD>
+  <TD width=128 height=40 align="RIGHT" valign="TOP">e★HLD_CMT_RT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>※ 교환대상이 주식인 교환사채권, 기초자산이 주식인 증권예탁증권ㆍ파생결합증권 및 자기주식을 교부하는 주식매수선택권 등에 한하여 분모에서 제외하고 보유비율을 산정<br>
+<br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2041' name='2041' target='toc'>가-1. 주식등의 종류별 의결권내역</a></P><P>★Table-Group aClass=MVR_CST_CNT1★</P>
+
+<TABLE border=1 width=850>
+<COLGROUP>
+  <COL width=46></COL>
+  <COL width=60></COL>
+  <COL width=93></COL>
+  <COL width=88></COL>
+  <COL width=88></COL>
+  <COL width=68></COL>
+  <COL width=107></COL>
+  <COL width=82></COL>
+  <COL width=64></COL>
+  <COL width=64></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=46 height=100 rowspan="3" align="CENTER">관 계</TH>
+  <TH width=60 height=100 rowspan="3" align="CENTER">성 명<br>
+(명칭)</TH>
+  <TH width=93 height=100 rowspan="3" align="CENTER">생년월일<br>
+또는<br>
+사업자<br>
+등록번호 등</TH>
+  <TH width=615 height=17 colspan="7" align="CENTER">보유주식의 의결권 수</TH>
+</TR>
+<TR>
+  <TH width=378 height=17 colspan="4" align="CENTER">의결권 있는 주식</TH>
+  <TH width=82 height=17 align="CENTER">잠재주식</TH>
+  <TH width=137 height=17 colspan="2" align="CENTER">합 계</TH>
+</TR>
+<TR>
+  <TH width=88 height=40 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=88 height=40 align="CENTER">1주당<br>
+의결권 수</TH>
+  <TH width=68 height=40 align="CENTER">의결권<br>
+수</TH>
+  <TH width=107 height=40 align="CENTER">복수의결권의<br>
+존속기간</TH>
+  <TH width=82 height=40 align="CENTER">잠재주식의<br>
+의결권 수</TH>
+  <TH width=64 height=40 align="CENTER">의결권<br>
+수</TH>
+  <TH width=64 height=40 align="CENTER">비율<br>
+(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=46 height=139 rowspan="2" align="CENTER">보고자</TD>
+  <TD width=60 height=139 rowspan="2" align="CENTER">e★VRM_NM |V|선</TD>
+  <TD width=93 height=139 rowspan="2" align="CENTER">e★VRM_ID |V|선</TD>
+  <TD width=88 height=63 align="RIGHT">e★VRM_STK_KND |V|선</TD>
+  <TD width=88 height=63 align="RIGHT">e★VRM_CNTP |\|선</TD>
+  <TD width=68 height=63 align="RIGHT">e★VRM_CNTT |\|선</TD>
+  <TD width=107 height=63 align="RIGHT">e★VRM_PRD |V|선</TD>
+  <TD width=82 height=139 rowspan="2" align="RIGHT">e★VRM_RS_CNT |\|선</TD>
+  <TD width=64 height=139 rowspan="2" align="RIGHT">e★VRM_VR_TOT |\|선</TD>
+  <TD width=64 height=139 rowspan="2" align="RIGHT">e★VRM_RT_TOT |%|선</TD>
+</TR>
+<TR>
+  <TD width=88 height=63 align="RIGHT">e★VRM_STK_KND |V|선</TD>
+  <TD width=88 height=63 align="RIGHT">e★VRM_CNTP |\|선</TD>
+  <TD width=68 height=63 align="RIGHT">e★VRM_CNTT |\|선</TD>
+  <TD width=107 height=63 align="RIGHT">e★VRM_PRD |V|선</TD>
+</TR>
+<TR>
+  <TD width=46 height=291 rowspan="4" align="CENTER">특별<br>
+관계자</TD>
+  <TD width=60 height=139 rowspan="2" align="CENTER">e★VRS_NM |V|선</TD>
+  <TD width=93 height=139 rowspan="2" align="CENTER">e★VRS_ID |V|선</TD>
+  <TD width=88 height=63 align="RIGHT">e★VRS_STK_KND |V|선</TD>
+  <TD width=88 height=63 align="RIGHT">e★VRS_CNTP |\|선</TD>
+  <TD width=68 height=63 align="RIGHT">e★VRS_CNTT |\|선</TD>
+  <TD width=107 height=63 align="RIGHT">e★VRS_PRD |V|선</TD>
+  <TD width=82 height=139 rowspan="2" align="RIGHT">e★VRS_RS_CNT |\|선</TD>
+  <TD width=64 height=139 rowspan="2" align="RIGHT">e★VRS_VR_TOT |\|선</TD>
+  <TD width=64 height=139 rowspan="2" align="RIGHT">e★VRS_RT_TOT |%|선</TD>
+</TR>
+<TR>
+  <TD width=88 height=63 align="RIGHT">e★VRS_STK_KND |V|선</TD>
+  <TD width=88 height=63 align="RIGHT">e★VRS_CNTP |\|선</TD>
+  <TD width=68 height=63 align="RIGHT">e★VRS_CNTT |\|선</TD>
+  <TD width=107 height=63 align="RIGHT">e★VRS_PRD |V|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=139 rowspan="2" align="CENTER">e★VRS_NM |V|선</TD>
+  <TD width=93 height=139 rowspan="2" align="CENTER">e★VRS_ID |V|선</TD>
+  <TD width=88 height=63 align="RIGHT">e★VRS_STK_KND |V|선</TD>
+  <TD width=88 height=63 align="RIGHT">e★VRS_CNTP |\|선</TD>
+  <TD width=68 height=63 align="RIGHT">e★VRS_CNTT |\|선</TD>
+  <TD width=107 height=63 align="RIGHT">e★VRS_PRD |V|선</TD>
+  <TD width=82 height=139 rowspan="2" align="RIGHT">e★VRS_RS_CNT |\|선</TD>
+  <TD width=64 height=139 rowspan="2" align="RIGHT">e★VRS_VR_TOT |\|선</TD>
+  <TD width=64 height=139 rowspan="2" align="RIGHT">e★VRS_RT_TOT |%|선</TD>
+</TR>
+<TR>
+  <TD width=88 height=63 align="RIGHT">e★VRS_STK_KND |V|선</TD>
+  <TD width=88 height=63 align="RIGHT">e★VRS_CNTP |\|선</TD>
+  <TD width=68 height=63 align="RIGHT">e★VRS_CNTT |\|선</TD>
+  <TD width=107 height=63 align="RIGHT">e★VRS_PRD |V|선</TD>
+</TR>
+<TR>
+  <TD width=411 height=17 colspan="5" align="CENTER">합계</TD>
+  <TD width=68 height=17 align="CENTER">J</TD>
+  <TD width=107 height=17 align="CENTER"></TD>
+  <TD width=82 height=17 align="CENTER">H</TD>
+  <TD width=137 height=17 colspan="2" align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>★Table-Group aClass=MUL_HLD_RT★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=115></COL>
+  <COL width=154></COL>
+  <COL width=167></COL>
+  <COL width=128></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=115 height=93 rowspan="2" align="CENTER">의결권<br>
+총수(K)</TH>
+  <TH width=154 height=93 rowspan="2" align="CENTER">보유잠재주식의<br>
+의결권 수<br>
+(a1+a2+B+C+D+E+F+G=H)</TH>
+  <TH width=304 height=17 colspan="2" align="CENTER">보유비율(%)</TH>
+</TR>
+<TR>
+  <TH width=167 height=63 align="CENTER">의결권의 보유비율<br>
+[J+H / K+H-(E+F+G)※] × 100 </TH>
+  <TH width=128 height=63 align="CENTER">주권의결권의 보유비율<br>
+(J / K) × 100 &nbsp;</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=115 height=40 align="RIGHT" valign="TOP">e★MVOT_VR_CNT |\|필</TD>
+  <TD width=154 height=40 align="RIGHT" valign="TOP">e★MHLD_VR_CNT |\|선</TD>
+  <TD width=167 height=40 align="RIGHT" valign="TOP">e★MHLD_VR_RT |%|선</TD>
+  <TD width=128 height=40 align="RIGHT" valign="TOP">e★MHLD_CVR_RT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>※ 교환대상이 주식인 교환사채권, 기초자산이 주식인 증권예탁증권ㆍ파생결합증권 및 자기주식을 교부하는 주식매수선택권 등에 한하여 분모에서 제외하고 보유비율을 산정<br>
+<br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2153' name='2153' target='toc'>나. 보유형태별 보유내역</a></P><P>★Table-Group aClass=HLD_STK★</P>
+
+<TABLE border=1 width=754>
+<COLGROUP>
+  <COL width=48></COL>
+  <COL width=47></COL>
+  <COL width=80></COL>
+  <COL width=51></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=60></COL>
+  <COL width=60></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=48 height=86 rowspan="2" align="CENTER">관계</TH>
+  <TH width=47 height=86 rowspan="2" align="CENTER">성명<br>
+(명칭)</TH>
+  <TH width=80 height=86 rowspan="2" align="CENTER">생년월일<br>
+또는<br>
+사업자<br>
+등록번호 등</TH>
+  <TH width=405 height=40 colspan="7" align="CENTER">소유에 준하는 보유(자본시장과 금융투자업에 관한 <br>
+법률 시행령 제142조) 형태</TH>
+  <TH width=129 height=40 colspan="2" align="CENTER">합계</TH>
+</TR>
+<TR>
+  <TH width=51 height=33 align="CENTER">제1호</TH>
+  <TH width=50 height=33 align="CENTER">제2호</TH>
+  <TH width=50 height=33 align="CENTER">제3호</TH>
+  <TH width=50 height=33 align="CENTER">제4호</TH>
+  <TH width=50 height=33 align="CENTER">제5호</TH>
+  <TH width=50 height=33 align="CENTER">제6호</TH>
+  <TH width=50 height=33 align="CENTER">제7호</TH>
+  <TH width=60 height=33 align="CENTER">주수</TH>
+  <TH width=60 height=33 align="CENTER">비율</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=48 height=63 align="CENTER">보고자</TD>
+  <TD width=47 height=63 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=51 height=63 align="RIGHT">e★STK_CNT1 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT2 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT3 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT4 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT5 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT6 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT7 |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_CNT |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=48 height=215 rowspan="3" align="CENTER">특별<br>
+관계자</TD>
+  <TD width=47 height=63 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=51 height=63 align="RIGHT">e★STK_CNT1 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT2 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT3 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT4 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT5 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT6 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT7 |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_CNT |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=47 height=63 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=51 height=63 align="RIGHT">e★STK_CNT1 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT2 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT3 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT4 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT5 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT6 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT7 |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_CNT |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=47 height=63 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=51 height=63 align="RIGHT">e★STK_CNT1 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT2 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT3 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT4 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT5 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT6 |\|선</TD>
+  <TD width=50 height=63 align="RIGHT">e★STK_CNT7 |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_CNT |\|선</TD>
+  <TD width=60 height=63 align="RIGHT">e★HLD_TOT_RT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>[의결권 관련]</P><P>★Table-Group aClass=HLD_MVR★</P>
+
+<TABLE border=1 width=753>
+<COLGROUP>
+  <COL width=48></COL>
+  <COL width=92></COL>
+  <COL width=58></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=59></COL>
+  <COL width=55></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=48 height=93 rowspan="2" align="CENTER">관계</TH>
+  <TH width=92 height=93 rowspan="2" align="CENTER">성명<br>
+(명칭)</TH>
+  <TH width=454 height=40 colspan="7" align="CENTER">소유에 준하는 보유(자본시장과 금융투자업에 관한 <br>
+법률 시행령 제142조) 형태별 의결권 수</TH>
+  <TH width=123 height=40 colspan="2" align="CENTER">합계</TH>
+</TR>
+<TR>
+  <TH width=58 height=40 align="CENTER">제1호</TH>
+  <TH width=57 height=40 align="CENTER">제2호</TH>
+  <TH width=57 height=40 align="CENTER">제3호</TH>
+  <TH width=57 height=40 align="CENTER">제4호</TH>
+  <TH width=57 height=40 align="CENTER">제5호</TH>
+  <TH width=57 height=40 align="CENTER">제6호</TH>
+  <TH width=57 height=40 align="CENTER">제7호</TH>
+  <TH width=59 height=40 align="CENTER">의결권수</TH>
+  <TH width=55 height=40 align="CENTER">비율</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=48 height=86 align="CENTER">보고자</TD>
+  <TD width=92 height=86 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=58 height=86 align="RIGHT">e★VR_CNT1 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT2 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT3 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT4 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT5 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT6 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT7 |\|선</TD>
+  <TD width=59 height=86 align="RIGHT">e★HLD_TOT_MVR |\|선</TD>
+  <TD width=55 height=86 align="RIGHT">e★HLD_TOT_MRT |%|선</TD>
+</TR>
+<TR>
+  <TD width=48 height=284 rowspan="3" align="CENTER">특별<br>
+관계자</TD>
+  <TD width=92 height=86 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=58 height=86 align="RIGHT">e★VR_CNT1 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT2 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT3 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT4 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT5 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT6 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT7 |\|선</TD>
+  <TD width=59 height=86 align="RIGHT">e★HLD_TOT_MVR |\|선</TD>
+  <TD width=55 height=86 align="RIGHT">e★HLD_TOT_MRT |%|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=86 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=58 height=86 align="RIGHT">e★VR_CNT1 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT2 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT3 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT4 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT5 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT6 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT7 |\|선</TD>
+  <TD width=59 height=86 align="RIGHT">e★HLD_TOT_MVR |\|선</TD>
+  <TD width=55 height=86 align="RIGHT">e★HLD_TOT_MRT |%|선</TD>
+</TR>
+<TR>
+  <TD width=92 height=86 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=58 height=86 align="RIGHT">e★VR_CNT1 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT2 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT3 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT4 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT5 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT6 |\|선</TD>
+  <TD width=57 height=86 align="RIGHT">e★VR_CNT7 |\|선</TD>
+  <TD width=59 height=86 align="RIGHT">e★HLD_TOT_MVR |\|선</TD>
+  <TD width=55 height=86 align="RIGHT">e★HLD_TOT_MRT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE class=nb width=640>
+<COLGROUP>
+  <COL width=631></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=631 height=339 valign="TOP"><br>
+※ 소유에 준하는 보유(자본시장과 금융투자업에 관한 법률 시행령 제142조)<br>
+<br>
+&nbsp;- 제1호 누구의 명의로든지 자기의 계산으로 주식등을 소유하는 경우<br>
+&nbsp;- 제2호 법률의 규정이나 매매, 그 밖의 계약에 따라 주식등의 인도청구권을 가지는경우<br>
+&nbsp;- 제3호 법률의 규정이나 금전의 신탁계약ㆍ담보계약, 그 밖의 계약에 따라 해당 주식등 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;의 의결권(의결권의 행사를 지시할 수 있는 권한을 포함한다)을 가지는 경우<br>
+&nbsp;- 제4호 법률의 규정이나 금전의 신탁계약ㆍ담보계약ㆍ투자일임계약, 그 밖의 계약에 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 따라 해당 주식등의 취득이나 처분의 권한을 가지는 경우<br>
+&nbsp;- 제5호 주식등의 매매의 일방예약을 하고 해당 매매를 완결할 권리를 취득하는 경우로 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 서 그 권리행사에 의하여 매수인으로서의 지위를 가지는 경우<br>
+&nbsp;- 제6호 주식등을 기초자산으로 하는 법 제5조제1항제2호에 따른 계약상의 권리를 가지 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;는 경우로서 그 권리의 행사에 의하여 매수인으로서의 지위를 가지는 경우<br>
+&nbsp;- 제7호 주식매수선택권을 부여받은 경우로서 그 권리의 행사에 의하여 매수인으로서의<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 지위를 가지는 경우</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 05-민법상조합의조합원출자내역&gt;&gt;</P><P>[조합원 출자 내역]</P><P>★Table-Group aClass=ASS_MBR★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=291 height=17 align="CENTER">특별관계자(조합원) 성명</TH>
+  <TH width=291 height=17 align="CENTER">출자비율(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=291 height=17 align="CENTER">e★ASS_NM |V|필</TD>
+  <TD width=291 height=17 align="RIGHT">e★ASS_RAT |%|필</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 align="CENTER">e★ASS_NM |V|필</TD>
+  <TD width=291 height=17 align="RIGHT">e★ASS_RAT |%|필</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 align="CENTER">e★ASS_NM |V|필</TD>
+  <TD width=291 height=17 align="RIGHT">e★ASS_RAT |%|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#2353' name='2353' target='toc'>2. 보유주식등에 관한 계약</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2355' name='2355' target='toc'>가. 계약 여부</a></P><P>★Table-Group aClass=TRD_RVQ★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">신탁ㆍ담보ㆍ대차ㆍ일임ㆍ장외매매ㆍ공동보유 등 주요계약 체결, 변경 여부</TD>
+</TR>
+<TR>
+  <TD class=tu width=591 height=63 align="CENTER">u★TRD_RVQ_SEL |List|L||필<br>
+있음|Y<br>
+없음|N</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>*주요계약 체결ㆍ변경사실 미보고시 해당 미보고분에 대해 의결권이 제한될 수 있음</P><P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2372' name='2372' target='toc'>나. 계약 내용</a></P><P>★Table-Group aClass=TRD_RVL★</P>
+
+<TABLE border=1 width=1297>
+<COLGROUP>
+  <COL width=44></COL>
+  <COL width=70></COL>
+  <COL width=215></COL>
+  <COL width=126></COL>
+  <COL width=342></COL>
+  <COL width=63></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=70></COL>
+  <COL width=50></COL>
+  <COL width=49></COL>
+  <COL width=46></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=44 height=40 align="CENTER">연번</TH>
+  <TH width=70 height=40 align="CENTER">성명<br>
+(명칭)</TH>
+  <TH width=215 height=40 align="CENTER">보고자와의<br>
+관계</TH>
+  <TH width=126 height=40 align="CENTER">생년월일 또는<br>
+사업자등록번호 등</TH>
+  <TH width=342 height=40 align="CENTER">주식등의<br>
+종류</TH>
+  <TH width=63 height=40 align="CENTER">주식등의<br>
+수</TH>
+  <TH width=57 height=40 align="CENTER">계약 <br>
+상대방</TH>
+  <TH width=57 height=40 align="CENTER">계약의<br>
+종류</TH>
+  <TH width=70 height=40 align="CENTER">계약체결<br>
+(변경)일</TH>
+  <TH width=50 height=40 align="CENTER">계약<br>
+기간</TH>
+  <TH width=49 height=40 align="CENTER">비율</TH>
+  <TH width=46 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=44 height=247 align="CENTER">e★SEQ_NO2 |#|선</TD>
+  <TD width=70 height=247 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD class=tu width=215 height=247 align="CENTER">u★IFR_RLT2 |List|L||선<br>
+본인|M<br>
+특수관계인|S<br>
+공동보유자|A<br>
+-|-</TD>
+  <TD width=126 height=247 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD class=tu width=342 height=247 align="CENTER">u★STK_KND |List|L||선<br>
+의결권있는 주식|11<br>
+신주인수권이표시된것|3<br>
+전환사채권|4<br>
+신주인수권부사채권|5<br>
+교환사채권|6<br>
+의결권있는 주식으로 전환될주식|13<br>
+의결권있는 주식으로 상환될주식|12<br>
+증권예탁증권|8<br>
+기타|10<br>
+-|9</TD>
+  <TD width=63 height=247 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=57 height=247 align="CENTER" valign="TOP">e★TRD_RVL |V|선</TD>
+  <TD width=57 height=247 align="CENTER" valign="TOP">e★TRD_KND |V|선</TD>
+  <TD class=tu width=70 height=247 align="CENTER">u★TRD_SIN |달력|선</TD>
+  <TD width=50 height=247 align="CENTER">e★TRD_PRD |V|선</TD>
+  <TD width=49 height=247 align="RIGHT">e★TRD_RT |%|선</TD>
+  <TD width=46 height=247 align="CENTER">e★TRD_RMK |V|선</TD>
+</TR>
+<TR>
+  <TD width=833 height=109 colspan="5" align="CENTER">합계(주식등의 수)</TD>
+  <TD width=63 height=109 align="RIGHT">e★SUM_STK_CNT |\|선</TD>
+  <TD width=261 height=109 colspan="4" align="CENTER">합계(비율)</TD>
+  <TD width=49 height=109 align="RIGHT">e★SUM_TRD_RT |%|선</TD>
+  <TD width=46 height=109 align="CENTER">e★SUM_TRD_RMK |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>[의결권 관련]</P><P>★Table-Group aClass=TRD_RVL_MVR★</P>
+
+<TABLE border=1 width=1280>
+<COLGROUP>
+  <COL width=44></COL>
+  <COL width=70></COL>
+  <COL width=219></COL>
+  <COL width=126></COL>
+  <COL width=321></COL>
+  <COL width=63></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=70></COL>
+  <COL width=50></COL>
+  <COL width=49></COL>
+  <COL width=46></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=44 height=40 align="CENTER">연번</TH>
+  <TH width=70 height=40 align="CENTER">성명<br>
+(명칭)</TH>
+  <TH width=219 height=40 align="CENTER">보고자와의<br>
+관계</TH>
+  <TH width=126 height=40 align="CENTER">생년월일 또는<br>
+사업자등록번호 등</TH>
+  <TH width=321 height=40 align="CENTER">주식등의<br>
+종류</TH>
+  <TH width=63 height=40 align="CENTER">의결권<br>
+수</TH>
+  <TH width=57 height=40 align="CENTER">계약 <br>
+상대방</TH>
+  <TH width=57 height=40 align="CENTER">계약의<br>
+종류</TH>
+  <TH width=70 height=40 align="CENTER">계약체결<br>
+(변경)일</TH>
+  <TH width=50 height=40 align="CENTER">계약<br>
+기간</TH>
+  <TH width=49 height=40 align="CENTER">의결권<br>
+비율</TH>
+  <TH width=46 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=44 height=247 align="CENTER">e★SEQ_NO2 |#|선</TD>
+  <TD width=70 height=247 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD class=tu width=219 height=247 align="CENTER">u★IFR_RLT2 |List|L||선<br>
+본인|M<br>
+특수관계인|S<br>
+공동보유자|A<br>
+-|-</TD>
+  <TD width=126 height=247 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD class=tu width=321 height=247 align="CENTER">u★STK_KND |List|L||선<br>
+의결권있는 주식|11<br>
+신주인수권이표시된것|3<br>
+전환사채권|4<br>
+신주인수권부사채권|5<br>
+교환사채권|6<br>
+의결권있는 주식으로 전환될주식|13<br>
+의결권있는 주식으로 상환될주식|12<br>
+증권예탁증권|8<br>
+기타|10<br>
+-|9</TD>
+  <TD width=63 height=247 align="RIGHT">e★VR_CNT |\|선</TD>
+  <TD width=57 height=247 align="CENTER" valign="TOP">e★TRD_RVL |V|선</TD>
+  <TD width=57 height=247 align="CENTER" valign="TOP">e★TRD_KND |V|선</TD>
+  <TD class=tu width=70 height=247 align="CENTER">u★TRD_SIN |달력|선</TD>
+  <TD width=50 height=247 align="CENTER">e★TRD_PRD |V|선</TD>
+  <TD width=49 height=247 align="RIGHT">e★TRD_RT |%|선</TD>
+  <TD width=46 height=247 align="CENTER">e★TRD_RMK |V|선</TD>
+</TR>
+<TR>
+  <TD width=816 height=109 colspan="5" align="CENTER">합계(주식등의 수)</TD>
+  <TD width=63 height=109 align="RIGHT">e★SUM_VR_CNT |\|선</TD>
+  <TD width=261 height=109 colspan="4" align="CENTER">합계(비율)</TD>
+  <TD width=49 height=109 align="RIGHT">e★SUM_TRD_VRT |%|선</TD>
+  <TD width=46 height=109 align="CENTER">e★SUM_TRD_VRMK |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2502' name='2502' target='toc'>다. 주요계약이 담보계약인 경우 추가 기재사항</a></P><P>★Table-Group aClass=SEC_CONT★</P>
+
+<TABLE border=1 width=612>
+<COLGROUP>
+  <COL width=34></COL>
+  <COL width=73></COL>
+  <COL width=73></COL>
+  <COL width=72></COL>
+  <COL width=72></COL>
+  <COL width=72></COL>
+  <COL width=72></COL>
+  <COL width=72></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=34 height=40 align="CENTER">연번</TH>
+  <TH width=73 height=40 align="CENTER">주식등의 수</TH>
+  <TH width=73 height=40 align="CENTER">의결권 수</TH>
+  <TH width=72 height=40 align="CENTER">대출금액</TH>
+  <TH width=72 height=40 align="CENTER">채무자</TH>
+  <TH width=72 height=40 align="CENTER">이자율</TH>
+  <TH width=72 height=40 align="CENTER">담보<br>
+유지비율</TH>
+  <TH width=72 height=40 align="CENTER">기타</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=34 height=109 align="CENTER">e★SEQ_NO2 |#|선</TD>
+  <TD width=73 height=109 align="RIGHT">e★SEC_CNT |P|선</TD>
+  <TD width=73 height=109 align="RIGHT">e★SEC_VR_CNT |P|선</TD>
+  <TD width=72 height=109 align="RIGHT">e★SEC_MOY |\|선</TD>
+  <TD width=72 height=109 align="CENTER">e★SEC_DEB |V|선</TD>
+  <TD width=72 height=109 align="RIGHT">e★SEC_INT |%|선</TD>
+  <TD width=72 height=109 align="RIGHT">e★SEC_KEP |%|선</TD>
+  <TD width=72 height=109 align="CENTER">e★SEC_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=34 height=109 align="CENTER">e★SEQ_NO2 |#|선</TD>
+  <TD width=73 height=109 align="RIGHT">e★SEC_CNT |P|선</TD>
+  <TD width=73 height=109 align="RIGHT">e★SEC_VR_CNT |P|선</TD>
+  <TD width=72 height=109 align="RIGHT">e★SEC_MOY |\|선</TD>
+  <TD width=72 height=109 align="CENTER">e★SEC_DEB |V|선</TD>
+  <TD width=72 height=109 align="RIGHT">e★SEC_INT |%|선</TD>
+  <TD width=72 height=109 align="RIGHT">e★SEC_KEP |%|선</TD>
+  <TD width=72 height=109 align="CENTER">e★SEC_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#2546' name='2546' target='toc'>3. 자기계정 및 고객계정별 보유내역(금융기관에 한함)</a></P><P>★Table-Group aClass=SF_CNS★</P>
+
+<TABLE border=1 width=825>
+<COLGROUP>
+  <COL width=75></COL>
+  <COL width=205></COL>
+  <COL width=98></COL>
+  <COL width=66></COL>
+  <COL width=96></COL>
+  <COL width=61></COL>
+  <COL width=89></COL>
+  <COL width=63></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=75 height=47 rowspan="2" align="CENTER">명칭</TH>
+  <TH width=205 height=47 rowspan="2" align="CENTER">보고자와의<br>
+관계</TH>
+  <TH width=348 height=17 colspan="4" align="CENTER" valign="TOP">계정별 내역</TH>
+  <TH width=161 height=17 colspan="2" align="CENTER" valign="TOP">합 &nbsp;계</TH>
+</TR>
+<TR>
+  <TH width=98 height=17 align="CENTER" valign="TOP">자기계정(주)</TH>
+  <TH width=66 height=17 align="CENTER" valign="TOP">비율(%)</TH>
+  <TH width=96 height=17 align="CENTER" valign="TOP">고객계정(주)</TH>
+  <TH width=61 height=17 align="CENTER" valign="TOP">비율(%)</TH>
+  <TH width=89 height=17 align="CENTER" valign="TOP">계(주)</TH>
+  <TH width=63 height=17 align="CENTER" valign="TOP">비율(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=75 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD class=tu width=205 height=109 align="CENTER">u★IFR_RLT2 |List|L||선<br>
+본인|M<br>
+특수관계인|S<br>
+공동보유자|A<br>
+-|-</TD>
+  <TD width=98 height=109 align="RIGHT">e★SF_CNT |\|선</TD>
+  <TD width=66 height=109 align="RIGHT">e★SF_RT |%|선</TD>
+  <TD width=96 height=109 align="RIGHT">e★CNS_CNT |\|선</TD>
+  <TD width=61 height=109 align="RIGHT">e★CNS_RT |%|선</TD>
+  <TD width=89 height=109 align="RIGHT">e★CNT_SUM |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★RT_SUM |%|선</TD>
+</TR>
+<TR>
+  <TD width=289 height=63 colspan="2" align="CENTER">합 &nbsp;계</TD>
+  <TD width=98 height=63 align="RIGHT">e★SF_CNT_SUM |\|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★SF_RT_SUM |%|선</TD>
+  <TD width=96 height=63 align="RIGHT">e★CNS_CNT_SUM |\|선</TD>
+  <TD width=61 height=63 align="RIGHT">e★CNS_RT_SUM |%|선</TD>
+  <TD width=89 height=63 align="RIGHT">e★ALL_CNT_SUM |\|선</TD>
+  <TD width=63 height=63 align="RIGHT">e★ALL_RT_SUM |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00636-TOC.htm#2602' name='2602' target='toc'>제3부 직전보고일 이후 대량변동 내역</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#2605' name='2605' target='toc'>1. 변동내역 총괄표</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2607' name='2607' target='toc'>가. 주식등의 변동내역</a></P><P>★Table-Group aClass=CST_CNT2★</P>
+
+<TABLE border=1 width=881>
+<COLGROUP>
+  <COL width=49></COL>
+  <COL width=60></COL>
+  <COL width=93></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=59></COL>
+  <COL width=67></COL>
+  <COL width=51></COL>
+  <COL width=63></COL>
+  <COL width=52></COL>
+  <COL width=39></COL>
+  <COL width=29></COL>
+  <COL width=43></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=49 height=169 rowspan="3" align="CENTER">관 계</TH>
+  <TH width=60 height=169 rowspan="3" align="CENTER">성 명<br>
+(명칭)</TH>
+  <TH width=93 height=169 rowspan="3" align="CENTER">생년월일<br>
+또는<br>
+사업자<br>
+등록번호 등</TH>
+  <TH width=643 height=17 colspan="11" align="CENTER">증감주식등의 내역</TH>
+</TR>
+<TR>
+  <TH width=185 height=17 colspan="3" align="CENTER">주 권</TH>
+  <TH width=67 height=139 rowspan="2" align="CENTER">신주<br>
+인수권이<br>
+표시된것</TH>
+  <TH width=51 height=139 rowspan="2" align="CENTER">전환<br>
+사채권</TH>
+  <TH width=63 height=139 rowspan="2" align="CENTER">신주<br>
+인수권부<br>
+사채권</TH>
+  <TH width=52 height=139 rowspan="2" align="CENTER">교환<br>
+사채권</TH>
+  <TH width=39 height=139 rowspan="2" align="CENTER">증권예탁증권</TH>
+  <TH width=29 height=139 rowspan="2" align="CENTER">기타</TH>
+  <TH width=94 height=17 colspan="2" align="CENTER">합 계</TH>
+</TR>
+<TR>
+  <TH width=54 height=109 align="CENTER">의결권<br>
+있는<br>
+주식</TH>
+  <TH width=54 height=109 align="CENTER">의결권<br>
+있는 주식으로<br>
+상환될주식</TH>
+  <TH width=59 height=109 align="CENTER">의결권<br>
+있는 주식으로<br>
+전환될 주식</TH>
+  <TH width=43 height=109 align="CENTER">주수<br>
+(주)</TH>
+  <TH width=42 height=109 align="CENTER">비율<br>
+(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=49 height=109 align="CENTER">보고자</TD>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=67 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=39 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=49 height=353 rowspan="3" align="CENTER">특별<br>
+관계자</TD>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=67 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=39 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=67 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=39 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=109 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=93 height=109 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★ATK_CNT |\|선</TD>
+  <TD width=54 height=109 align="RIGHT">e★REP_CNT |\|선</TD>
+  <TD width=59 height=109 align="RIGHT">e★CHN_CNT |\|선</TD>
+  <TD width=67 height=109 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=51 height=109 align="RIGHT">e★CB_CNT |\|선</TD>
+  <TD width=63 height=109 align="RIGHT">e★LN_CNT |\|선</TD>
+  <TD width=52 height=109 align="RIGHT">e★EB_CNT |\|선</TD>
+  <TD width=39 height=109 align="RIGHT">e★CF_CNT |\|선</TD>
+  <TD width=29 height=109 align="RIGHT">e★ET_CNT |\|선</TD>
+  <TD width=43 height=109 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=42 height=109 align="RIGHT">e★STK_RT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2708' name='2708' target='toc'>나. 의결권 변동내역</a></P><P>★Table-Group aClass=MVR_CST_CNT2★</P>
+
+<TABLE border=1 width=850>
+<COLGROUP>
+  <COL width=46></COL>
+  <COL width=60></COL>
+  <COL width=93></COL>
+  <COL width=88></COL>
+  <COL width=80></COL>
+  <COL width=76></COL>
+  <COL width=107></COL>
+  <COL width=82></COL>
+  <COL width=64></COL>
+  <COL width=64></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=46 height=123 rowspan="3" align="CENTER">관 계</TH>
+  <TH width=60 height=123 rowspan="3" align="CENTER">성 명<br>
+(명칭)</TH>
+  <TH width=93 height=123 rowspan="3" align="CENTER">생년월일<br>
+또는<br>
+사업자<br>
+등록번호 등</TH>
+  <TH width=615 height=17 colspan="7" align="CENTER">증감 의결권의 내역</TH>
+</TR>
+<TR>
+  <TH width=378 height=17 colspan="4" align="CENTER">의결권 있는 주식</TH>
+  <TH width=82 height=17 align="CENTER">잠재주식</TH>
+  <TH width=137 height=17 colspan="2" align="CENTER">합 계</TH>
+</TR>
+<TR>
+  <TH width=88 height=63 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=80 height=63 align="CENTER">1주당<br>
+의결권<br>
+수</TH>
+  <TH width=76 height=63 align="CENTER">변동의결권<br>
+수</TH>
+  <TH width=107 height=63 align="CENTER">복수의결권의<br>
+존속기간</TH>
+  <TH width=82 height=63 align="CENTER">변동잠재주식의<br>
+의결권 수</TH>
+  <TH width=64 height=63 align="CENTER">의결권<br>
+수</TH>
+  <TH width=64 height=63 align="CENTER">증감<br>
+비율<br>
+(%)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=46 height=93 rowspan="2" align="CENTER">보고자</TD>
+  <TD width=60 height=93 rowspan="2" align="CENTER">e★VRM_NM |V|선</TD>
+  <TD width=93 height=93 rowspan="2" align="CENTER">e★VRM_ID |V|선</TD>
+  <TD width=88 height=40 align="RIGHT">e★VRM_STK_KND |V|선</TD>
+  <TD width=80 height=40 align="RIGHT">e★VRM_CNTP |\|선</TD>
+  <TD width=76 height=40 align="RIGHT">e★VRM_CNTT |\|선</TD>
+  <TD width=107 height=40 align="RIGHT">e★VRM_PRD |V|선</TD>
+  <TD width=82 height=93 rowspan="2" align="RIGHT">e★VRM_RS_CNT |\|선</TD>
+  <TD width=64 height=93 rowspan="2" align="RIGHT">e★VRM_VR_TOT |\|선</TD>
+  <TD width=64 height=93 rowspan="2" align="RIGHT">e★VRM_RT_TOT |%|선</TD>
+</TR>
+<TR>
+  <TD width=88 height=40 align="RIGHT">e★VRM_STK_KND |V|선</TD>
+  <TD width=80 height=40 align="RIGHT">e★VRM_CNTP |\|선</TD>
+  <TD width=76 height=40 align="RIGHT">e★VRM_CNTT |\|선</TD>
+  <TD width=107 height=40 align="RIGHT">e★VRM_PRD |V|선</TD>
+</TR>
+<TR>
+  <TD width=46 height=199 rowspan="4" align="CENTER">특별<br>
+관계자</TD>
+  <TD width=60 height=93 rowspan="2" align="CENTER">e★VRS_NM |V|선</TD>
+  <TD width=93 height=93 rowspan="2" align="CENTER">e★VRS_ID |V|선</TD>
+  <TD width=88 height=40 align="RIGHT">e★VRS_STK_KND |V|선</TD>
+  <TD width=80 height=40 align="RIGHT">e★VRS_CNTP |\|선</TD>
+  <TD width=76 height=40 align="RIGHT">e★VRS_CNTT |\|선</TD>
+  <TD width=107 height=40 align="RIGHT">e★VRS_PRD |V|선</TD>
+  <TD width=82 height=93 rowspan="2" align="RIGHT">e★VRS_RS_CNT |\|선</TD>
+  <TD width=64 height=93 rowspan="2" align="RIGHT">e★VRS_VR_TOT |\|선</TD>
+  <TD width=64 height=93 rowspan="2" align="RIGHT">e★VRS_RT_TOT |%|선</TD>
+</TR>
+<TR>
+  <TD width=88 height=40 align="RIGHT">e★VRS_STK_KND |V|선</TD>
+  <TD width=80 height=40 align="RIGHT">e★VRS_CNTP |\|선</TD>
+  <TD width=76 height=40 align="RIGHT">e★VRS_CNTT |\|선</TD>
+  <TD width=107 height=40 align="RIGHT">e★VRS_PRD |V|선</TD>
+</TR>
+<TR>
+  <TD width=60 height=93 rowspan="2" align="CENTER">e★VRS_NM |V|선</TD>
+  <TD width=93 height=93 rowspan="2" align="CENTER">e★VRS_ID |V|선</TD>
+  <TD width=88 height=40 align="RIGHT">e★VRS_STK_KND |V|선</TD>
+  <TD width=80 height=40 align="RIGHT">e★VRS_CNTP |\|선</TD>
+  <TD width=76 height=40 align="RIGHT">e★VRS_CNTT |\|선</TD>
+  <TD width=107 height=40 align="RIGHT">e★VRS_PRD |V|선</TD>
+  <TD width=82 height=93 rowspan="2" align="RIGHT">e★VRS_RS_CNT |\|선</TD>
+  <TD width=64 height=93 rowspan="2" align="RIGHT">e★VRS_VR_TOT |\|선</TD>
+  <TD width=64 height=93 rowspan="2" align="RIGHT">e★VRS_RT_TOT |%|선</TD>
+</TR>
+<TR>
+  <TD width=88 height=40 align="RIGHT">e★VRS_STK_KND |V|선</TD>
+  <TD width=80 height=40 align="RIGHT">e★VRS_CNTP |\|선</TD>
+  <TD width=76 height=40 align="RIGHT">e★VRS_CNTT |\|선</TD>
+  <TD width=107 height=40 align="RIGHT">e★VRS_PRD |V|선</TD>
+</TR>
+<TR>
+  <TD width=403 height=63 colspan="5" align="CENTER">합계</TD>
+  <TD width=76 height=63 align="RIGHT">e★VS_CNTT_TOT |\|선</TD>
+  <TD width=107 height=63 align="RIGHT"></TD>
+  <TD width=82 height=63 align="RIGHT">e★VS_RS_CNT_TOT |\|선</TD>
+  <TD width=137 height=63 colspan="2" align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#2797' name='2797' target='toc'>2. 세부변동내역</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2799' name='2799' target='toc'>가. 주식등의 세부변동내역</a></P><P>★Table-Group aClass=HLD_MTH★</P>
+
+<TABLE class=nb width=865>
+<COLGROUP>
+  <COL width=856></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=856 height=17 align="RIGHT" valign="BOTTOM">(단위 : 주, 원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=1396>
+<COLGROUP>
+  <COL width=77></COL>
+  <COL width=126></COL>
+  <COL width=81></COL>
+  <COL width=385></COL>
+  <COL width=291></COL>
+  <COL width=72></COL>
+  <COL width=72></COL>
+  <COL width=54></COL>
+  <COL width=43></COL>
+  <COL width=41></COL>
+  <COL width=55></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=77 height=47 rowspan="2" align="CENTER">성명<br>
+(명칭)</TH>
+  <TH width=126 height=47 rowspan="2" align="CENTER">생년월일 또는<br>
+사업자등록번호 등</TH>
+  <TH width=81 height=47 rowspan="2" align="CENTER">변동일*</TH>
+  <TH width=385 height=47 rowspan="2" align="CENTER">취득/처분<br>
+방법</TH>
+  <TH width=291 height=47 rowspan="2" align="CENTER">주식등의<br>
+종류</TH>
+  <TH width=216 height=17 colspan="3" align="CENTER">변동 내역</TH>
+  <TH width=93 height=47 colspan="2" rowspan="2" align="CENTER">취득/처분<br>
+단가**</TH>
+  <TH width=55 height=47 rowspan="2" align="CENTER">비 고</TH>
+</TR>
+<TR>
+  <TH width=72 height=17 align="CENTER">변동전</TH>
+  <TH width=72 height=17 align="CENTER">증감</TH>
+  <TH width=54 height=17 align="CENTER">변동후</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=77 height=1880 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=126 height=1880 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD class=tu width=81 height=1880 align="CENTER">u★MDF_DT |달력|선</TD>
+  <TD class=tu width=385 height=1880 align="CENTER">u★HLD_MTH |List|L||선<br>
+장내매수(+)|01<br>
+장내매도(-)|02<br>
+장외매수(+)|11<br>
+장외매도(-)|12<br>
+CB인수(+)|13<br>
+BW인수(+)|14<br>
+유상신주취득(+)|21<br>
+무상신주취득(+)|23<br>
+제3자배정유상증자(+)|24<br>
+주식배당(+)|25<br>
+실권주인수(+)|27<br>
+신규등록(+)|30<br>
+신규상장(유상취득)(+)|102<br>
+신규상장(무상취득)(+)|103<br>
+신규선임(유상취득)(+)|104<br>
+신규선임(무상취득)(+)|105<br>
+신규주요주주(+)|32<br>
+신규보고(+)|33<br>
+임원퇴임(-)|97<br>
+증여(-)|34<br>
+수증(+)|35<br>
+수증취소(-)|36<br>
+증여취소(+)|37<br>
+피상속(-)|38<br>
+상속(+)|39<br>
+상속포기(-)|40<br>
+전환사채의권리행사(+)|41<br>
+전환등(-)|42<br>
+신주인수권사채의권리행사(+)|43<br>
+전환권등소멸(-)|44<br>
+신주인수권증권의권리행사(+)|45<br>
+합병(-)|46<br>
+합병(+)|47<br>
+공개매수청약(-)|48<br>
+공개매수(+)|49<br>
+매출(-)|50<br>
+대물변제수령(+)|51<br>
+대물변제(-)|52<br>
+교환(+)|53<br>
+교환(-)|54<br>
+차입(+)|55<br>
+대여(-)|56<br>
+교환사채의권리행사(+)|57<br>
+주식매수선택권부여(+)|66<br>
+주식매수선택권부여취소(-)|67<br>
+주식매수선택권행사(+)|68<br>
+주식매수선택권행사(-)|69<br>
+자사주상여금(+)|59<br>
+계열사편입(+)|60<br>
+콜옵션취득(+)|106<br>
+콜옵션권리행사에따른CB취득(+)|107<br>
+콜옵션권리행사에따른주식취득(+)|61<br>
+콜옵션권리행사배정에따른주식처분(-)|62<br>
+풋옵션권리행사에따른주식처분(-)|63<br>
+풋옵션권리행사배정에따른주식취득(+)|64<br>
+계약기간만료|70<br>
+계약중도해지|71<br>
+특별관계해소(-)|75<br>
+자사주펀드가입(+)|77<br>
+자사주펀드해지(-)|78<br>
+신고대량매매(+)|79<br>
+신고대량매매(-)|80<br>
+시간외매매(+)|81<br>
+시간외매매(-)|82<br>
+우선주무배당(+)|83<br>
+우선주배당(+)|84<br>
+주식매수청구권 행사(+)|85<br>
+주식매수청구권 행사(-)|86<br>
+실명전환(+)|87<br>
+실명전환(-)|88<br>
+주식병합|89<br>
+주식분할|90<br>
+담보주식처분권보유|91<br>
+주식소각|92<br>
+출자전환|93<br>
+자본감소|95<br>
+회사분할|96<br>
+행사가액조정|101<br>
+기타(-)|98<br>
+기타(+)|99<br>
+-|-</TD>
+  <TD class=tu width=291 height=1880 align="CENTER">u★STK_KND |List|L||선<br>
+의결권있는 주식|11<br>
+신주인수권이표시된것|3<br>
+전환사채권|4<br>
+신주인수권부사채권|5<br>
+교환사채권|6<br>
+의결권있는 주식으로 전환될주식|13<br>
+의결권있는 주식으로 상환될주식|12<br>
+증권예탁증권|8<br>
+기타|10<br>
+-|9</TD>
+  <TD width=72 height=1880 align="RIGHT">e★BFR_MDF_CNT |\|선</TD>
+  <TD width=72 height=1880 align="RIGHT">e★MDF_SDK_CNT |\|선</TD>
+  <TD width=54 height=1880 align="RIGHT">e★AFR_MDF_CNT |\|선</TD>
+  <TD width=43 height=1880 align="RIGHT">e★HLD_UNT_PRJ |P|선</TD>
+  <TD width=41 height=1880 align="RIGHT">e★HLD_UNT_PRG |V|선</TD>
+  <TD width=55 height=1880 align="CENTER">e★RMK |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>* &nbsp; 증권시장에서 주식등을 매매한 경우에는 그 계약체결일</P><P>** 주식 외의 증권의 경우 해당 증권의 행사(전환ㆍ교환)가액 또는 해당 증권의 권리행사로 취득ㆍ처분하는 주식의 매매단가를 의미하며, ( &nbsp; )의 금액은 해당 증권의 매매단가를 의미</P><P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2864' name='2864' target='toc'>나. 의결권의 세부변동내역</a></P><P>★Table-Group aClass=HLD_MTH_MVR★</P>
+
+<TABLE class=nb width=865>
+<COLGROUP>
+  <COL width=856></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=856 height=17 align="RIGHT" valign="BOTTOM">(단위 : 주, 원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=1375>
+<COLGROUP>
+  <COL width=77></COL>
+  <COL width=126></COL>
+  <COL width=81></COL>
+  <COL width=363></COL>
+  <COL width=292></COL>
+  <COL width=72></COL>
+  <COL width=72></COL>
+  <COL width=54></COL>
+  <COL width=43></COL>
+  <COL width=41></COL>
+  <COL width=55></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=77 height=47 rowspan="2" align="CENTER">성명<br>
+(명칭)</TH>
+  <TH width=126 height=47 rowspan="2" align="CENTER">생년월일 또는<br>
+사업자등록번호 등</TH>
+  <TH width=81 height=47 rowspan="2" align="CENTER">변동일*</TH>
+  <TH width=363 height=47 rowspan="2" align="CENTER">취득/처분<br>
+방법</TH>
+  <TH width=292 height=47 rowspan="2" align="CENTER">주식의<br>
+종류</TH>
+  <TH width=216 height=17 colspan="3" align="CENTER">의결권 변동 내역</TH>
+  <TH width=93 height=47 colspan="2" rowspan="2" align="CENTER">취득/처분<br>
+단가**</TH>
+  <TH width=55 height=47 rowspan="2" align="CENTER">비 고</TH>
+</TR>
+<TR>
+  <TH width=72 height=17 align="CENTER">변동전</TH>
+  <TH width=72 height=17 align="CENTER">증감</TH>
+  <TH width=54 height=17 align="CENTER">변동후</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=77 height=1880 align="CENTER">e★SPC_NM |V|선</TD>
+  <TD width=126 height=1880 align="CENTER">e★SPC_ID2 |V|선</TD>
+  <TD class=tu width=81 height=1880 align="CENTER">u★MDF_DT |달력|선</TD>
+  <TD class=tu width=363 height=1880 align="CENTER">u★HLD_MTH |List|L||선<br>
+장내매수(+)|01<br>
+장내매도(-)|02<br>
+장외매수(+)|11<br>
+장외매도(-)|12<br>
+CB인수(+)|13<br>
+BW인수(+)|14<br>
+유상신주취득(+)|21<br>
+무상신주취득(+)|23<br>
+제3자배정유상증자(+)|24<br>
+주식배당(+)|25<br>
+실권주인수(+)|27<br>
+신규등록(+)|30<br>
+신규상장(유상취득)(+)|102<br>
+신규상장(무상취득)(+)|103<br>
+신규선임(유상취득)(+)|104<br>
+신규선임(무상취득)(+)|105<br>
+신규주요주주(+)|32<br>
+신규보고(+)|33<br>
+임원퇴임(-)|97<br>
+증여(-)|34<br>
+수증(+)|35<br>
+수증취소(-)|36<br>
+증여취소(+)|37<br>
+피상속(-)|38<br>
+상속(+)|39<br>
+상속포기(-)|40<br>
+전환사채의권리행사(+)|41<br>
+전환등(-)|42<br>
+신주인수권사채의권리행사(+)|43<br>
+전환권등소멸(-)|44<br>
+신주인수권증권의권리행사(+)|45<br>
+합병(-)|46<br>
+합병(+)|47<br>
+공개매수청약(-)|48<br>
+공개매수(+)|49<br>
+매출(-)|50<br>
+대물변제수령(+)|51<br>
+대물변제(-)|52<br>
+교환(+)|53<br>
+교환(-)|54<br>
+차입(+)|55<br>
+대여(-)|56<br>
+교환사채의권리행사(+)|57<br>
+주식매수선택권부여(+)|66<br>
+주식매수선택권부여취소(-)|67<br>
+주식매수선택권행사(+)|68<br>
+주식매수선택권행사(-)|69<br>
+자사주상여금(+)|59<br>
+계열사편입(+)|60<br>
+콜옵션취득(+)|106<br>
+콜옵션권리행사에따른CB취득(+)|107<br>
+콜옵션권리행사에따른주식취득(+)|61<br>
+콜옵션권리행사배정에따른주식처분(-)|62<br>
+풋옵션권리행사에따른주식처분(-)|63<br>
+풋옵션권리행사배정에따른주식취득(+)|64<br>
+계약기간만료|70<br>
+계약중도해지|71<br>
+특별관계해소(-)|75<br>
+자사주펀드가입(+)|77<br>
+자사주펀드해지(-)|78<br>
+신고대량매매(+)|79<br>
+신고대량매매(-)|80<br>
+시간외매매(+)|81<br>
+시간외매매(-)|82<br>
+우선주무배당(+)|83<br>
+우선주배당(+)|84<br>
+주식매수청구권 행사(+)|85<br>
+주식매수청구권 행사(-)|86<br>
+실명전환(+)|87<br>
+실명전환(-)|88<br>
+주식병합|89<br>
+주식분할|90<br>
+담보주식처분권보유|91<br>
+주식소각|92<br>
+출자전환|93<br>
+자본감소|95<br>
+회사분할|96<br>
+행사가액조정|101<br>
+기타(-)|98<br>
+기타(+)|99<br>
+-|-</TD>
+  <TD class=tu width=292 height=1880 align="CENTER">u★STK_KND |List|L||선<br>
+의결권있는 주식|11<br>
+신주인수권이표시된것|3<br>
+전환사채권|4<br>
+신주인수권부사채권|5<br>
+교환사채권|6<br>
+의결권있는 주식으로 전환될주식|13<br>
+의결권있는 주식으로 상환될주식|12<br>
+증권예탁증권|8<br>
+기타|10<br>
+-|9</TD>
+  <TD width=72 height=1880 align="RIGHT">e★BFR_MDF_CNT |\|선</TD>
+  <TD width=72 height=1880 align="RIGHT">e★MDF_SDK_CNT |\|선</TD>
+  <TD width=54 height=1880 align="RIGHT">e★AFR_MDF_CNT |\|선</TD>
+  <TD width=43 height=1880 align="RIGHT">e★HLD_UNT_PRJ |P|선</TD>
+  <TD width=41 height=1880 align="RIGHT">e★HLD_UNT_PRG |V|선</TD>
+  <TD width=55 height=1880 align="CENTER">e★RMK |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>* 증권시장에서 주식등을 매매한 경우에는 그 계약체결일. 복수의결권 주식의 보통주 전환시 그 전환일일</P><P><br></P>
+<P class=section-2><a class='toc' href='00636-TOC.htm#2928' name='2928' target='toc'>3. 취득에 필요한 자금등의 조성내역</a></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2930' name='2930' target='toc'>(1) 취득자금등의 개요</a></P><P>★Table-Group aClass=PRH_CPT3★</P>
+
+<TABLE class=nb width=666>
+<COLGROUP>
+  <COL width=657></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=657 height=17 align="RIGHT" valign="BOTTOM">(단위 : 원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=666>
+<COLGROUP>
+  <COL width=95></COL>
+  <COL width=138></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=94></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=95 height=40 align="CENTER">성명</TH>
+  <TH width=138 height=40 align="CENTER">생년월일 또는<br>
+사업자등록번호등</TH>
+  <TH width=95 height=40 align="CENTER">자기자금(H)</TH>
+  <TH width=95 height=40 align="CENTER">차입금(I)</TH>
+  <TH width=95 height=40 align="CENTER">기타(J)</TH>
+  <TH width=94 height=40 align="CENTER">계(H+I+J)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=95 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=138 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_CPT |P|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_LN |P|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_AMT |P|선</TD>
+  <TD width=94 height=40 align="RIGHT">e★PRH_SUM |\|선</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=138 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_CPT |P|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_LN |P|선</TD>
+  <TD width=95 height=40 align="RIGHT">e★PRH_AMT |P|선</TD>
+  <TD width=94 height=40 align="RIGHT">e★PRH_SUM |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00636-TOC.htm#2972' name='2972' target='toc'>(2) 취득자금등의 조성경위 및 원천</a></P><P>&lt;&lt;단위서식 : 01_자기자금의 경우&gt;&gt;</P>
+<P class=section-4>ㅇ 자기자금의 경우</P><P>★Table-Group aClass=CSE_HA★</P>
+
+<TABLE border=1 width=623>
+<COLGROUP>
+  <COL width=109></COL>
+  <COL width=125></COL>
+  <COL width=362></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=109 height=40 align="CENTER">성명</TH>
+  <TH width=125 height=40 align="CENTER">생년월일 또는<br>
+사업자등록번호등</TH>
+  <TH width=362 height=40 align="CENTER">취득자금등의 조성경위 및 원천</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=109 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=125 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=362 height=40 align="CENTER">e★HA_DTL |V|필</TD>
+</TR>
+<TR>
+  <TD width=109 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=125 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=362 height=40 align="CENTER">e★HA_DTL |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 02_차입금의 경우&gt;&gt;</P>
+<P class=section-4>ㅇ 차입금의 경우</P><P>★Table-Group aClass=CSE_IA★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=161></COL>
+  <COL width=147></COL>
+  <COL width=98></COL>
+  <COL width=158></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=161 height=17 align="CENTER">차입자</TD>
+  <TD width=147 height=17 align="LEFT" valign="TOP">e★IA_MAN |V|필</TD>
+  <TD width=98 height=17 align="CENTER">차입처</TD>
+  <TD width=158 height=17 align="LEFT" valign="TOP">e★IA_PLA |V|필</TD>
+</TR>
+<TR>
+  <TD width=161 height=17 align="CENTER">차입금액</TD>
+  <TD width=147 height=17 align="LEFT" valign="TOP">e★IA_MOY |\|필</TD>
+  <TD width=98 height=17 align="CENTER">차입기간</TD>
+  <TD width=158 height=17 align="LEFT" valign="TOP">e★IA_PER |V|필</TD>
+</TR>
+<TR>
+  <TD width=161 height=17 align="CENTER">주식등의 담보제공 여부</TD>
+  <TD width=147 height=17 align="LEFT" valign="TOP">e★IA_SEC |V|필</TD>
+  <TD width=98 height=17 align="CENTER">담보 내역</TD>
+  <TD width=158 height=17 align="LEFT" valign="TOP">e★IA_SEB |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 03_기타의 경우&gt;&gt;</P>
+<P class=section-4>ㅇ 기타의 경우</P><P>★Table-Group aClass=CSE_JA★</P>
+
+<TABLE border=1 width=623>
+<COLGROUP>
+  <COL width=109></COL>
+  <COL width=125></COL>
+  <COL width=362></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=109 height=40 align="CENTER">성명</TH>
+  <TH width=125 height=40 align="CENTER">생년월일 또는<br>
+사업자등록번호등</TH>
+  <TH width=362 height=40 align="CENTER">취득자금등의 조성경위 및 원천</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=109 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=125 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=362 height=40 align="CENTER">e★JA_DTL |V|필</TD>
+</TR>
+<TR>
+  <TD width=109 height=40 align="CENTER">e★PRH_NM |V|선</TD>
+  <TD width=125 height=40 align="CENTER">e★PRH_ID |V|선</TD>
+  <TD width=362 height=40 align="CENTER">e★JA_DTL |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+</BODY>
+</HTML>

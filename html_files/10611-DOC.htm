@@ -1,0 +1,346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 10611, 서식버전 : 2.0, 서식변경날짜 : 2023년 10월 20일,<br>
+&nbsp; &nbsp;문서명 : 투자설명서(집합투자증권)★</P>
+
+<TABLE border=1 width=699>
+<COLGROUP>
+  <COL width=33></COL>
+  <COL width=33></COL>
+  <COL width=33></COL>
+  <COL width=33></COL>
+  <COL width=33></COL>
+  <COL width=32></COL>
+  <COL width=439></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=242 height=44 colspan="6" style="font-size: 13pt; color: #ffffff; background-color: #ff1418; font-weight: bold;"> 투자위험등급<br>
+&nbsp;1등급[ 매우 높은 위험 ]</TD>
+  <TD width=439 height=153 rowspan="3"><SPAN style="font-size: 13pt; line-height: 1.6em; font-weight: bold;">ОО자산운용(주)는</SPAN><SPAN style="font-size: 13pt; line-height: 1.6em;"> 이 투자신탁의 </SPAN><SPAN style="font-size: 15pt; line-height: 1.6em; font-weight: bold;">실제 수익률 변동성</SPAN><SPAN style="font-size: 15pt; line-height: 1.6em;">(또는 투자대상 자산의 종류 및 위험도 등)</SPAN><SPAN style="font-size: 13pt; line-height: 1.6em;">을 감안하여 </SPAN><SPAN style="font-size: 13pt; line-height: 1.6em; font-weight: bold;">O등급으로 분류</SPAN><SPAN style="font-size: 13pt; line-height: 1.6em;">하였습니다. </SPAN><SPAN style="font-size: 13pt; line-height: 1.6em; font-weight: bold;">펀드의 위험 등급은 운용실적, 시장 상황 등에 따라 변경될 수 있다는 점을 유의하여 투자판단을 하시기 바랍니다.</SPAN></TD>
+</TR>
+<TR>
+  <TD width=33 height=17 align="CENTER" style="color: #ffffff; background-color: #ff1418; font-weight: bold;">1</TD>
+  <TD width=33 height=17 align="CENTER" style="color: #ffffff; background-color: #ffbf28;">2</TD>
+  <TD width=33 height=17 align="CENTER" style="color: #ffffff; background-color: #8acf57;">3</TD>
+  <TD width=33 height=17 align="CENTER" style="color: #ffffff; background-color: #00aeee;">4</TD>
+  <TD width=33 height=17 align="CENTER" style="color: #ffffff; background-color: #006fbd;">5</TD>
+  <TD width=32 height=17 align="CENTER" style="color: #ffffff; background-color: #72329d;">6</TD>
+</TR>
+<TR>
+  <TD width=33 height=66 align="CENTER" style="color: #ff1418; font-weight: bold;">매우<br>
+높은<br>
+위험</TD>
+  <TD width=33 height=66 align="CENTER" style="color: #ffbf28;">높은<br>
+위험</TD>
+  <TD width=33 height=66 align="CENTER" style="color: #8acf57;">다소<br>
+높은<br>
+위험</TD>
+  <TD width=33 height=66 align="CENTER" style="color: #00aeee;">보통<br>
+위험</TD>
+  <TD width=33 height=66 align="CENTER" style="color: #006fbd;">낮은<br>
+위험</TD>
+  <TD width=32 height=66 align="CENTER" style="color: #72329d;">매우<br>
+낮은<br>
+위험</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=cover-title><a class='toc' href='10611-TOC.htm#47' name='47' target='toc'>투 자 설 명 서</a></P><P><br>
+이 투자설명서는 ОООО투자신탁에 대한 자세한 내용을 담고 있습니다. &nbsp;따라서 ОООО투자신탁 수익증권을 매입하기 전에 이 투자설명서를 읽어보시기 바랍니다.<br>
+<br></P><P>★Table-Group aClass=_FUND_MAIN_★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=162></COL>
+  <COL width=215></COL>
+  <COL width=83></COL>
+  <COL width=76></COL>
+  <COL width=19></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=162 height=63 valign="TOP">1. 집합투자기구 명칭 :</TD>
+  <TD width=215 height=63 align="LEFT" valign="TOP">e★FUND_NAME |V|필</TD>
+  <TD width=83 height=63 valign="TOP">(펀드코드 :</TD>
+  <TD width=76 height=63 align="CENTER" valign="TOP">e★FUND_CODE |AAAAA|선</TD>
+  <TD width=19 height=63 valign="TOP">)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="5" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=162 height=17 valign="TOP">2. 집합투자업자 명칭 :</TD>
+  <TD width=420 height=17 colspan="4" align="LEFT" valign="TOP">e★FUND_TRD |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=231></COL>
+  <COL width=351></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=231 height=40 valign="TOP">3. 판 &nbsp; 매 &nbsp; 회 &nbsp; 사 :<br>
+<br></TD>
+  <TD width=351 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=231 height=40 valign="TOP">4. 작 성 기 준 일 :<br>
+<br></TD>
+  <TD width=351 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=231 height=40 valign="TOP">5. 증권신고서 효력발생일 :<br>
+<br></TD>
+  <TD width=351 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=231 height=40 valign="TOP">6. 모집(매출) 증권의 종류 및 수 :<br>
+<br></TD>
+  <TD width=351 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=231 height=40 valign="TOP">[모집(매출) 총액 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;]<br>
+<br></TD>
+  <TD width=351 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=231 height=40 valign="TOP">7. 모집(매출) 기간(판매기간) : <br>
+<br></TD>
+  <TD width=351 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=231 height=17 valign="TOP"></TD>
+  <TD width=351 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP">8. 집합투자증권신고서 및 투자설명서의 열람장소</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; 가. 집합투자증권신고서</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 전자문서 : 금융위(금감원) 전자공시시스템 → &nbsp;http://dart.fss.or.kr</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; 나. 투자설명서</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 전자문서 : 금융위(금감원) 전자공시시스템 → &nbsp;http://dart.fss.or.kr</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 서면문서 : 집합투자업자, 판매회사 및 협회 (전화번호, 홈페이지 주소)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP">9. (안정조작 또는 시장조성 관련)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" valign="TOP">※ 효력발생일까지 증권신고서의 기재사항 중 일부가 변경될 수 있으며, 개방형 집합투자증권인 경우 효력발생일 이후(청약일 이후)에도 변경될 수 있습니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=144 valign="TOP" style="font-family: 바탕, sans-serif; font-size: 13pt; color: #ff0000; font-weight: bold;">금융위원회가 투자설명서의 기재사항이 진실 또는 정확하다는 것을 인정하거나 그 증권의 가치를 보증 또는 승인하지 아니함을 유의하시기 바랍니다.<br>
+또한 이 집합투자증권은「예금자보호법」에 의한 보호를 받지 않는 실적배당상품으로 투자원금의 손실이 발생할 수 있으므로 투자에 신중을 기하여 주시기 바랍니다. </TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 1_본문-PDF파일첨부&gt;&gt;</P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#127' name='127' target='toc'>[ 본 문 ]</a></P><P>&lt;&lt;단위서식 : 2_본문-직접작성(신탁형)&gt;&gt;</P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#133' name='133' target='toc'>투자결정시 유의사항 안내</a></P><P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#138' name='138' target='toc'>요 약 정 보</a></P><P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#145' name='145' target='toc'>제1부 모집 또는 매출에 관한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#147' name='147' target='toc'>1. 집합투자기구의 명칭</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#150' name='150' target='toc'>2. 집합투자기구의 종류 및 형태</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#153' name='153' target='toc'>3. 모집예정금액</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#156' name='156' target='toc'>4. 모집의 내용 및 절차</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#159' name='159' target='toc'>5. 인수에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#162' name='162' target='toc'>6. 상장 및 매매에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#166' name='166' target='toc'>제2부 집합투자기구에 관한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#168' name='168' target='toc'>1. 집합투자기구의 명칭</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#171' name='171' target='toc'>2. 집합투자기구의 연혁</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#174' name='174' target='toc'>3. 집합투자기구의 신탁계약기간</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#177' name='177' target='toc'>4. 집합투자업자</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#180' name='180' target='toc'>5. 운용전문인력에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#183' name='183' target='toc'>6. 집합투자기구의 구조</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#186' name='186' target='toc'>7. 집합투자기구의 투자목적</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#189' name='189' target='toc'>8. 집합투자기구의 투자대상</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#192' name='192' target='toc'>9. 집합투자기구의 투자전략, 위험관리 및 수익구조</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#195' name='195' target='toc'>10. 집합투자기구의 투자위험</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#198' name='198' target='toc'>11. 매입, 환매, 전환 기준</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#201' name='201' target='toc'>12. 기준가격 산정기준 및 집합투자재산의 평가</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#204' name='204' target='toc'>13. 보수 및 수수료에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#207' name='207' target='toc'>14. 이익 배분 및 과세에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#211' name='211' target='toc'>제3부 집합투자기구의 재무 및 운용실적 등에 관한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#213' name='213' target='toc'>1. 재무정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#216' name='216' target='toc'>2. 연도별 설정 및 환매 현황</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#219' name='219' target='toc'>3. 집합투자기구의 운용실적</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#223' name='223' target='toc'>제4부 집합투자기구 관련회사에 관한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#225' name='225' target='toc'>1. 집합투자업자에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#228' name='228' target='toc'>2. 운용관련 업무 수탁회사 등에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#231' name='231' target='toc'>3. 기타 집합투자기구 관련회사에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#235' name='235' target='toc'>제5부 기타 투자자보호를 위해 필요한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#237' name='237' target='toc'>1. 투자자의 권리에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#240' name='240' target='toc'>2. 집합투자기구의 해지에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#243' name='243' target='toc'>3. 집합투자기구의 공시에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#246' name='246' target='toc'>4. 이해관계인 등과의 거래에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#249' name='249' target='toc'>5. 집합투자업자의 고유재산 투자에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#252' name='252' target='toc'>6. 외국 집합투자기구에 관한 추가 기재사항</a></P><P><br></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 3_본문-직접작성(회사형)&gt;&gt;</P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#258' name='258' target='toc'>투자결정시 유의사항 안내</a></P><P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#263' name='263' target='toc'>요 약 정 보</a></P><P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#270' name='270' target='toc'>제1부 모집 또는 매출에 관한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#272' name='272' target='toc'>1. 집합투자기구의 명칭</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#275' name='275' target='toc'>2. 집합투자기구의 종류 및 형태</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#278' name='278' target='toc'>3. 모집예정금액</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#281' name='281' target='toc'>4. 모집의 내용 및 절차</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#284' name='284' target='toc'>5. 인수에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#287' name='287' target='toc'>6. 상장 및 매매에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#291' name='291' target='toc'>제2부 집합투자기구에 관한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#293' name='293' target='toc'>1. 집합투자기구의 명칭</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#296' name='296' target='toc'>2. 집합투자기구의 연혁</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#299' name='299' target='toc'>3. 집합투자기구의 신탁계약기간</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#302' name='302' target='toc'>4. 집합투자업자</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#305' name='305' target='toc'>5. 운용전문인력에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#308' name='308' target='toc'>6. 집합투자기구의 구조</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#311' name='311' target='toc'>7. 집합투자기구의 투자목적</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#314' name='314' target='toc'>8. 집합투자기구의 투자대상</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#317' name='317' target='toc'>9. 집합투자기구의 투자전략, 위험관리 및 수익구조</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#320' name='320' target='toc'>10. 집합투자기구의 투자위험</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#323' name='323' target='toc'>11. 매입, 환매, 전환 기준</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#326' name='326' target='toc'>12. 기준가격 산정기준 및 집합투자재산의 평가</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#329' name='329' target='toc'>13. 보수 및 수수료에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#332' name='332' target='toc'>14. 이익 배분 및 과세에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#335' name='335' target='toc'>15. 발기인ㆍ감독이사에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#339' name='339' target='toc'>제3부 집합투자기구의 재무 및 운용실적 등에 관한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#341' name='341' target='toc'>1. 재무정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#344' name='344' target='toc'>2. 연도별 설정 및 환매 현황</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#347' name='347' target='toc'>3. 투자회사의 출자금에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#350' name='350' target='toc'>4. 집합투자기구의 운용실적</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#354' name='354' target='toc'>제4부 집합투자기구 관련회사에 관한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#356' name='356' target='toc'>1. 집합투자업자에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#359' name='359' target='toc'>2. 운용관련 업무 수탁회사 등에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#362' name='362' target='toc'>3. 기타 집합투자기구 관련회사에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10611-TOC.htm#366' name='366' target='toc'>제5부 기타 투자자보호를 위해 필요한 사항</a></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#368' name='368' target='toc'>1. 투자자의 권리에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#371' name='371' target='toc'>2. 집합투자기구의 해지에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#374' name='374' target='toc'>3. 집합투자기구의 공시에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#377' name='377' target='toc'>4. 이해관계인 등과의 거래에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#380' name='380' target='toc'>5. 집합투자업자의 고유재산 투자에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10611-TOC.htm#383' name='383' target='toc'>6. 외국 집합투자기구에 관한 추가 기재사항</a></P><P><br></P>
+<P class=pgbrk></P>
+</BODY>
+</HTML>

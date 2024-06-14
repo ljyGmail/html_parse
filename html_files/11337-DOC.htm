@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 11337, 서식버전 : 1.2, 서식변경날짜 : 2022년 10월 18일,<br>
+&nbsp; &nbsp;문서명 : 영업양도 결정★</P>
+<P class=section-1><a class='toc' href='11337-TOC.htm#15' name='15' target='toc'>영업양도 결정</a></P><P><br></P><P>★Table-Group aClass=TBL_TRB★</P>
+
+<TABLE border=1 width=913>
+<COLGROUP>
+  <COL width=165></COL>
+  <COL width=146></COL>
+  <COL width=200></COL>
+  <COL width=190></COL>
+  <COL width=167></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=320 height=17 colspan="2" valign="TOP">1. 양도영업</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★TR_OBJ |V|선</TD>
+</TR>
+<TR>
+  <TD width=320 height=17 colspan="2" valign="TOP">2. 양도영업 주요내용</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★TR_DTL |V|선</TD>
+</TR>
+<TR>
+  <TD width=320 height=17 colspan="2" valign="TOP">3. 양도가액(원)</TD>
+  <TD width=575 height=17 colspan="3" align="RIGHT" valign="TOP">e★TR_AMT |\|선</TD>
+</TR>
+<TR>
+  <TD width=165 height=100 rowspan="3"> &nbsp; - 재무내용(원)</TD>
+  <TD width=146 height=40 valign="TOP"></TD>
+  <TD width=200 height=40 align="CENTER" valign="TOP">양도대상<br>
+영업부문(A)</TD>
+  <TD width=190 height=40 align="CENTER" valign="TOP">당사전체<br>
+(B)</TD>
+  <TD width=167 height=40 align="CENTER" valign="TOP">비중(%)<br>
+(A/B)</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 align="CENTER" valign="TOP">자산액</TD>
+  <TD width=200 height=17 align="RIGHT" valign="TOP">e★TR_ASST |\|선</TD>
+  <TD width=190 height=17 align="RIGHT" valign="TOP">e★CRP_ASST |\|선</TD>
+  <TD width=167 height=17 align="RIGHT" valign="TOP">e★ASST_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 align="CENTER" valign="TOP">매출액</TD>
+  <TD width=200 height=17 align="RIGHT" valign="TOP">e★TR_SALE |\|선</TD>
+  <TD width=190 height=17 align="RIGHT" valign="TOP">e★CRP_SALE |\|선</TD>
+  <TD width=167 height=17 align="RIGHT" valign="TOP">e★SALE_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=320 height=17 colspan="2" valign="TOP">4. 양도목적</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★TR_PPS |V|선</TD>
+</TR>
+<TR>
+  <TD width=320 height=17 colspan="2" valign="TOP">5. 양도영향</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★TR_EFT |V|선</TD>
+</TR>
+<TR>
+  <TD width=165 height=47 rowspan="2">6. 양도예정일자</TD>
+  <TD width=146 height=17 align="CENTER" valign="TOP">계약체결일</TD>
+  <TD class=tu width=575 height=17 colspan="3" align="CENTER" valign="TOP">u★TR_CTRT_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 align="CENTER" valign="TOP">양도기준일</TD>
+  <TD class=tu width=575 height=17 colspan="3" align="CENTER" valign="TOP">u★TR_BSC_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=165 height=344 rowspan="5">7. 거래상대방</TD>
+  <TD width=146 height=17 align="CENTER" valign="TOP">회사명(성명)</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★OTH_NM |V|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 align="CENTER" valign="TOP">자본금(원)</TD>
+  <TD width=575 height=17 colspan="3" align="RIGHT" valign="TOP">e★OTH_CPT |\|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 align="CENTER" valign="TOP">주요사업</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★OTH_MNB |V|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 align="CENTER" valign="TOP">본점소재지(주소)</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★OTH_ADRS |V|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=224 align="CENTER" valign="TOP">회사와의 관계</TD>
+  <TD class=tu width=575 height=224 colspan="3" align="CENTER" valign="TOP">u★OTH_RLT |List|L||선<br>
+최대주주|1<br>
+최대주주의 특수관계인|2<br>
+주요주주|3<br>
+임직원|4<br>
+계열회사|5<br>
+자회사|6<br>
+모회사|7<br>
+임직원겸직|8<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=320 height=17 colspan="2" valign="TOP">8. 양도대금지급</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★PRC_PAY |V|선</TD>
+</TR>
+<TR>
+  <TD width=165 height=183 rowspan="5">9. 외부평가에 관한 사항</TD>
+  <TD width=146 height=63 valign="TOP">외부평가 여부</TD>
+  <TD class=tu width=575 height=63 colspan="3" align="CENTER" valign="TOP">u★EXV_YN |List|L||선<br>
+예|Y<br>
+미해당|N</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 valign="TOP"> - 근거 및 사유</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★EXV_BSS |V|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 valign="TOP">외부평가기관의 명칭</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★EXV_NM |V|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 valign="TOP">외부평가 기간</TD>
+  <TD class=tu width=575 height=17 colspan="3" align="CENTER" valign="TOP">u★EXV_PROD |달력2|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 valign="TOP">외부평가 의견</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★EXV_OPN |V|선</TD>
+</TR>
+<TR>
+  <TD width=320 height=63 colspan="2" valign="TOP">10. 주주총회 특별결의 여부</TD>
+  <TD class=tu width=575 height=63 colspan="3" align="CENTER" valign="TOP">u★GM_SD_YN |List|L||선<br>
+예|Y<br>
+미해당|N</TD>
+</TR>
+<TR>
+  <TD width=320 height=17 colspan="2" valign="TOP"> &nbsp; - 주주총회 예정일자</TD>
+  <TD class=tu width=575 height=17 colspan="3" align="CENTER" valign="TOP">u★GM_DUE_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=165 height=236 rowspan="6"> &nbsp; - 주식매수청구권에<br>
+&nbsp; &nbsp; &nbsp;관한 사항</TD>
+  <TD width=146 height=17 valign="TOP">행사요건</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★CSPR_RQMT |V|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 valign="TOP">매수예정가격</TD>
+  <TD width=575 height=17 colspan="3" align="RIGHT" valign="TOP">e★CSPR_EPT_PRC |\|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=40 valign="TOP">행사절차, 방법,<br>
+기간, 장소</TD>
+  <TD width=575 height=40 colspan="3" align="CENTER" valign="TOP">e★CSPR_DTL |V|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=40 valign="TOP">지급예정시기,<br>
+지급방법</TD>
+  <TD width=575 height=40 colspan="3" align="CENTER" valign="TOP">e★CSPR_PAY_DTL |V|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=40 valign="TOP">주식매수청구권 제한<br>
+관련 내용</TD>
+  <TD width=575 height=40 colspan="3" align="CENTER" valign="TOP">e★CSPR_LMT |V|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 valign="TOP">계약에 미치는 효력</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★CSPR_EFT |V|선</TD>
+</TR>
+<TR>
+  <TD width=320 height=17 colspan="2" valign="TOP">11. 이사회결의일(결정일)</TD>
+  <TD class=tu width=575 height=17 colspan="3" align="CENTER" valign="TOP">u★DRT_RSLT_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=165 height=47 rowspan="2"> &nbsp; - 사외이사참석여부</TD>
+  <TD width=146 height=17 align="CENTER" valign="TOP">참석(명)</TD>
+  <TD width=575 height=17 colspan="3" align="RIGHT" valign="TOP">e★ODRT_ATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=146 height=17 align="CENTER" valign="TOP">불참(명)</TD>
+  <TD width=575 height=17 colspan="3" align="RIGHT" valign="TOP">e★ODRT_NATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=320 height=86 colspan="2" valign="TOP"> &nbsp; - 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+  <TD class=tu width=575 height=86 colspan="3" align="CENTER" valign="TOP">u★ADT_ATD_YN |List|L||선<br>
+참석|Y<br>
+불참|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=320 height=63 colspan="2" valign="TOP">12. 공정거래위원회 신고대상 여부</TD>
+  <TD class=tu width=575 height=63 colspan="3" align="CENTER" valign="TOP">u★FTC_RPT_YN |List|L||선<br>
+해당|Y<br>
+미해당|N</TD>
+</TR>
+<TR>
+  <TD width=320 height=63 colspan="2" valign="TOP">13. 풋옵션 등 계약 체결여부</TD>
+  <TD class=tu width=575 height=63 colspan="3" align="CENTER" valign="TOP">u★PO_CTRT_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=320 height=17 colspan="2" valign="TOP"> &nbsp; - 계약내용</TD>
+  <TD width=575 height=17 colspan="3" align="CENTER" valign="TOP">e★PO_CTRT_DTL |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>14. 향후 회사구조개편에 관한 계획</P><P><br></P><P>15. 기타 투자판단과 관련한 중요사항</P><P><br></P><P>※ 관련공시 :</P><P><br></P>
+</BODY>
+</HTML>

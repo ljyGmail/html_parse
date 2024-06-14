@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 11319, 서식버전 : 1.1, 서식변경날짜 : 2014년 1월 13일,<br>
+&nbsp; &nbsp;문서명 : 주요사항보고서(외국법인등의 주식 등에 대한 외국에서의 공개매수)★</P>
+<P class=section-1><a class='toc' href='11319-TOC.htm#15' name='15' target='toc'>외국법인등의 주식 등에 대한 외국에서의 공개매수</a></P><P><br></P><P>★Table-Group aClass=FRN_TOB★</P>
+
+<TABLE border=1 width=720>
+<COLGROUP>
+  <COL width=118></COL>
+  <COL width=91></COL>
+  <COL width=120></COL>
+  <COL width=173></COL>
+  <COL width=173></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=347 height=17 colspan="3">1. 외국법인등의 설립준거지국명</TD>
+  <TD width=355 height=17 colspan="2" align="LEFT">e★FRN_NM |V|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=40 colspan="3">2. 상장거래소 명칭(제3국인 경우 해당 국가명 포함)</TD>
+  <TD width=355 height=40 colspan="2" align="LEFT">e★FRN_LST_MKT |V|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=17 colspan="3">3. 공개매수자</TD>
+  <TD width=355 height=17 colspan="2" align="LEFT">e★TOBMAN |V|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=17 colspan="3">4. 공개매수 목적</TD>
+  <TD width=355 height=17 colspan="2" align="LEFT">e★TOBOBJ |V|선</TD>
+</TR>
+<TR>
+  <TD width=118 height=227 rowspan="8">5. 공개매수 내용</TD>
+  <TD width=220 height=17 colspan="2"> 주식등의 종류</TD>
+  <TD width=173 height=17 align="CENTER">매수가격</TD>
+  <TD width=173 height=17 align="CENTER">매수예정수량</TD>
+</TR>
+<TR>
+  <TD width=220 height=17 colspan="2"> 주권</TD>
+  <TD width=173 height=17 align="RIGHT">e★PCH_PRC |V|선</TD>
+  <TD width=173 height=17 align="CENTER">e★MAX_CNT_ST |P|선</TD>
+</TR>
+<TR>
+  <TD width=220 height=17 colspan="2"> 신주인수권이 표시된 증서</TD>
+  <TD width=173 height=17 align="RIGHT">e★PCH_PRC_NS |V|선</TD>
+  <TD width=173 height=17 align="CENTER">e★MAX_CNT_NS |P|선</TD>
+</TR>
+<TR>
+  <TD width=220 height=17 colspan="2"> 전환사채권</TD>
+  <TD width=173 height=17 align="RIGHT">e★PCH_PRC_CB |V|선</TD>
+  <TD width=173 height=17 align="CENTER">e★MAX_CNT_CB |P|선</TD>
+</TR>
+<TR>
+  <TD width=220 height=17 colspan="2"> 신주인수권부사채권</TD>
+  <TD width=173 height=17 align="RIGHT">e★PCH_PRC_NB |V|선</TD>
+  <TD width=173 height=17 align="CENTER">e★MAX_CNT_NB |P|선</TD>
+</TR>
+<TR>
+  <TD width=220 height=17 colspan="2"> 교환사채권</TD>
+  <TD width=173 height=17 align="RIGHT">e★PCH_PRC_EB |V|선</TD>
+  <TD width=173 height=17 align="CENTER">e★MAX_CNT_EB |P|선</TD>
+</TR>
+<TR>
+  <TD width=91 height=47 rowspan="2" align="CENTER">합계</TD>
+  <TD width=120 height=17 align="CENTER">수량</TD>
+  <TD width=173 height=47 rowspan="2" align="RIGHT">e★TOB_PCH_CNT</TD>
+  <TD width=173 height=17 align="CENTER">e★TOB_MAX_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=120 height=17 align="CENTER">비율(%)</TD>
+  <TD width=173 height=17 align="CENTER">e★TOB_MAX_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=218 height=47 colspan="2" rowspan="2">6. 공개매수기간</TD>
+  <TD width=120 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=355 height=17 colspan="2" align="CENTER">u★TOB_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=120 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=355 height=17 colspan="2" align="CENTER">u★TOB_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=218 height=47 colspan="2" rowspan="2">7. 공개매수후 주식등 보유비율</TD>
+  <TD width=120 height=17 align="CENTER">주식수</TD>
+  <TD width=355 height=17 colspan="2" align="CENTER">e★AFT_STK_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=120 height=17 align="CENTER">지분율(%)</TD>
+  <TD width=355 height=17 colspan="2" align="CENTER">e★AFT_STK_RT |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>8. 기타 투자판단에 참고할 사항</P><P>&lt;&lt;단위서식 : 주요사항보고서-자회사에관한공시&gt;&gt;</P><P>★Table-Group aClass=_CHD_CRP_INF_★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=12></COL>
+  <COL width=89></COL>
+  <COL width=204></COL>
+  <COL width=259></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=12 height=17 valign="TOP"></TD>
+  <TD width=89 height=17 valign="TOP">※ 자회사인</TD>
+  <TD width=204 height=17 align="CENTER" valign="TOP">e★CHD_CRP_NM |V|필</TD>
+  <TD width=259 height=17 valign="TOP">의</TD>
+</TR>
+<TR>
+  <TD width=12 height=40 valign="TOP"></TD>
+  <TD width=570 height=40 colspan="3" valign="TOP">　 자본시장과 금융투자업에 관한 법률 제161조 주요사항보고서 및<br>
+　 유가증권시장(코스닥시장)공시규정에 따른 거래소 신고의무 사항임</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br>
+<br></P><P><br></P>
+</BODY>
+</HTML>

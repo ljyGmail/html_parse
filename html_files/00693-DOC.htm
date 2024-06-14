@@ -1,0 +1,406 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00693, 서식버전 : 2.6, 서식변경날짜 : 2015년 3월 3일,<br>
+&nbsp; &nbsp;문서명 : 신탁계약해지결과보고서★</P>
+<P class=cover-title><a class='toc' href='00693-TOC.htm#11' name='11' target='toc'>신탁계약해지 결과보고서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=152></COL>
+  <COL width=430></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=40 colspan="2" valign="TOP"><br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP">금융감독원장 귀하</TD>
+  <TD width=430 height=17 align="RIGHT" valign="TOP">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=152 height=40 valign="TOP"></TD>
+  <TD width=430 height=40 valign="TOP"><br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=152 height=40 valign="TOP">회 &nbsp; &nbsp; &nbsp; 사 &nbsp; &nbsp; &nbsp; 명 :<br>
+<br></TD>
+  <TD width=430 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=152 height=40 valign="TOP">대 &nbsp; 표 &nbsp; &nbsp; 이 &nbsp; 사 :<br>
+<br></TD>
+  <TD width=430 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP">본 &nbsp;점 &nbsp;소 &nbsp;재 &nbsp;지 :</TD>
+  <TD width=430 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP"></TD>
+  <TD width=430 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP"></TD>
+  <TD width=430 height=17 valign="TOP">(홈페이지) http://</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP"></TD>
+  <TD width=430 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP">작 &nbsp;성 &nbsp;책 &nbsp;임 &nbsp;자 :</TD>
+  <TD width=430 height=17 valign="TOP">(직 &nbsp;책) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(성 &nbsp;명) </TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP"></TD>
+  <TD width=430 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=152 height=40 valign="TOP"><br>
+<br></TD>
+  <TD width=430 height=40 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=section-2><a class='toc' href='00693-TOC.htm#55' name='55' target='toc'>1. 발행인의 명칭 및 주소</a></P>
+<P class=section-3><a class='toc' href='00693-TOC.htm#57' name='57' target='toc'>가. 명 &nbsp;칭 :</a></P><P><br></P>
+<P class=section-3><a class='toc' href='00693-TOC.htm#60' name='60' target='toc'>나. 주 &nbsp;소 :</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00693-TOC.htm#63' name='63' target='toc'>2. 신탁계약등 해지보고에 관한 내용</a></P>
+<P class=section-3><a class='toc' href='00693-TOC.htm#65' name='65' target='toc'>가. 해지 주요사항보고서 제출일 :</a></P><P><br></P>
+<P class=section-3><a class='toc' href='00693-TOC.htm#68' name='68' target='toc'>나. 해지 신탁업자의 명칭 : </a></P><P>★Table-Group aClass=CNCL_CRP★</P>
+
+<TABLE class=nb width=441>
+<COLGROUP>
+  <COL width=99></COL>
+  <COL width=324></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=99 height=17>회사명 :</TD>
+  <TD width=324 height=17></TD>
+</TR>
+<TR>
+  <TD width=99 height=40>회사고유번호 :</TD>
+  <TD width=324 height=40 align="LEFT">e★CNCL_CRP |CIK|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00693-TOC.htm#83' name='83' target='toc'>3. 신탁계약등 해지내용</a></P><P>★Table-Group aClass=CNCL_DT★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=86 align="RIGHT" valign="TOP"></TD>
+  <TD class=tu width=291 height=86 align="RIGHT" valign="TOP">u★WON |List|L|1|선<br>
+(단위 : 원)|1<br>
+(단위 : 천원)|2<br>
+(단위 : 백만원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=189></COL>
+  <COL width=189></COL>
+  <COL width=195></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=189 height=17 align="CENTER">해지일자</TH>
+  <TH width=189 height=17 align="CENTER">신탁계약등 종류</TH>
+  <TH width=195 height=17 align="CENTER">계약해지금액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=189 height=17 align="CENTER" valign="TOP">u★CNCL_DT |달력|필</TD>
+  <TD width=189 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=195 height=17 align="CENTER" valign="TOP">e★CTR_CNC_AMT |\|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00693-TOC.htm#110' name='110' target='toc'>4. 신탁계약을 통한 해당법인 발행주식 취득ㆍ처분 현황</a></P><P>★Table-Group aClass=ACQ_DSP★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=224 valign="TOP"></TD>
+  <TD class=tu width=291 height=224 align="RIGHT" valign="TOP">u★WONSTOCKPERCENT |List|L|1|선<br>
+(단위 : 원, 주, %)|1<br>
+(단위 : 원, 천주, %)|2<br>
+(단위 : 원, 백만주, %)|3<br>
+(단위 : 천원, 주, %)|4<br>
+(단위 : 천원, 천주, %)|5<br>
+(단위 : 천원, 백만주, %)|6<br>
+(단위 : 백만원, 주, %)|7<br>
+(단위 : 백만원, 천주, %)|8<br>
+(단위 : 백만원, 백만주, %)|9</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=824>
+<COLGROUP>
+  <COL width=103></COL>
+  <COL width=214></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=56></COL>
+  <COL width=57></COL>
+  <COL width=57></COL>
+  <COL width=56></COL>
+  <COL width=86></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=103 height=86 rowspan="2" align="CENTER">월 &nbsp;말</TH>
+  <TH width=214 height=86 rowspan="2" align="CENTER">종 &nbsp;류</TH>
+  <TH width=188 height=17 colspan="3" align="CENTER">취 &nbsp;득</TH>
+  <TH width=188 height=17 colspan="3" align="CENTER">처 &nbsp;분</TH>
+  <TH width=86 height=86 rowspan="2" align="CENTER">월말현재<br>
+신탁<br>
+계약금액<br>
+(B)</TH>
+</TR>
+<TR>
+  <TH width=57 height=56 align="CENTER">수량</TH>
+  <TH width=57 height=56 align="CENTER">금액<br>
+(A)</TH>
+  <TH width=56 height=56 align="CENTER">비율<br>
+(A/B)</TH>
+  <TH width=57 height=56 align="CENTER">수량</TH>
+  <TH width=57 height=56 align="CENTER">금액<br>
+(A)</TH>
+  <TH width=56 height=56 align="CENTER">비율<br>
+(A/B)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=103 height=63 align="CENTER" valign="TOP">u★MONTH_DT |달력|선</TD>
+  <TD class=tu width=214 height=63 align="CENTER" valign="TOP">u★STK_KND |List|L|1|선<br>
+보통주식|6<br>
+기타주식|7</TD>
+  <TD width=57 height=63 align="RIGHT" valign="TOP">e★ACQ_CNT |P|선</TD>
+  <TD width=57 height=63 align="RIGHT" valign="TOP">e★ACQ_AMT |\|선</TD>
+  <TD width=56 height=63 align="RIGHT" valign="TOP">e★ACQ_RT |%|선</TD>
+  <TD width=57 height=63 align="RIGHT" valign="TOP">e★DSP_CNT |P|선</TD>
+  <TD width=57 height=63 align="RIGHT" valign="TOP">e★DSP_AMT |\|선</TD>
+  <TD width=56 height=63 align="RIGHT" valign="TOP">e★DSP_RT |%|선</TD>
+  <TD width=86 height=63 align="RIGHT" valign="TOP">e★MONTH_AMT |\|선</TD>
+</TR>
+<TR>
+  <TD width=103 height=17 align="CENTER">계</TD>
+  <TD width=214 height=17 align="CENTER"></TD>
+  <TD width=57 height=17 align="RIGHT"></TD>
+  <TD width=57 height=17 align="RIGHT"></TD>
+  <TD width=56 height=17 align="RIGHT"></TD>
+  <TD width=57 height=17 align="RIGHT"></TD>
+  <TD width=57 height=17 align="RIGHT"></TD>
+  <TD width=56 height=17 align="RIGHT"></TD>
+  <TD width=86 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00693-TOC.htm#178' name='178' target='toc'>5. 신탁계약등 해지후 자기주식등 보유현황</a></P><P>★Table-Group aClass=HLD_CNT★</P>
+
+<TABLE class=nb width=763>
+<COLGROUP>
+  <COL width=15></COL>
+  <COL width=138></COL>
+  <COL width=234></COL>
+  <COL width=340></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=15 height=224 valign="TOP">[</TD>
+  <TD class=tu width=138 height=224 valign="TOP">u★BASE_DT |달력|필</TD>
+  <TD width=234 height=224 valign="TOP">현재]</TD>
+  <TD class=tu width=340 height=224 align="RIGHT" valign="TOP">u★WONSTOCKPERCENT |List|L|1|선<br>
+(단위 : 원, 주, %)|1<br>
+(단위 : 원, 천주, %)|2<br>
+(단위 : 원, 백만주, %)|3<br>
+(단위 : 천원, 주, %)|4<br>
+(단위 : 천원, 천주, %)|5<br>
+(단위 : 천원, 백만주, %)|6<br>
+(단위 : 백만원, 주, %)|7<br>
+(단위 : 백만원, 천주, %)|8<br>
+(단위 : 백만원, 백만주, %)|9</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=901>
+<COLGROUP>
+  <COL width=211></COL>
+  <COL width=75></COL>
+  <COL width=51></COL>
+  <COL width=72></COL>
+  <COL width=78></COL>
+  <COL width=55></COL>
+  <COL width=81></COL>
+  <COL width=61></COL>
+  <COL width=56></COL>
+  <COL width=71></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=211 height=70 rowspan="2" align="CENTER">주식의 종류</TH>
+  <TH width=216 height=40 colspan="3" align="CENTER">법제165조의3의<br>
+규정에 의한 보유상황(A)</TH>
+  <TH width=232 height=40 colspan="3" align="CENTER">법제165조의3의<br>
+신탁계약등에 의한 보유상황(B)</TH>
+  <TH width=206 height=40 colspan="3" align="CENTER">계(A+B)</TH>
+</TR>
+<TR>
+  <TH width=75 height=17 align="CENTER">수량</TH>
+  <TH width=51 height=17 align="CENTER">비율</TH>
+  <TH width=72 height=17 align="CENTER">총가액</TH>
+  <TH width=78 height=17 align="CENTER">수량</TH>
+  <TH width=55 height=17 align="CENTER">비율</TH>
+  <TH width=81 height=17 align="CENTER">계약금액</TH>
+  <TH width=61 height=17 align="CENTER">수량</TH>
+  <TH width=56 height=17 align="CENTER">비율</TH>
+  <TH width=71 height=17 align="CENTER">금 &nbsp;액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=211 height=86 align="CENTER" valign="TOP">u★STK_KND |List|L|1|선<br>
+보통주식|6<br>
+기타주식|7</TD>
+  <TD width=75 height=86 align="RIGHT" valign="TOP">e★HLD_CNT1 |\|선</TD>
+  <TD width=51 height=86 align="RIGHT" valign="TOP">e★HLD_RATE1 |%|선</TD>
+  <TD width=72 height=86 align="RIGHT" valign="TOP">e★HLD_AMT1 |\|선</TD>
+  <TD width=78 height=86 align="RIGHT" valign="TOP">e★HLD_CNT2 |\|선</TD>
+  <TD width=55 height=86 align="RIGHT" valign="TOP">e★HLD_RATE2 |%|선</TD>
+  <TD width=81 height=86 align="RIGHT" valign="TOP">e★HLD_AMT2 |\|선</TD>
+  <TD width=61 height=86 align="RIGHT" valign="TOP">e★HLD_CNT3 |\|필</TD>
+  <TD width=56 height=86 align="RIGHT" valign="TOP">e★HLD_RATE3 |%|필</TD>
+  <TD width=71 height=86 align="RIGHT" valign="TOP">e★HLD_AMT3 |\|필</TD>
+</TR>
+<TR>
+  <TD width=211 height=17 align="CENTER" valign="TOP">계</TD>
+  <TD width=75 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=51 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=72 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=78 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=55 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=81 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=61 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=56 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=71 height=17 align="RIGHT" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+</BODY>
+</HTML>

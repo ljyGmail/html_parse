@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 90119, 서식버전 : 2.2, 서식변경날짜 : 2009년 10월 1일,<br>
+&nbsp; &nbsp;문서명 : 자산실사보고서★</P>
+<P class=cover-title><a class='toc' href='90119-TOC.htm#11' name='11' target='toc'>자산실사보고서</a></P><P><br>
+<br>
+<br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=183></COL>
+  <COL width=94></COL>
+  <COL width=296></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="3">○○회사 귀중</TD>
+</TR>
+<TR>
+  <TD width=591 height=132 colspan="3"><br>
+<br>
+<br>
+<br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="3" align="CENTER">○○회사의 자산유동화와 관련하여 자산실사 결과 종합의견</TD>
+</TR>
+<TR>
+  <TD width=591 height=132 colspan="3"><br>
+<br>
+<br>
+<br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="3">계약체결일자 : </TD>
+</TR>
+<TR>
+  <TD width=591 height=63 colspan="3"><br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="3">실 &nbsp;사 &nbsp;기 &nbsp;간 : </TD>
+</TR>
+<TR>
+  <TD width=591 height=86 colspan="3"><br>
+<br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="3" align="RIGHT">XXXX년 XX월 XX일</TD>
+</TR>
+<TR>
+  <TD width=591 height=109 colspan="3"><br>
+<br>
+<br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=183 height=17></TD>
+  <TD width=94 height=17>실사기관명 :</TD>
+  <TD width=296 height=17></TD>
+</TR>
+<TR>
+  <TD width=183 height=17></TD>
+  <TD width=94 height=17>대 표 이 사 :</TD>
+  <TD width=296 height=17 align="RIGHT">(인)</TD>
+</TR>
+<TR>
+  <TD width=183 height=17></TD>
+  <TD width=94 height=17>본점소재지 :</TD>
+  <TD width=296 height=17></TD>
+</TR>
+<TR>
+  <TD width=183 height=40></TD>
+  <TD width=94 height=40>실사책임자 :</TD>
+  <TD width=296 height=40>(직책) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(성명) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(인)</TD>
+</TR>
+<TR>
+  <TD width=183 height=17></TD>
+  <TD width=94 height=17></TD>
+  <TD width=296 height=17>(전화번호)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='90119-TOC.htm#57' name='57' target='toc'>I. 자산실사의 개요</a></P><P><br></P>
+<P class=section-2><a class='toc' href='90119-TOC.htm#60' name='60' target='toc'>1. 실사대상회사 및 실사기관의 개황 등</a></P><P style="font-size: 14pt;">가. 실사대상회사의 개황</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=143></COL>
+  <COL width=439></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=143 height=17 align="CENTER" valign="TOP">구 &nbsp; &nbsp;분</TH>
+  <TH width=439 height=17 align="CENTER" valign="TOP">내 &nbsp; &nbsp; &nbsp;용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=143 height=17 align="CENTER">회 &nbsp;사 &nbsp;명</TD>
+  <TD width=439 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">설립연월일</TD>
+  <TD width=439 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">대 표 이 사</TD>
+  <TD width=439 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">본점소재지</TD>
+  <TD width=439 height=17 align="RIGHT" valign="TOP">(전화번호 : &nbsp; &nbsp; &nbsp; )</TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">목 적 사 업</TD>
+  <TD width=439 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">자본금(출자금등)</TD>
+  <TD width=439 height=17 align="RIGHT" valign="TOP">(1주당 액면가액 : &nbsp; &nbsp; &nbsp; )</TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">주요주주(출자자등)</TD>
+  <TD width=439 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">나. 실사기관의 개황</P>
+
+<TABLE border=1 width=599>
+<COLGROUP>
+  <COL width=143></COL>
+  <COL width=90></COL>
+  <COL width=165></COL>
+  <COL width=165></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=143 height=17 align="CENTER" valign="TOP">구 &nbsp; &nbsp;분</TH>
+  <TH width=438 height=17 colspan="3" align="CENTER" valign="TOP">내 &nbsp; &nbsp; &nbsp;용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=143 height=17 align="CENTER">회 &nbsp;사 &nbsp;명</TD>
+  <TD width=438 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">설립연월일</TD>
+  <TD width=438 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">대 표 이 사</TD>
+  <TD width=438 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">본점소재지</TD>
+  <TD width=438 height=17 colspan="3" align="RIGHT" valign="TOP">(전화번호 : &nbsp; &nbsp; &nbsp; )</TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">목 적 사 업</TD>
+  <TD width=438 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">자본금(출자금등)</TD>
+  <TD width=438 height=17 colspan="3" align="RIGHT" valign="TOP">(1주당 액면가액 : &nbsp; &nbsp; &nbsp; )</TD>
+</TR>
+<TR>
+  <TD width=143 height=17 align="CENTER" valign="TOP">주요주주(출자자등)</TD>
+  <TD width=438 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=143 height=139 rowspan="2" align="CENTER">재 무 현 황</TD>
+  <TD width=90 height=40 align="CENTER">구 &nbsp; 분</TD>
+  <TD width=165 height=40 align="CENTER">당 &nbsp; 기<br>
+( &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;~ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)</TD>
+  <TD width=165 height=40 align="CENTER">전 &nbsp; 기<br>
+( &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;~ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=90 height=86 align="CENTER" valign="TOP">자 산 총 액<br>
+부 채 총 액<br>
+자 본 총 액<br>
+당기순이익</TD>
+  <TD width=165 height=86 align="RIGHT" valign="TOP"><br>
+<br>
+<br>
+<br></TD>
+  <TD width=165 height=86 align="RIGHT" valign="TOP"><br>
+<br>
+<br>
+<br></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">다. 자산실사기간</P><P><br></P><P style="font-size: 14pt;">라. 자산실사기준일</P><P><br></P>
+<P class=section-2><a class='toc' href='90119-TOC.htm#133' name='133' target='toc'>2. 자산실사의 방법 및 기준</a></P><P style="font-size: 14pt;">가. 자산실사의 방법</P><P><br></P><P style="font-size: 14pt;">나. 자산실사의 기준</P><P><br></P>
+<P class=section-2><a class='toc' href='90119-TOC.htm#139' name='139' target='toc'>3. 기타 투자자보호를 위하여 필요한 사항</a></P><P><br>
+<br></P>
+<P class=section-1><a class='toc' href='90119-TOC.htm#142' name='142' target='toc'>II. 자산실사의 결과요약 및 종합의견</a></P><P><br></P>
+<P class=section-2><a class='toc' href='90119-TOC.htm#145' name='145' target='toc'>1. 실사대상자산의 유형별 내용 및 특성</a></P><P><br></P>
+<P class=section-2><a class='toc' href='90119-TOC.htm#148' name='148' target='toc'>2. 자산실사의 결과요약</a></P><P><br></P>
+<P class=section-2><a class='toc' href='90119-TOC.htm#151' name='151' target='toc'>3. 실사결과 종합의견</a></P><P><br>
+<br></P>
+<P class=section-1><a class='toc' href='90119-TOC.htm#154' name='154' target='toc'>III. 증빙서류등의 관리방법</a></P><P><br>
+<br></P>
+<P class=section-1><a class='toc' href='90119-TOC.htm#157' name='157' target='toc'>IV. 기타 투자자보호에 필요한 사항</a></P><P><br>
+<br></P>
+<P class=section-1><a class='toc' href='90119-TOC.htm#160' name='160' target='toc'>V. 첨부자료</a></P><P><br></P><P><br></P>
+</BODY>
+</HTML>

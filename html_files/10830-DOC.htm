@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 10830, 서식버전 : 1.0, 서식변경날짜 : 2009년 2월 4일,<br>
+&nbsp; &nbsp;문서명 : 증권발행실적보고서(집합투자증권-합병)★</P>
+<P class=cover-title><a class='toc' href='10830-TOC.htm#11' name='11' target='toc'>증권발행실적보고서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=152></COL>
+  <COL width=430></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER">[집합투자증권-합병]</TD>
+</TR>
+<TR>
+  <TD width=591 height=63 colspan="2"><br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=152 height=17>금융감독원장 귀하</TD>
+  <TD width=430 height=17 align="RIGHT">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=152 height=17></TD>
+  <TD width=430 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=_FUND_MAIN_★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=152></COL>
+  <COL width=239></COL>
+  <COL width=77></COL>
+  <COL width=68></COL>
+  <COL width=19></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=152 height=63>집합투자기구 명칭 :</TD>
+  <TD width=239 height=63 align="LEFT">e★FUND_NAME |V|필</TD>
+  <TD width=77 height=63>(펀드코드 :</TD>
+  <TD width=68 height=63 align="CENTER">e★FUND_CODE |AAAAA|선</TD>
+  <TD width=19 height=63>)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="5"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=152></COL>
+  <COL width=430></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=152 height=17 valign="TOP">집합투자업자 명칭 :</TD>
+  <TD width=430 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP"></TD>
+  <TD width=430 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP">연 &nbsp; &nbsp; &nbsp; &nbsp;락 &nbsp; &nbsp; &nbsp; 처 :</TD>
+  <TD width=430 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP"></TD>
+  <TD width=430 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP"></TD>
+  <TD width=430 height=17 valign="TOP">(홈페이지) http://</TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP"></TD>
+  <TD width=430 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP">작 &nbsp;성 &nbsp;책 &nbsp;임 &nbsp;자 :</TD>
+  <TD width=430 height=17 valign="TOP">(직 &nbsp;책) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(성 &nbsp;명) </TD>
+</TR>
+<TR>
+  <TD width=152 height=17 valign="TOP"></TD>
+  <TD width=430 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=152 height=40 valign="TOP"><br>
+<br></TD>
+  <TD width=430 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" align="RIGHT" valign="TOP">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" align="RIGHT" valign="TOP"><br>
+(집합투자기구 명칭)</TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" align="RIGHT" valign="TOP"><br>
+자산운용회사 &nbsp;대표이사 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(인)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=section-2><a class='toc' href='10830-TOC.htm#85' name='85' target='toc'>1. 집합투자기구의 명칭</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10830-TOC.htm#88' name='88' target='toc'>2. 합병일정</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10830-TOC.htm#91' name='91' target='toc'>3. 집합투자자총회 결과</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10830-TOC.htm#94' name='94' target='toc'>4. 매수청구권 행사 내용</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10830-TOC.htm#97' name='97' target='toc'>5. 집합투자증권 배정 등에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10830-TOC.htm#100' name='100' target='toc'>6. 합병 전ㆍ후 요약 재무정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10830-TOC.htm#103' name='103' target='toc'>7. 투자자 등 보호에 필요한 사항</a></P><P><br></P><P><br></P>
+</BODY>
+</HTML>

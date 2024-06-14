@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 11345, 서식버전 : 1.2, 서식변경날짜 : 2022년 10월 18일,<br>
+&nbsp; &nbsp;문서명 : 주요사항보고서(회사분할 결정)★</P>
+<P class=section-1><a class='toc' href='11345-TOC.htm#15' name='15' target='toc'>회사분할 결정</a></P><P><br></P><P>★Table-Group aClass=RSL_SPL★</P>
+
+<TABLE border=1 width=901>
+<COLGROUP>
+  <COL width=109></COL>
+  <COL width=122></COL>
+  <COL width=105></COL>
+  <COL width=82></COL>
+  <COL width=184></COL>
+  <COL width=82></COL>
+  <COL width=154></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=354 height=17 colspan="3">1. 분할방법</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER" valign="TOP">e★SPL_MTH |V|선</TD>
+</TR>
+<TR>
+  <TD width=354 height=17 colspan="3">2. 분할목적</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER" valign="TOP">e★SPL_RES |V|선</TD>
+</TR>
+<TR>
+  <TD width=354 height=17 colspan="3">3. 분할의 중요영향 및 효과</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER" valign="TOP">e★SPL_EFT |V|선</TD>
+</TR>
+<TR>
+  <TD width=354 height=17 colspan="3">4. 분할비율 </TD>
+  <TD width=529 height=17 colspan="4" align="RIGHT" valign="TOP">e★NEW_SPL_RATE |V|선</TD>
+</TR>
+<TR>
+  <TD width=354 height=17 colspan="3">5. 분할로 이전할 사업 및 재산의 내용</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER" valign="TOP">e★SPL_PROP |V|선</TD>
+</TR>
+<TR>
+  <TD width=109 height=266 rowspan="7">6. 분할 후 존속회사</TD>
+  <TD width=236 height=17 colspan="2">회사명</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER" valign="TOP">e★SPL_INC |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=77 colspan="2" rowspan="3">분할후 재무내용(원)</TD>
+  <TD width=82 height=17 align="CENTER">자산총계</TD>
+  <TD width=184 height=17 align="RIGHT" valign="TOP">e★SPL_ASST |\|선</TD>
+  <TD width=82 height=17 align="CENTER">부채총계</TD>
+  <TD width=154 height=17 align="RIGHT" valign="TOP">e★SPL_DPT |\|선</TD>
+</TR>
+<TR>
+  <TD width=82 height=17 align="CENTER">자본총계</TD>
+  <TD width=184 height=17 align="RIGHT" valign="TOP">e★SPL_DPT_SUM |\|선</TD>
+  <TD width=82 height=17 align="CENTER">자본금</TD>
+  <TD width=154 height=17 align="RIGHT" valign="TOP">e★SPL_CPT |\|선</TD>
+</TR>
+<TR>
+  <TD class=tu width=275 height=17 colspan="2" align="CENTER" valign="TOP">u★SPL_NDY |달력|선</TD>
+  <TD width=245 height=17 colspan="2" align="CENTER">현재기준</TD>
+</TR>
+<TR>
+  <TD width=236 height=40 colspan="2">존속사업부문 최근 사업연도매출액(원)</TD>
+  <TD width=529 height=40 colspan="4" align="RIGHT">e★SPL_SAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">주요사업</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER" valign="TOP">e★SPL_PRB |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=63 colspan="2">분할 후 상장유지 여부</TD>
+  <TD class=tu width=529 height=63 colspan="4" align="CENTER" valign="TOP">u★SPL_CTC |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=109 height=266 rowspan="7">7. 분할설립회사</TD>
+  <TD width=236 height=17 colspan="2">회사명</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER" valign="TOP">e★NEW_INC |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=77 colspan="2" rowspan="3">설립시 재무내용(원)</TD>
+  <TD width=82 height=17 align="CENTER">자산총계</TD>
+  <TD width=184 height=17 align="RIGHT" valign="TOP">e★NEW_ASST |\|선</TD>
+  <TD width=82 height=17 align="CENTER">부채총계</TD>
+  <TD width=154 height=17 align="RIGHT" valign="TOP">e★NEW_DPT |\|선</TD>
+</TR>
+<TR>
+  <TD width=82 height=17 align="CENTER">자본총계</TD>
+  <TD width=184 height=17 align="RIGHT" valign="TOP">e★NEW_DPT_SUM |\|선</TD>
+  <TD width=82 height=17 align="CENTER">자본금</TD>
+  <TD width=154 height=17 align="RIGHT" valign="TOP">e★NEW_CPT |\|선</TD>
+</TR>
+<TR>
+  <TD class=tu width=275 height=17 colspan="2" align="CENTER" valign="TOP">u★NEW_NDY |달력|선</TD>
+  <TD width=245 height=17 colspan="2" align="CENTER">현재기준</TD>
+</TR>
+<TR>
+  <TD width=236 height=40 colspan="2">신설사업부문 최근 사업연도 매출액(원)</TD>
+  <TD width=529 height=40 colspan="4" align="RIGHT">e★NEW_SAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">주요사업</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER" valign="TOP">e★NEW_PRB |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=63 colspan="2">재상장신청 여부</TD>
+  <TD class=tu width=529 height=63 colspan="4" align="CENTER" valign="TOP">u★NEW_RR |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=109 height=287 rowspan="10">8. 감자에 관한 사항</TD>
+  <TD width=236 height=17 colspan="2">감자비율(%)</TD>
+  <TD width=529 height=17 colspan="4" align="RIGHT" valign="TOP">e★RDC_RATE |V|선</TD>
+</TR>
+<TR>
+  <TD width=122 height=47 rowspan="2">구주권<br>
+제출기간</TD>
+  <TD width=105 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★OSH_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=105 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★OSH_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=122 height=47 rowspan="2">매매거래정지 예정기간</TD>
+  <TD width=105 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★STP_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=105 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★STP_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">신주배정조건</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER" valign="TOP">e★CPR_DBN |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">- 주주 주식수 비례여부 및 사유</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER">e★CPR_CRN |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">신주배정기준일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★CPR_CDD |달력|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">신주권교부예정일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★CPR_CYD |달력|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">신주의 상장예정일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★CPR_CED |달력|선</TD>
+</TR>
+<TR>
+  <TD width=109 height=566 rowspan="17">9. 분할일정</TD>
+  <TD width=236 height=17 colspan="2">이사회결의일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER">u★DRT_RSLT_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=122 height=47 rowspan="2">- 사외이사<br>
+&nbsp; &nbsp;참석여부</TD>
+  <TD width=105 height=17 align="CENTER">참석(명)</TD>
+  <TD width=529 height=17 colspan="4" align="RIGHT" valign="TOP">e★ODRT_ATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=105 height=17 align="CENTER">불참(명)</TD>
+  <TD width=529 height=17 colspan="4" align="RIGHT" valign="TOP">e★ODRT_NATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=86 colspan="2">- 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+  <TD class=tu width=529 height=86 colspan="4" align="CENTER">u★ADT_ATD_YN |List|L||선<br>
+참석|Y<br>
+불참|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">주주확정기준일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER">u★MGR_CRT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=122 height=47 rowspan="2">주주명부폐쇄기간</TD>
+  <TD width=105 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★CLO_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=105 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★CLO_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=122 height=47 rowspan="2">분할반대의사통지 접수기간</TD>
+  <TD width=105 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★REV_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=105 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★REV_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">주주총회예정일자</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★SPL_SHM_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=122 height=47 rowspan="2">주식매수청구권 행사기간</TD>
+  <TD width=105 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★BUY_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=105 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★BUY_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=122 height=47 rowspan="2">채권자 이의제출기간</TD>
+  <TD width=105 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★PRT_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=105 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★PRT_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">분할기일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★SPL_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">종료보고 총회일</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★MGR_ENY |달력|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">분할등기예정일자</TD>
+  <TD class=tu width=529 height=17 colspan="4" align="CENTER" valign="TOP">u★SPL_RGS_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=109 height=167 rowspan="6">10.<br>
+주식매수청구권에 관한 사항</TD>
+  <TD width=236 height=17 colspan="2">행사요건</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER">e★MGR_STO |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">매수예정가격</TD>
+  <TD width=529 height=17 colspan="4" align="RIGHT">e★MGR_STP |\|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">행사절차, 방법, 기간, 장소</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER">e★MGR_STD |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">지급예정시기, 지급방법</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER">e★MGR_STY |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">주식매수청구권 제한 관련 내용</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER">e★MGR_STC |V|선</TD>
+</TR>
+<TR>
+  <TD width=236 height=17 colspan="2">계약에 미치는 효력</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER">e★MGR_STE |V|선</TD>
+</TR>
+<TR>
+  <TD width=354 height=63 colspan="3">11. 풋옵션 등 계약 체결여부</TD>
+  <TD class=tu width=529 height=63 colspan="4" align="CENTER">u★PO_CTRT_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=354 height=17 colspan="3">- 계약내용</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER">e★PO_CTRT_DTL |V|선</TD>
+</TR>
+<TR>
+  <TD width=354 height=63 colspan="3">12. 증권신고서 제출대상 여부</TD>
+  <TD class=tu width=529 height=63 colspan="4" align="CENTER">u★RPT_SM_YN |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+<TR>
+  <TD width=354 height=17 colspan="3">- 제출을 면제받은 경우 그 사유</TD>
+  <TD width=529 height=17 colspan="4" align="CENTER">e★RPT_SBM |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>13. 향후 회사구조개편에 관한 계획</P><P><br></P><P>14. 물적분할의 경우 물적분할 추진에 대한 검토내용</P><P><br></P><P>15. 물적분할의 경우 주주보호방안</P><P><br></P><P>16. 기타 투자판단과 관련한 중요사항</P><P><br></P><P>※ 관련공시</P><P><br></P><P><br></P><P><br></P>
+</BODY>
+</HTML>

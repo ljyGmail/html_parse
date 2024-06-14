@@ -1,0 +1,671 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 90165, 서식버전 : 2.5, 서식변경날짜 : 2024년 2월 19일,<br>
+&nbsp; &nbsp;문서명 : 내부회계관리제도운영보고서★</P><P><br></P>
+<P class=cover-title><a class='toc' href='90165-TOC.htm#12' name='12' target='toc'>내부회계관리제도운영보고서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=129></COL>
+  <COL width=174></COL>
+  <COL width=270></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=63 colspan="3" valign="TOP">「외부감사 및 회계 등에 관한 규정」 제7조의 규정에 따라 내부회계관리제도 운영보고서를 첨부합니다.</TD>
+</TR>
+<TR>
+  <TD width=312 height=17 colspan="2">금융위원회 귀중</TD>
+  <TD width=270 height=17 align="RIGHT"> &nbsp;년 &nbsp; &nbsp; 월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="3" valign="TOP"><br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=129 height=17 valign="TOP">회 &nbsp; &nbsp; 사 &nbsp; &nbsp; 명 &nbsp;:</TD>
+  <TD width=453 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=129 height=17 valign="TOP">대 &nbsp;표 &nbsp; 이 &nbsp;사 &nbsp;:</TD>
+  <TD width=174 height=17 valign="TOP"></TD>
+  <TD width=270 height=17 valign="TOP">(인)</TD>
+</TR>
+<TR>
+  <TD width=129 height=17 valign="TOP">본 점 &nbsp;소 재 지 :</TD>
+  <TD width=453 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=129 height=17 valign="TOP"> &nbsp; &nbsp; (전 &nbsp;화)</TD>
+  <TD width=453 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=129 height=17 valign="TOP"></TD>
+  <TD width=453 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=129 height=17 valign="TOP"></TD>
+  <TD width=453 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=129 height=17 valign="TOP">내부회계관리자 :</TD>
+  <TD width=174 height=17 valign="TOP"></TD>
+  <TD width=270 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=129 height=17 valign="TOP"> &nbsp; &nbsp; (전 &nbsp;화)</TD>
+  <TD width=453 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="3" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='90165-TOC.htm#63' name='63' target='toc'>1. 「주식회사 등의 외부감사에 관한 법률」 제8조제1항의 규정에 의한 내부회계관리규정과 이를 관리ㆍ운영하는 인력에 관한 사항</a></P><P><br>
+(1) 내부회계관리규정<br>
+<br></P><P>(2) 당해 사업연도중 내부회계관리규정의 주요 개선내용</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=90></COL>
+  <COL width=158></COL>
+  <COL width=158></COL>
+  <COL width=158></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=90 height=17 align="CENTER">개선일자</TH>
+  <TH width=158 height=17 align="CENTER">개선전</TH>
+  <TH width=158 height=17 align="CENTER">개선후</TH>
+  <TH width=158 height=17 align="CENTER">비고(개선이유등)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=90 height=17 valign="TOP"></TD>
+  <TD width=158 height=17 valign="TOP"></TD>
+  <TD width=158 height=17 valign="TOP"></TD>
+  <TD width=158 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(3) 관리ㆍ운영조직의 책임자 현황</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=61></COL>
+  <COL width=67></COL>
+  <COL width=131></COL>
+  <COL width=116></COL>
+  <COL width=80></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=91 height=70 rowspan="2" align="CENTER">소속기관<br>
+또는 부서</TH>
+  <TH width=61 height=70 rowspan="2" align="CENTER">책임자<br>
+성명</TH>
+  <TH width=67 height=70 rowspan="2" align="CENTER">직 책</TH>
+  <TH width=256 height=17 colspan="2" align="CENTER">담당업무</TH>
+  <TH width=80 height=70 rowspan="2" align="CENTER">전화번호</TH>
+</TR>
+<TR>
+  <TH width=131 height=40 align="CENTER">내부회계관리제도<br>
+관련</TH>
+  <TH width=116 height=40 align="CENTER">기타</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=91 height=17 align="CENTER">감사(위원회)</TD>
+  <TD width=61 height=17 align="CENTER"></TD>
+  <TD width=67 height=17 align="CENTER">감사</TD>
+  <TD width=131 height=17></TD>
+  <TD width=116 height=17></TD>
+  <TD width=80 height=17></TD>
+</TR>
+<TR>
+  <TD width=91 height=40 align="CENTER">이사회</TD>
+  <TD width=61 height=40 align="CENTER"></TD>
+  <TD width=67 height=40 align="CENTER">내부회계<br>
+관리자</TD>
+  <TD width=131 height=40></TD>
+  <TD width=116 height=40></TD>
+  <TD width=80 height=40></TD>
+</TR>
+<TR>
+  <TD width=91 height=17 align="CENTER">회계처리부서</TD>
+  <TD width=61 height=17 align="CENTER"></TD>
+  <TD width=67 height=17 align="CENTER"></TD>
+  <TD width=131 height=17></TD>
+  <TD width=116 height=17></TD>
+  <TD width=80 height=17></TD>
+</TR>
+<TR>
+  <TD width=91 height=17 align="CENTER">전산운영부서</TD>
+  <TD width=61 height=17 align="CENTER"></TD>
+  <TD width=67 height=17 align="CENTER"></TD>
+  <TD width=131 height=17></TD>
+  <TD width=116 height=17></TD>
+  <TD width=80 height=17></TD>
+</TR>
+<TR>
+  <TD width=91 height=17 align="CENTER">자금운영부서</TD>
+  <TD width=61 height=17 align="CENTER"></TD>
+  <TD width=67 height=17 align="CENTER"></TD>
+  <TD width=131 height=17></TD>
+  <TD width=116 height=17></TD>
+  <TD width=80 height=17></TD>
+</TR>
+<TR>
+  <TD width=91 height=17 align="CENTER">기타관련부서</TD>
+  <TD width=61 height=17 align="CENTER"></TD>
+  <TD width=67 height=17 align="CENTER"></TD>
+  <TD width=131 height=17></TD>
+  <TD width=116 height=17></TD>
+  <TD width=80 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(4) 내부회계관리ㆍ운영조직 인력 및 공인회계사 보유현황</P>
+
+<TABLE border=1 width=604>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=40></COL>
+  <COL width=104></COL>
+  <COL width=104></COL>
+  <COL width=111></COL>
+  <COL width=100></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=91 height=116 rowspan="2" align="CENTER">소속기관<br>
+또는 부서</TH>
+  <TH width=40 height=116 rowspan="2" align="CENTER">총 원</TH>
+  <TH width=337 height=40 colspan="3" align="CENTER">내부회계담당 인력의 공인회계사 자격증 보유비율</TH>
+  <TH width=100 height=116 rowspan="2" align="CENTER">내부회계담당<br>
+인력의<br>
+평균경력월수*</TH>
+</TR>
+<TR>
+  <TH width=104 height=63 align="CENTER">내부회계<br>
+담당인력수<br>
+(A)</TH>
+  <TH width=104 height=63 align="CENTER">공인회계사<br>
+자격증<br>
+소지자수(B)</TH>
+  <TH width=111 height=63 align="CENTER">비율<br>
+(B/A×100)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=91 height=17>감사(위원회)</TD>
+  <TD width=40 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=111 height=17 align="CENTER"></TD>
+  <TD width=100 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=91 height=17>이사회</TD>
+  <TD width=40 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=111 height=17 align="CENTER"></TD>
+  <TD width=100 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=91 height=17>회계처리부서</TD>
+  <TD width=40 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=111 height=17 align="CENTER"></TD>
+  <TD width=100 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=91 height=17>전산운영부서</TD>
+  <TD width=40 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=111 height=17 align="CENTER"></TD>
+  <TD width=100 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=91 height=17>자금운영부서</TD>
+  <TD width=40 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=111 height=17 align="CENTER"></TD>
+  <TD width=100 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=91 height=17>기타관련부서</TD>
+  <TD width=40 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=104 height=17 align="CENTER"></TD>
+  <TD width=111 height=17 align="CENTER"></TD>
+  <TD width=100 height=17 align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=601>
+<COLGROUP>
+  <COL width=14></COL>
+  <COL width=138></COL>
+  <COL width=18></COL>
+  <COL width=395></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=14 height=68 align="CENTER">*<br>
+<br></TD>
+  <TD width=138 height=68>내부회계담당인력의<br>
+평균경력월수</TD>
+  <TD width=18 height=68 align="CENTER">＝</TD>
+  <TD width=395 height=68 align="CENTER" valign="TOP">A의 단순합산 내부회계관리업무경력월수(입사전 포함)<br>
+─────────────────────────<br>
+내부회계담당인력수(A)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+(5) 회계담당자의 경력 및 교육실적</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=97></COL>
+  <COL width=51></COL>
+  <COL width=50></COL>
+  <COL width=76></COL>
+  <COL width=64></COL>
+  <COL width=64></COL>
+  <COL width=63></COL>
+  <COL width=63></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=97 height=70 rowspan="2" align="CENTER">직책<br>
+(직위)</TH>
+  <TH width=51 height=70 rowspan="2" align="CENTER">성명</TH>
+  <TH width=50 height=70 rowspan="2" align="CENTER">전화<br>
+번호</TH>
+  <TH width=76 height=70 rowspan="2" align="CENTER">회계담당자<br>
+등록여부</TH>
+  <TH width=137 height=17 colspan="2" align="CENTER">경력</TH>
+  <TH width=135 height=17 colspan="2" align="CENTER">교육실적</TH>
+</TR>
+<TR>
+  <TH width=64 height=40 align="CENTER">근무<br>
+연수</TH>
+  <TH width=64 height=40 align="CENTER">회계관련<br>
+경력</TH>
+  <TH width=63 height=40 align="CENTER">당기</TH>
+  <TH width=63 height=40 align="CENTER">누적</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=97 height=42 align="CENTER">내부회계<br>
+관리자</TD>
+  <TD width=51 height=42 align="CENTER"></TD>
+  <TD width=50 height=42 align="CENTER"></TD>
+  <TD width=76 height=42 align="CENTER"></TD>
+  <TD width=64 height=42 align="CENTER"></TD>
+  <TD width=64 height=42 align="CENTER"></TD>
+  <TD width=63 height=42 align="CENTER"></TD>
+  <TD width=63 height=42 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">회계담당임원</TD>
+  <TD width=51 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=76 height=17 align="CENTER"></TD>
+  <TD width=64 height=17 align="CENTER"></TD>
+  <TD width=64 height=17 align="CENTER"></TD>
+  <TD width=63 height=17 align="CENTER"></TD>
+  <TD width=63 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">회계담당직원</TD>
+  <TD width=51 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=76 height=17 align="CENTER"></TD>
+  <TD width=64 height=17 align="CENTER"></TD>
+  <TD width=64 height=17 align="CENTER"></TD>
+  <TD width=63 height=17 align="CENTER"></TD>
+  <TD width=63 height=17 align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-1><a class='toc' href='90165-TOC.htm#277' name='277' target='toc'>2. 「주식회사 등의 외부감사에 관한 법률」제8조제4항의 규정에 의하여 대표자가 보고한 내부회계관리제도 운영실태보고서</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=96></COL>
+  <COL width=95></COL>
+  <COL width=167></COL>
+  <COL width=99></COL>
+  <COL width=98></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=96 height=17 align="CENTER">보고일자</TH>
+  <TH width=95 height=17 align="CENTER">보고자</TH>
+  <TH width=167 height=17 align="CENTER">보고내용</TH>
+  <TH width=99 height=17 align="CENTER">보고대상</TH>
+  <TH width=98 height=17 align="CENTER">비 고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=96 height=17 valign="TOP"></TD>
+  <TD width=95 height=17 valign="TOP"></TD>
+  <TD width=167 height=17 valign="TOP"></TD>
+  <TD width=99 height=17 valign="TOP"></TD>
+  <TD width=98 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>&lt;&lt;단위서식 : 02_연결내부회계관리제도운영실태보고서&gt;&gt;</P>
+<P class=section-2><a class='toc' href='90165-TOC.htm#349' name='349' target='toc'>2-1. 「주식회사 등의 외부감사에 관한 법률」제8조제4항의 규정에 의하여 대표자가 보고한 연결 내부회계관리제도 운영실태보고서</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=96></COL>
+  <COL width=95></COL>
+  <COL width=167></COL>
+  <COL width=99></COL>
+  <COL width=98></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=96 height=17 align="CENTER">보고일자</TH>
+  <TH width=95 height=17 align="CENTER">보고자</TH>
+  <TH width=167 height=17 align="CENTER">보고내용</TH>
+  <TH width=99 height=17 align="CENTER">보고대상</TH>
+  <TH width=98 height=17 align="CENTER">비 고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=96 height=17 valign="TOP"></TD>
+  <TD width=95 height=17 valign="TOP"></TD>
+  <TD width=167 height=17 valign="TOP"></TD>
+  <TD width=99 height=17 valign="TOP"></TD>
+  <TD width=98 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-1><a class='toc' href='90165-TOC.htm#309' name='309' target='toc'>3. 「주식회사 등의 외부감사에 관한 법률」 제8조제5항의 규정에 의하여 감사가 내부회계관리제도의 운영실태를 평가하여 이사회에 보고한 내용</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=97></COL>
+  <COL width=96></COL>
+  <COL width=262></COL>
+  <COL width=109></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=97 height=17 align="CENTER">보고일자</TH>
+  <TH width=96 height=17 align="CENTER">보고자</TH>
+  <TH width=262 height=17 align="CENTER">보고내용</TH>
+  <TH width=109 height=17 align="CENTER">비 고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=97 height=17 valign="TOP"></TD>
+  <TD width=96 height=17 valign="TOP"></TD>
+  <TD width=262 height=17 valign="TOP"></TD>
+  <TD width=109 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>&lt;&lt;단위서식 : 03_연결내부회계관리제도평가보고&gt;&gt;</P>
+<P class=section-2><a class='toc' href='90165-TOC.htm#311' name='311' target='toc'>3-1. 「주식회사 등의 외부감사에 관한 법률」 제8조제5항의 규정에 의하여 감사가 연결 내부회계관리제도의 운영실태를 평가하여 이사회에 보고한 내용</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=97></COL>
+  <COL width=96></COL>
+  <COL width=262></COL>
+  <COL width=109></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=97 height=17 align="CENTER">보고일자</TH>
+  <TH width=96 height=17 align="CENTER">보고자</TH>
+  <TH width=262 height=17 align="CENTER">보고내용</TH>
+  <TH width=109 height=17 align="CENTER">비 고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=97 height=17 valign="TOP"></TD>
+  <TD width=96 height=17 valign="TOP"></TD>
+  <TD width=262 height=17 valign="TOP"></TD>
+  <TD width=109 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-1><a class='toc' href='90165-TOC.htm#338' name='338' target='toc'>4. 「주식회사 등의 외부감사에 관한 법률」제8조제6항에 따른 감사인의 검토의견 또는 감사의견</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">(감사인명 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=40 align="CENTER">구 분</TH>
+  <TH width=111 height=40 align="CENTER">의견내용</TH>
+  <TH width=111 height=40 align="CENTER">회사의<br>
+개선여부</TH>
+  <TH width=111 height=40 align="CENTER">개선계획</TH>
+  <TH width=111 height=40 align="CENTER">비 고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=136 valign="TOP"><P style="font-family: 굴림, sans-serif; font-size: 11pt;">「주식회사 등의 외부감사에 관한 법률」<br>
+제8조 제6항의 종합의견</P></TD>
+  <TD width=111 height=136></TD>
+  <TD width=111 height=136></TD>
+  <TD width=111 height=136></TD>
+  <TD width=111 height=136></TD>
+</TR>
+<TR>
+  <TD width=111 height=40 valign="TOP">기타 내부회계<br>
+제도관련 의견</TD>
+  <TD width=111 height=40></TD>
+  <TD width=111 height=40></TD>
+  <TD width=111 height=40></TD>
+  <TD width=111 height=40></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>&lt;&lt;단위서식 : 04_감사인의연결내부회계관리제도에대한검토의견또는감사의견&gt;&gt;</P>
+<P class=section-2><a class='toc' href='90165-TOC.htm#213' name='213' target='toc'>4-1. 「주식회사 등의 외부감사에 관한 법률」제8조제6항에 따른 연결 내부회계관리제도에 대한 감사인의 검토의견 또는 감사의견</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">(감사인명 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=40 align="CENTER">구 분</TH>
+  <TH width=111 height=40 align="CENTER">의견내용</TH>
+  <TH width=111 height=40 align="CENTER">회사의<br>
+개선여부</TH>
+  <TH width=111 height=40 align="CENTER">개선계획</TH>
+  <TH width=111 height=40 align="CENTER">비 고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=136 valign="TOP"><P style="font-family: 굴림, sans-serif; font-size: 11pt;">「주식회사 등의 외부감사에 관한 법률」<br>
+제8조 제6항의 종합의견</P></TD>
+  <TD width=111 height=136></TD>
+  <TD width=111 height=136></TD>
+  <TD width=111 height=136></TD>
+  <TD width=111 height=136></TD>
+</TR>
+<TR>
+  <TD width=111 height=40 valign="TOP">기타 내부회계<br>
+제도관련 의견</TD>
+  <TD width=111 height=40></TD>
+  <TD width=111 height=40></TD>
+  <TD width=111 height=40></TD>
+  <TD width=111 height=40></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+</BODY>
+</HTML>

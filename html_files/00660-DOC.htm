@@ -1,0 +1,2886 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00660, 서식버전 : 3.7, 서식변경날짜 : 2023년 12월 29일,<br>
+&nbsp; &nbsp;문서명 : 의결권대리행사권유참고서류★</P>
+<P class=cover-title><a class='toc' href='00660-TOC.htm#11' name='11' target='toc'>의결권 대리행사 권유 참고서류</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=155></COL>
+  <COL width=427></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP">금융위원회 / 한국거래소 귀중</TD>
+</TR>
+<TR>
+  <TD width=155 height=86 valign="TOP"><br>
+<br>
+<br>
+<br></TD>
+  <TD width=427 height=86 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=155 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=427 height=40 align="RIGHT" valign="TOP"> &nbsp; &nbsp;년 &nbsp;월 &nbsp;일</TD>
+</TR>
+<TR>
+  <TD width=155 height=63 align="CENTER" valign="TOP">권 유 자:</TD>
+  <TD width=427 height=63 valign="TOP">성 명:<br>
+주 소:<br>
+전화번호:</TD>
+</TR>
+<TR>
+  <TD width=155 height=63 align="CENTER" valign="TOP">작 성 자:</TD>
+  <TD width=427 height=63 valign="TOP">성 명:<br>
+부서 및 직위:<br>
+전화번호:</TD>
+</TR>
+<TR>
+  <TD width=591 height=63 colspan="2" valign="TOP"><br>
+<br>
+<br></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00660-TOC.htm#36' name='36' target='toc'>&lt;의결권 대리행사 권유 요약&gt;</a></P><P><br></P><P>★Table-Group aClass=SUMMARY★</P>
+
+<TABLE border=1 width=793>
+<COLGROUP>
+  <COL width=158></COL>
+  <COL width=230></COL>
+  <COL width=142></COL>
+  <COL width=227></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=784 height=17 colspan="4">1. 의결권 대리행사 권유에 관한 사항</TD>
+</TR>
+<TR>
+  <TD width=158 height=17>가. 권유자</TD>
+  <TD width=230 height=17 align="CENTER" valign="TOP">e★REC_NM |V|필</TD>
+  <TD width=142 height=17>나. 회사와의 관계</TD>
+  <TD width=227 height=17 align="CENTER" valign="TOP">e★REC_COP_RL |V|필</TD>
+</TR>
+<TR>
+  <TD width=158 height=17>다. 주총 소집공고일</TD>
+  <TD class=tu width=230 height=17 align="CENTER" valign="TOP">u★CVC_GMS_DT |달력|필</TD>
+  <TD width=142 height=17>라. 주주총회일</TD>
+  <TD class=tu width=227 height=17 align="CENTER" valign="TOP">u★GMS_DT |달력|필</TD>
+</TR>
+<TR>
+  <TD width=158 height=63>마. 권유 시작일</TD>
+  <TD class=tu width=230 height=63 align="CENTER">u★REC_BGN_DT |달력|필</TD>
+  <TD width=142 height=63>바. 권유업무<br>
+&nbsp; &nbsp; &nbsp;위탁 여부</TD>
+  <TD class=tu width=227 height=63 align="CENTER">u★REC_CSG_YN |List|L||선<br>
+위탁|Y<br>
+미위탁|N</TD>
+</TR>
+<TR>
+  <TD width=784 height=17 colspan="4">2. 의결권 대리행사 권유의 취지</TD>
+</TR>
+<TR>
+  <TD width=158 height=17>가. 권유취지</TD>
+  <TD width=617 height=17 colspan="3" align="LEFT" valign="TOP">e★REC_PPS |V|선</TD>
+</TR>
+<TR>
+  <TD width=158 height=63>나. 전자위임장 여부</TD>
+  <TD class=tu width=230 height=63 align="CENTER" valign="TOP">u★DIG_WAR_YN |List|L||선<br>
+전자위임장 가능|Y<br>
+해당사항 없음|N</TD>
+  <TD width=142 height=63 align="CENTER">(관리기관)</TD>
+  <TD width=227 height=63 align="CENTER" valign="TOP">e★DIG_WAR_OP |V|선</TD>
+</TR>
+<TR>
+  <TD width=158 height=17 align="CENTER">(인터넷 주소)</TD>
+  <TD width=617 height=17 colspan="3" align="CENTER" valign="TOP">e★DIG_WAR_URL |V|선</TD>
+</TR>
+<TR>
+  <TD width=158 height=109>다. 전자/서면투표 여부</TD>
+  <TD class=tu width=230 height=109 align="CENTER" valign="TOP">u★VOTE_TYPE |List|L||선<br>
+전자투표 가능|1<br>
+서면투표 가능|2<br>
+둘다 가능|3<br>
+해당사항 없음|4</TD>
+  <TD width=142 height=109 align="CENTER">(전자투표 관리기관)</TD>
+  <TD width=227 height=109 align="CENTER" valign="TOP">e★DIG_VOTE_OP |V|선</TD>
+</TR>
+<TR>
+  <TD width=158 height=17 align="CENTER">(전자투표 인터넷 주소)</TD>
+  <TD width=617 height=17 colspan="3" align="CENTER" valign="TOP">e★DIG_VOTE_URL |V|선</TD>
+</TR>
+<TR>
+  <TD width=784 height=17 colspan="4">3. 주주총회 목적사항</TD>
+</TR>
+<TR>
+  <TD class=tu width=784 height=477 colspan="4" valign="TOP">u★GMS_OBJ |List|L||선<br>
+□ 재무제표의승인|1<br>
+□ 정관의변경|2<br>
+□ 이사의선임|3<br>
+□ 감사위원회위원의선임|4<br>
+□ 감사의선임|5<br>
+□ 이사의해임|6<br>
+□ 감사위원회의위원의해임|7<br>
+□ 감사의해임|8<br>
+□ 이사의보수한도승인|9<br>
+□ 감사의보수한도승인|10<br>
+□ 주식매수선택권의부여|11<br>
+□ 회사의합병|12<br>
+□ 회사의분할또는분할합병|13<br>
+□ 영업의전부또는중요한일부의양도이거나다른회사의영업전부|14<br>
+□ 「상법」제3편제4장제2절에따른주식교환또는주식이전|15<br>
+□ 준비금의자본전입또는이에따른신주발행|16<br>
+□ 주주외의자에대한신주인수권의교부|17<br>
+□ 법제165조의8에따른액면미달의가액으로주식발행|18<br>
+□ 자본의감소|19<br>
+□ 기타주주총회의목적사항|20</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00660-TOC.htm#93' name='93' target='toc'>I. 의결권 대리행사 권유에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#96' name='96' target='toc'>1. 권유자에 관한 사항</a></P><P>&lt;&lt;단위서식 : I_1_발행회사가복수의결권주식을발행하지않은경우&gt;&gt;</P><P>★Table-Group aClass=REC_TBL★</P>
+
+<TABLE border=1 width=625>
+<COLGROUP>
+  <COL width=96></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=96 height=40 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=95 height=40 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=95 height=40 align="CENTER">소유주식수</TH>
+  <TH width=95 height=40 align="CENTER">소유비율</TH>
+  <TH width=95 height=40 align="CENTER">회사와의 관계</TH>
+  <TH width=95 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=96 height=40 align="CENTER">e★REC_NM |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_STK_KND |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_STK |P|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_STK_RT |%|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_COP_RL |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>- 권유자의 특별관계자에 관한 사항</P><P>★Table-Group aClass=REC_AFF★</P>
+
+<TABLE border=1 width=625>
+<COLGROUP>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=81 height=40 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=81 height=40 align="CENTER">권유자와의<br>
+관계</TH>
+  <TH width=80 height=40 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=80 height=40 align="CENTER">소유주식수</TH>
+  <TH width=80 height=40 align="CENTER">소유 비율</TH>
+  <TH width=80 height=40 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=80 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=81 height=63 align="CENTER">e★AFF_NM |V|선</TD>
+  <TD width=81 height=63 align="CENTER">e★AFF_REC_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_KND |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK |P|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_RT |%|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_COP_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=81 height=63 align="CENTER">e★AFF_NM |V|선</TD>
+  <TD width=81 height=63 align="CENTER">e★AFF_REC_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_KND |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK |P|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_RT |%|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_COP_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=171 height=63 colspan="2" align="CENTER">계</TD>
+  <TD width=80 height=63 align="CENTER">-</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_TOT |P|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_RT_TOT |%|선</TD>
+  <TD width=80 height=63 align="CENTER">-</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_ETC_TOT |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : I_1_발행회사가복수의결권주식을발행한경우&gt;&gt;</P><P>★Table-Group aClass=REC_TBL★</P>
+
+<TABLE border=1 width=625>
+<COLGROUP>
+  <COL width=70></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=70 height=63 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=69 height=63 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=69 height=63 align="CENTER">소유주식수</TH>
+  <TH width=69 height=63 align="CENTER">소유비율</TH>
+  <TH width=69 height=63 align="CENTER">소유<br>
+의결권 수</TH>
+  <TH width=69 height=63 align="CENTER">의결권<br>
+소유비율</TH>
+  <TH width=69 height=63 align="CENTER">회사와의 관계</TH>
+  <TH width=69 height=63 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=70 height=63 align="CENTER">e★REC_NM |V|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_STK_KND |V|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_STK |P|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_STK_RT |%|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_VR_CNT |P|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_VR_RT |%|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_COP_RL |V|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>- 권유자의 특별관계자에 관한 사항</P><P>★Table-Group aClass=REC_AFF★</P>
+
+<TABLE border=1 width=625>
+<COLGROUP>
+  <COL width=61></COL>
+  <COL width=84></COL>
+  <COL width=49></COL>
+  <COL width=66></COL>
+  <COL width=44></COL>
+  <COL width=60></COL>
+  <COL width=60></COL>
+  <COL width=60></COL>
+  <COL width=60></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=61 height=63 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=84 height=63 align="CENTER">권유자와의<br>
+관계</TH>
+  <TH width=49 height=63 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=66 height=63 align="CENTER">소유주식수</TH>
+  <TH width=44 height=63 align="CENTER">소유<br>
+비율</TH>
+  <TH width=60 height=63 align="CENTER">소유<br>
+의결권<br>
+수</TH>
+  <TH width=60 height=63 align="CENTER">의결권<br>
+소유비율</TH>
+  <TH width=60 height=63 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=60 height=63 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=61 height=86 align="CENTER">e★AFF_NM |V|선</TD>
+  <TD width=84 height=86 align="CENTER">e★AFF_REC_RL |V|선</TD>
+  <TD width=49 height=86 align="CENTER">e★AFF_STK_KND |V|선</TD>
+  <TD width=66 height=86 align="CENTER">e★AFF_STK |P|선</TD>
+  <TD width=44 height=86 align="CENTER">e★AFF_STK_RT |%|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_VR |P|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_VR_RT |%|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_COP_RL |V|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=61 height=86 align="CENTER">e★AFF_NM |V|선</TD>
+  <TD width=84 height=86 align="CENTER">e★AFF_REC_RL |V|선</TD>
+  <TD width=49 height=86 align="CENTER">e★AFF_STK_KND |V|선</TD>
+  <TD width=66 height=86 align="CENTER">e★AFF_STK |P|선</TD>
+  <TD width=44 height=86 align="CENTER">e★AFF_STK_RT |%|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_VR |P|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_VR_RT |%|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_COP_RL |V|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=154 height=109 colspan="2" align="CENTER">계</TD>
+  <TD width=49 height=109 align="CENTER">-</TD>
+  <TD width=66 height=109 align="CENTER">e★AFF_STK_TOT |P|선</TD>
+  <TD width=44 height=109 align="CENTER">e★AFF_STK_RT_TOT |%|선</TD>
+  <TD width=60 height=109 align="CENTER">e★AFF_VR_TOT |P|선</TD>
+  <TD width=60 height=109 align="CENTER">e★AFF_VR_RT_TOT |%|선</TD>
+  <TD width=60 height=109 align="CENTER">-</TD>
+  <TD width=60 height=109 align="CENTER">e★AFF_ETC_TOT |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#102' name='102' target='toc'>2. 권유자의 대리인에 관한 사항</a></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#104' name='104' target='toc'>가. 주주총회 의결권행사 대리인 (의결권 수임인)</a></P><P>&lt;&lt;단위서식 : I_2_발행회사가복수의결권주식을발행하지않은경우&gt;&gt;</P><P>★Table-Group aClass=VR_AGT★</P>
+
+<TABLE border=1 width=624>
+<COLGROUP>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=95 height=40 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=95 height=40 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=95 height=40 align="CENTER">소유<br>
+주식수</TH>
+  <TH width=95 height=40 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=95 height=40 align="CENTER">권유자와의<br>
+관계</TH>
+  <TH width=95 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=95 height=40 align="CENTER">e★VAGT_NM |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_STK_KND |V|필</TD>
+  <TD width=95 height=40 align="RIGHT">e★VAGT_STK |P|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_COP_RL |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_REC_RL |V|선</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">e★VAGT_NM |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_STK_KND |V|필</TD>
+  <TD width=95 height=40 align="RIGHT">e★VAGT_STK |P|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_COP_RL |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_REC_RL |V|선</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : I_2_발행회사가복수의결권주식을발행한경우&gt;&gt;</P><P>★Table-Group aClass=VR_AGT★</P>
+
+<TABLE border=1 width=624>
+<COLGROUP>
+  <COL width=81></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=81 height=63 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=80 height=63 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=80 height=63 align="CENTER">소유<br>
+주식수</TH>
+  <TH width=80 height=63 align="CENTER">소유의결권<br>
+수</TH>
+  <TH width=80 height=63 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=80 height=63 align="CENTER">권유자와의<br>
+관계</TH>
+  <TH width=80 height=63 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=81 height=63 align="CENTER">e★VAGT_NM |V|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_STK_KND |V|필</TD>
+  <TD width=80 height=63 align="RIGHT">e★VAGT_STK |P|필</TD>
+  <TD width=80 height=63 align="RIGHT">e★VAGT_VR |P|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_COP_RL |V|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_REC_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=81 height=63 align="CENTER">e★VAGT_NM |V|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_STK_KND |V|필</TD>
+  <TD width=80 height=63 align="RIGHT">e★VAGT_STK |P|필</TD>
+  <TD width=80 height=63 align="RIGHT">e★VAGT_VR |P|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_COP_RL |V|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_REC_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#110' name='110' target='toc'>나. 의결권 대리행사 권유업무 대리인</a></P><P>★Table-Group aClass=REC_AGT★</P>
+
+<TABLE border=1 width=767>
+<COLGROUP>
+  <COL width=81></COL>
+  <COL width=223></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=81 height=40 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=223 height=40 align="CENTER">구분</TH>
+  <TH width=80 height=40 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=80 height=40 align="CENTER">주식<br>
+소유수</TH>
+  <TH width=80 height=40 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=80 height=40 align="CENTER">권유자와의<br>
+관계</TH>
+  <TH width=80 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=81 height=86 align="CENTER">e★RAGT_NM |V|선</TD>
+  <TD class=tu width=223 height=86 align="CENTER">u★RAGT_GB |List|L||선<br>
+법인|1<br>
+개인|2<br>
+해당사항없음|-</TD>
+  <TD width=80 height=86 align="CENTER">e★RAGT_STK_KND |V|선</TD>
+  <TD width=80 height=86 align="CENTER">e★RAGT_STK |P|선</TD>
+  <TD width=80 height=86 align="CENTER">e★RAGT_COP_RL |V|선</TD>
+  <TD width=80 height=86 align="CENTER">e★RAGT_REC_RL |V|선</TD>
+  <TD width=80 height=86 align="CENTER">e★RAGT_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 의결권대리행사권유수탁법인에관한사항&gt;&gt;</P><P>【의결권 대리행사 권유업무 대리인이 법인인 경우】</P><P>- 의결권 대리행사 권유 수탁 법인에 관한 사항</P><P>★Table-Group aClass=REC_COP★</P>
+
+<TABLE border=1 width=619>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=79></COL>
+  <COL width=143></COL>
+  <COL width=134></COL>
+  <COL width=107></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=17 align="CENTER" valign="TOP">법인명</TH>
+  <TH width=79 height=17 align="CENTER" valign="TOP">대표자</TH>
+  <TH width=143 height=17 align="CENTER" valign="TOP">소재지</TH>
+  <TH width=134 height=17 align="CENTER" valign="TOP">위탁범위</TH>
+  <TH width=107 height=17 align="CENTER" valign="TOP">연락처</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=63 align="CENTER" valign="TOP">e★REC_COP_NM |V|필</TD>
+  <TD width=79 height=63 align="CENTER" valign="TOP">e★REC_COP_REP |V|필</TD>
+  <TD width=143 height=63 align="CENTER" valign="TOP">e★REC_COP_ADD |V|필</TD>
+  <TD width=134 height=63 align="CENTER" valign="TOP">e★REC_COP_SOC |V|필</TD>
+  <TD width=107 height=63 align="CENTER" valign="TOP">e★REC_COP_NUM |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#153' name='153' target='toc'>3. 권유기간 및 피권유자의 범위</a></P><P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#156' name='156' target='toc'>가. 권유기간</a></P><P>★Table-Group aClass=REC_PER★</P>
+
+<TABLE border=1 width=622>
+<COLGROUP>
+  <COL width=147></COL>
+  <COL width=147></COL>
+  <COL width=146></COL>
+  <COL width=146></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=147 height=40 align="CENTER">주주총회<br>
+소집공고일</TH>
+  <TH width=147 height=40 align="CENTER">권유 시작일</TH>
+  <TH width=146 height=40 align="CENTER">권유 종료일</TH>
+  <TH width=146 height=40 align="CENTER">주주총회일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=147 height=40 align="CENTER">u★CVC_GMS_DT |달력|필</TD>
+  <TD class=tu width=147 height=40 align="CENTER">u★REC_BGN_DT |달력|필</TD>
+  <TD class=tu width=146 height=40 align="CENTER">u★REC_END_DT |달력|필</TD>
+  <TD class=tu width=146 height=40 align="CENTER">u★GMS_DT |달력|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#178' name='178' target='toc'>나. 피권유자의 범위</a></P><P>★Table-Group aClass=PREC_SCOP★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 align="LEFT" valign="TOP">e★PREC_SCOP |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00660-TOC.htm#189' name='189' target='toc'>II. 의결권 대리행사 권유의 취지</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#192' name='192' target='toc'>1. 의결권 대리행사의 권유를 하는 취지</a></P><P>★Table-Group aClass=R_PURPOSE★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 align="LEFT" valign="TOP">e★R_PURPOSE |V-2000|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#205' name='205' target='toc'>2. 의결권의 위임에 관한 사항</a></P><P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#208' name='208' target='toc'>가. 전자적 방법으로 의결권을 위임하는 방법 (전자위임장)</a></P><P>★Table-Group aClass=DIG_WAR★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=196></COL>
+  <COL width=386></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=196 height=63 align="CENTER" valign="TOP">전자위임장 수여 가능 여부</TD>
+  <TD class=tu width=386 height=63 align="CENTER" valign="TOP">u★DIG_WAR_YN |List|L||선<br>
+전자위임장 가능|Y<br>
+해당사항 없음|N</TD>
+</TR>
+<TR>
+  <TD width=196 height=17 align="CENTER" valign="TOP">전자위임장 수여기간</TD>
+  <TD width=386 height=17 align="CENTER" valign="TOP">e★DIG_WAR_PER |V|선</TD>
+</TR>
+<TR>
+  <TD width=196 height=17 align="CENTER" valign="TOP">전자위임장 관리기관</TD>
+  <TD width=386 height=17 align="CENTER" valign="TOP">e★DIG_WAR_OP |V|선</TD>
+</TR>
+<TR>
+  <TD width=196 height=40 align="CENTER" valign="TOP">전자위임장 수여<br>
+인터넷 홈페이지 주소</TD>
+  <TD width=386 height=40 align="CENTER" valign="TOP">e★DIG_WAR_URL |V|선</TD>
+</TR>
+<TR>
+  <TD width=196 height=17 align="CENTER" valign="TOP">기타 추가 안내사항 등</TD>
+  <TD width=386 height=17 align="CENTER" valign="TOP">e★DIG_WAR_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#232' name='232' target='toc'>나. 서면 위임장으로 의결권을 위임하는 방법</a></P><P><br></P>
+<P class=section-4>□ 권유자 등이 위임장 용지를 교부하는 방법</P><P>★Table-Group aClass=WAR_ISS★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=386></COL>
+  <COL width=196></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=386 height=63>피권유자에게 직접 교부</TD>
+  <TD class=tu width=196 height=63 align="CENTER">u★ISS_TYPE1 |List|L||선<br>
+O|O<br>
+X|X</TD>
+</TR>
+<TR>
+  <TD width=386 height=63>우편 또는 모사전송(FAX)</TD>
+  <TD class=tu width=196 height=63 align="CENTER">u★ISS_TYPE2 |List|L||선<br>
+O|O<br>
+X|X</TD>
+</TR>
+<TR>
+  <TD width=386 height=63>인터넷 홈페이지 등에 위임장 용지를 게시</TD>
+  <TD class=tu width=196 height=63 align="CENTER">u★ISS_TYPE3 |List|L||선<br>
+O|O<br>
+X|X</TD>
+</TR>
+<TR>
+  <TD width=386 height=63>전자우편으로 위임장 용지 송부</TD>
+  <TD class=tu width=196 height=63 align="CENTER">u★ISS_TYPE4 |List|L||선<br>
+O|O<br>
+X|X</TD>
+</TR>
+<TR>
+  <TD width=386 height=63>주주총회 소집 통지와 함께 송부<br>
+(발행인에 한함)</TD>
+  <TD class=tu width=196 height=63 align="CENTER">u★ISS_TYPE5 |List|L||선<br>
+O|O<br>
+X|X</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 위임장용지교부인터넷홈페이지&gt;&gt;</P><P>- 위임장용지 교부 인터넷 홈페이지</P><P>★Table-Group aClass=ISS3_INFO★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=134></COL>
+  <COL width=376></COL>
+  <COL width=63></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=134 height=17 align="CENTER" valign="TOP">홈페이지 명칭</TH>
+  <TH width=376 height=17 align="CENTER" valign="TOP">인터넷 주소</TH>
+  <TH width=63 height=17 align="CENTER" valign="TOP">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=134 height=40 align="CENTER" valign="TOP">e★HP_NM |V|필</TD>
+  <TD width=376 height=40 align="CENTER" valign="TOP">e★HP_URL |V|필</TD>
+  <TD width=63 height=40 align="CENTER" valign="TOP">e★HP_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 전자우편전송에대한피권유자의의사표시확보여부및확보계획&gt;&gt;</P><P>- 전자우편 전송에 대한 피권유자의 의사표시 확보 여부 및 확보 계획</P><P>★Table-Group aClass=ISS4_INFO★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 align="LEFT" valign="TOP">e★ISS4_WAY |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-4>□ 피권유자가 위임장을 수여하는 방법</P><P>★Table-Group aClass=PREC_WAY★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 align="LEFT" valign="TOP">e★PREC_WAY |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#277' name='277' target='toc'>다. 기타 의결권 위임의 방법</a></P><P>★Table-Group aClass=ETC_WAY★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 align="LEFT" valign="TOP">e★ETC_WAY |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#287' name='287' target='toc'>3. 주주총회에서 의결권의 직접 행사에 관한 사항</a></P><P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#290' name='290' target='toc'>가. 주주총회 일시 및 장소</a></P><P>★Table-Group aClass=GMS_INFO★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=115></COL>
+  <COL width=467></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=115 height=17 align="CENTER" valign="TOP">일 시</TD>
+  <TD width=467 height=17 align="CENTER" valign="TOP">e★GMS_DNT |V|필</TD>
+</TR>
+<TR>
+  <TD width=115 height=17 align="CENTER" valign="TOP">장 소</TD>
+  <TD width=467 height=17 align="CENTER" valign="TOP">e★GMS_LOC |V|필</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#305' name='305' target='toc'>나. 전자/서면투표 여부</a></P>
+<P class=section-4>□ 전자투표에 관한 사항</P><P>★Table-Group aClass=DVOTE_INFO★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=188></COL>
+  <COL width=394></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=188 height=63 align="CENTER" valign="TOP">전자투표 가능 여부</TD>
+  <TD class=tu width=394 height=63 align="CENTER" valign="TOP">u★DVOTE_YN |List|L||선<br>
+전자투표 가능|Y<br>
+해당사항 없음|N</TD>
+</TR>
+<TR>
+  <TD width=188 height=17 align="CENTER" valign="TOP">전자투표 기간</TD>
+  <TD width=394 height=17 align="CENTER" valign="TOP">e★DIG_VOTE_PER |V|선</TD>
+</TR>
+<TR>
+  <TD width=188 height=17 align="CENTER" valign="TOP">전자투표 관리기관</TD>
+  <TD width=394 height=17 align="CENTER" valign="TOP">e★DIG_VOTE_OP |V|선</TD>
+</TR>
+<TR>
+  <TD width=188 height=17 align="CENTER" valign="TOP">인터넷 홈페이지 주소</TD>
+  <TD width=394 height=17 align="CENTER" valign="TOP">e★DIG_VOTE_URL |V|선</TD>
+</TR>
+<TR>
+  <TD width=188 height=17 align="CENTER" valign="TOP">기타 추가 안내사항 등</TD>
+  <TD width=394 height=17 align="CENTER" valign="TOP">e★DIG_VOTE_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-4>□ 서면투표에 관한 사항</P><P>★Table-Group aClass=SVOTE_INFO★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=188></COL>
+  <COL width=394></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=188 height=63 align="CENTER" valign="TOP">서면투표 가능 여부</TD>
+  <TD class=tu width=394 height=63 align="CENTER" valign="TOP">u★SVOTE_YN |List|L||선<br>
+서면투표 가능|Y<br>
+해당사항 없음|N</TD>
+</TR>
+<TR>
+  <TD width=188 height=17 align="CENTER" valign="TOP">서면투표 기간</TD>
+  <TD width=394 height=17 align="CENTER" valign="TOP">e★SVOTE_PER |V|선</TD>
+</TR>
+<TR>
+  <TD width=188 height=17 align="CENTER" valign="TOP">서면투표 방법</TD>
+  <TD width=394 height=17 align="CENTER" valign="TOP">e★SVOTE_WAY |V|선</TD>
+</TR>
+<TR>
+  <TD width=188 height=17 align="CENTER" valign="TOP">기타 추가 안내사항 등</TD>
+  <TD width=394 height=17 align="CENTER" valign="TOP">e★SVOTE_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#352' name='352' target='toc'>다. 기타 주주총회에서의 의결권 행사와 관련한 사항</a></P><P>★Table-Group aClass=GMS_ETC★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 align="LEFT" valign="TOP">e★GMS_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00660-TOC.htm#363' name='363' target='toc'>III. 주주총회 목적사항별 기재사항</a></P><P><br></P><P>&lt;&lt;단위서식 : 일부목적사항만기재하는경우&gt;&gt;</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 valign="TOP">이하의 주주총회 목적사항은 동 서식의 제출일 현재 확정된 일부 목적사항만을 기재한 것으로 나머지 목적사항이 확정되면 위임장 용지와 참고서류를 정정하여 금융위원회 및 거래소에 제출한 후 피권유자에게 교부하겠습니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 01_재무제표의승인&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#695' name='695' target='toc'>□ 재무제표의 승인</a></P><P><br></P><P>가. 당해 사업연도의 영업상황의 개요</P><P><br></P><P><br></P><P>나. 당해 사업연도의 대차대조표(대차대조표)ㆍ손익계산서(포괄손익계산서)ㆍ이익잉여금처분계산서(결손금처리계산서)</P><P><br></P><P> - 대차대조표(재무상태표)</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;대 차 대 조 표(재 무 상 태 표)&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P> - 손익계산서(포괄손익계산서)</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;손 익 계 산 서(포 괄 손 익 계 산 서)&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P> - 이익잉여금처분계산서(안)〔결손금처리계산서(안)〕</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;이익잉여금처리계산서(결손금처리계산서)&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P> - 최근 2사업연도의 배당에 관한 사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 02_정관의변경&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#718' name='718' target='toc'>□ 정관의 변경</a></P><P><br></P><P>가. 집중투표 배제를 위한 정관의 변경 또는 그 배제된 정관의 변경</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">변경전 내용</TH>
+  <TH width=191 height=17 align="CENTER">변경후 내용</TH>
+  <TH width=191 height=17 align="CENTER">변경의 목적</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>나. 그 외의 정관변경에 관한 건</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">변경전 내용</TH>
+  <TH width=191 height=17 align="CENTER">변경후 내용</TH>
+  <TH width=191 height=17 align="CENTER">변경의 목적</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 03_이사의선임&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#744' name='744' target='toc'>□ 이사의 선임</a></P><P><br></P><P>가. 후보자의 성명ㆍ생년월일ㆍ추천인ㆍ최대주주와의 관계ㆍ사외이사후보자 등 여부</P>
+
+<TABLE border=1 width=619>
+<COLGROUP>
+  <COL width=77></COL>
+  <COL width=69></COL>
+  <COL width=97></COL>
+  <COL width=150></COL>
+  <COL width=106></COL>
+  <COL width=66></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=77 height=40 align="CENTER">후보자<br>
+성명</TH>
+  <TH width=69 height=40 align="CENTER">생년월일</TH>
+  <TH width=97 height=40 align="CENTER">사외이사<br>
+후보자여부</TH>
+  <TH width=150 height=40 align="CENTER">감사위원회의 위원인<br>
+이사 분리선출 여부</TH>
+  <TH width=106 height=40 align="CENTER">최대주주와의<br>
+관계</TH>
+  <TH width=66 height=40 align="CENTER">추천인</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=77 height=17 valign="TOP"></TD>
+  <TD width=69 height=17 valign="TOP"></TD>
+  <TD width=97 height=17 valign="TOP"></TD>
+  <TD width=150 height=17 valign="TOP"></TD>
+  <TD width=106 height=17 valign="TOP"></TD>
+  <TD width=66 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=77 height=17 valign="TOP"></TD>
+  <TD width=69 height=17 valign="TOP"></TD>
+  <TD width=97 height=17 valign="TOP"></TD>
+  <TD width=150 height=17 valign="TOP"></TD>
+  <TD width=106 height=17 valign="TOP"></TD>
+  <TD width=66 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=610 height=17 colspan="6" align="CENTER">총 ( &nbsp; &nbsp; ) 명</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>나. 후보자의 주된직업ㆍ세부경력ㆍ당해법인과의 최근3년간 거래내역</P>
+
+<TABLE border=1 width=674>
+<COLGROUP>
+  <COL width=95></COL>
+  <COL width=83></COL>
+  <COL width=87></COL>
+  <COL width=193></COL>
+  <COL width=171></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=95 height=47 rowspan="2" align="CENTER">후보자성명</TH>
+  <TH width=83 height=47 rowspan="2" align="CENTER">주된직업</TH>
+  <TH width=289 height=17 colspan="2" align="CENTER">세부경력</TH>
+  <TH width=171 height=47 rowspan="2" align="CENTER">당해법인과의<br>
+최근3년간 거래내역</TH>
+</TR>
+<TR>
+  <TH width=87 height=17 align="CENTER">기간</TH>
+  <TH width=193 height=17 align="CENTER">내용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=95 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=83 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+  <TD width=171 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=95 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=83 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+  <TD width=171 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>다. 후보자의 직무수행계획(사외이사 선임의 경우에 한함)</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=77 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>라. 후보자에 대한 이사회의 추천 사유</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=77 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#939' name='939' target='toc'>확인서</a></P><P><br></P><P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 04_감사위원회위원의선임&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#856' name='856' target='toc'>□ 감사위원회 위원의 선임</a></P><P><br></P><P>가. 후보자의 성명ㆍ생년월일ㆍ추천인ㆍ최대주주와의 관계ㆍ사외이사후보자 등 여부</P>
+
+<TABLE border=1 width=615>
+<COLGROUP>
+  <COL width=77></COL>
+  <COL width=68></COL>
+  <COL width=103></COL>
+  <COL width=139></COL>
+  <COL width=107></COL>
+  <COL width=67></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=77 height=40 align="CENTER">후보자<br>
+성명</TH>
+  <TH width=68 height=40 align="CENTER">생년월일</TH>
+  <TH width=103 height=40 align="CENTER">사외이사<br>
+후보자여부</TH>
+  <TH width=139 height=40 align="CENTER">감사위원회 위원인<br>
+이사 분리선출 여부</TH>
+  <TH width=107 height=40 align="CENTER">최대주주와의<br>
+관계</TH>
+  <TH width=67 height=40 align="CENTER">추천인</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=77 height=17 valign="TOP"></TD>
+  <TD width=68 height=17 valign="TOP"></TD>
+  <TD width=103 height=17 valign="TOP"></TD>
+  <TD width=139 height=17 valign="TOP"></TD>
+  <TD width=107 height=17 valign="TOP"></TD>
+  <TD width=67 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=77 height=17 valign="TOP"></TD>
+  <TD width=68 height=17 valign="TOP"></TD>
+  <TD width=103 height=17 valign="TOP"></TD>
+  <TD width=139 height=17 valign="TOP"></TD>
+  <TD width=107 height=17 valign="TOP"></TD>
+  <TD width=67 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=606 height=17 colspan="6" align="CENTER">총 ( &nbsp; &nbsp; ) 명</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>나. 후보자의 주된직업ㆍ세부경력ㆍ당해법인과의 최근3년간 거래내역</P>
+
+<TABLE border=1 width=674>
+<COLGROUP>
+  <COL width=95></COL>
+  <COL width=83></COL>
+  <COL width=87></COL>
+  <COL width=193></COL>
+  <COL width=171></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=95 height=47 rowspan="2" align="CENTER">후보자성명</TH>
+  <TH width=83 height=47 rowspan="2" align="CENTER">주된직업</TH>
+  <TH width=289 height=17 colspan="2" align="CENTER">세부경력</TH>
+  <TH width=171 height=47 rowspan="2" align="CENTER">당해법인과의<br>
+최근3년간 거래내역</TH>
+</TR>
+<TR>
+  <TH width=87 height=17 align="CENTER">기간</TH>
+  <TH width=193 height=17 align="CENTER">내용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=95 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=83 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+  <TD width=171 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=95 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=83 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+  <TD width=171 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>다. 후보자에 대한 이사회의 추천 사유</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=77 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#1069' name='1069' target='toc'>확인서</a></P><P><br></P><P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 05_감사의선임&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#889' name='889' target='toc'>□ 감사의 선임</a></P><P><br></P><P>&lt;권유시 감사후보자가 예정되어 있는 경우&gt;</P><P>가. 후보자의 성명ㆍ생년월일ㆍ추천인ㆍ최대주주와의 관계</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=17 align="CENTER">후보자성명</TH>
+  <TH width=141 height=17 align="CENTER">생년월일</TH>
+  <TH width=141 height=17 align="CENTER">최대주주와의 관계</TH>
+  <TH width=141 height=17 align="CENTER">추천인</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="4" align="CENTER">총 ( &nbsp; &nbsp; ) 명</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>나. 후보자의 주된직업ㆍ세부경력ㆍ당해법인과의 최근3년간 거래내역</P>
+
+<TABLE border=1 width=674>
+<COLGROUP>
+  <COL width=95></COL>
+  <COL width=83></COL>
+  <COL width=87></COL>
+  <COL width=193></COL>
+  <COL width=171></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=95 height=47 rowspan="2" align="CENTER">후보자성명</TH>
+  <TH width=83 height=47 rowspan="2" align="CENTER">주된직업</TH>
+  <TH width=289 height=17 colspan="2" align="CENTER">세부경력</TH>
+  <TH width=171 height=47 rowspan="2" align="CENTER">당해법인과의<br>
+최근3년간 거래내역</TH>
+</TR>
+<TR>
+  <TH width=87 height=17 align="CENTER">기간</TH>
+  <TH width=193 height=17 align="CENTER">내용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=95 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=83 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+  <TD width=171 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=95 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=83 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+  <TD width=171 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=193 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>다. 후보자에 대한 이사회의 추천 사유</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=77 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00660-TOC.htm#1190' name='1190' target='toc'>확인서</a></P><P><br></P><P><br></P><P><br></P><P>&lt;권유시 감사후보자가 예정되지 아니한 경우&gt;</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17 align="CENTER">선임 예정 감사의 수</TD>
+  <TD width=291 height=17 align="RIGHT">(명)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 06_이사의해임&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#1028' name='1028' target='toc'>□ 이사의 해임</a></P><P><br></P><P>가. 해임 대상자의 성명, 생년월일 및 최근 주요약력</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=17 align="CENTER">해임대상자 성명</TH>
+  <TH width=141 height=17 align="CENTER">생년월일</TH>
+  <TH width=141 height=17 align="CENTER">최근 주요약력</TH>
+  <TH width=141 height=17 align="CENTER">예정임기만료일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+</TR>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>나. 해임하여야 할 사유</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=441></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=17 align="CENTER">해임대상자 성명</TH>
+  <TH width=441 height=17 align="CENTER">해임하여야 할 사유</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=441 height=17></TD>
+</TR>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=441 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 07_감사위원회의위원의해임&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#1303' name='1303' target='toc'>□ 감사위원회의 위원의 해임</a></P><P><br></P><P>가. 해임 대상자의 성명, 생년월일 및 최근 주요약력</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=17 align="CENTER">해임대상자 성명</TH>
+  <TH width=141 height=17 align="CENTER">생년월일</TH>
+  <TH width=141 height=17 align="CENTER">최근 주요약력</TH>
+  <TH width=141 height=17 align="CENTER">예정임기만료일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+</TR>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>나. 해임하여야 할 사유</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=441></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=17 align="CENTER">해임대상자 성명</TH>
+  <TH width=441 height=17 align="CENTER">해임하여야 할 사유</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=441 height=17></TD>
+</TR>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=441 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 08_감사의해임&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#1358' name='1358' target='toc'>□ 감사의 해임</a></P><P><br></P><P>가. 해임 대상자의 성명, 생년월일 및 최근 주요약력</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=17 align="CENTER">해임대상자 성명</TH>
+  <TH width=141 height=17 align="CENTER">생년월일</TH>
+  <TH width=141 height=17 align="CENTER">최근 주요약력</TH>
+  <TH width=141 height=17 align="CENTER">예정임기만료일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+</TR>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+  <TD width=141 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>나. 해임하여야 할 사유</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=441></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=17 align="CENTER">해임대상자 성명</TH>
+  <TH width=441 height=17 align="CENTER">해임하여야 할 사유</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=441 height=17></TD>
+</TR>
+<TR>
+  <TD width=141 height=17></TD>
+  <TD width=441 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 09_이사의보수한도승인&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#1413' name='1413' target='toc'>□ 이사의 보수한도 승인</a></P><P><br></P><P>가. 이사의 수ㆍ보수총액 내지 최고 한도액</P><P><br></P><P>(당 기)</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=211></COL>
+  <COL width=371></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=211 height=17 align="CENTER">이사의 수 (사외이사수)</TD>
+  <TD width=371 height=17 align="RIGHT">( &nbsp; &nbsp; &nbsp; &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=211 height=17 align="CENTER">보수총액 또는 최고한도액</TD>
+  <TD width=371 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(전 기)</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=211></COL>
+  <COL width=371></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=211 height=17 align="CENTER">이사의 수 (사외이사수)</TD>
+  <TD width=371 height=17 align="RIGHT">( &nbsp; &nbsp; &nbsp; &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=211 height=17 align="CENTER">실제 지급된 보수총액</TD>
+  <TD width=371 height=17 align="RIGHT"></TD>
+</TR>
+<TR>
+  <TD width=211 height=17 align="CENTER">최고한도액</TD>
+  <TD width=371 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 10_감사의보수한도승인&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#1432' name='1432' target='toc'>□ 감사의 보수한도 승인</a></P><P><br></P><P>가. 감사의 수ㆍ보수총액 내지 최고 한도액</P><P><br></P><P>(당 기)</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=211></COL>
+  <COL width=371></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=211 height=17 align="CENTER">감사의 수</TD>
+  <TD width=371 height=17 align="RIGHT"></TD>
+</TR>
+<TR>
+  <TD width=211 height=17 align="CENTER">보수총액 또는 최고한도액</TD>
+  <TD width=371 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>(전 기)</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=211></COL>
+  <COL width=371></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=211 height=17 align="CENTER">감사의 수</TD>
+  <TD width=371 height=17 align="RIGHT"></TD>
+</TR>
+<TR>
+  <TD width=211 height=17 align="CENTER">실제 지급된 보수총액</TD>
+  <TD width=371 height=17 align="RIGHT"></TD>
+</TR>
+<TR>
+  <TD width=211 height=17 align="CENTER">최고한도액</TD>
+  <TD width=371 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 11_주식매수선택권의부여&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#1475' name='1475' target='toc'>□ 주식매수선택권의 부여</a></P><P><br></P><P>가. 주식매수선택권을 부여하여야 할 필요성의 요지</P><P><br></P><P><br></P><P>나. 주식매수선택권을 부여받을 자의 성명</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=47 rowspan="2" align="CENTER">성명</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">직위</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">직책</TH>
+  <TH width=231 height=17 colspan="2" align="CENTER">교부할 주식</TH>
+</TR>
+<TR>
+  <TH width=111 height=17 align="CENTER">주식의종류</TH>
+  <TH width=111 height=17 align="CENTER">주식수</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17 align="CENTER" valign="TOP">총( &nbsp; &nbsp; )명</TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 align="CENTER" valign="TOP">총( &nbsp; &nbsp; )주</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>다. 주식매수선택권의 부여방법, 그 행사에 따라 교부할 주식의 종류 및 수, 그 행사가격, 행사 기간 및 기타 조건의 개요</P>
+
+<TABLE border=1 width=619>
+<COLGROUP>
+  <COL width=185></COL>
+  <COL width=313></COL>
+  <COL width=94></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=185 height=17 align="CENTER" valign="TOP">구 &nbsp;분</TH>
+  <TH width=313 height=17 align="CENTER" valign="TOP">내 &nbsp;용</TH>
+  <TH width=94 height=17 align="CENTER" valign="TOP">비 &nbsp;고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=185 height=17 valign="TOP">부여방법</TD>
+  <TD width=313 height=17 valign="TOP"></TD>
+  <TD width=94 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=185 height=17 valign="TOP">교부할 주식의 종류 및 수</TD>
+  <TD width=313 height=17 valign="TOP"></TD>
+  <TD width=94 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=185 height=17 valign="TOP">행사가격 및 행사기간</TD>
+  <TD width=313 height=17 valign="TOP"></TD>
+  <TD width=94 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=185 height=17 valign="TOP">기타 조건의 개요</TD>
+  <TD width=313 height=17 valign="TOP"></TD>
+  <TD width=94 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>라. 최근일 현재 잔여주식매수선택권의 내역 및 최근년도 주식매수선택권의 부여, 행사 및 실효내역의 요약</P><P><br></P><P> - 최근일 현재 잔여주식매수선택권의 내역</P>
+
+<TABLE border=1 width=697>
+<COLGROUP>
+  <COL width=102></COL>
+  <COL width=151></COL>
+  <COL width=150></COL>
+  <COL width=119></COL>
+  <COL width=130></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=102 height=17 align="CENTER" valign="TOP">총발행주식수</TH>
+  <TH width=151 height=17 align="CENTER" valign="TOP">부여가능주식의 범위</TH>
+  <TH width=150 height=17 align="CENTER" valign="TOP">부여가능주식의 종류</TH>
+  <TH width=119 height=17 align="CENTER" valign="TOP">부여가능주식수</TH>
+  <TH width=130 height=17 align="CENTER" valign="TOP">잔여주식수</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=102 height=17 valign="TOP"></TD>
+  <TD width=151 height=17 valign="TOP"></TD>
+  <TD width=150 height=17 valign="TOP"></TD>
+  <TD width=119 height=17 valign="TOP"></TD>
+  <TD width=130 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P> - 최근 2사업연도와 당해사업연도의 주식매수선택권의 부여, 행사 및 실효내역</P>
+
+<TABLE border=1 width=704>
+<COLGROUP>
+  <COL width=70></COL>
+  <COL width=68></COL>
+  <COL width=68></COL>
+  <COL width=86></COL>
+  <COL width=85></COL>
+  <COL width=85></COL>
+  <COL width=85></COL>
+  <COL width=85></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=70 height=40 align="CENTER">사업년도</TH>
+  <TH width=68 height=40 align="CENTER">부여일</TH>
+  <TH width=68 height=40 align="CENTER">부여인원</TH>
+  <TH width=86 height=40 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=85 height=40 align="CENTER">부여<br>
+주식수</TH>
+  <TH width=85 height=40 align="CENTER">행사<br>
+주식수</TH>
+  <TH width=85 height=40 align="CENTER">실효<br>
+주식수</TH>
+  <TH width=85 height=40 align="CENTER">잔여<br>
+주식수</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=70 height=40 align="CENTER" valign="TOP">××××년</TD>
+  <TD width=68 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=68 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=86 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=70 height=40 align="CENTER" valign="TOP">××××년</TD>
+  <TD width=68 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=68 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=86 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=70 height=40 align="CENTER" valign="TOP">××××년</TD>
+  <TD width=68 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=68 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=86 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=40 align="CENTER" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=70 height=17 align="CENTER" valign="TOP">계</TD>
+  <TD width=68 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=68 height=17 align="CENTER" valign="TOP">총( &nbsp; &nbsp; )명</TD>
+  <TD width=86 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=85 height=17 align="CENTER" valign="TOP">총( &nbsp; &nbsp; )주</TD>
+  <TD width=85 height=17 align="CENTER" valign="TOP">총( &nbsp; &nbsp; )주</TD>
+  <TD width=85 height=17 align="CENTER" valign="TOP">총( &nbsp; &nbsp; )주</TD>
+  <TD width=85 height=17 align="CENTER" valign="TOP">총( &nbsp; &nbsp; )주</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 12_회사의합병&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#1509' name='1509' target='toc'>□ 회사의 합병</a></P><P><br></P><P>가. 합병의 목적 및 경위</P><P><br></P><P><br></P><P>나. 합병계약서의 주요내용의 요지</P><P><br></P><P><br></P><P>다. 합병당사회사(합병회사 및 피합병회사)의 최근 사업연도의 대차대조표(재무상태표) 및 손익계산서(포괄손익계산서)</P><P><br></P><P>(합병회사) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 【합병회사명】</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;대 차 대 조 표(재 무 상 태 표)&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;손 익 계 산 서(포 괄 손 익 계 산 서)&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>(피합병회사) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;【피합병회사명】</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;대 차 대 조 표(재 무 상 태 표)&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;손 익 계 산 서(포 괄 손 익 계 산 서)&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 13_회사의분할또는분할합병&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#1723' name='1723' target='toc'>□ 회사의 분할 또는 분할합병</a></P><P><br></P><P>가. 분할 또는 분할합병의 목적 및 경위</P><P><br></P><P><br></P><P>나. 분할 또는 분할합병 계획서 또는 계약서의 주요내용의 요지</P><P><br></P><P><br></P><P>다. 분할의 경우 분할되는 회사의 최근 사업연도의 대차대조표 및 손익계산서, 분할합병의 경우 분할되는 회사와 합병회사의 최근 사업연도의 대차대조표 및 손익계산서</P><P><br></P><P>(분할의 경우)</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;【분할되는 회사명】</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;대 차 대 조 표&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;손 익 계 산 서&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>(분할합병의 경우)</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;【분할되는 회사명】</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;대 차 대 조 표&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;손 익 계 산 서&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 【합병 회사명】</P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;대 차 대 조 표&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 XXXX. XX. XX 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;손 익 계 산 서&gt;</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">제 XX 기 (XXXX. XX. XX 부터 XXXX. XX. XX 까지)</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="BOTTOM">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=191 height=17 align="CENTER">과 목</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+  <TH width=191 height=17 align="CENTER">제 XX 기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+  <TD width=191 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 14_영업의전부또는중요한일부의양도이거나다른회사의영업전부&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#1980' name='1980' target='toc'>□ 영업의 전부 또는 중요한 일부의 양도이거나 다른회사의 영업전부 또는 중요한 일부의 양수</a></P><P><br></P><P>가. 영업양수도 상대방의 주소, 성명(상호) 및 대표자</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=105></COL>
+  <COL width=256></COL>
+  <COL width=62></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=17 align="CENTER" valign="TOP">성명(상호)</TH>
+  <TH width=105 height=17 align="CENTER" valign="TOP">대표자</TH>
+  <TH width=256 height=17 align="CENTER" valign="TOP">주 소</TH>
+  <TH width=62 height=17 align="CENTER" valign="TOP">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=105 height=17 valign="TOP"></TD>
+  <TD width=256 height=17 valign="TOP"></TD>
+  <TD width=62 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>나. 영업양수도의 경위 및 그 계약의 주요내용</P><P><br></P><P><br></P><P>다. 영업양수도 상대방과의 사이에 가지고 있거나 있었던 이해관계의 요지</P><P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 15_「상법」제3편제4장제2절에따른주식교환또는주식이전&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#2026' name='2026' target='toc'>□ 「상법」제3편제4장제2절에 따른 주식교환 또는 주식이전</a></P><P><br></P><P>가. 주식교환 또는 주식이전의 목적 및 경위</P><P><br></P><P><br></P><P>나. 주식교환 또는 주식이전 계약서의 주요내용</P><P><br></P><P><br></P><P>다. 주식매수청구권의 내용 및 행사방법</P><P><br></P><P><br></P><P>라. 일방회사의 정관에 주식의 양도에 관하여 이사회의 승인을 요한다는 뜻의 규정이 있고 다른 회사의 정관에 그 규정이 없는 경우 그 뜻</P><P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 16_준비금의자본전입또는이에따른신주발행&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#2065' name='2065' target='toc'>□ 준비금의 자본전입 또는 이에 따른 신주발행</a></P><P><br></P>
+
+<TABLE border=1 width=621>
+<COLGROUP>
+  <COL width=98></COL>
+  <COL width=82></COL>
+  <COL width=71></COL>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=76></COL>
+  <COL width=79></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=98 height=47 rowspan="2" align="CENTER">자본전입금액</TH>
+  <TH width=417 height=17 colspan="5" align="CENTER">발행신주에 관한 사항</TH>
+  <TH width=79 height=47 rowspan="2" align="CENTER">비 고</TH>
+</TR>
+<TR>
+  <TH width=82 height=17 align="CENTER">신주의종류</TH>
+  <TH width=71 height=17 align="CENTER">주식수</TH>
+  <TH width=76 height=17 align="CENTER">배정비율</TH>
+  <TH width=76 height=17 align="CENTER">배정기준일</TH>
+  <TH width=76 height=17 align="CENTER">배당기산일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=98 height=17 valign="TOP"></TD>
+  <TD width=82 height=17 valign="TOP"></TD>
+  <TD width=71 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+  <TD width=79 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 17_주주외의자에대한신주인수권의교부&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#2073' name='2073' target='toc'>□ 주주외의 자에 대한 신주인수권의 교부</a></P><P><br></P><P>가. 주주 외의 자에게 신주인수권을 부여하여야 할 필요성의 요지</P><P><br></P><P><br></P><P>나. 신주인수권의 목적인 주식의 종류, 수, 발행가액 및 납입기일</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=17 align="CENTER" valign="TOP">주식의 종류</TH>
+  <TH width=111 height=17 align="CENTER" valign="TOP">주식수</TH>
+  <TH width=111 height=17 align="CENTER" valign="TOP">발행가액</TH>
+  <TH width=111 height=17 align="CENTER" valign="TOP">납입기일</TH>
+  <TH width=111 height=17 align="CENTER" valign="TOP">비 고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 18_법제165조의8에따른액면미달의가액으로주식발행&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#2146' name='2146' target='toc'>□ 법 제165조의8에 따른 액면미달의 가액으로 주식발행</a></P><P><br></P><P>가. 주식을 액면미달가액으로 발행하여야 할 필요성의 요지 및 경위</P><P><br></P><P><br></P><P>나. 액면미달가액발행의 목적인 주식의 종류와 수, 발행가액 및 납입기일</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=91 height=17 align="CENTER" valign="TOP">주식의 종류</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">주식수</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">발행가액</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">발행예정일</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">발행방식</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">주금납입일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P> - 발행가액 산정근거 : </P><P><br></P><P>다. 상각이 완료된 액면미달금액이 있는 경우 가장 최근의 액면미달가액 발행내역</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=91 height=17 align="CENTER" valign="TOP">발행일자</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">주식의종류</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">발행주식수</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">발행가액</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">상각완료일자</TH>
+  <TH width=91 height=17 align="CENTER" valign="TOP">비 고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 19_자본의감소&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#2227' name='2227' target='toc'>□ 자본의 감소</a></P><P><br></P><P>가. 자본의 감소를 하는 사유</P><P><br></P><P><br></P><P>나. 자본감소의 방법</P><P><br></P><P><br></P><P>다. 자본감소의 목적인 주식의 종류와 수, 감소비율 및 기준일</P>
+
+<TABLE border=1 width=610>
+<COLGROUP>
+  <COL width=109></COL>
+  <COL width=83></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=109 height=40 align="CENTER">감자주식의종류</TH>
+  <TH width=83 height=40 align="CENTER">감자주식수</TH>
+  <TH width=91 height=40 align="CENTER">감자비율</TH>
+  <TH width=91 height=40 align="CENTER">감자기준일</TH>
+  <TH width=91 height=40 align="CENTER">감자전자본금<br>
+(발행주식수)</TH>
+  <TH width=91 height=40 align="CENTER">감자후자본금<br>
+(발행주식수)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=109 height=17 valign="TOP"></TD>
+  <TD width=83 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+  <TD width=91 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P>※ 기타 참고사항</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 20_기타주주총회의목적사항&gt;&gt;</P>
+<P class=section-2><a class='toc' href='00660-TOC.htm#2241' name='2241' target='toc'>□ 기타 주주총회의 목적사항</a></P><P><br></P><P>가. 의안 제목</P><P><br></P><P><br></P><P>나. 의안의 요지</P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : I_1_발행회사가복수의결권주식을발행하지않은경우&gt;&gt;</P><P>★Table-Group aClass=REC_TBL★</P>
+
+<TABLE border=1 width=625>
+<COLGROUP>
+  <COL width=96></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=96 height=40 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=95 height=40 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=95 height=40 align="CENTER">소유주식수</TH>
+  <TH width=95 height=40 align="CENTER">소유비율</TH>
+  <TH width=95 height=40 align="CENTER">회사와의 관계</TH>
+  <TH width=95 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=96 height=40 align="CENTER">e★REC_NM |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_STK_KND |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_STK |P|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_STK_RT |%|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_COP_RL |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★REC_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>- 권유자의 특별관계자에 관한 사항</P><P>★Table-Group aClass=REC_AFF★</P>
+
+<TABLE border=1 width=625>
+<COLGROUP>
+  <COL width=81></COL>
+  <COL width=81></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=81 height=40 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=81 height=40 align="CENTER">권유자와의<br>
+관계</TH>
+  <TH width=80 height=40 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=80 height=40 align="CENTER">소유주식수</TH>
+  <TH width=80 height=40 align="CENTER">소유 비율</TH>
+  <TH width=80 height=40 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=80 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=81 height=63 align="CENTER">e★AFF_NM |V|선</TD>
+  <TD width=81 height=63 align="CENTER">e★AFF_REC_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_KND |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK |P|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_RT |%|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_COP_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=81 height=63 align="CENTER">e★AFF_NM |V|선</TD>
+  <TD width=81 height=63 align="CENTER">e★AFF_REC_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_KND |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK |P|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_RT |%|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_COP_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=171 height=63 colspan="2" align="CENTER">계</TD>
+  <TD width=80 height=63 align="CENTER">-</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_TOT |P|선</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_STK_RT_TOT |%|선</TD>
+  <TD width=80 height=63 align="CENTER">-</TD>
+  <TD width=80 height=63 align="CENTER">e★AFF_ETC_TOT |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : I_1_발행회사가복수의결권주식을발행한경우&gt;&gt;</P><P>★Table-Group aClass=REC_TBL★</P>
+
+<TABLE border=1 width=625>
+<COLGROUP>
+  <COL width=70></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=70 height=63 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=69 height=63 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=69 height=63 align="CENTER">소유주식수</TH>
+  <TH width=69 height=63 align="CENTER">소유비율</TH>
+  <TH width=69 height=63 align="CENTER">소유<br>
+의결권 수</TH>
+  <TH width=69 height=63 align="CENTER">의결권<br>
+소유비율</TH>
+  <TH width=69 height=63 align="CENTER">회사와의 관계</TH>
+  <TH width=69 height=63 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=70 height=63 align="CENTER">e★REC_NM |V|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_STK_KND |V|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_STK |P|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_STK_RT |%|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_VR_CNT |P|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_VR_RT |%|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_COP_RL |V|필</TD>
+  <TD width=69 height=63 align="CENTER">e★REC_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>- 권유자의 특별관계자에 관한 사항</P><P>★Table-Group aClass=REC_AFF★</P>
+
+<TABLE border=1 width=625>
+<COLGROUP>
+  <COL width=61></COL>
+  <COL width=84></COL>
+  <COL width=49></COL>
+  <COL width=66></COL>
+  <COL width=44></COL>
+  <COL width=60></COL>
+  <COL width=60></COL>
+  <COL width=60></COL>
+  <COL width=60></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=61 height=63 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=84 height=63 align="CENTER">권유자와의<br>
+관계</TH>
+  <TH width=49 height=63 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=66 height=63 align="CENTER">소유주식수</TH>
+  <TH width=44 height=63 align="CENTER">소유<br>
+비율</TH>
+  <TH width=60 height=63 align="CENTER">소유<br>
+의결권<br>
+수</TH>
+  <TH width=60 height=63 align="CENTER">의결권<br>
+소유비율</TH>
+  <TH width=60 height=63 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=60 height=63 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=61 height=86 align="CENTER">e★AFF_NM |V|선</TD>
+  <TD width=84 height=86 align="CENTER">e★AFF_REC_RL |V|선</TD>
+  <TD width=49 height=86 align="CENTER">e★AFF_STK_KND |V|선</TD>
+  <TD width=66 height=86 align="CENTER">e★AFF_STK |P|선</TD>
+  <TD width=44 height=86 align="CENTER">e★AFF_STK_RT |%|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_VR |P|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_VR_RT |%|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_COP_RL |V|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=61 height=86 align="CENTER">e★AFF_NM |V|선</TD>
+  <TD width=84 height=86 align="CENTER">e★AFF_REC_RL |V|선</TD>
+  <TD width=49 height=86 align="CENTER">e★AFF_STK_KND |V|선</TD>
+  <TD width=66 height=86 align="CENTER">e★AFF_STK |P|선</TD>
+  <TD width=44 height=86 align="CENTER">e★AFF_STK_RT |%|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_VR |P|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_VR_RT |%|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_COP_RL |V|선</TD>
+  <TD width=60 height=86 align="CENTER">e★AFF_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=154 height=109 colspan="2" align="CENTER">계</TD>
+  <TD width=49 height=109 align="CENTER">-</TD>
+  <TD width=66 height=109 align="CENTER">e★AFF_STK_TOT |P|선</TD>
+  <TD width=44 height=109 align="CENTER">e★AFF_STK_RT_TOT |%|선</TD>
+  <TD width=60 height=109 align="CENTER">e★AFF_VR_TOT |P|선</TD>
+  <TD width=60 height=109 align="CENTER">e★AFF_VR_RT_TOT |%|선</TD>
+  <TD width=60 height=109 align="CENTER">-</TD>
+  <TD width=60 height=109 align="CENTER">e★AFF_ETC_TOT |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : I_2_발행회사가복수의결권주식을발행하지않은경우&gt;&gt;</P><P>★Table-Group aClass=VR_AGT★</P>
+
+<TABLE border=1 width=624>
+<COLGROUP>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+  <COL width=95></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=95 height=40 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=95 height=40 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=95 height=40 align="CENTER">소유<br>
+주식수</TH>
+  <TH width=95 height=40 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=95 height=40 align="CENTER">권유자와의<br>
+관계</TH>
+  <TH width=95 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=95 height=40 align="CENTER">e★VAGT_NM |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_STK_KND |V|필</TD>
+  <TD width=95 height=40 align="RIGHT">e★VAGT_STK |P|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_COP_RL |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_REC_RL |V|선</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=95 height=40 align="CENTER">e★VAGT_NM |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_STK_KND |V|필</TD>
+  <TD width=95 height=40 align="RIGHT">e★VAGT_STK |P|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_COP_RL |V|필</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_REC_RL |V|선</TD>
+  <TD width=95 height=40 align="CENTER">e★VAGT_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>&lt;&lt;단위서식 : I_2_발행회사가복수의결권주식을발행한경우&gt;&gt;</P><P>★Table-Group aClass=VR_AGT★</P>
+
+<TABLE border=1 width=624>
+<COLGROUP>
+  <COL width=81></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+  <COL width=80></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=81 height=63 align="CENTER">성명<br>
+(회사명)</TH>
+  <TH width=80 height=63 align="CENTER">주식의<br>
+종류</TH>
+  <TH width=80 height=63 align="CENTER">소유<br>
+주식수</TH>
+  <TH width=80 height=63 align="CENTER">소유의결권<br>
+수</TH>
+  <TH width=80 height=63 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=80 height=63 align="CENTER">권유자와의<br>
+관계</TH>
+  <TH width=80 height=63 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=81 height=63 align="CENTER">e★VAGT_NM |V|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_STK_KND |V|필</TD>
+  <TD width=80 height=63 align="RIGHT">e★VAGT_STK |P|필</TD>
+  <TD width=80 height=63 align="RIGHT">e★VAGT_VR |P|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_COP_RL |V|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_REC_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_ETC |V|선</TD>
+</TR>
+<TR>
+  <TD width=81 height=63 align="CENTER">e★VAGT_NM |V|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_STK_KND |V|필</TD>
+  <TD width=80 height=63 align="RIGHT">e★VAGT_STK |P|필</TD>
+  <TD width=80 height=63 align="RIGHT">e★VAGT_VR |P|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_COP_RL |V|필</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_REC_RL |V|선</TD>
+  <TD width=80 height=63 align="CENTER">e★VAGT_ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+</BODY>
+</HTML>

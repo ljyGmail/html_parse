@@ -1,0 +1,386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 11031, 서식버전 : 1.4, 서식변경날짜 : 2023년 2월 20일,<br>
+&nbsp; &nbsp;문서명 : 사업보고서(유동화전문회사)★</P><P><br></P>
+<P class=cover-title><a class='toc' href='11031-TOC.htm#12' name='12' target='toc'>사 업 보 고 서</a></P><P style="font-size: 16pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[ 유동화전문회사 ]</P><P><br>
+<br>
+<br></P><P style="font-size: 16pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(제 XX 기)</P><P>★Table-Group aClass=COVER★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=209></COL>
+  <COL width=153></COL>
+  <COL width=211></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=209 height=70 rowspan="2" align="RIGHT">사업연도</TD>
+  <TD class=tu width=153 height=40 align="CENTER">u★PERIODFROM |달력|필</TD>
+  <TD width=211 height=40> 부터</TD>
+</TR>
+<TR>
+  <TD class=tu width=153 height=17 align="CENTER">u★PERIODTO</TD>
+  <TD width=211 height=17> 까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=168></COL>
+  <COL width=414></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=168 height=17 valign="TOP">금융위원회</TD>
+  <TD width=414 height=17 align="RIGHT" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP">한국거래소 귀중</TD>
+  <TD width=414 height=17 align="RIGHT" valign="TOP">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP"></TD>
+  <TD width=414 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP">회 &nbsp; &nbsp; &nbsp;사 &nbsp; &nbsp; &nbsp;명 :</TD>
+  <TD width=414 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP"></TD>
+  <TD width=414 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP">대 &nbsp; 표 &nbsp; &nbsp;이 &nbsp; 사 :</TD>
+  <TD width=414 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP"></TD>
+  <TD width=414 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP">본 &nbsp;점 &nbsp;소 &nbsp;재 &nbsp;지 :</TD>
+  <TD width=414 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP"></TD>
+  <TD width=414 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP"></TD>
+  <TD width=414 height=17 valign="TOP">(홈페이지) http://</TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP"></TD>
+  <TD width=414 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP">작 &nbsp;성 &nbsp;책 &nbsp;임 &nbsp;자 :</TD>
+  <TD width=414 height=17 valign="TOP">(업무수탁기관 및 담당부서)</TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP"></TD>
+  <TD width=414 height=17 valign="TOP">(직 &nbsp;책) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(성 &nbsp;명)</TD>
+</TR>
+<TR>
+  <TD width=168 height=17 valign="TOP"></TD>
+  <TD width=414 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=toc>목 &nbsp; &nbsp; 차</P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='11031-TOC.htm#84' name='84' target='toc'>【 대표이사 등의 확인 】</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='11031-TOC.htm#90' name='90' target='toc'>I. 유동화전문회사등에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#93' name='93' target='toc'>1. 회사의 개요</a></P><P><br></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#97' name='97' target='toc'>2. 재무에 관한 사항</a></P><P><br></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#101' name='101' target='toc'>3. 기타 사항</a></P><P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='11031-TOC.htm#106' name='106' target='toc'>II. 자산관리자 및 자산의 관리방법 등</a></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#109' name='109' target='toc'>1. 자산관리자의 개요</a></P><P><br></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#113' name='113' target='toc'>2. 자산의 관리방법 등</a></P>
+<P class=section-3><a class='toc' href='11031-TOC.htm#115' name='115' target='toc'>1) 대금회수의 방법 및 관리절차 등</a></P><P><br></P>
+<P class=section-3><a class='toc' href='11031-TOC.htm#118' name='118' target='toc'>2) 자산의 관리ㆍ운용ㆍ처분방법 및 절차</a></P><P><br></P>
+<P class=section-3><a class='toc' href='11031-TOC.htm#121' name='121' target='toc'>3) 기타 자산의 관리ㆍ운용ㆍ처분에 관한 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='11031-TOC.htm#125' name='125' target='toc'>III. 자산유동화계획의 추진실적</a></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#128' name='128' target='toc'>1. 자산유동화계획의 개요</a></P><P><br></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#132' name='132' target='toc'>2. 유동화자산에 관한 사항</a></P>
+<P class=section-3><a class='toc' href='11031-TOC.htm#134' name='134' target='toc'>1) 유동화자산의 현황</a></P><P><br></P><P><br></P>
+<P class=section-3><a class='toc' href='11031-TOC.htm#139' name='139' target='toc'>2) 유동화자산의 변동내역 및 분석내용</a></P><P><br></P>
+<P class=section-3><a class='toc' href='11031-TOC.htm#142' name='142' target='toc'>3) 유동화자산과 관련된 기타 필요한 사항</a></P><P><br></P><P><br></P><P>&lt;&lt;단위서식 : 01_PF사업관련진행현황&gt;&gt;</P><P>가) PF 사업의 세부현황</P><P>사업개요 등을 상세하게 서술하고 사업명칭, 목적 및 특징, 사업종류, 위치, 사업참여자, 사업기간, 사업추진 경과, 주요 진행상황(토지보상률, 공정률, 분양률) 등을 표로 작성한다.</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=107></COL>
+  <COL width=325></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=257 height=17 colspan="2" align="CENTER">구 분</TH>
+  <TH width=325 height=17 align="CENTER">내 용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">사업명칭</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">사업목적 및 특징</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">사업 종류</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">사업 단계</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">사업 위치</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">사업시행자</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">시공사 (신용등급)</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">사업 기간</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">사업 면적</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">예상 평균분양가 (총분양대금)</TD>
+  <TD width=325 height=17 align="RIGHT">( &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;) </TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">입지 여건 등</TD>
+  <TD width=325 height=17></TD>
+</TR>
+<TR>
+  <TD width=141 height=77 rowspan="3" align="CENTER">주요 진행률<br>
+(△△년 △월 기준)</TD>
+  <TD width=107 height=17 align="CENTER">토지보상률</TD>
+  <TD width=325 height=17 align="RIGHT">(계획 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; % ) </TD>
+</TR>
+<TR>
+  <TD width=107 height=17 align="CENTER">공정률</TD>
+  <TD width=325 height=17 align="RIGHT">(계획 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; % ) </TD>
+</TR>
+<TR>
+  <TD width=107 height=17 align="CENTER">분양률</TD>
+  <TD width=325 height=17 align="RIGHT">(계획 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; % ) </TD>
+</TR>
+<TR>
+  <TD width=257 height=17 colspan="2" align="CENTER">특이사항</TD>
+  <TD width=325 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>나) PF 사업 주요 진행상황</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=40 align="CENTER">구 분</TH>
+  <TH width=141 height=40 align="CENTER">△△년 △월<br>
+(유동화계획등록일)</TH>
+  <TH width=141 height=40 align="CENTER">△△년 △월<br>
+(전분기 말)</TH>
+  <TH width=141 height=40 align="CENTER">△△년 △월<br>
+(작성기준일)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17 align="CENTER">토지보상률</TD>
+  <TD width=141 height=17 align="CENTER">△△%</TD>
+  <TD width=141 height=17 align="CENTER">△△%</TD>
+  <TD width=141 height=17 align="CENTER">△△%</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">공정률</TD>
+  <TD width=141 height=17 align="CENTER">△△%</TD>
+  <TD width=141 height=17 align="CENTER">△△%</TD>
+  <TD width=141 height=17 align="CENTER">△△%</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">분양률</TD>
+  <TD width=141 height=17 align="CENTER">△△%</TD>
+  <TD width=141 height=17 align="CENTER">△△%</TD>
+  <TD width=141 height=17 align="CENTER">△△%</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>다) PF 사업수지 현황</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">(단위 : 억원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=133></COL>
+  <COL width=144></COL>
+  <COL width=144></COL>
+  <COL width=143></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=133 height=40 align="CENTER">구 분</TH>
+  <TH width=144 height=40 align="CENTER">분양률△△%<br>
+(작성기준일)</TH>
+  <TH width=144 height=40 align="CENTER">분양률△△%시</TH>
+  <TH width=143 height=40 align="CENTER">분양률100%시</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=133 height=17 align="CENTER">예상 총 매출액</TD>
+  <TD width=144 height=17 align="RIGHT"></TD>
+  <TD width=144 height=17 align="RIGHT"></TD>
+  <TD width=143 height=17 align="RIGHT"></TD>
+</TR>
+<TR>
+  <TD width=133 height=17 align="CENTER">예상 총 사업비</TD>
+  <TD width=144 height=17 align="RIGHT"></TD>
+  <TD width=144 height=17 align="RIGHT"></TD>
+  <TD width=143 height=17 align="RIGHT"></TD>
+</TR>
+<TR>
+  <TD width=133 height=17 align="CENTER">예상 총수익</TD>
+  <TD width=144 height=17 align="RIGHT"></TD>
+  <TD width=144 height=17 align="RIGHT"></TD>
+  <TD width=143 height=17 align="RIGHT"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#149' name='149' target='toc'>3. 유동화증권에 관한 사항</a></P>
+<P class=section-3><a class='toc' href='11031-TOC.htm#151' name='151' target='toc'>1) 유동화증권의 현황</a></P><P><br></P>
+<P class=section-3><a class='toc' href='11031-TOC.htm#154' name='154' target='toc'>2) 유동화증권의 향후 상환계획 및 방법</a></P><P><br></P>
+<P class=section-3><a class='toc' href='11031-TOC.htm#157' name='157' target='toc'>3) 자금의 차입ㆍ운용에 대한 계획 및 실적</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='11031-TOC.htm#161' name='161' target='toc'>IV. 그 밖의 투자자 보호를 위하여 필요한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#164' name='164' target='toc'>1. 자산유동화계획 참여기관의 주요업무 및 담당자 등</a></P><P><br></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#168' name='168' target='toc'>2. 기타</a></P><P><br></P><P><br></P>
+<P class=section-2><a class='toc' href='11031-TOC.htm#172' name='172' target='toc'>3. 부속명세서</a></P><P><br>
+<br></P>
+</BODY>
+</HTML>

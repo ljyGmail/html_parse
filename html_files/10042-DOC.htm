@@ -1,0 +1,635 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 10042, 서식버전 : 2.5, 서식변경날짜 : 2023년 10월 20일,<br>
+&nbsp; &nbsp;문서명 : 일괄신고서(집합투자증권-신탁형)★</P>
+<P class=cover-title><a class='toc' href='10042-TOC.htm#11' name='11' target='toc'>일 괄 신 고 서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=235></COL>
+  <COL width=347></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=18 colspan="2" align="CENTER" valign="TOP" style="font-family: 바탕, sans-serif; font-size: 12pt; font-weight: bold;">[집합투자증권-신탁형]</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP">금융위원회 귀중</TD>
+  <TD width=347 height=17 align="RIGHT" valign="TOP">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP"></TD>
+  <TD width=347 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP">집합투자기구 명칭 :</TD>
+  <TD width=347 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP"></TD>
+  <TD width=347 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP">집합투자업자 명칭 :</TD>
+  <TD width=347 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP"></TD>
+  <TD width=347 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP">연 &nbsp;락 &nbsp;처 :</TD>
+  <TD width=347 height=17 valign="TOP">(주 &nbsp;소)</TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP"></TD>
+  <TD width=347 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP"></TD>
+  <TD width=347 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP">작 &nbsp;성 &nbsp;책 &nbsp;임 &nbsp;자 :</TD>
+  <TD width=347 height=17 valign="TOP">(직 &nbsp;책) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(성 &nbsp;명)</TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP"></TD>
+  <TD width=347 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP"></TD>
+  <TD width=347 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=235 height=17 valign="TOP">모집(매출) 증권의 종류 및 수 : </TD>
+  <TD width=347 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" valign="TOP">[모집(매출) 총액 : &nbsp; &nbsp; &nbsp;]<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=235 height=40 valign="TOP">모집(매출) 기간 (판매기간) : <br>
+<br></TD>
+  <TD width=347 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=235 height=40 valign="TOP">집합투자증권신고서 작성 기준일 :<br>
+<br></TD>
+  <TD width=347 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP">집합투자증권신고서 및 투자설명서의 공시장소</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; 가. 집합투자증권신고서</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;전자문서 : 금융위(금감원)홈페이지 → &nbsp;dart.fss.or.kr</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; 나. 투자설명서</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;전자문서 : 금융위(금감원)홈페이지 → &nbsp;dart.fss.or.kr</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;서면문서 :</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=144 valign="TOP" style="font-family: 바탕, sans-serif; font-size: 13pt; color: #ff0000; font-weight: bold;">금융위원회가 증권신고서의 기재사항이 진실 또는 정확하다는 것을 인정하거나 그 증권의 가치를 보증 또는 승인하지 아니함을 유의하시기 바랍니다.<br>
+또한 이 집합투자증권은「예금자보호법」에 의한 보호를 받지 않는 실적배당상품으로 투자원금의 손실이 발생할 수 있으므로 투자에 신중을 기하여 주시기 바랍니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=19 valign="TOP">▣ 집합투자기구 명칭 및 펀드코드(종류형 포함)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=_FUND_MAIN2_★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=491></COL>
+  <COL width=91></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=491 height=17 align="CENTER">집합투자기구 명칭(종류형 명칭)</TH>
+  <TH width=91 height=17 align="CENTER">펀드코드</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=491 height=63 align="CENTER">e★FUND_NAME2 |V|필</TD>
+  <TD width=91 height=63 align="CENTER">e★FUND_CODE2 |AAAAA|선</TD>
+</TR>
+<TR>
+  <TD width=491 height=63 align="CENTER">e★FUND_NAME2 |V|필</TD>
+  <TD width=91 height=63 align="CENTER">e★FUND_CODE2 |AAAAA|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10042-TOC.htm#113' name='113' target='toc'>투자결정시 유의사항 안내</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10042-TOC.htm#117' name='117' target='toc'>대표이사 등의 확인ㆍ서명</a></P><P><br>
+<br></P><P style="font-size: 16pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 확 &nbsp;인 &nbsp;서</P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=109 valign="TOP">　우리는 이 OO투자신탁의 발행인인 OO자산운용회사의 대표이사 및 신고업무담당 이사로서 이 증권신고서의 기재내용에 대해 상당한 주의를 다하여 직접 확인ㆍ검토한 결과, 중요한 기재사항의 기재 또는 표시의 누락이나 허위의 기재 또는 표시가 없고, 이 증권신고서에 표시된 기재 또는 표시사항을 이용하는 자의 중대한 오해를 유발하는 내용이 기재 또는 표시되지 아니하였음을 확인합니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=373></COL>
+  <COL width=131></COL>
+  <COL width=50></COL>
+  <COL width=10></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=572 height=40 colspan="3" align="RIGHT" valign="TOP">20xx. xx. xx</TD>
+  <TD width=10 height=40 align="RIGHT" valign="TOP"><br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=572 height=40 colspan="3" align="RIGHT" valign="TOP">【OO투자신탁】</TD>
+  <TD width=10 height=40 align="RIGHT" valign="TOP"><br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=373 height=40 align="RIGHT" valign="TOP">OO자산운용회사 대표이사</TD>
+  <TD width=131 height=40 align="CENTER" valign="TOP">【대표이사명】</TD>
+  <TD width=50 height=40 align="RIGHT" valign="TOP">(서명)</TD>
+  <TD width=10 height=40 valign="TOP"><br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=373 height=40 align="RIGHT" valign="TOP">OO자산운용회사 신고업무담당이사</TD>
+  <TD width=131 height=40 align="CENTER" valign="TOP">【이사명】</TD>
+  <TD width=50 height=40 align="RIGHT" valign="TOP">(서명)</TD>
+  <TD width=10 height=40 valign="TOP"><br>
+<br></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10042-TOC.htm#157' name='157' target='toc'>요 약 정 보</a></P><P><br></P><P><br></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 1_본문-직접작성(신규 및 효력발생전 정정신고서)&gt;&gt;</P>
+<P class=part><a class='toc' href='10042-TOC.htm#131' name='131' target='toc'>제1부 모집 또는 매출에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#96' name='96' target='toc'>1. 집합투자기구의 명칭</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#89' name='89' target='toc'>2. 집합투자기구의 종류 및 형태</a></P><P>★Table-Group aClass=FUND_KND★</P>
+
+<TABLE class=nb width=795>
+<COLGROUP>
+  <COL width=180></COL>
+  <COL width=319></COL>
+  <COL width=269></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=180 height=178>가. 형태별 종류</TD>
+  <TD class=tu width=319 height=178>u★FUND_FRM |List|L|1|선<br>
+투자신탁|1<br>
+투자회사|2<br>
+투자유한회사|3<br>
+투자합자회사|4<br>
+투자익명조합|6<br>
+투자유한책임회사|7<br>
+투자합자조합|8</TD>
+  <TD width=269 height=178></TD>
+</TR>
+<TR>
+  <TD width=180 height=385>나. 운용자산별 종류</TD>
+  <TD class=tu width=319 height=385>u★FUND_ASST |List|L|1|선<br>
+증권(채권형)|2<br>
+증권(채권파생형)|B<br>
+증권(주식형)|1<br>
+증권(주식파생형)|C<br>
+증권(혼합주식형)|D<br>
+증권(혼합주식파생형)|E<br>
+증권(혼합채권형)|F<br>
+증권(혼합채권파생형)|G<br>
+증권(투자계약증권형)|H<br>
+증권(투자계약증권파생형)|I<br>
+증권(재간접형)|5<br>
+증권(재간접파생형)|J<br>
+부동산|7<br>
+특별자산|8<br>
+혼합자산|9<br>
+단기금융|A</TD>
+  <TD width=269 height=385></TD>
+</TR>
+<TR>
+  <TD width=180 height=63>다. 개방형ㆍ폐쇄형 구분</TD>
+  <TD class=tu width=319 height=63>u★FUND_OP |List|L|1|선<br>
+개방형|1<br>
+폐쇄형|2</TD>
+  <TD width=269 height=63></TD>
+</TR>
+<TR>
+  <TD width=180 height=63>라. 추가형ㆍ단위형 구분</TD>
+  <TD class=tu width=319 height=63>u★FUND_UNIT |List|L|1|선<br>
+추가형|1<br>
+단위형|2</TD>
+  <TD width=269 height=63></TD>
+</TR>
+<TR>
+  <TD width=180 height=132>마. 특수형태 표시</TD>
+  <TD class=tu width=319 height=132>u★FUND_SPCL |List|L|1|선<br>
+종류형|1<br>
+전환형|2<br>
+모자형|3<br>
+상장지수|4<br>
+-|-</TD>
+  <TD width=269 height=132></TD>
+</TR>
+<TR>
+  <TD width=180 height=63>바. 고난도금융투자상품<br>
+&nbsp; &nbsp; &nbsp;해당여부</TD>
+  <TD class=tu width=319 height=63>u★FUND_HD |List|L|1|선<br>
+O|O<br>
+X|X</TD>
+  <TD width=269 height=63></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#265' name='265' target='toc'>3. 모집예정금액</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#268' name='268' target='toc'>4. 모집의 내용 및 절차</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#271' name='271' target='toc'>5. 인수에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#274' name='274' target='toc'>6. 상장 및 매매에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10042-TOC.htm#278' name='278' target='toc'>제2부 집합투자기구에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#282' name='282' target='toc'>1. 집합투자기구의 명칭</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#285' name='285' target='toc'>2. 집합투자기구의 연혁</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#288' name='288' target='toc'>3. 집합투자기구의 신탁계약기간</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#291' name='291' target='toc'>4. 집합투자업자</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#294' name='294' target='toc'>5. 운용전문인력에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#297' name='297' target='toc'>6. 집합투자기구의 구조</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#300' name='300' target='toc'>7. 집합투자기구의 투자목적</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#303' name='303' target='toc'>8. 집합투자기구의 투자대상</a></P><P>가. 투자대상</P><P><br></P><P>나. 투자제한</P><P><br></P><P>다. 편입한 집합투자증권에 관한 사항</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#311' name='311' target='toc'>9. 집합투자기구의 투자전략, 위험관리 및 수익구조</a></P><P>가. 투자전략 및 위험관리</P><P><br></P><P>나. 수익구조</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#317' name='317' target='toc'>10. 집합투자기구의 투자위험</a></P><P>가. 일반위험</P><P><br></P><P>나. 특수위험</P><P><br></P><P>다. 기타 투자위험</P><P><br></P><P>라. 이 집합투자기구에 적합한 투자자 유형</P><P>★Table-Group aClass=RISK_CLASS★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=16></COL>
+  <COL width=100></COL>
+  <COL width=19></COL>
+  <COL width=25></COL>
+  <COL width=71></COL>
+  <COL width=315></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=16 height=178 valign="TOP"></TD>
+  <TD width=100 height=178 valign="TOP">투자위험 등급</TD>
+  <TD width=19 height=178 align="RIGHT" valign="TOP"> (</TD>
+  <TD width=25 height=178 align="CENTER" valign="TOP">e★RISK_CLASS |\|선</TD>
+  <TD width=71 height=178 valign="TOP">) 등급</TD>
+  <TD width=315 height=178 align="LEFT" valign="TOP">e★RISK_EXP |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#345' name='345' target='toc'>11. 매입, 환매, 전환 기준</a></P><P>가. 매입</P><P><br></P><P>나. 환매</P><P><br></P><P>다. 전환</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#353' name='353' target='toc'>12. 기준가격 산정기준 및 집합투자재산의 평가</a></P><P>가. 기준가격의 산정 및 공시</P><P><br></P><P>나. 집합투자재산의 평가방법</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#359' name='359' target='toc'>13. 보수 및 수수료에 관한 사항</a></P><P>가. 투자자에게 직접 부과되는 수수료</P><P>★Table-Group aClass=FEE★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=91 height=70 rowspan="2" align="CENTER">명칭<br>
+(클래스)</TH>
+  <TH width=91 height=70 rowspan="2" align="CENTER">가입자격</TH>
+  <TH width=391 height=17 colspan="4" align="CENTER">수수료율</TH>
+</TR>
+<TR>
+  <TH width=91 height=40 align="CENTER">선취<br>
+판매수수료</TH>
+  <TH width=91 height=40 align="CENTER">후취<br>
+판매수수료</TH>
+  <TH width=91 height=40 align="CENTER">환매수수료</TH>
+  <TH width=91 height=40 align="CENTER">전환수수료</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=91 height=40 align="LEFT">e★FUND_NAME</TD>
+  <TD width=91 height=40 align="LEFT">e★SUB_REQ |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_PRE |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_PST |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_BBCK |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_STCH |V|선</TD>
+</TR>
+<TR>
+  <TD width=91 height=40 align="LEFT">e★FUND_NAME</TD>
+  <TD width=91 height=40 align="LEFT">e★SUB_REQ |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_PRE |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_PST |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_BBCK |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_STCH |V|선</TD>
+</TR>
+<TR>
+  <TD width=191 height=40 colspan="2" align="CENTER">부과기준</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_PRE_STD |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_PST_STD |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_BBCK_STD |V|선</TD>
+  <TD width=91 height=40 align="LEFT">e★FEE_STCH_STD |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>나. 집합투자기구에 부과되는 보수 및 비용</P><P>★Table-Group aClass=RPRS★</P>
+
+<TABLE border=1 width=825>
+<COLGROUP>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=66 height=139 rowspan="2" align="CENTER">명칭<br>
+(클래스)</TH>
+  <TH width=741 height=17 colspan="10" align="CENTER">지급비율(연간, %)</TH>
+</TR>
+<TR>
+  <TH width=66 height=109 align="CENTER">집합투자<br>
+업자<br>
+보수</TH>
+  <TH width=66 height=109 align="CENTER">판매회사<br>
+보수</TH>
+  <TH width=66 height=109 align="CENTER">수탁회사<br>
+보수</TH>
+  <TH width=66 height=109 align="CENTER">일반사무<br>
+관리회사<br>
+보수</TH>
+  <TH width=66 height=109 align="CENTER">총 보수</TH>
+  <TH width=66 height=109 align="CENTER">(동종유형<br>
+총 보수)</TH>
+  <TH width=66 height=109 align="CENTER">기타비용</TH>
+  <TH width=66 height=109 align="CENTER">총 보수<br>
+ㆍ비용</TH>
+  <TH width=66 height=109 align="CENTER">총 보수ㆍ비용(피투자 집합투자기구 보수포함)</TH>
+  <TH width=66 height=109 align="CENTER">증권<br>
+거래비용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=66 height=86 align="LEFT">e★FUND_NAME</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_FUND_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_SALE_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TRST_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_AGNT_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TOTPAY_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_DTOTPAY_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_ETC_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TOT_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TOT_RT2 |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TRSC_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=66 height=86 align="LEFT">e★FUND_NAME</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_FUND_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_SALE_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TRST_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_AGNT_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TOTPAY_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_DTOTPAY_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_ETC_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TOT_RT |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TOT_RT2 |%|선</TD>
+  <TD width=66 height=86 align="RIGHT">e★RPRS_TRSC_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=66 height=86 align="CENTER">지급시기</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_FUND_TRM |V|선</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_SALE_TRM |V|선</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_TRST_TRM |V|선</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_AGNT_TRM |V|선</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_TOTPAY_TRM |V|선</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_DTOTPAY_TRM |V|선</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_ETC_TRM |V|선</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_TOT_TRM |V|선</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_TOT_TRM2 |V|선</TD>
+  <TD width=66 height=86 align="LEFT">e★RPRS_TRSC_TRM |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>다. 보수 및 지급내역에 관한 사항</P><P>★Table-Group aClass=PAY_DTL★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=48></COL>
+  <COL width=47></COL>
+  <COL width=47></COL>
+  <COL width=47></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=66 height=70 rowspan="2" align="CENTER">기준지표</TH>
+  <TH width=66 height=70 rowspan="2" align="CENTER">보수<br>
+산정방식</TH>
+  <TH width=66 height=70 rowspan="2" align="CENTER">한도<br>
+(%)</TH>
+  <TH width=66 height=70 rowspan="2" align="CENTER">산출<br>
+주기</TH>
+  <TH width=66 height=70 rowspan="2" align="CENTER">지급<br>
+시기</TH>
+  <TH width=216 height=40 colspan="4" align="CENTER">지급내역<br>
+(직전 회계연도 기준, %)</TH>
+</TR>
+<TR>
+  <TH width=48 height=17 align="CENTER">1분기</TH>
+  <TH width=47 height=17 align="CENTER">2분기</TH>
+  <TH width=47 height=17 align="CENTER">3분기</TH>
+  <TH width=47 height=17 align="CENTER">4분기</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=66 height=63 align="CENTER">e★PY_STD_IDX |V|선</TD>
+  <TD width=66 height=63 align="CENTER">e★PY_EST_MTH |V|선</TD>
+  <TD width=66 height=63 align="CENTER">e★PY_LMT |%|선</TD>
+  <TD width=66 height=63 align="CENTER">e★PY_CYC |V|선</TD>
+  <TD width=66 height=63 align="CENTER">e★PY_MMT |V|선</TD>
+  <TD width=48 height=63 align="CENTER">e★PY_DTL1 |%|선</TD>
+  <TD width=47 height=63 align="CENTER">e★PY_DTL2 |%|선</TD>
+  <TD width=47 height=63 align="CENTER">e★PY_DTL3 |%|선</TD>
+  <TD width=47 height=63 align="CENTER">e★PY_DTL4 |%|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#511' name='511' target='toc'>14. 이익 배분 및 과세에 관한 사항</a></P><P>가. 이익 배분</P><P><br></P><P>나. 과세</P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10042-TOC.htm#518' name='518' target='toc'>제3부 집합투자기구의 재무 및 운용실적 등에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#522' name='522' target='toc'>1. 재무정보</a></P><P>가. 요약재무정보</P><P><br></P><P>나. 대차대조표</P><P><br></P><P>다. 손익계산서</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#530' name='530' target='toc'>2. 연도별 설정 및 환매 현황</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#533' name='533' target='toc'>3. 집합투자기구의 운용실적</a></P><P>가. 연평균 수익률(세전 기준)</P><P><br></P><P>나. 연도별 수익률 추이</P><P><br></P><P>다. 집합투자기구의 자산 구성 현황</P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10042-TOC.htm#542' name='542' target='toc'>제4부 집합투자기구 관련회사에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#546' name='546' target='toc'>1. 집합투자업자에 관한 사항</a></P><P>가. 회사 개요</P><P><br></P><P>나. 주요 업무</P><P><br></P><P>다. 최근 2개 사업연도 요약 재무내용</P><P><br></P><P>라. 운용자산 규모</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#556' name='556' target='toc'>2. 운용관련 업무 수탁회사 등에 관한 사항</a></P><P>가. 집합투자재산의 운용(지시)업무 수탁회사</P><P><br></P><P>나. 기타 업무의 수탁회사</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#562' name='562' target='toc'>3. 기타 집합투자기구 관련회사에 관한 사항</a></P><P>가. 신탁회사</P><P><br></P><P>나. 일반사무관리회사</P><P><br></P><P>다. 집합투자기구평가회사</P><P><br></P><P>라. 채권평가회사</P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10042-TOC.htm#573' name='573' target='toc'>제5부 기타 투자자보호를 위해 필요한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#577' name='577' target='toc'>1. 투자자의 권리에 관한 사항</a></P><P>가. 투자자총회등</P><P> &nbsp;(1) 투자자총회의 구성</P><P> &nbsp;(2) 투자자총회의 소집 및 의결권 행사방법</P><P> &nbsp;(3) 투자자총회 결의사항</P><P> &nbsp;(4) 반대매수청구권</P><P><br></P><P>나. 잔여재산분배</P><P><br></P><P>다. 장부ㆍ서류의 열람 및 등ㆍ초본 교부청구권</P><P><br></P><P>라. 손해배상책임</P><P><br></P><P>마. 재판관할</P><P><br></P><P>바. 기타 투자자의 권리보호에 관한 사항</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#595' name='595' target='toc'>2. 집합투자기구의 해지에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#598' name='598' target='toc'>3. 집합투자기구의 공시에 관한 사항</a></P><P>가. 정기보고서</P><P> &nbsp;(1) 영업보고서 및 결산서류 제출 등</P><P> &nbsp;(2) 자산운용보고서</P><P> &nbsp;(3) 자산보관ㆍ관리보고서</P><P> &nbsp;(4) 기타장부 및 서류</P><P><br></P><P>나. 수시공시</P><P> &nbsp;(1) 신탁계약변경에 관한 공시</P><P> &nbsp;(2) 수시공시</P><P> &nbsp;(3) 집합투자재산의 의결권 행사에 관한 공시</P><P> &nbsp;(4) 위험지표의 공시</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#612' name='612' target='toc'>4. 이해관계인 등과의 거래에 관한 사항</a></P><P>가. 이해관계인과의 거래내역</P><P><br></P><P>나. 집합투자기구간 거래에 관한 사항</P><P><br></P><P>다. 투자중개업자 선정 기준</P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#620' name='620' target='toc'>5. 집합투자업자의 고유재산 투자에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10042-TOC.htm#623' name='623' target='toc'>6. 외국 집합투자기구에 관한 추가 기재사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10042-TOC.htm#627' name='627' target='toc'>[붙임] 용어풀이</a></P><P> - 증권신고서에 나오는 용어 중 별도 설명이 필요한 내용을 간략하게 기재한다.</P><P><br></P><P>&lt;&lt;단위서식 : 2_본문-PDF파일첨부(그외의 정정신고서)&gt;&gt;</P>
+<P class=part><a class='toc' href='10042-TOC.htm#13' name='13' target='toc'>[ 본 문 ]</a></P><P><br></P>
+</BODY>
+</HTML>

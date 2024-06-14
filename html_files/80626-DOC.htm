@@ -1,0 +1,1360 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 80626, 서식버전 : 1.1, 서식변경날짜 : 2022년 12월 27일,<br>
+&nbsp; &nbsp;문서명 : 대규모기업집단현황공시(연1회-동일인용)★</P>
+<P class=cover-title><a class='toc' href='80626-TOC.htm#11' name='11' target='toc'>대규모기업집단 현황 공시(동일인용)</a></P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=158></COL>
+  <COL width=424></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=158 height=19 valign="TOP"></TD>
+  <TD width=424 height=19 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=158 height=19 valign="TOP">기업집단명 :</TD>
+  <TD width=424 height=19 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=158 height=19 valign="TOP"></TD>
+  <TD width=424 height=19 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=158 height=19 valign="TOP">기업집단 동일인 :</TD>
+  <TD width=424 height=19 valign="TOP">O O O</TD>
+</TR>
+<TR>
+  <TD width=158 height=19 valign="TOP"></TD>
+  <TD width=424 height=19 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=158 height=19 valign="TOP">작성회사 :</TD>
+  <TD width=424 height=19 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=158 height=19 valign="TOP">담당자 :</TD>
+  <TD width=424 height=19 valign="TOP">O O O (직 &nbsp;위) , 전화번호(00-0000-0000)</TD>
+</TR>
+<TR>
+  <TD width=158 height=19 valign="TOP"></TD>
+  <TD width=424 height=19 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='80626-TOC.htm#45' name='45' target='toc'>1. 총수일가가 지분을 보유한 국외 계열회사 현황</a></P>
+<P class=section-2><a class='toc' href='80626-TOC.htm#47' name='47' target='toc'>(1) 일반현황</a></P>
+
+<TABLE class=nb width=667>
+<COLGROUP>
+  <COL width=658></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=658 height=17 align="RIGHT">(금년도 지정일 기준)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=667>
+<COLGROUP>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=74></COL>
+  <COL width=74></COL>
+  <COL width=74></COL>
+  <COL width=74></COL>
+  <COL width=74></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=159 height=40 colspan="2" align="CENTER">국외계열회사명</TH>
+  <TH width=75 height=40 align="CENTER">대표자명</TH>
+  <TH width=74 height=40 align="CENTER">설립일</TH>
+  <TH width=74 height=40 align="CENTER">업종</TH>
+  <TH width=74 height=40 align="CENTER">총수일가<br>
+지분율(%)</TH>
+  <TH width=74 height=40 align="CENTER">소재국</TH>
+  <TH width=74 height=40 align="CENTER">결산일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=159 height=17 colspan="2" align="CENTER">①</TD>
+  <TD width=75 height=17 align="CENTER">②</TD>
+  <TD width=74 height=17 align="CENTER">③</TD>
+  <TD width=74 height=17 align="CENTER">④</TD>
+  <TD width=74 height=17 align="CENTER">⑤</TD>
+  <TD width=74 height=17 align="CENTER">⑥</TD>
+  <TD width=74 height=17 align="CENTER">⑦</TD>
+</TR>
+<TR>
+  <TD width=159 height=17 colspan="2" align="CENTER">...</TD>
+  <TD width=75 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=75 height=17 align="CENTER">합계</TD>
+  <TD width=75 height=17 align="CENTER">⑧</TD>
+  <TD width=75 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='80626-TOC.htm#101' name='101' target='toc'>(2) 주주현황</a></P>
+
+<TABLE class=nb width=754>
+<COLGROUP>
+  <COL width=745></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=745 height=17 align="RIGHT">(금년도 지정일 기준, 단위: 주, %)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=754>
+<COLGROUP>
+  <COL width=97></COL>
+  <COL width=69></COL>
+  <COL width=24></COL>
+  <COL width=102></COL>
+  <COL width=39></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=97 height=47 rowspan="2" align="CENTER">국외<br>
+계열회사명</TH>
+  <TH width=213 height=47 colspan="3" rowspan="2" align="CENTER">동일인과의 관계</TH>
+  <TH width=39 height=47 rowspan="2" align="CENTER">성명</TH>
+  <TH width=117 height=17 colspan="2" align="CENTER">보통주</TH>
+  <TH width=117 height=17 colspan="2" align="CENTER">우선주</TH>
+  <TH width=117 height=17 colspan="2" align="CENTER">합계</TH>
+</TR>
+<TR>
+  <TH width=54 height=17 align="CENTER">주식수</TH>
+  <TH width=54 height=17 align="CENTER">지분율</TH>
+  <TH width=54 height=17 align="CENTER">주식수</TH>
+  <TH width=54 height=17 align="CENTER">지분율</TH>
+  <TH width=54 height=17 align="CENTER">주식수</TH>
+  <TH width=54 height=17 align="CENTER">지분율</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=97 height=670 rowspan="22" align="CENTER">A</TD>
+  <TD width=69 height=557 rowspan="19" align="CENTER">동<br>
+일<br>
+인<br>
+측</TD>
+  <TD width=135 height=17 colspan="2" align="CENTER">동일인</TD>
+  <TD width=39 height=17 align="CENTER">①</TD>
+  <TD width=54 height=17 align="CENTER">②</TD>
+  <TD width=54 height=17 align="CENTER">③</TD>
+  <TD width=54 height=17 align="CENTER">④</TD>
+  <TD width=54 height=17 align="CENTER">⑤</TD>
+  <TD width=54 height=17 align="CENTER">⑥</TD>
+  <TD width=54 height=17 align="CENTER">⑦</TD>
+</TR>
+<TR>
+  <TD width=24 height=257 rowspan="9" align="CENTER">친<br>
+족</TD>
+  <TD width=102 height=47 rowspan="2" align="CENTER">배우자/<br>
+혈족1촌</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=102 height=47 rowspan="2" align="CENTER">혈족2~4촌</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=102 height=47 rowspan="2" align="CENTER">인척 3촌 이내</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=102 height=47 rowspan="2" align="CENTER">⑧ 기타친족</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=102 height=17 align="CENTER">⑨ 친족 합계</TD>
+  <TD width=39 height=17 align="CENTER">X</TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=47 colspan="2" rowspan="2" align="CENTER">비영리법인</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=47 colspan="2" rowspan="2" align="CENTER">임원</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=17 colspan="2" align="CENTER">자기주식</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=47 colspan="2" rowspan="2" align="CENTER">계열회사<br>
+(국내+국외)</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=17 colspan="2" align="CENTER">기타 동일인관련자</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=17 colspan="2" align="CENTER">⑩ 동일인측 합계</TD>
+  <TD width=39 height=17 align="CENTER">X</TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=69 height=70 rowspan="2" align="CENTER">기타주주</TD>
+  <TD width=135 height=40 colspan="2" align="CENTER">동일인측이 아닌<br>
+최다주주</TD>
+  <TD width=39 height=40 align="CENTER">⑪</TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=17 colspan="2" align="CENTER">기타</TD>
+  <TD width=39 height=17 align="CENTER">X</TD>
+  <TD width=54 height=17 align="CENTER">⑫</TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=213 height=17 colspan="3" align="CENTER">총 계</TD>
+  <TD width=39 height=17 align="CENTER">X</TD>
+  <TD width=54 height=17 align="CENTER">⑬</TD>
+  <TD width=54 height=17 align="CENTER">100%</TD>
+  <TD width=54 height=17 align="CENTER">⑬</TD>
+  <TD width=54 height=17 align="CENTER">100%</TD>
+  <TD width=54 height=17 align="CENTER">⑬</TD>
+  <TD width=54 height=17 align="CENTER">100%</TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">…</TD>
+  <TD width=213 height=17 colspan="3" align="CENTER">…</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">…</TD>
+  <TD width=213 height=17 colspan="3" align="CENTER">…</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='80626-TOC.htm#355' name='355' target='toc'>2. 국내 계열회사에 직ㆍ간접 출자한 국외 계열회사 현황</a></P>
+<P class=section-2><a class='toc' href='80626-TOC.htm#357' name='357' target='toc'>(1) 일반현황</a></P>
+
+<TABLE class=nb width=667>
+<COLGROUP>
+  <COL width=658></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=658 height=17 align="RIGHT">(금년도 지정일 기준)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=667>
+<COLGROUP>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=74></COL>
+  <COL width=74></COL>
+  <COL width=74></COL>
+  <COL width=74></COL>
+  <COL width=74></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=159 height=40 colspan="2" align="CENTER">국외계열회사명</TH>
+  <TH width=75 height=40 align="CENTER">대표자명</TH>
+  <TH width=74 height=40 align="CENTER">설립일</TH>
+  <TH width=74 height=40 align="CENTER">업종</TH>
+  <TH width=74 height=40 align="CENTER">내부<br>
+지분율(%)</TH>
+  <TH width=74 height=40 align="CENTER">소재국</TH>
+  <TH width=74 height=40 align="CENTER">결산일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=159 height=17 colspan="2" align="CENTER">①</TD>
+  <TD width=75 height=17 align="CENTER">②</TD>
+  <TD width=74 height=17 align="CENTER">③</TD>
+  <TD width=74 height=17 align="CENTER">④</TD>
+  <TD width=74 height=17 align="CENTER">⑤</TD>
+  <TD width=74 height=17 align="CENTER">⑥</TD>
+  <TD width=74 height=17 align="CENTER">⑦</TD>
+</TR>
+<TR>
+  <TD width=159 height=17 colspan="2" align="CENTER">...</TD>
+  <TD width=75 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=75 height=17 align="CENTER">합계</TD>
+  <TD width=75 height=17 align="CENTER">⑧</TD>
+  <TD width=75 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER">-</TD>
+  <TD width=74 height=17 align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='80626-TOC.htm#411' name='411' target='toc'>(2) 주주현황</a></P>
+
+<TABLE class=nb width=754>
+<COLGROUP>
+  <COL width=745></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=745 height=17 align="RIGHT">(금년도 지정일 기준, 단위: 주, %)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=754>
+<COLGROUP>
+  <COL width=97></COL>
+  <COL width=69></COL>
+  <COL width=24></COL>
+  <COL width=102></COL>
+  <COL width=39></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+  <COL width=54></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=97 height=47 rowspan="2" align="CENTER">국외<br>
+계열회사명</TH>
+  <TH width=213 height=47 colspan="3" rowspan="2" align="CENTER">동일인과의 관계</TH>
+  <TH width=39 height=47 rowspan="2" align="CENTER">성명</TH>
+  <TH width=117 height=17 colspan="2" align="CENTER">보통주</TH>
+  <TH width=117 height=17 colspan="2" align="CENTER">우선주</TH>
+  <TH width=117 height=17 colspan="2" align="CENTER">합계</TH>
+</TR>
+<TR>
+  <TH width=54 height=17 align="CENTER">주식수</TH>
+  <TH width=54 height=17 align="CENTER">지분율</TH>
+  <TH width=54 height=17 align="CENTER">주식수</TH>
+  <TH width=54 height=17 align="CENTER">지분율</TH>
+  <TH width=54 height=17 align="CENTER">주식수</TH>
+  <TH width=54 height=17 align="CENTER">지분율</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=97 height=670 rowspan="22" align="CENTER">A</TD>
+  <TD width=69 height=557 rowspan="19" align="CENTER">동<br>
+일<br>
+인<br>
+측</TD>
+  <TD width=135 height=17 colspan="2" align="CENTER">동일인</TD>
+  <TD width=39 height=17 align="CENTER">①</TD>
+  <TD width=54 height=17 align="CENTER">②</TD>
+  <TD width=54 height=17 align="CENTER">③</TD>
+  <TD width=54 height=17 align="CENTER">④</TD>
+  <TD width=54 height=17 align="CENTER">⑤</TD>
+  <TD width=54 height=17 align="CENTER">⑥</TD>
+  <TD width=54 height=17 align="CENTER">⑦</TD>
+</TR>
+<TR>
+  <TD width=24 height=257 rowspan="9" align="CENTER">친<br>
+족</TD>
+  <TD width=102 height=47 rowspan="2" align="CENTER">배우자/<br>
+혈족1촌</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=102 height=47 rowspan="2" align="CENTER">혈족2~4촌</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=102 height=47 rowspan="2" align="CENTER">인척 3촌 이내</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=102 height=47 rowspan="2" align="CENTER">⑧ 기타친족</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=102 height=17 align="CENTER">⑨ 친족 합계</TD>
+  <TD width=39 height=17 align="CENTER">X</TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=47 colspan="2" rowspan="2" align="CENTER">비영리법인</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=47 colspan="2" rowspan="2" align="CENTER">임원</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=17 colspan="2" align="CENTER">자기주식</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=47 colspan="2" rowspan="2" align="CENTER">계열회사<br>
+(국내+국외)</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=17 colspan="2" align="CENTER">기타 동일인관련자</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=17 colspan="2" align="CENTER">⑩ 동일인측 합계</TD>
+  <TD width=39 height=17 align="CENTER">X</TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=69 height=70 rowspan="2" align="CENTER">기타주주</TD>
+  <TD width=135 height=40 colspan="2" align="CENTER">동일인측이 아닌<br>
+최다주주</TD>
+  <TD width=39 height=40 align="CENTER">⑪</TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+  <TD width=54 height=40 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=135 height=17 colspan="2" align="CENTER">기타</TD>
+  <TD width=39 height=17 align="CENTER">X</TD>
+  <TD width=54 height=17 align="CENTER">⑫</TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=213 height=17 colspan="3" align="CENTER">총 계</TD>
+  <TD width=39 height=17 align="CENTER">X</TD>
+  <TD width=54 height=17 align="CENTER">⑬</TD>
+  <TD width=54 height=17 align="CENTER">100%</TD>
+  <TD width=54 height=17 align="CENTER">⑬</TD>
+  <TD width=54 height=17 align="CENTER">100%</TD>
+  <TD width=54 height=17 align="CENTER">⑬</TD>
+  <TD width=54 height=17 align="CENTER">100%</TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">…</TD>
+  <TD width=213 height=17 colspan="3" align="CENTER">…</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=97 height=17 align="CENTER">…</TD>
+  <TD width=213 height=17 colspan="3" align="CENTER">…</TD>
+  <TD width=39 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+  <TD width=54 height=17 align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='80626-TOC.htm#664' name='664' target='toc'>(3) 계열회사에 대한 출자현황</a></P>
+
+<TABLE class=nb width=725>
+<COLGROUP>
+  <COL width=716></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=716 height=17 align="RIGHT">(금년도 지정일 기준, 단위 : 주, %, 백만원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=725>
+<COLGROUP>
+  <COL width=21></COL>
+  <COL width=21></COL>
+  <COL width=71></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=50></COL>
+  <COL width=49></COL>
+  <COL width=49></COL>
+  <COL width=49></COL>
+  <COL width=49></COL>
+  <COL width=49></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=131 height=63 colspan="3" rowspan="2" align="CENTER">출자회사<br>
+＼<br>
+피출자회사</TH>
+  <TH width=109 height=17 colspan="2" align="CENTER">D</TH>
+  <TH width=109 height=17 colspan="2" align="CENTER">E</TH>
+  <TH width=108 height=17 colspan="2" align="CENTER">F</TH>
+  <TH width=107 height=17 colspan="2" align="CENTER">..</TH>
+  <TH width=107 height=17 colspan="2" align="CENTER">..</TH>
+</TR>
+<TR>
+  <TH width=50 height=33 align="CENTER">주식수</TH>
+  <TH width=50 height=33 align="CENTER">지분율</TH>
+  <TH width=50 height=33 align="CENTER"></TH>
+  <TH width=50 height=33 align="CENTER"></TH>
+  <TH width=50 height=33 align="CENTER"></TH>
+  <TH width=49 height=33 align="CENTER"></TH>
+  <TH width=49 height=33 align="CENTER"></TH>
+  <TH width=49 height=33 align="CENTER"></TH>
+  <TH width=49 height=33 align="CENTER"></TH>
+  <TH width=49 height=33 align="CENTER"></TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=21 height=227 rowspan="8" align="CENTER">국내계열회사</TD>
+  <TD width=21 height=107 rowspan="4" align="CENTER">A</TD>
+  <TD width=71 height=17 align="CENTER">장부가액</TD>
+  <TD width=109 height=17 colspan="2" align="CENTER">①</TD>
+  <TD width=109 height=17 colspan="2" align="CENTER"></TD>
+  <TD width=108 height=17 colspan="2" align="CENTER"></TD>
+  <TD width=107 height=17 colspan="2" align="CENTER"></TD>
+  <TD width=107 height=17 colspan="2" align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=71 height=17 align="CENTER">보통주</TD>
+  <TD width=50 height=17 align="CENTER">②</TD>
+  <TD width=50 height=17 align="CENTER">③</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=71 height=17 align="CENTER">우선주</TD>
+  <TD width=50 height=17 align="CENTER">④</TD>
+  <TD width=50 height=17 align="CENTER">⑤</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=71 height=17 align="CENTER">합계</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=21 height=17 align="CENTER">B</TD>
+  <TD width=71 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=21 height=17 align="CENTER">C</TD>
+  <TD width=71 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=21 height=17 align="CENTER">..</TD>
+  <TD width=71 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=101 height=17 colspan="2" align="CENTER">장부가액 소계</TD>
+  <TD width=109 height=17 colspan="2" align="CENTER">⑧</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=21 height=347 rowspan="12" align="CENTER">국외계열회사</TD>
+  <TD width=21 height=107 rowspan="4" align="CENTER">D</TD>
+  <TD width=71 height=17 align="CENTER">장부가액</TD>
+  <TD width=109 height=17 colspan="2" align="CENTER">⑥</TD>
+  <TD width=109 height=17 colspan="2" align="CENTER"></TD>
+  <TD width=108 height=17 colspan="2" align="CENTER"></TD>
+  <TD width=107 height=17 colspan="2" align="CENTER"></TD>
+  <TD width=107 height=17 colspan="2" align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=71 height=17 align="CENTER">보통주</TD>
+  <TD width=50 height=17 align="CENTER">⑥</TD>
+  <TD width=50 height=17 align="CENTER">⑥</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=71 height=17 align="CENTER">우선주</TD>
+  <TD width=50 height=17 align="CENTER">⑥</TD>
+  <TD width=50 height=17 align="CENTER">⑥</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=71 height=17 align="CENTER">합계</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=21 height=107 rowspan="4" align="CENTER">E</TD>
+  <TD width=71 height=17 align="CENTER">장부가액</TD>
+  <TD width=109 height=17 colspan="2" align="CENTER">⑦</TD>
+  <TD width=109 height=17 colspan="2" align="CENTER"></TD>
+  <TD width=108 height=17 colspan="2" align="CENTER"></TD>
+  <TD width=107 height=17 colspan="2" align="CENTER"></TD>
+  <TD width=107 height=17 colspan="2" align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=71 height=17 align="CENTER">보통주</TD>
+  <TD width=50 height=17 align="CENTER">⑦</TD>
+  <TD width=50 height=17 align="CENTER">⑦</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=71 height=17 align="CENTER">우선주</TD>
+  <TD width=50 height=17 align="CENTER">⑦</TD>
+  <TD width=50 height=17 align="CENTER">⑦</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=71 height=17 align="CENTER">합계</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=21 height=17 align="CENTER">F</TD>
+  <TD width=71 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=21 height=17 align="CENTER">..</TD>
+  <TD width=71 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=101 height=17 colspan="2" align="CENTER">장부가액 소계</TD>
+  <TD width=109 height=17 colspan="2" align="CENTER">⑧</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=101 height=17 colspan="2" align="CENTER">합계</TD>
+  <TD width=109 height=17 colspan="2" align="CENTER">⑨</TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+  <TD width=49 height=17 align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='80626-TOC.htm#940' name='940' target='toc'>(4) 국내외 계열회사간 순환출자현황</a></P>
+
+<TABLE class=nb width=1012>
+<COLGROUP>
+  <COL width=1003></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=1003 height=17 align="RIGHT">(금년도 지정일 기준, 단위: %, 주)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=1014>
+<COLGROUP>
+  <COL width=32></COL>
+  <COL width=43></COL>
+  <COL width=34></COL>
+  <COL width=52></COL>
+  <COL width=43></COL>
+  <COL width=42></COL>
+  <COL width=34></COL>
+  <COL width=50></COL>
+  <COL width=42></COL>
+  <COL width=42></COL>
+  <COL width=34></COL>
+  <COL width=50></COL>
+  <COL width=42></COL>
+  <COL width=42></COL>
+  <COL width=34></COL>
+  <COL width=50></COL>
+  <COL width=42></COL>
+  <COL width=42></COL>
+  <COL width=42></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=32 height=17 align="CENTER">순번</TH>
+  <TH width=199 height=17 colspan="4" align="CENTER">회사1</TH>
+  <TH width=195 height=17 colspan="4" align="CENTER">회사2</TH>
+  <TH width=195 height=17 colspan="4" align="CENTER">회사3</TH>
+  <TH width=195 height=17 colspan="4" align="CENTER">회사4</TH>
+  <TH width=93 height=17 colspan="2" align="CENTER">회사5</TH>
+  <TH width=42 height=17 align="CENTER">...</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=32 height=137 rowspan="5" align="CENTER">1</TD>
+  <TD width=43 height=137 rowspan="5" align="CENTER">①<br>
+A</TD>
+  <TD width=147 height=17 colspan="3" align="CENTER">→</TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER">B</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">→</TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER">C</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">→</TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER">A</TD>
+  <TD width=144 height=137 colspan="3" rowspan="5" align="CENTER"></TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER"></TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER"></TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=147 height=17 colspan="3" align="CENTER">②지분율</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">지분율</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">지분율</TD>
+</TR>
+<TR>
+  <TD width=34 height=77 rowspan="3" align="CENTER">주<br>
+식<br>
+수</TD>
+  <TD width=52 height=17 align="CENTER">보통주</TD>
+  <TD width=43 height=17 align="CENTER">③</TD>
+  <TD width=34 height=77 rowspan="3" align="CENTER">주<br>
+식<br>
+수</TD>
+  <TD width=50 height=17 align="CENTER">보통주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+  <TD width=34 height=77 rowspan="3" align="CENTER">주<br>
+식<br>
+수</TD>
+  <TD width=50 height=17 align="CENTER">보통주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=52 height=17 align="CENTER">우선주</TD>
+  <TD width=43 height=17 align="CENTER">④</TD>
+  <TD width=50 height=17 align="CENTER">우선주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER">우선주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=52 height=17 align="CENTER">합계</TD>
+  <TD width=43 height=17 align="CENTER">⑤</TD>
+  <TD width=50 height=17 align="CENTER">합계</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER">합계</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=32 height=137 rowspan="5" align="CENTER">2</TD>
+  <TD width=43 height=137 rowspan="5" align="CENTER">A</TD>
+  <TD width=147 height=17 colspan="3" align="CENTER">→</TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER">B</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">→</TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER">C</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">→</TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER">D</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">→</TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER">A</TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER"></TD>
+  <TD width=42 height=137 rowspan="5" align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=147 height=17 colspan="3" align="CENTER">지분율</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">지분율</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">지분율</TD>
+  <TD width=144 height=17 colspan="3" align="CENTER">지분율</TD>
+</TR>
+<TR>
+  <TD width=34 height=77 rowspan="3" align="CENTER">주<br>
+식<br>
+수</TD>
+  <TD width=52 height=17 align="CENTER">보통주</TD>
+  <TD width=43 height=17 align="CENTER"></TD>
+  <TD width=34 height=77 rowspan="3" align="CENTER">주<br>
+식<br>
+수</TD>
+  <TD width=50 height=17 align="CENTER">보통주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+  <TD width=34 height=77 rowspan="3" align="CENTER">주<br>
+식<br>
+수</TD>
+  <TD width=50 height=17 align="CENTER">보통주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+  <TD width=34 height=77 rowspan="3" align="CENTER">주<br>
+식<br>
+수</TD>
+  <TD width=50 height=17 align="CENTER">보통주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=52 height=17 align="CENTER">우선주</TD>
+  <TD width=43 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER">우선주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER">우선주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER">우선주</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=52 height=17 align="CENTER">합계</TD>
+  <TD width=43 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER">합계</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER">합계</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+  <TD width=50 height=17 align="CENTER">합계</TD>
+  <TD width=42 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=32 height=17 align="CENTER">...</TD>
+  <TD width=964 height=17 colspan="19" align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+</BODY>
+</HTML>

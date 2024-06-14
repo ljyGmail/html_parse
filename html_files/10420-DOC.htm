@@ -1,0 +1,1061 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 10420, 서식버전 : 1.7, 서식변경날짜 : 2024년 1월 12일,<br>
+&nbsp; &nbsp;문서명 : 소액공모공시서류(외국기업외의외국법인등)★</P>
+<P class=cover-title><a class='toc' href='10420-TOC.htm#11' name='11' target='toc'>소액공모공시서류</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=246></COL>
+  <COL width=336></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER" valign="TOP">(외국기업 외의 외국법인등)</TD>
+</TR>
+<TR>
+  <TD width=591 height=63 colspan="2" valign="TOP"><br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=246 height=17 valign="TOP">금융위원회 귀중</TD>
+  <TD width=336 height=17 align="RIGHT" valign="TOP">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=246 height=40 valign="TOP"><br>
+<br></TD>
+  <TD width=336 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=40 valign="TOP">발 &nbsp; 행 &nbsp; 인 &nbsp; 명 :<br>
+<br></TD>
+  <TD width=336 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=40 valign="TOP">대 &nbsp; 표 &nbsp; 자 &nbsp; 명 :<br>
+<br></TD>
+  <TD width=336 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=40 valign="TOP">주 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 소 :<br>
+<br></TD>
+  <TD width=336 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=17 valign="TOP"></TD>
+  <TD width=336 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=246 height=17 valign="TOP"></TD>
+  <TD width=336 height=17 valign="TOP">(홈페이지) http://</TD>
+</TR>
+<TR>
+  <TD width=246 height=40 valign="TOP">대 &nbsp; 리 &nbsp; 인 &nbsp; 명 :<br>
+<br></TD>
+  <TD width=336 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=40 valign="TOP">대 &nbsp; 표 &nbsp; 자 &nbsp; 명 :<br>
+<br></TD>
+  <TD width=336 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=40 valign="TOP">주 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 소 :<br>
+<br></TD>
+  <TD width=336 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=17 valign="TOP"></TD>
+  <TD width=336 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=246 height=17 valign="TOP"></TD>
+  <TD width=336 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=17 valign="TOP">작 &nbsp;성 &nbsp;책 &nbsp;임 &nbsp;자 :</TD>
+  <TD width=336 height=17 valign="TOP">(직 &nbsp;책) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(성 &nbsp;명)</TD>
+</TR>
+<TR>
+  <TD width=246 height=17 valign="TOP"></TD>
+  <TD width=336 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=246 height=17 valign="TOP"></TD>
+  <TD width=336 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=40 valign="TOP">모집 또는 매출 증권의 종류 및 수 :<br>
+<br></TD>
+  <TD width=336 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=246 height=40 valign="TOP">모집 또는 매출총액 :<br>
+<br></TD>
+  <TD width=336 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP">청약권유인쇄물 열람장소</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;전자문서 : 금융위(금감원) 전자공시시스템 → &nbsp;http://dart.fss.or.kr</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;서면문서 :</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#81' name='81' target='toc'>청약권유인쇄물</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=169></COL>
+  <COL width=413></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="RIGHT">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" align="CENTER">( 발 &nbsp; &nbsp; 행 &nbsp; &nbsp; 회 &nbsp; &nbsp; 사 &nbsp; &nbsp;명 )<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" align="CENTER">( 증권의 종목과 발행증권수 )<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" align="CENTER">( 모 &nbsp;집 &nbsp; 또는 &nbsp;매 출 총 액 )<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=169 height=40 valign="TOP">1. 모집 또는 매출가액 :<br>
+<br></TD>
+  <TD width=413 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=169 height=40 valign="TOP">2. 청약기간 :<br>
+<br></TD>
+  <TD width=413 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=169 height=40 valign="TOP">3. 납입기일 :<br>
+<br></TD>
+  <TD width=413 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" align="CENTER">( 대 &nbsp;표 &nbsp;주 &nbsp;관 &nbsp;회 &nbsp;사 &nbsp;명 )<br>
+<br></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10420-TOC.htm#108' name='108' target='toc'>모집 또는 매출에 관한 사항의 요약</a></P><P>&lt;&lt;단위서식 : 00_모집또는매출에관한사항의요약-지분증권의경우&gt;&gt;</P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#13' name='13' target='toc'>모집 또는 매출에 관한 사항의 요약</a></P><P>[지분증권의 경우](투자계약증권, 증권예탁증권)</P><P>★Table-Group aClass=PBO★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=224 valign="TOP"></TD>
+  <TD class=tu width=291 height=224 align="RIGHT" valign="BOTTOM">u★WONSTOCK |List|L|1|선<br>
+(단위 : 원, 주)|1<br>
+(단위 : 원, 천주)|2<br>
+(단위 : 원, 백만주)|3<br>
+(단위 : 천원, 주)|4<br>
+(단위 : 천원, 천주)|5<br>
+(단위 : 천원, 백만주)|6<br>
+(단위 : 백만원, 주)|7<br>
+(단위 : 백만원, 천주)|8<br>
+(단위 : 백만원, 백만주)|9</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=946>
+<COLGROUP>
+  <COL width=246></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=282></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=246 height=40 align="CENTER">증권의<br>
+종류</TH>
+  <TH width=91 height=40 align="CENTER">증권수량</TH>
+  <TH width=91 height=40 align="CENTER">액면가액</TH>
+  <TH width=91 height=40 align="CENTER">모집(매출)<br>
+가액</TH>
+  <TH width=91 height=40 align="CENTER">모집(매출)<br>
+총액</TH>
+  <TH width=282 height=40 align="CENTER">모집(매출)<br>
+방법</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=246 height=178 align="CENTER">u★STK_KND |List|L|1|선<br>
+보통주|1<br>
+우선주|2<br>
+기타|-</TD>
+  <TD width=91 height=178 align="RIGHT">e★STK_CNT |\|선</TD>
+  <TD width=91 height=178 align="RIGHT">e★FACE_VAL |\|선</TD>
+  <TD width=91 height=178 align="RIGHT">e★PB_VAL |\|선</TD>
+  <TD width=91 height=178 align="RIGHT">e★PB_TOT |\|선</TD>
+  <TD class=tu width=282 height=178 align="CENTER" valign="TOP">u★PB_MTH |List|L|1|선<br>
+주주배정|1<br>
+주주우선공모|2<br>
+주주배정후 실권주 일반공모|3<br>
+일반공모|5<br>
+제3자배정|6<br>
+매출|7<br>
+기타|8</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=ACC_ES★</P>
+
+<TABLE border=1 width=954>
+<COLGROUP>
+  <COL width=254></COL>
+  <COL width=141></COL>
+  <COL width=272></COL>
+  <COL width=251></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=254 height=17 align="CENTER">인수(주선) 여부</TH>
+  <TH width=682 height=17 colspan="3" align="CENTER">지분증권 등 상장을 위한 공모여부</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=254 height=109 align="CENTER">u★UW_BRK_KND |List|L||선<br>
+인수|1<br>
+주선|2<br>
+직접공모|3</TD>
+  <TD class=tu width=141 height=109 align="CENTER">u★PSSRP_KND1 |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+  <TD class=tu width=272 height=109 align="CENTER">u★PSSRP_KND2 |List|L||선<br>
+유가증권시장|1<br>
+코스닥시장|2<br>
+코넥스시장|3<br>
+해당없음|-</TD>
+  <TD class=tu width=251 height=109 align="CENTER">u★PSSRP_KND3 |List|L||선<br>
+신규상장|1<br>
+이전상장|2<br>
+해당없음|-</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=ACC★</P>
+
+<TABLE border=1 width=1156>
+<COLGROUP>
+  <COL width=226></COL>
+  <COL width=359></COL>
+  <COL width=220></COL>
+  <COL width=72></COL>
+  <COL width=76></COL>
+  <COL width=71></COL>
+  <COL width=69></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=594 height=40 colspan="2" align="CENTER">인수(주선)인</TH>
+  <TH width=220 height=40 align="CENTER">증권의<br>
+종류</TH>
+  <TH width=72 height=40 align="CENTER">인수수량</TH>
+  <TH width=76 height=40 align="CENTER">인수금액</TH>
+  <TH width=71 height=40 align="CENTER">인수대가</TH>
+  <TH width=69 height=40 align="CENTER">인수방법</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=226 height=1857 align="CENTER">u★ACC_KND |List|L|1|선<br>
+대표|1<br>
+공동|2<br>
+인수|3<br>
+주선|4<br>
+-|-</TD>
+  <TD class=tu width=359 height=1857 align="CENTER">u★ACC_NMT |List|L|1|선<br>
+경남은행|082<br>
+골드만삭스증권회사 서울지점|001<br>
+광주은행|083<br>
+교보증권|003<br>
+국민은행|064<br>
+노무라금융투자|004<br>
+농협은행|084<br>
+다올투자증권|047<br>
+다이와증권캐피탈마켓코리아|070<br>
+대구은행|085<br>
+대신증권|007<br>
+도이치증권|009<br>
+디에스투자증권|051<br>
+리딩투자증권|012<br>
+맥쿼리증권|013<br>
+메리츠증권|014<br>
+메릴린치증권 서울지점|015<br>
+모간스탠리인터내셔날증권회사 서울지점|016<br>
+미래에셋증권|068<br>
+미즈호증권아시아리미티드 서울지점|076<br>
+부국증권|020<br>
+부산은행|086<br>
+브이아이금융투자|071<br>
+비엔피파리바증권|023<br>
+삼성선물|079<br>
+삼성증권|025<br>
+상상인증권|002<br>
+수협중앙회|087<br>
+신영증권|027<br>
+신한은행|066<br>
+신한투자증권|028<br>
+씨엘에스에이코리아증권|029<br>
+씨지에스 인터내셔널증권 홍콩 한국지점|074<br>
+씨티그룹글로벌마켓증권|030<br>
+아이비케이투자증권|031<br>
+우리은행|065<br>
+우리종금|067<br>
+유비에스증권리미티드(영업소)|040<br>
+유안타증권|011<br>
+유진증권|041<br>
+유진투자선물|080<br>
+유화증권|042<br>
+이베스트투자증권|043<br>
+전북은행|088<br>
+제이피모간증권회사 서울지점|044<br>
+제주은행|089<br>
+중소기업은행|090<br>
+초상증권|072<br>
+카카오페이증권|018<br>
+케이비증권|045<br>
+케이아이디비채권중개|046<br>
+케이알투자증권|069<br>
+케이프투자증권|038<br>
+코리아에셋투자증권|048<br>
+크레디아그리콜아시아증권 서울지점|032<br>
+크레디트스위스증권 서울지점|049<br>
+키움증권|050<br>
+토스준비법인|073<br>
+하나증권|052<br>
+하이투자증권|053<br>
+한국산업은행|063<br>
+한국스탠다드차타드증권|054<br>
+한국씨티은행|092<br>
+한국에스지증권|034<br>
+한국증권금융|077<br>
+한국투자증권|055<br>
+한국SC은행|091<br>
+한양증권|057<br>
+한화투자증권|059<br>
+현대차증권|036<br>
+홍콩상하이증권 서울지점|061<br>
+흥국증권|062<br>
+BNK투자증권|021<br>
+DB금융투자|010<br>
+ING증권 서울지점|075<br>
+KEB하나은행|081<br>
+NH선물|078<br>
+NH투자증권|039<br>
+SK증권|035<br>
+-|-</TD>
+  <TD class=tu width=220 height=1857 align="CENTER">u★STK_KND |List|L|1|선<br>
+보통주|1<br>
+우선주|2<br>
+기타|-</TD>
+  <TD width=72 height=1857 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=76 height=1857 align="RIGHT">e★ACC_VAL |\|선</TD>
+  <TD width=71 height=1857 align="LEFT">e★ACC_PRI |V|선</TD>
+  <TD width=69 height=1857 align="LEFT">e★ACC_MTH |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=SCHD★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=17 align="CENTER">청약기일</TH>
+  <TH width=111 height=17 align="CENTER">납입기일</TH>
+  <TH width=111 height=17 align="CENTER">청약공고일</TH>
+  <TH width=111 height=17 align="CENTER">배정공고일</TH>
+  <TH width=111 height=17 align="CENTER">배정기준일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★SSC_PRD |달력2|선</TD>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★PYM_PRD |달력2|선</TD>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★SSC_ANN_DT |달력|선</TD>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★ASN_ANN_DT |달력|선</TD>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★ASN_BAS_DT |달력|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=FND★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=591 height=17 colspan="2" align="CENTER">자금의 사용목적</TH>
+</TR>
+<TR>
+  <TH width=291 height=17 align="CENTER">구 &nbsp; 분</TH>
+  <TH width=291 height=17 align="CENTER">금 &nbsp; 액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=291 height=17 align="CENTER" valign="TOP">e★FND_SEC |V|선</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">e★FND_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 align="CENTER" valign="TOP">e★FND_SEC |V|선</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">e★FND_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 align="CENTER">발행제비용</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">e★IS_AMT |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=PTR★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=191></COL>
+  <COL width=191></COL>
+  <COL width=191></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=591 height=17 colspan="3" align="CENTER">신주인수권에 관한 사항</TH>
+</TR>
+<TR>
+  <TH width=191 height=17 align="CENTER">행사대상증권</TH>
+  <TH width=191 height=17 align="CENTER">행사가격</TH>
+  <TH width=191 height=17 align="CENTER">행사기간</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=191 height=17 align="LEFT">e★PTR_STK |V|선</TD>
+  <TD width=191 height=17 align="RIGHT" valign="TOP">e★PTR_VAL |\|선</TD>
+  <TD class=tu width=191 height=17 align="CENTER" valign="TOP">u★PTR_PRD |달력2|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=SLPRTN★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=591 height=17 colspan="5" align="CENTER">매출인에 관한 사항</TH>
+</TR>
+<TR>
+  <TH width=111 height=40 align="CENTER">보유자</TH>
+  <TH width=111 height=40 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=111 height=40 align="CENTER">매출전<br>
+보유증권수</TH>
+  <TH width=111 height=40 align="CENTER">매출증권수</TH>
+  <TH width=111 height=40 align="CENTER">매출후<br>
+보유증권수</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=40 align="LEFT">e★SLPRTN_NM |V|선</TD>
+  <TD width=111 height=40 align="LEFT">e★RLT |V|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★PRE_SLPRTN_STK |\|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★SLPRTN_STK |\|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★PST_SLPRTN_STK |\|선</TD>
+</TR>
+<TR>
+  <TD width=111 height=40 align="LEFT">e★SLPRTN_NM |V|선</TD>
+  <TD width=111 height=40 align="LEFT">e★RLT |V|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★PRE_SLPRTN_STK |\|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★SLPRTN_STK |\|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★PST_SLPRTN_STK |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=ETC★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=491></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=91 height=63>【기 타】</TD>
+  <TD width=491 height=63 align="LEFT" valign="TOP">e★ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P>&lt;&lt;단위서식 : 01_모집또는매출에관한사항의요약-채무증권의경우&gt;&gt;</P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#300' name='300' target='toc'>모집 또는 매출에 관한 사항의 요약</a></P><P>[채무증권의 경우]</P><P>★Table-Group aClass=PL_KND_WRT★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=60></COL>
+  <COL width=222></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=60 height=224 align="CENTER" valign="TOP">회차 :</TD>
+  <TD width=222 height=224 align="RIGHT">e★SEQ_NO |V|필</TD>
+  <TD class=tu width=291 height=224 align="RIGHT" valign="BOTTOM">u★WONSTOCK |List|L|1|선<br>
+(단위 : 원, 주)|1<br>
+(단위 : 원, 천주)|2<br>
+(단위 : 원, 백만주)|3<br>
+(단위 : 천원, 주)|4<br>
+(단위 : 천원, 천주)|5<br>
+(단위 : 천원, 백만주)|6<br>
+(단위 : 백만원, 주)|7<br>
+(단위 : 백만원, 천주)|8<br>
+(단위 : 백만원, 백만주)|9</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=805>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=346></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=141 height=730 align="CENTER">채무증권 명칭</TD>
+  <TD class=tu width=346 height=730 align="CENTER" valign="TOP">u★PL_KND_WRT |List|L|1|선<br>
+무보증사채|B0<br>
+무보증전환사채|B1<br>
+무보증신주인수권부사채|B2<br>
+무보증이익참가부사채|B3<br>
+무보증교환사채|B4<br>
+무보증복리사채|B5<br>
+무보증옵션사채|B6<br>
+해외전환사채|B7<br>
+해외신주사채|B8<br>
+무보증후순위사채|B9<br>
+보증사채|A0<br>
+보증전환사채|A1<br>
+보증신주인수권부사채|A2<br>
+보증이익참가부사채|A3<br>
+보증교환사채|A4<br>
+보증복리사채|A5<br>
+보증옵션사채|A6<br>
+보증기타사채|A7<br>
+담보부사채|C0<br>
+담보전환사채|C1<br>
+담보신주인수권부사채|C2<br>
+담보이익참가부사채|C3<br>
+담보교환사채|C4<br>
+담보복리사채|C5<br>
+담보옵션사채|C6<br>
+담보기타사채|C7<br>
+자산유동화증권(ABS)|D0<br>
+주택저당증권(MBS)|F0<br>
+주택저당채권 담보부채권(MBD)|G0<br>
+전환형 조건부자본증권|I0<br>
+상각형 조건부자본증권|I1</TD>
+  <TD width=141 height=730 align="CENTER">모집(매출)방법</TD>
+  <TD width=141 height=730 align="LEFT">e★INC_MTH_T |V|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="CENTER">권면(전자등록)<br>
+총액</TD>
+  <TD width=346 height=40 align="RIGHT">e★FACE_TOT |\|선</TD>
+  <TD width=141 height=40 align="CENTER">모집(매출)총액</TD>
+  <TD width=141 height=40 align="RIGHT">e★FIX_PB_TOT</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="CENTER">발행가액</TD>
+  <TD width=346 height=40 align="RIGHT">e★PUB_PB_VAL |\|선</TD>
+  <TD width=141 height=40 align="CENTER">이자율</TD>
+  <TD width=141 height=40 align="LEFT">e★FACE_PB_RT |V|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 align="CENTER">발행수익률</TD>
+  <TD width=346 height=17 align="LEFT">e★FLT_ER |%|선</TD>
+  <TD width=141 height=17 align="CENTER">상환기일</TD>
+  <TD class=tu width=141 height=17 align="CENTER" valign="TOP">u★EXP_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="CENTER">원리금<br>
+지급대행기관</TD>
+  <TD width=346 height=40 align="LEFT">e★PAY_ORG |V|선</TD>
+  <TD width=141 height=40 align="CENTER">(사채)관리회사</TD>
+  <TD width=141 height=40 align="LEFT">e★ADMN_ORG |V|선</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 align="CENTER">신용등급<br>
+(신용평가기관)</TD>
+  <TD width=346 height=40 align="LEFT">e★CRDT_GRD |V|선</TD>
+  <TD width=141 height=40 align="CENTER">비고</TD>
+  <TD width=141 height=40 align="LEFT">e★ESG_NOTE |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=ACC_BS★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=291 height=17 align="CENTER">인수(주선) 여부</TH>
+  <TH width=291 height=17 align="CENTER">채무증권 상장을 위한 공모여부</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=291 height=86 align="CENTER">u★UW_BRK_KND |List|L||선<br>
+인수|1<br>
+주선|2<br>
+직접공모|3</TD>
+  <TD class=tu width=291 height=86 align="CENTER">u★PSSRP_KND1 |List|L||선<br>
+예|Y<br>
+아니오|N</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=ACC★</P>
+
+<TABLE border=1 width=1044>
+<COLGROUP>
+  <COL width=202></COL>
+  <COL width=385></COL>
+  <COL width=101></COL>
+  <COL width=101></COL>
+  <COL width=101></COL>
+  <COL width=100></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=596 height=17 colspan="2" align="CENTER">인수(주선)인</TH>
+  <TH width=101 height=17 align="CENTER">인수수량</TH>
+  <TH width=101 height=17 align="CENTER">인수금액</TH>
+  <TH width=101 height=17 align="CENTER">인수대가</TH>
+  <TH width=100 height=17 align="CENTER">인수방법</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=202 height=1857 align="CENTER">u★ACC_KND |List|L|1|선<br>
+대표|1<br>
+공동|2<br>
+인수|3<br>
+주선|4<br>
+-|-</TD>
+  <TD class=tu width=385 height=1857 align="CENTER">u★ACC_NMT |List|L|1|선<br>
+경남은행|082<br>
+골드만삭스증권회사 서울지점|001<br>
+광주은행|083<br>
+교보증권|003<br>
+국민은행|064<br>
+노무라금융투자|004<br>
+농협은행|084<br>
+다올투자증권|047<br>
+다이와증권캐피탈마켓코리아|070<br>
+대구은행|085<br>
+대신증권|007<br>
+도이치증권|009<br>
+디에스투자증권|051<br>
+리딩투자증권|012<br>
+맥쿼리증권|013<br>
+메리츠증권|014<br>
+메릴린치증권 서울지점|015<br>
+모간스탠리인터내셔날증권회사 서울지점|016<br>
+미래에셋증권|068<br>
+미즈호증권아시아리미티드 서울지점|076<br>
+부국증권|020<br>
+부산은행|086<br>
+브이아이금융투자|071<br>
+비엔피파리바증권|023<br>
+삼성선물|079<br>
+삼성증권|025<br>
+상상인증권|002<br>
+수협중앙회|087<br>
+신영증권|027<br>
+신한은행|066<br>
+신한투자증권|028<br>
+씨엘에스에이코리아증권|029<br>
+씨지에스 인터내셔널증권 홍콩 한국지점|074<br>
+씨티그룹글로벌마켓증권|030<br>
+아이비케이투자증권|031<br>
+우리은행|065<br>
+우리종금|067<br>
+유비에스증권리미티드(영업소)|040<br>
+유안타증권|011<br>
+유진증권|041<br>
+유진투자선물|080<br>
+유화증권|042<br>
+이베스트투자증권|043<br>
+전북은행|088<br>
+제이피모간증권회사 서울지점|044<br>
+제주은행|089<br>
+중소기업은행|090<br>
+초상증권|072<br>
+카카오페이증권|018<br>
+케이비증권|045<br>
+케이아이디비채권중개|046<br>
+케이알투자증권|069<br>
+케이프투자증권|038<br>
+코리아에셋투자증권|048<br>
+크레디아그리콜아시아증권 서울지점|032<br>
+크레디트스위스증권 서울지점|049<br>
+키움증권|050<br>
+토스준비법인|073<br>
+하나증권|052<br>
+하이투자증권|053<br>
+한국산업은행|063<br>
+한국스탠다드차타드증권|054<br>
+한국씨티은행|092<br>
+한국에스지증권|034<br>
+한국증권금융|077<br>
+한국투자증권|055<br>
+한국SC은행|091<br>
+한양증권|057<br>
+한화투자증권|059<br>
+현대차증권|036<br>
+홍콩상하이증권 서울지점|061<br>
+흥국증권|062<br>
+BNK투자증권|021<br>
+DB금융투자|010<br>
+ING증권 서울지점|075<br>
+KEB하나은행|081<br>
+NH선물|078<br>
+NH투자증권|039<br>
+SK증권|035<br>
+-|-</TD>
+  <TD width=101 height=1857 align="RIGHT">e★ACC_CNT |\|선</TD>
+  <TD width=101 height=1857 align="RIGHT">e★ACC_VAL |\|선</TD>
+  <TD width=101 height=1857 align="LEFT">e★ACC_PRI |V|선</TD>
+  <TD width=100 height=1857 align="LEFT">e★ACC_MTH |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=SCHD★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=17 align="CENTER">청약기일</TH>
+  <TH width=111 height=17 align="CENTER">납입기일</TH>
+  <TH width=111 height=17 align="CENTER">청약공고일</TH>
+  <TH width=111 height=17 align="CENTER">배정공고일</TH>
+  <TH width=111 height=17 align="CENTER">배정기준일</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★SSC_PRD |달력2|선</TD>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★PYM_PRD |달력2|선</TD>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★SSC_ANN_DT |달력|선</TD>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★ASN_ANN_DT |달력|선</TD>
+  <TD class=tu width=111 height=40 align="CENTER" valign="TOP">u★ASN_BAS_DT |달력|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=FND★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=591 height=17 colspan="2" align="CENTER">자금의 사용목적</TH>
+</TR>
+<TR>
+  <TH width=291 height=17 align="CENTER">구 &nbsp; 분</TH>
+  <TH width=291 height=17 align="CENTER">금 &nbsp; 액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=291 height=17 align="CENTER" valign="TOP">e★FND_SEC |V|선</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">e★FND_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 align="CENTER" valign="TOP">e★FND_SEC |V|선</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">e★FND_VAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=291 height=17 align="CENTER">발행제비용</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">e★IS_AMT |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=WTY_ETC★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+  <COL width=91></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=91 height=93 rowspan="2" align="CENTER">보증을<br>
+받은 경우</TD>
+  <TD width=91 height=40 align="CENTER">보증기관</TD>
+  <TD width=91 height=40 align="LEFT" valign="TOP">e★WTY_ORG |V|선</TD>
+  <TD width=91 height=199 rowspan="4" align="CENTER">지분증권과<br>
+연계된 경우</TD>
+  <TD width=91 height=40 align="CENTER">행사대상증권</TD>
+  <TD width=91 height=40 align="LEFT" valign="TOP">e★USE_STK |V|선</TD>
+</TR>
+<TR>
+  <TD width=91 height=40 align="CENTER">보증금액</TD>
+  <TD width=91 height=40 align="RIGHT" valign="TOP">e★WTY_AMT |\|선</TD>
+  <TD width=91 height=40 align="CENTER">권리행사비율</TD>
+  <TD width=91 height=40 align="LEFT" valign="TOP">e★USE_RT |V|선</TD>
+</TR>
+<TR>
+  <TD width=91 height=93 rowspan="2" align="CENTER">담보 제공의<br>
+경우</TD>
+  <TD width=91 height=40 align="CENTER">담보의 종류</TD>
+  <TD width=91 height=40 align="LEFT" valign="TOP">e★SCR_KND |V|선</TD>
+  <TD width=91 height=40 align="CENTER">권리행사가격</TD>
+  <TD width=91 height=40 align="RIGHT" valign="TOP">e★USE_VAL |V|선</TD>
+</TR>
+<TR>
+  <TD width=91 height=40 align="CENTER">담보금액</TD>
+  <TD width=91 height=40 align="RIGHT" valign="TOP">e★SCR_AMT |\|선</TD>
+  <TD width=91 height=40 align="CENTER">권리행사기간</TD>
+  <TD class=tu width=91 height=40 align="CENTER" valign="TOP">u★PTR_PRD |달력2|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=SLPRTN★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=591 height=17 colspan="5" align="CENTER">매출인에 관한 사항</TH>
+</TR>
+<TR>
+  <TH width=111 height=40 align="CENTER">보유자</TH>
+  <TH width=111 height=40 align="CENTER">회사와의<br>
+관계</TH>
+  <TH width=111 height=40 align="CENTER">매출전<br>
+보유증권수</TH>
+  <TH width=111 height=40 align="CENTER">매출증권수</TH>
+  <TH width=111 height=40 align="CENTER">매출후<br>
+보유증권수</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=40 align="LEFT">e★SLPRTN_NM |V|선</TD>
+  <TD width=111 height=40 align="LEFT">e★RLT |V|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★PRE_SLPRTN_STK |\|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★SLPRTN_STK |\|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★PST_SLPRTN_STK |\|선</TD>
+</TR>
+<TR>
+  <TD width=111 height=40 align="LEFT">e★SLPRTN_NM |V|선</TD>
+  <TD width=111 height=40 align="LEFT">e★RLT |V|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★PRE_SLPRTN_STK |\|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★SLPRTN_STK |\|선</TD>
+  <TD width=111 height=40 align="RIGHT" valign="TOP">e★PST_SLPRTN_STK |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=ETC★</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=491></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=91 height=63>【기 타】</TD>
+  <TD width=491 height=63 align="LEFT" valign="TOP">e★ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10420-TOC.htm#115' name='115' target='toc'>Ⅰ. 발행에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#119' name='119' target='toc'>1. 모집·매출에 관한 일반사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#122' name='122' target='toc'>2. 증권의 주요 권리내용</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#125' name='125' target='toc'>3. 투자위험요소</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10420-TOC.htm#129' name='129' target='toc'>Ⅱ. 발행인에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#133' name='133' target='toc'>1. 발행인의 개요</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#136' name='136' target='toc'>2. 자본구성</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#139' name='139' target='toc'>3. 업무내용</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#142' name='142' target='toc'>4. 조직구성</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10420-TOC.htm#145' name='145' target='toc'>5. 재무에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10420-TOC.htm#149' name='149' target='toc'>Ⅲ. 대한민국의 가맹 또는 출자현황</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10420-TOC.htm#153' name='153' target='toc'>Ⅳ. 발행자금의 용도</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10420-TOC.htm#157' name='157' target='toc'>Ⅴ. 인수 및 판매</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10420-TOC.htm#161' name='161' target='toc'>Ⅵ. 일반정보</a></P><P><br></P><P><br>
+<br></P>
+</BODY>
+</HTML>

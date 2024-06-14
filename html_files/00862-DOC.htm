@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00862, 서식버전 : 1.0, 서식변경날짜 : 2019년 2월 12일,<br>
+&nbsp; &nbsp;문서명 : 감사전 재무제표 기한 내 미제출 신고서(감사인 미제출시)★</P>
+<P class=section-1><a class='toc' href='00862-TOC.htm#11' name='11' target='toc'>감사전 재무제표 기한 내 미제출신고서</a></P>
+
+<TABLE class=nb width=606>
+<COLGROUP>
+  <COL width=597></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=597 height=47 align="CENTER" valign="TOP">(감사인에 제출하지 못한 경우)</TD>
+</TR>
+<TR>
+  <TD width=597 height=42 style="font-family: 바탕, sans-serif; font-size: 12pt;">「주식회사 등의 외부감사에 관한 법률」 제6조제3항에 따라 감사전 재무제표(연결재무제표 포함)를 기한 내에 감사인에 제출하지 못한 사유를 제출합니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=606>
+<COLGROUP>
+  <COL width=597></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=597 height=19 style="font-family: 바탕, sans-serif; font-size: 13pt; font-weight: bold;">「주식회사 등의 외부감사에 관한 법률」 제6조제3항 관련</TD>
+</TR>
+<TR>
+  <TD width=597 height=43 style="font-family: 바탕, sans-serif; font-size: 12pt;">(사업보고서 제출대상법인이 기한 내에 감사전 재무제표를 감사인에 제출하지 못한 경우 사업보고서 공시 후 14일 이내에 그 사유를 공시)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=NOT_SBMT_RSN1★</P>
+
+<TABLE border=1 width=621>
+<COLGROUP>
+  <COL width=102></COL>
+  <COL width=120></COL>
+  <COL width=91></COL>
+  <COL width=16></COL>
+  <COL width=115></COL>
+  <COL width=123></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=331 height=17 colspan="3">1. 회사명</TD>
+  <TD width=272 height=17 colspan="3" align="CENTER">e★CRP_NM |V|선</TD>
+</TR>
+<TR>
+  <TD width=331 height=17 colspan="3">2. 법인등록번호</TD>
+  <TD width=272 height=17 colspan="3" align="CENTER">e★CRP_RGS_NO</TD>
+</TR>
+<TR>
+  <TD width=331 height=63 colspan="3">3. 회생절차 진행 여부</TD>
+  <TD class=tu width=272 height=63 colspan="3" align="CENTER">u★RHL_YN |List|L||선<br>
+해당없음|N<br>
+회생절차 진행중|Y</TD>
+</TR>
+<TR>
+  <TD width=331 height=63 colspan="3">4. 적용 회계처리기준</TD>
+  <TD class=tu width=272 height=63 colspan="3" align="CENTER">u★ACNT_STD |List|L||선<br>
+한국채택국제회계기준|K<br>
+일반기업회계기준|N</TD>
+</TR>
+<TR>
+  <TD width=331 height=63 colspan="3">5. 법인 구분</TD>
+  <TD class=tu width=272 height=63 colspan="3" align="CENTER">u★CRP_TP |List|L||선<br>
+주권상장법인|L<br>
+사업보고서 제출 비상장법인|N</TD>
+</TR>
+<TR>
+  <TD width=331 height=63 colspan="3"> &nbsp;5-1. 직전 사업연도 말 자산총액</TD>
+  <TD class=tu width=272 height=63 colspan="3" align="CENTER">u★LTST_AST |List|L||선<br>
+2조원 이상|G <br>
+2조원 미만|L</TD>
+</TR>
+<TR>
+  <TD width=331 height=17 colspan="3">6. 사업연도 종료일</TD>
+  <TD class=tu width=272 height=17 colspan="3" align="CENTER">u★BSN_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=331 height=17 colspan="3">7. 정기주주총회 개최일(예정일)</TD>
+  <TD class=tu width=272 height=17 colspan="3" align="CENTER">u★MTNG_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=331 height=17 colspan="3">8. 사업보고서 제출일</TD>
+  <TD class=tu width=272 height=17 colspan="3" align="CENTER">u★RPT_SBMT_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=331 height=17 colspan="3">9. 재무제표 제출기한</TD>
+  <TD class=tu width=272 height=17 colspan="3" align="CENTER">u★FNST_SBMT_DDL |달력|선</TD>
+</TR>
+<TR>
+  <TD width=331 height=40 colspan="3"> &nbsp;9-1. 연결재무제표 제출기한(연결재무제표 작성대상인 경우) </TD>
+  <TD class=tu width=272 height=40 colspan="3" align="CENTER">u★IFRS_SBMT_DDL |달력|선</TD>
+</TR>
+<TR>
+  <TD width=331 height=17 colspan="3">10. 감사인에 대한 제출일</TD>
+  <TD class=tu width=272 height=17 colspan="3" align="CENTER">u★ADTR_SBMT_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=331 height=17 colspan="3">11. 기한내 미제출 사유</TD>
+  <TD width=272 height=17 colspan="3" align="CENTER">e★NOT_SBMT_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=331 height=17 colspan="3">12. 향후계획(제출 예정일)</TD>
+  <TD class=tu width=272 height=17 colspan="3" align="CENTER">u★EXPT_SBMT_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=612 height=17 colspan="6">13. 미제출 재무제표의 종류</TD>
+</TR>
+<TR>
+  <TD width=102 height=40 align="CENTER">개별(별도)<br>
+재무상태표</TD>
+  <TD width=120 height=40 align="CENTER">개별(별도)<br>
+(포괄)손익계산서</TD>
+  <TD width=116 height=40 colspan="2" align="CENTER">개별(별도)<br>
+자본변동표</TD>
+  <TD width=115 height=40 align="CENTER">개별(별도)<br>
+현금흐름표</TD>
+  <TD width=123 height=40 align="CENTER">주석</TD>
+</TR>
+<TR>
+  <TD class=tu width=102 height=86 align="CENTER">u★SEP_BS_YN |List|L||선<br>
+제출|Y<br>
+미제출|N</TD>
+  <TD class=tu width=120 height=86 align="CENTER">u★SEP_IS_YN |List|L||선<br>
+제출|Y<br>
+미제출|N</TD>
+  <TD class=tu width=116 height=86 colspan="2" align="CENTER">u★SEP_PEF_YN |List|L||선<br>
+제출|Y<br>
+미제출|N</TD>
+  <TD class=tu width=115 height=86 align="CENTER">u★SEP_CF_YN |List|L||선<br>
+제출|Y<br>
+미제출|N</TD>
+  <TD class=tu width=123 height=86 align="CENTER">u★SEP_CMNT_YN |List|L||선<br>
+제출|Y<br>
+미제출|N</TD>
+</TR>
+<TR>
+  <TD width=102 height=40 align="CENTER">연결<br>
+재무상태표</TD>
+  <TD width=120 height=40 align="CENTER">연결<br>
+(포괄)손익계산서</TD>
+  <TD width=116 height=40 colspan="2" align="CENTER">연결<br>
+자본변동표</TD>
+  <TD width=115 height=40 align="CENTER">연결<br>
+현금흐름표</TD>
+  <TD width=123 height=40 align="CENTER">연결주석</TD>
+</TR>
+<TR>
+  <TD class=tu width=102 height=109 align="CENTER">u★IFRS_BS_YN |List|L||선<br>
+제출|Y<br>
+미제출|N<br>
+해당없음|X</TD>
+  <TD class=tu width=120 height=109 align="CENTER">u★IFRS_IS_YN |List|L||선<br>
+제출|Y<br>
+미제출|N<br>
+해당없음|X</TD>
+  <TD class=tu width=116 height=109 colspan="2" align="CENTER">u★IFRS_PEF_YN |List|L||선<br>
+제출|Y<br>
+미제출|N<br>
+해당없음|X</TD>
+  <TD class=tu width=115 height=109 align="CENTER">u★IFRS_CF_YN |List|L||선<br>
+제출|Y<br>
+미제출|N<br>
+해당없음|X</TD>
+  <TD class=tu width=123 height=109 align="CENTER">u★IFRS_CMNT_YN |List|L||선<br>
+제출|Y<br>
+미제출|N<br>
+해당없음|X</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+</BODY>
+</HTML>

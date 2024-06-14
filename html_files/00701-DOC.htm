@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00701, 서식버전 : 2.2, 서식변경날짜 : 2009년 2월 4일,<br>
+&nbsp; &nbsp;문서명 : 시장조성보고서★</P>
+<P class=cover-title><a class='toc' href='00701-TOC.htm#11' name='11' target='toc'>시장조성보고서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=441></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=40 colspan="2" valign="TOP"><br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP">금융위원회 귀중</TD>
+  <TD width=441 height=17 align="RIGHT" valign="TOP">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 valign="TOP"><br>
+<br></TD>
+  <TD width=441 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=40 valign="TOP">보 &nbsp; &nbsp;고 &nbsp; &nbsp;자 &nbsp; 명 :<br>
+<br></TD>
+  <TD width=441 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=40 valign="TOP">본 &nbsp;점 &nbsp;소 &nbsp;재 &nbsp;지 :<br>
+<br></TD>
+  <TD width=441 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP">(홈페이지) http://</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-2><a class='toc' href='00701-TOC.htm#39' name='39' target='toc'>Ⅰ. 시장조성을 한 투자매매업자</a></P><P style="font-size: 14pt;"> &nbsp;투자매매업자명 :</P><P><br></P>
+<P class=section-2><a class='toc' href='00701-TOC.htm#43' name='43' target='toc'>Ⅱ. 시장조성을 한 증권의 종목</a></P><P style="font-size: 14pt;"> &nbsp;증권의 종목 :</P><P><br></P>
+<P class=section-2><a class='toc' href='00701-TOC.htm#47' name='47' target='toc'>Ⅲ. 매매거래내용</a></P>
+<P class=section-3><a class='toc' href='00701-TOC.htm#49' name='49' target='toc'>1. 매매거래의 개요</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">(단위 : &nbsp; )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=63></COL>
+  <COL width=63></COL>
+  <COL width=63></COL>
+  <COL width=63></COL>
+  <COL width=63></COL>
+  <COL width=63></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=159 height=47 colspan="2" rowspan="2" align="CENTER">구 &nbsp;분</TH>
+  <TH width=207 height=17 colspan="3" align="CENTER">총거래량</TH>
+  <TH width=207 height=17 colspan="3" align="CENTER">시장조성거래량</TH>
+</TR>
+<TR>
+  <TH width=63 height=17 align="CENTER">자기</TH>
+  <TH width=63 height=17 align="CENTER">위탁</TH>
+  <TH width=63 height=17 align="CENTER">계</TH>
+  <TH width=63 height=17 align="CENTER">주문수량</TH>
+  <TH width=63 height=17 align="CENTER">거래량</TH>
+  <TH width=63 height=17 align="CENTER">거래가격</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=75 height=47 rowspan="2" align="CENTER">OOO</TD>
+  <TD width=75 height=17 align="CENTER">매 &nbsp;수</TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+</TR>
+<TR>
+  <TD width=75 height=17 align="CENTER">매 &nbsp;도</TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+</TR>
+<TR>
+  <TD width=75 height=47 rowspan="2" align="CENTER">합 &nbsp;계</TD>
+  <TD width=75 height=17 align="CENTER">매 &nbsp;수</TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+</TR>
+<TR>
+  <TD width=75 height=17 align="CENTER">매 &nbsp;도</TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+  <TD width=63 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00701-TOC.htm#105' name='105' target='toc'>2. 일별 시장조성관련 매매내용</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=93></COL>
+  <COL width=67></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=75 height=47 rowspan="2" align="CENTER">날 &nbsp;짜</TH>
+  <TH width=159 height=17 colspan="2" align="CENTER">매 &nbsp; &nbsp;수</TH>
+  <TH width=159 height=17 colspan="2" align="CENTER">매 &nbsp; &nbsp;도</TH>
+  <TH width=93 height=47 rowspan="2" align="CENTER">보유증권수</TH>
+  <TH width=67 height=47 rowspan="2" align="CENTER">지분율</TH>
+</TR>
+<TR>
+  <TH width=75 height=17 align="CENTER">수 &nbsp;량</TH>
+  <TH width=75 height=17 align="CENTER">가 &nbsp;격</TH>
+  <TH width=75 height=17 align="CENTER">수 &nbsp;량</TH>
+  <TH width=75 height=17 align="CENTER">가 &nbsp;격</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=75 height=17 align="CENTER"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=93 height=17 align="RIGHT"></TD>
+  <TD width=67 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=75 height=17 align="CENTER"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=93 height=17 align="RIGHT"></TD>
+  <TD width=67 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=75 height=17 align="CENTER">계</TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=75 height=17 align="RIGHT"></TD>
+  <TD width=93 height=17 align="RIGHT"></TD>
+  <TD width=67 height=17 align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00701-TOC.htm#151' name='151' target='toc'>3. 상품증권 보유수량</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17 align="RIGHT" valign="TOP"></TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=267></COL>
+  <COL width=159></COL>
+  <COL width=147></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=267 height=17 align="CENTER">구 &nbsp; &nbsp;분</TH>
+  <TH width=159 height=17 align="CENTER">주식수</TH>
+  <TH width=147 height=17 align="CENTER">지분율</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=267 height=17 align="CENTER">발행증권총수</TD>
+  <TD width=159 height=17 align="RIGHT"></TD>
+  <TD width=147 height=17 align="CENTER">-</TD>
+</TR>
+<TR>
+  <TD width=267 height=17 align="CENTER">공모증권수</TD>
+  <TD width=159 height=17 align="RIGHT"></TD>
+  <TD width=147 height=17 align="CENTER">-</TD>
+</TR>
+<TR>
+  <TD width=267 height=17 align="CENTER">시장조성기간전 보유 상품증권 수</TD>
+  <TD width=159 height=17 align="RIGHT"></TD>
+  <TD width=147 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=267 height=17 align="CENTER">시장조성기간중 매수증권 수</TD>
+  <TD width=159 height=17 align="RIGHT"></TD>
+  <TD width=147 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=267 height=17 align="CENTER">시장조성기간중 매도증권 수</TD>
+  <TD width=159 height=17 align="RIGHT"></TD>
+  <TD width=147 height=17 align="CENTER"></TD>
+</TR>
+<TR>
+  <TD width=267 height=17 align="CENTER">시장조성기간후 보유 상품증권 수</TD>
+  <TD width=159 height=17 align="RIGHT"></TD>
+  <TD width=147 height=17 align="CENTER"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+</BODY>
+</HTML>

@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 10010, 서식버전 : 1.3, 서식변경날짜 : 2023년 2월 20일,<br>
+&nbsp; &nbsp;문서명 : 증권신고서(IDS적용외국기업)★</P>
+<P class=cover-title><a class='toc' href='10010-TOC.htm#14' name='14' target='toc'>증 권 신 고 서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=247></COL>
+  <COL width=335></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 colspan="2" align="CENTER" valign="TOP">(국제공시기준(International Disclosure Standard)적용 외국기업의 경우)</TD>
+</TR>
+<TR>
+  <TD width=591 height=63 colspan="2" valign="TOP"><br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=247 height=17 valign="TOP">금융위원회 귀중</TD>
+  <TD width=335 height=17 align="RIGHT" valign="TOP">년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일</TD>
+</TR>
+<TR>
+  <TD width=247 height=40 valign="TOP"><br>
+<br></TD>
+  <TD width=335 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=247 height=40 valign="TOP">회 &nbsp; &nbsp; &nbsp; 사 &nbsp; &nbsp; &nbsp; 명 :<br>
+<br></TD>
+  <TD width=335 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=247 height=40 valign="TOP">대 &nbsp; 표 &nbsp; &nbsp; 이 &nbsp; 사 :<br>
+<br></TD>
+  <TD width=335 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=247 height=40 valign="TOP">본 &nbsp;점 &nbsp;소 &nbsp;재 &nbsp;지 :<br>
+<br></TD>
+  <TD width=335 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=247 height=17 valign="TOP"></TD>
+  <TD width=335 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 valign="TOP"></TD>
+  <TD width=335 height=17 valign="TOP">(홈페이지) http://</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 valign="TOP"></TD>
+  <TD width=335 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=247 height=17 valign="TOP">작 &nbsp;성 &nbsp;책 &nbsp;임 &nbsp;자 :</TD>
+  <TD width=335 height=17 valign="TOP">(직 &nbsp;책) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(성 &nbsp;명)</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 valign="TOP"></TD>
+  <TD width=335 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=247 height=17 valign="TOP"></TD>
+  <TD width=335 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=247 height=40 valign="TOP">모집 또는 매출 증권의 종류 및 수 :<br>
+<br></TD>
+  <TD width=335 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=247 height=40 valign="TOP">모집 또는 매출총액 :<br>
+<br></TD>
+  <TD width=335 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP">증권신고서 및 투자설명서 열람장소</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; 가. 증권신고서</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;전자문서 : 금융위(금감원) 전자공시시스템 → &nbsp;http://dart.fss.or.kr</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; 나. 투자설명서</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;전자문서 : 금융위(금감원) 전자공시시스템 → &nbsp;http://dart.fss.or.kr</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;서면문서 :</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=toc>&lt; 목 &nbsp;차 &gt;</P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#81' name='81' target='toc'>【 대표이사 등의 확인 】</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#88' name='88' target='toc'>Ⅰ. 이사, 경영진 및 자문인의 신원</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#91' name='91' target='toc'>A. 이사 및 경영진</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#94' name='94' target='toc'>B. 자문인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#97' name='97' target='toc'>C. 감사인</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#100' name='100' target='toc'>II. 공모가액 및 예상일정</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#103' name='103' target='toc'>A. 공모가액</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#106' name='106' target='toc'>B. 공모방식과 일정</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#110' name='110' target='toc'>III. 주요 정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#113' name='113' target='toc'>A. 요약 재무정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#116' name='116' target='toc'>B. 자본전입과 차입</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#119' name='119' target='toc'>C. 공모이유 및 자금의 사용계획</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#122' name='122' target='toc'>D. 투자위험요소</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#126' name='126' target='toc'>IV. 발행인에 관한 정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#129' name='129' target='toc'>A. 회사의 연혁 및 발달과정</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#132' name='132' target='toc'>B. 사업 개요</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#135' name='135' target='toc'>C. 조직구조</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#138' name='138' target='toc'>D. 부동산, 공장, 설비 관련사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#142' name='142' target='toc'>V. 운영 및 재무성과와 전망</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#145' name='145' target='toc'>A. 경영성과</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#148' name='148' target='toc'>B. 유동성 및 자본의 충실성</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#151' name='151' target='toc'>C. 연구개발, 특허 및 면허보유 등</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#154' name='154' target='toc'>D. 추세 정보</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#158' name='158' target='toc'>VI. 이사, 경영진 및 직원</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#161' name='161' target='toc'>A. 이사 및 경영진</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#164' name='164' target='toc'>B. 보수</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#167' name='167' target='toc'>C. 이사회 활동</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#170' name='170' target='toc'>D. 직원</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#173' name='173' target='toc'>E. 지분보유 현황</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#177' name='177' target='toc'>VII. 주요주주 및 관계자 거래</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#180' name='180' target='toc'>A. 주요주주</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#183' name='183' target='toc'>B. 관계자 거래</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#186' name='186' target='toc'>C. 전문가 및 고문의 지분현황</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#190' name='190' target='toc'>VIII. 재무정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#193' name='193' target='toc'>A. 연결재무제표 및 여타 재무정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#196' name='196' target='toc'>B. 중요한 변동사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#200' name='200' target='toc'>IX. 공모 및 상장</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#203' name='203' target='toc'>A. 공모 및 상장 세부사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#206' name='206' target='toc'>B. 분매계획(배정계획)</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#209' name='209' target='toc'>C. 시 &nbsp;장</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#212' name='212' target='toc'>D. 매출하는 주주</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#215' name='215' target='toc'>E. 희석화</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#218' name='218' target='toc'>F. 발행비용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#222' name='222' target='toc'>X. 추가 정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#225' name='225' target='toc'>A. 자 &nbsp;본</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#228' name='228' target='toc'>B. 회사의 정관</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#231' name='231' target='toc'>C. 중요 계약</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#234' name='234' target='toc'>D. 외환거래 통제사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#237' name='237' target='toc'>E. 조 &nbsp;세</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#240' name='240' target='toc'>F. 배당 및 지급대리인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#243' name='243' target='toc'>G. 전문가의 의견서</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#246' name='246' target='toc'>H. 추가서류의 열람</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#249' name='249' target='toc'>I. 자회사 정보</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#253' name='253' target='toc'>XI. 증권에 대한 인수인(분석기관)의 평가의견</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#256' name='256' target='toc'>A. 평가기관의 개요</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#259' name='259' target='toc'>B. 평가의 개요</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#262' name='262' target='toc'>C. 기업실사결과 및 평가의견</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#265' name='265' target='toc'>D. 종합평가 결과</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#269' name='269' target='toc'>XII. 법적 위험 및 변호사의 법률검토의견 등</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#272' name='272' target='toc'>A. 법적 위험</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#275' name='275' target='toc'>B. 민사책임의 집행가능성</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#278' name='278' target='toc'>C. 이사 등 임원의 면책 관련</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#281' name='281' target='toc'>D. 변호사의 법률검토의견</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10010-TOC.htm#285' name='285' target='toc'>XIII. 증권예탁증권의 원주 등 관련 추가정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#288' name='288' target='toc'>A. 증권예탁증권 발행기관</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#291' name='291' target='toc'>B. 증권예탁증권의 원주에 관한 정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10010-TOC.htm#294' name='294' target='toc'>C. 관련 비용</a></P><P><br></P><P><br></P>
+</BODY>
+</HTML>

@@ -1,0 +1,528 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 10602, 서식버전 : 2.1, 서식변경날짜 : 2023년 2월 20일,<br>
+&nbsp; &nbsp;문서명 : 예비투자설명서★</P>
+<P class=cover-title><a class='toc' href='10602-TOC.htm#12' name='12' target='toc'>예비투자설명서</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=197></COL>
+  <COL width=385></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 colspan="2" align="RIGHT"><br>
+년 &nbsp; &nbsp; &nbsp;월 &nbsp; &nbsp; 일<br>
+&nbsp;</TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" align="CENTER">( 발 &nbsp; &nbsp; 행 &nbsp; &nbsp; 회 &nbsp; &nbsp; 사 &nbsp; &nbsp;명 )<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" align="CENTER">( 증권의 종목과 발행증권수 )<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" align="CENTER">( 모 &nbsp;집 &nbsp; 또는 &nbsp;매 출 총 액 )<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=197 height=40 valign="TOP">1. 모집가액 &nbsp;:<br>
+<br></TD>
+  <TD width=385 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=197 height=40 valign="TOP">2. 청약기간 &nbsp;:<br>
+<br></TD>
+  <TD width=385 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=197 height=40 valign="TOP">3. 납입기일 :<br>
+<br></TD>
+  <TD width=385 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=40 colspan="2" valign="TOP">4. 증권신고서 및 투자설명서의 열람장소<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=197 height=40 valign="TOP"> &nbsp;가. 증권신고서 :<br>
+<br></TD>
+  <TD width=385 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=197 height=40 valign="TOP"> &nbsp;나. 일괄신고 추가서류 :<br>
+<br></TD>
+  <TD width=385 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=197 height=17 valign="TOP"> &nbsp;다. 투자설명서 :</TD>
+  <TD width=385 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=197 height=17 valign="TOP"></TD>
+  <TD width=385 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 colspan="2" valign="TOP">5. 안정조작 또는 시장조성에 관한 사항</TD>
+</TR>
+<TR>
+  <TD width=591 height=63 colspan="2" valign="TOP"><br>
+<br>
+<br></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=63 valign="TOP">이 예비투자설명서의 증권신고서는 ××××년 ××월 ××일자로 금융위원회에 제출되었으나 아직 효력이 발생하지 아니하였으며, 이 예비투자설명서의 기재사항은 청약일 전에 정정될 수 있음을 유의하시기 바랍니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=40 align="CENTER">( 대 &nbsp;표 &nbsp;주 &nbsp;관 &nbsp;회 &nbsp;사 &nbsp;명 )<br>
+<br></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 10_투자결정시유의사항&gt;&gt;</P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#76' name='76' target='toc'>【 투자결정시 유의사항 】</a></P><P><br></P><P>은행 및 금융지주사가 발행하는 상각형 조건부자본증권의 경우에 한하여 각 상품의 특성을 고려하여 핵심위험을 요약하여 작성한다.</P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#82' name='82' target='toc'>【 대표이사 등의 확인 】</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#88' name='88' target='toc'>【 본 &nbsp; &nbsp;문 】</a></P><P>&lt;&lt;단위서식 : 0_(가져오기)-본문_증권신고서 내용 가져오기(#전부)&gt;&gt;</P>
+<P class=part><a class='toc' href='10602-TOC.htm#96' name='96' target='toc'>증권신고서 내용 가져오기</a></P><P><br></P><P>&lt;&lt;단위서식 : 0_(가져오기)-본문_증권신고서 내용 가져오기(1부만)&gt;&gt;</P>
+<P class=part><a class='toc' href='10602-TOC.htm#102' name='102' target='toc'>증권신고서 내용 가져오기</a></P><P><br></P><P>&lt;&lt;단위서식 : 1_(직접작성)-본문_지분증권,채무증권,증권예탁증권,투자계약증권의경우&gt;&gt;</P>
+<P class=part><a class='toc' href='10602-TOC.htm#108' name='108' target='toc'>요약정보</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#112' name='112' target='toc'>제1부 모집 또는 매출에 관한 사항</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#115' name='115' target='toc'>I. 모집 또는 매출에 관한 일반사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#119' name='119' target='toc'>II. 증권의 주요 권리내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#123' name='123' target='toc'>III. 투자위험요소</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#127' name='127' target='toc'>IV. 인수인의 의견(분석기관의 평가의견)</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#131' name='131' target='toc'>V. 자금의 사용목적</a></P><P><br></P><P>&lt;&lt;단위서식 : 11_자금의사용목적&gt;&gt;</P><P>자금의 사용목적</P><P>★Table-Group aClass=INC_PRPS★</P>
+
+<TABLE class=nb width=627>
+<COLGROUP>
+  <COL width=71></COL>
+  <COL width=137></COL>
+  <COL width=71></COL>
+  <COL width=135></COL>
+  <COL width=12></COL>
+  <COL width=147></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=71 height=109 align="CENTER">회차 : </TD>
+  <TD width=137 height=109 align="RIGHT">e★SEQ_NO |#|필</TD>
+  <TD width=71 height=109 align="CENTER">(기준일 : </TD>
+  <TD class=tu width=135 height=109 align="CENTER">u★FND_DT |달력|필</TD>
+  <TD width=12 height=109 align="CENTER">)</TD>
+  <TD class=tu width=147 height=109 align="RIGHT">u★WON |List|L|1|선<br>
+(단위 : 원)|1<br>
+(단위 : 천원)|2<br>
+(단위 : 백만원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=66></COL>
+  <COL width=80></COL>
+  <COL width=62></COL>
+  <COL width=61></COL>
+  <COL width=61></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=66 height=40 align="CENTER">시설자금</TH>
+  <TH width=66 height=40 align="CENTER">영업양수<br>
+자금</TH>
+  <TH width=66 height=40 align="CENTER">운영자금</TH>
+  <TH width=66 height=40 align="CENTER">채무상환<br>
+자금</TH>
+  <TH width=80 height=40 align="CENTER">타법인증권<br>
+취득자금</TH>
+  <TH width=62 height=40 align="CENTER">기타</TH>
+  <TH width=61 height=40 align="CENTER">계</TH>
+  <TH width=61 height=40 align="CENTER">비고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=66 height=63 align="RIGHT">e★FND_USE1 |\|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★FND_USE_SQ |\|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★FND_USE2 |\|선</TD>
+  <TD width=66 height=63 align="RIGHT">e★FND_USE5 |\|선</TD>
+  <TD width=80 height=63 align="RIGHT">e★FND_USE_AS |\|선</TD>
+  <TD width=62 height=63 align="RIGHT">e★FND_USE4 |\|선</TD>
+  <TD width=61 height=63 align="RIGHT">e★FND_USE_SUM |\|선</TD>
+  <TD width=61 height=63 align="CENTER">e★FND_USE_NOTE |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#192' name='192' target='toc'>VI. 그 밖에 투자자보호를 위해 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#196' name='196' target='toc'>제2부 발행인에 관한 사항</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#199' name='199' target='toc'>I. 회사의 개요</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#203' name='203' target='toc'>II. 사업의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#207' name='207' target='toc'>III. 재무에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#211' name='211' target='toc'>IV. 회계감사인의 감사의견 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#215' name='215' target='toc'>V. 이사회 등 회사의 기관에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#219' name='219' target='toc'>VI. 주주에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#223' name='223' target='toc'>VII. 임원 및 직원 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#227' name='227' target='toc'>VIII. 계열회사 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#231' name='231' target='toc'>IX. 대주주 등과의 거래내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#235' name='235' target='toc'>X. 그 밖에 투자자 보호를 위하여 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#239' name='239' target='toc'>XI. 상세표</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#243' name='243' target='toc'>【 전문가의 확인 】</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#247' name='247' target='toc'>1. 전문가의 확인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#250' name='250' target='toc'>2. 전문가와의 이해관계</a></P><P><br></P><P>&lt;&lt;단위서식 : 2_(직접작성)-본문_합병의경우&gt;&gt;</P>
+<P class=part><a class='toc' href='10602-TOC.htm#256' name='256' target='toc'>요약정보</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#260' name='260' target='toc'>제1부 합병의 개요</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#263' name='263' target='toc'>I. 합병에 관한 기본사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#267' name='267' target='toc'>II. 합병 가액 및 그 산출근거</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#271' name='271' target='toc'>III. 합병의 요령</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#275' name='275' target='toc'>IV. 영업 및 자산의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#279' name='279' target='toc'>V. 신주의 주요 권리내용에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#283' name='283' target='toc'>VI. 투자위험요소</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#287' name='287' target='toc'>VII. 주식매수청구권에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#291' name='291' target='toc'>VIII. 당사회사간의 이해관계 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#295' name='295' target='toc'>IX. 기타 투자자보호에 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#299' name='299' target='toc'>제2부 당사회사에 관한 사항</a></P><P>&lt;&lt;단위서식 : 9_당사회사에관한사항&gt;&gt;</P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#307' name='307' target='toc'>I. 회사의 개요</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#311' name='311' target='toc'>II. 사업의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#315' name='315' target='toc'>III. 재무에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#319' name='319' target='toc'>IV. 회계감사인의 감사의견 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#323' name='323' target='toc'>V. 이사회 등 회사의 기관에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#327' name='327' target='toc'>VI. 주주에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#331' name='331' target='toc'>VII. 임원 및 직원 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#335' name='335' target='toc'>VIII. 계열회사 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#339' name='339' target='toc'>IX. 그 밖에 투자자 보호를 위하여 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#343' name='343' target='toc'>X. 상세표</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#347' name='347' target='toc'>【 전문가의 확인 】</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#351' name='351' target='toc'>1. 전문가의 확인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#354' name='354' target='toc'>2. 전문가와의 이해관계</a></P><P><br></P><P>&lt;&lt;단위서식 : 3_(직접작성)-본문_영업양수의경우&gt;&gt;</P>
+<P class=part><a class='toc' href='10602-TOC.htm#360' name='360' target='toc'>요약정보</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#364' name='364' target='toc'>제1부 영업양수의 개요</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#367' name='367' target='toc'>I. 영업양수에 관한 기본사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#371' name='371' target='toc'>II. 영업양수 가액 및 그 산출근거</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#375' name='375' target='toc'>III. 영업양수의 요령</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#379' name='379' target='toc'>IV. 영업 및 자산의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#383' name='383' target='toc'>V. 신주의 주요 권리내용에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#387' name='387' target='toc'>VI. 투자위험요소</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#391' name='391' target='toc'>VII. 주식매수청구권에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#395' name='395' target='toc'>VIII. 당사회사간의 이해관계 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#399' name='399' target='toc'>IX. 기타 투자자보호에 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#403' name='403' target='toc'>제2부 당사회사에 관한 사항</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#406' name='406' target='toc'>I. 회사의 개요</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#410' name='410' target='toc'>II. 사업의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#414' name='414' target='toc'>III. 재무에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#418' name='418' target='toc'>IV. 회계감사인의 감사의견 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#422' name='422' target='toc'>V. 이사회 등 회사의 기관에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#426' name='426' target='toc'>VI. 주주에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#430' name='430' target='toc'>VII. 임원 및 직원 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#434' name='434' target='toc'>IX. 그 밖에 투자자 보호를 위하여 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#438' name='438' target='toc'>X. 상세표</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#442' name='442' target='toc'>【 전문가의 확인 】</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#446' name='446' target='toc'>1. 전문가의 확인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#449' name='449' target='toc'>2. 전문가와의 이해관계</a></P><P><br></P><P>&lt;&lt;단위서식 : 4_(직접작성)-본문_자산양수의경우&gt;&gt;</P>
+<P class=part><a class='toc' href='10602-TOC.htm#455' name='455' target='toc'>요약정보</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#459' name='459' target='toc'>제1부 자산양수의 개요</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#462' name='462' target='toc'>I. 자산양수에 관한 기본사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#466' name='466' target='toc'>II. 자산양수 가액 및 그 산출근거</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#470' name='470' target='toc'>III. 자산양수의 요령</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#474' name='474' target='toc'>IV. 영업 및 자산의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#478' name='478' target='toc'>V. 신주의 주요 권리내용에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#482' name='482' target='toc'>VI. 투자위험요소</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#486' name='486' target='toc'>VII. 주식매수청구권에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#490' name='490' target='toc'>VIII. 당사회사간의 이해관계 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#494' name='494' target='toc'>IX. 기타 투자자보호에 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#498' name='498' target='toc'>제2부 당사회사에 관한 사항</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#501' name='501' target='toc'>I. 회사의 개요</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#505' name='505' target='toc'>II. 사업의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#509' name='509' target='toc'>III. 재무에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#513' name='513' target='toc'>IV. 회계감사인의 감사의견 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#517' name='517' target='toc'>V. 이사회 등 회사의 기관에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#521' name='521' target='toc'>VI. 주주에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#525' name='525' target='toc'>VII. 임원 및 직원 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#529' name='529' target='toc'>VIII. 계열회사 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#533' name='533' target='toc'>IX. 그 밖에 투자자 보호를 위하여 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#537' name='537' target='toc'>X. 상세표</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#541' name='541' target='toc'>【 전문가의 확인 】</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#545' name='545' target='toc'>1. 전문가의 확인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#548' name='548' target='toc'>2. 전문가와의 이해관계</a></P><P><br></P><P>&lt;&lt;단위서식 : 5_(직접작성)-본문_주식의포괄적교환·이전의경우&gt;&gt;</P>
+<P class=part><a class='toc' href='10602-TOC.htm#554' name='554' target='toc'>요약정보</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#558' name='558' target='toc'>제1부 주식의 포괄적 교환ㆍ이전의 개요</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#561' name='561' target='toc'>I. 주식의 포괄적 교환ㆍ이전에 관한 기본사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#565' name='565' target='toc'>II. 주식의 포괄적 교환ㆍ이전 가액 및 그 산출근거</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#569' name='569' target='toc'>III. 주식의 포괄적 교환ㆍ이전의 요령</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#573' name='573' target='toc'>IV. 영업 및 자산의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#577' name='577' target='toc'>V. 신주의 주요 권리내용에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#581' name='581' target='toc'>VI. 투자위험요소</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#585' name='585' target='toc'>VII. 주식매수청구권에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#589' name='589' target='toc'>VIII. 당사회사간의 이해관계 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#593' name='593' target='toc'>IX. 기타 투자자보호에 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#597' name='597' target='toc'>제2부 당사회사에 관한 사항</a></P><P><br></P><P>&lt;&lt;단위서식 : 9_당사회사에관한사항&gt;&gt;</P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#606' name='606' target='toc'>I. 회사의 개요</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#610' name='610' target='toc'>II. 사업의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#614' name='614' target='toc'>III. 재무에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#618' name='618' target='toc'>IV. 회계감사인의 감사의견 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#622' name='622' target='toc'>V. 이사회 등 회사의 기관에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#626' name='626' target='toc'>VI. 주주에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#630' name='630' target='toc'>VII. 임원 및 직원 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#634' name='634' target='toc'>VIII. 계열회사 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#638' name='638' target='toc'>IX. 그 밖에 투자자 보호를 위하여 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#642' name='642' target='toc'>X. 상세표</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#646' name='646' target='toc'>【 전문가의 확인 】</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#650' name='650' target='toc'>1. 전문가의 확인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#653' name='653' target='toc'>2. 전문가와의 이해관계</a></P><P><br></P><P>&lt;&lt;단위서식 : 6_(직접작성)-본문_분할의경우&gt;&gt;</P>
+<P class=part><a class='toc' href='10602-TOC.htm#659' name='659' target='toc'>요약정보</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#663' name='663' target='toc'>제1부 분할의 개요</a></P><P><br></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#666' name='666' target='toc'>I. 분할에 관한 기본사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#670' name='670' target='toc'>II. 분할 가액 및 그 산출근거</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#674' name='674' target='toc'>III. 분할의 요령</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#678' name='678' target='toc'>IV. 영업 및 자산의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#682' name='682' target='toc'>V. 신주의 주요 권리내용에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#686' name='686' target='toc'>VI. 투자위험요소</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#690' name='690' target='toc'>VII. 주식매수청구권에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#694' name='694' target='toc'>VIII. 당사회사간의 이해관계 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#698' name='698' target='toc'>IX. 기타 투자자보호에 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#702' name='702' target='toc'>제2부 당사회사에 관한 사항</a></P><P><br></P><P>&lt;&lt;단위서식 : 9_당사회사에관한사항&gt;&gt;</P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#711' name='711' target='toc'>I. 회사의 개요</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#715' name='715' target='toc'>II. 사업의 내용</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#719' name='719' target='toc'>III. 재무에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#723' name='723' target='toc'>IV. 회계감사인의 감사의견 등</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#727' name='727' target='toc'>V. 이사회 등 회사의 기관에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#731' name='731' target='toc'>VI. 주주에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#735' name='735' target='toc'>VII. 임원 및 직원 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#739' name='739' target='toc'>VIII. 계열회사 등에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#743' name='743' target='toc'>IX. 그 밖에 투자자 보호를 위하여 필요한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='10602-TOC.htm#747' name='747' target='toc'>X. 상세표</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=part><a class='toc' href='10602-TOC.htm#751' name='751' target='toc'>【 전문가의 확인 】</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#755' name='755' target='toc'>1. 전문가의 확인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='10602-TOC.htm#758' name='758' target='toc'>2. 전문가와의 이해관계</a></P><P><br></P><P>&lt;&lt;단위서식 : 7_(직접작성)-본문_그외의경우&gt;&gt;</P>
+</BODY>
+</HTML>

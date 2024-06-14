@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 80521, 서식버전 : 2.2, 서식변경날짜 : 2010년 10월 1일,<br>
+&nbsp; &nbsp;문서명 : 감자 결정★</P>
+<P class=section-1><a class='toc' href='80521-TOC.htm#12' name='12' target='toc'>감자 결정</a></P><P>★Table-Group aClass=CRP_INFO★</P>
+
+<TABLE border=1 width=617>
+<COLGROUP>
+  <COL width=75></COL>
+  <COL width=56></COL>
+  <COL width=46></COL>
+  <COL width=84></COL>
+  <COL width=65></COL>
+  <COL width=65></COL>
+  <COL width=65></COL>
+  <COL width=89></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=75 height=63 align="CENTER">기업집단명</TD>
+  <TD width=56 height=63 align="LEFT">e★KB_NM</TD>
+  <TD width=46 height=63 align="CENTER">회사명</TD>
+  <TD width=84 height=63 align="LEFT">e★CRP_NM</TD>
+  <TD width=65 height=63 align="CENTER">공시일자</TD>
+  <TD class=tu width=65 height=63 align="CENTER">u★DIS_DT |달력|선</TD>
+  <TD width=65 height=63 align="CENTER">관련법규</TD>
+  <TD width=89 height=63 align="CENTER">공정거래법</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>★Table-Group aClass=CST_CNT★</P>
+
+<TABLE border=1 width=639>
+<COLGROUP>
+  <COL width=181></COL>
+  <COL width=157></COL>
+  <COL width=131></COL>
+  <COL width=134></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=181 height=47 rowspan="2">1. 감자주식의 종류와 수</TD>
+  <TD width=157 height=17 align="CENTER">보통주 (주)</TD>
+  <TD width=274 height=17 colspan="2" align="RIGHT">e★CST_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=17 align="CENTER">우선주 (주)</TD>
+  <TD width=274 height=17 colspan="2" align="RIGHT">e★PST_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=17 colspan="2">2. 1주당 액면가액 (원)</TD>
+  <TD width=274 height=17 colspan="2" align="RIGHT">e★FVAL |\|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=70 colspan="2" rowspan="2">3. 감자전후 자본금</TD>
+  <TD width=131 height=17 align="CENTER">감자전 (원)</TD>
+  <TD width=134 height=17 align="CENTER">감자후 (원)</TD>
+</TR>
+<TR>
+  <TD width=131 height=40 align="RIGHT">e★ROC_BAMT |\|선</TD>
+  <TD width=134 height=40 align="RIGHT">e★ROC_AAMT |\|선</TD>
+</TR>
+<TR>
+  <TD width=181 height=123 rowspan="3">4. 감자전후 발행주식수</TD>
+  <TD width=157 height=17 align="CENTER">구 &nbsp; 분</TD>
+  <TD width=131 height=17 align="CENTER">감자전 (주)</TD>
+  <TD width=134 height=17 align="CENTER">감자후 (주)</TD>
+</TR>
+<TR>
+  <TD width=157 height=40 align="CENTER">보통주(주)</TD>
+  <TD width=131 height=40 align="RIGHT">e★BFR_CST_CNT |P|선</TD>
+  <TD width=134 height=40 align="RIGHT">e★AFT_CST_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=40 align="CENTER">우선주(주)</TD>
+  <TD width=131 height=40 align="RIGHT">e★BFR_PST_CNT |P|선</TD>
+  <TD width=134 height=40 align="RIGHT">e★AFT_PST_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=181 height=47 rowspan="2">5. 감자비율</TD>
+  <TD width=157 height=17 align="CENTER">보통주 (%)</TD>
+  <TD width=274 height=17 colspan="2" align="RIGHT">e★ROC_CST_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=17 align="CENTER">우선주 (%)</TD>
+  <TD width=274 height=17 colspan="2" align="RIGHT">e★ROC_PST_RT |%|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=17 colspan="2">6. 감자기준일</TD>
+  <TD class=tu width=274 height=17 colspan="2" align="CENTER">u★ROC_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=17 colspan="2">7. 감자방법</TD>
+  <TD width=274 height=17 colspan="2" align="LEFT">e★ROC_MTH |V|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=17 colspan="2">8. 감자사유</TD>
+  <TD width=274 height=17 colspan="2" align="LEFT">e★ROC_RSN |V|선</TD>
+</TR>
+<TR>
+  <TD width=181 height=167 rowspan="6">9. 감자일정</TD>
+  <TD width=157 height=17>주주총회 예정일</TD>
+  <TD class=tu width=274 height=17 colspan="2" align="CENTER">u★GMSH_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=17>명의개서정지기간</TD>
+  <TD width=274 height=17 colspan="2" align="LEFT">e★REFRM_TRM |V|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=17>구주권제출기간</TD>
+  <TD width=274 height=17 colspan="2" align="LEFT">e★SBM_TRM |V|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=17>매매거래정지예정기간</TD>
+  <TD width=274 height=17 colspan="2" align="LEFT">e★TRD_STP_TRM |V|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=17>신주권교부예정일</TD>
+  <TD class=tu width=274 height=17 colspan="2" align="CENTER">u★NST_GV_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=17>신주상장예정일</TD>
+  <TD class=tu width=274 height=17 colspan="2" align="CENTER">u★NST_LST_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=181 height=47 rowspan="2">10. 채권자 이의제출기간</TD>
+  <TD width=157 height=17 align="CENTER">시작일</TD>
+  <TD class=tu width=274 height=17 colspan="2" align="CENTER">u★DTT_PRC_BGN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=17 align="CENTER">종료일</TD>
+  <TD class=tu width=274 height=17 colspan="2" align="CENTER">u★DTT_PRC_END_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=17 colspan="2">11. 구주권제출 및 신주권교부장소</TD>
+  <TD width=274 height=17 colspan="2" align="LEFT">e★SBM_GV_PLC |V|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=17 colspan="2">12. 이사회결의일(결정일)</TD>
+  <TD class=tu width=274 height=17 colspan="2" align="CENTER">u★DRC_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=181 height=47 rowspan="2"> &nbsp; - 사외이사 참석여부</TD>
+  <TD width=157 height=17 align="CENTER">참석(명)</TD>
+  <TD width=274 height=17 colspan="2" align="CENTER">e★ATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=157 height=17 align="CENTER">불참(명)</TD>
+  <TD width=274 height=17 colspan="2" align="CENTER">e★NATD_CNT |P|선</TD>
+</TR>
+<TR>
+  <TD width=347 height=86 colspan="2"> &nbsp; - 감사(감사위원) 참석여부</TD>
+  <TD class=tu width=274 height=86 colspan="2" align="CENTER">u★ADT_ATD_YN |List|L||선<br>
+참석|Y<br>
+불참|N<br>
+-|-</TD>
+</TR>
+<TR>
+  <TD width=347 height=17 colspan="2">13. 기타 투자판단에 참고할 사항</TD>
+  <TD width=274 height=17 colspan="2" align="CENTER">e★ETC |V|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P> &nbsp;</P>
+</BODY>
+</HTML>

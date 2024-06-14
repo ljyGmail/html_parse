@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 11200, 서식버전 : 1.6, 서식변경날짜 : 2015년 12월 3일,<br>
+&nbsp; &nbsp;문서명 : 주요사항보고서★</P>
+<P class=cover-title><a class='toc' href='11200-TOC.htm#13' name='13' target='toc'>주 요 사 항 보 고 서</a></P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=441></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=141 height=17 valign="TOP">금융위원회 귀중</TD>
+  <TD width=441 height=17 align="RIGHT" valign="TOP">년 &nbsp; &nbsp;월 &nbsp; &nbsp;일</TD>
+</TR>
+<TR>
+  <TD width=141 height=40 valign="TOP"><br>
+<br></TD>
+  <TD width=441 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=40 valign="TOP">회 &nbsp; &nbsp; &nbsp; 사 &nbsp; &nbsp; &nbsp; 명 :<br>
+<br></TD>
+  <TD width=441 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=40 valign="TOP">대 &nbsp; 표 &nbsp; &nbsp; 이 &nbsp; 사 :<br>
+<br></TD>
+  <TD width=441 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=40 valign="TOP">본 &nbsp;점 &nbsp;소 &nbsp;재 &nbsp;지 :<br>
+<br></TD>
+  <TD width=441 height=40 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP">(홈페이지) http://</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP">작 &nbsp;성 &nbsp;책 &nbsp;임 &nbsp;자 :</TD>
+  <TD width=441 height=17 valign="TOP">(직 &nbsp;책) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(성 &nbsp;명)</TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=441 height=17 valign="TOP">(전 &nbsp;화)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='11200-TOC.htm#53' name='53' target='toc'>【 대표이사 등의 확인 】</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-2><a class='toc' href='11200-TOC.htm#60' name='60' target='toc'>Ⅰ. 보고 사유</a></P><P>★Table-Group aClass=_RPT_RSN_★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=26></COL>
+  <COL width=556></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=26 height=63></TD>
+  <TD class=tu width=556 height=63>u★RPT_RSN_TP |List|L||선<br>
+중요한 자산양수도 결정(기타)|0103<br>
+풋백옵션 등 계약체결 결정|0301</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>*중요한 자산양수도 결정(기타)는 별지서식 &lt;제38-38호&gt; 내지 &lt;제38-43호&gt;에 해당하지 아니하는 중요한 자산양수도</P><P><br></P>
+<P class=section-2><a class='toc' href='11200-TOC.htm#75' name='75' target='toc'>Ⅱ. 보고 내용</a></P><P><br></P><P>&lt;&lt;단위서식 : 3_보고내용-자산양수도가액&gt;&gt;</P>
+<P class=section-3>[자산양수도가액]</P><P>★Table-Group aClass=SUB_3★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=86 valign="BOTTOM"></TD>
+  <TD class=tu width=291 height=86 align="RIGHT" valign="BOTTOM">u★WON |List|L||선<br>
+(단위 : 원)|1<br>
+(단위 : 천원)|2<br>
+(단위 : 백만원)|3</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17 valign="TOP">자산양수ㆍ도 가액</TD>
+  <TD width=291 height=17 align="RIGHT">e★TRC_ASS_PRC |\|선</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='11200-TOC.htm#113' name='113' target='toc'>【 전문가의 확인 】</a></P><P><br></P>
+<P class=section-2><a class='toc' href='11200-TOC.htm#116' name='116' target='toc'>1. 전문가의 확인</a></P><P><br></P>
+<P class=section-2><a class='toc' href='11200-TOC.htm#119' name='119' target='toc'>2. 전문가와의 이해관계</a></P><P><br></P>
+</BODY>
+</HTML>

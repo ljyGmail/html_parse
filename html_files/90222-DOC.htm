@@ -1,0 +1,346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 90222, 서식버전 : 2.2, 서식변경날짜 : 2015년 3월 13일,<br>
+&nbsp; &nbsp;문서명 : 분기감사보고서★</P><P><br>
+<br></P><P style="font-size: 18pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 감사대상회사의 명칭</P><P><br>
+<br>
+<br>
+<br></P><P style="font-size: 18pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;분 기 재 무 제 표 에 대 한</P>
+<P class=cover-title><a class='toc' href='90222-TOC.htm#28' name='28' target='toc'>감 &nbsp; 사 &nbsp; 보 &nbsp; 고 &nbsp; 서</a></P><P><br>
+<br>
+<br>
+<br>
+<br></P><P>★Table-Group aClass=COVER★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=333></COL>
+  <COL width=249></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=21 colspan="2" align="CENTER" style="font-family: 바탕, sans-serif; font-size: 14pt;">제 XX 기 &nbsp;분기</TD>
+</TR>
+<TR>
+  <TD class=tu width=333 height=17 align="RIGHT">u★PERIODFROM |달력|필</TD>
+  <TD width=249 height=17>부터</TD>
+</TR>
+<TR>
+  <TD class=tu width=333 height=17 align="RIGHT" valign="TOP">u★PERIODTO</TD>
+  <TD width=249 height=17 valign="TOP">까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=333></COL>
+  <COL width=249></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=21 colspan="2" align="CENTER" style="font-family: 바탕, sans-serif; font-size: 14pt;">제 XX 기 &nbsp;분기</TD>
+</TR>
+<TR>
+  <TD width=333 height=17 align="RIGHT">XXXX년 XX월 XX일</TD>
+  <TD width=249 height=17>부터</TD>
+</TR>
+<TR>
+  <TD width=333 height=17 align="RIGHT" valign="TOP">XXXX년 XX월 XX일</TD>
+  <TD width=249 height=17 valign="TOP">까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br>
+<br>
+<br></P><P style="font-size: 18pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 감사인 명칭</P><P><br></P>
+<P class=pgbrk></P>
+<P class=toc>목 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;차</P><P><br></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 61_외부감사인의 감사보고서&gt;&gt;</P>
+<P class=section-1><a class='toc' href='90222-TOC.htm#121' name='121' target='toc'>외부감사인의 감사보고서</a></P><P><br></P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17 valign="TOP">감사대상회사의 명칭</TD>
+  <TD width=291 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=291 height=17 valign="TOP">XXXX 귀중</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">XXXX년 XX월 XX일</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 16pt;">1. 감사보고서 본문</P><P><br></P><P style="font-size: 16pt;">2. 특기사항</P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">감사인의 주소</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">대표자 명칭</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P><P>&lt;&lt;단위서식 : 62_독립된 감사인의 감사보고서&gt;&gt;</P>
+<P class=section-1><a class='toc' href='90222-TOC.htm#162' name='162' target='toc'>독립된 감사인의 감사보고서</a></P><P><br></P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=291></COL>
+  <COL width=291></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=291 height=17 valign="TOP">감사대상회사의 명칭</TD>
+  <TD width=291 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=291 height=17 valign="TOP">XXXX 귀중</TD>
+  <TD width=291 height=17 align="RIGHT" valign="TOP">XXXX년 XX월 XX일</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 16pt;">1. 감사보고서 본문</P><P><br></P><P style="font-size: 16pt;">2. 특기사항</P><P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">감사인의 주소</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">대표자 명칭</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='90222-TOC.htm#70' name='70' target='toc'>(첨부)분 기 재 무 제 표</a></P><P><br>
+<br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=26 align="CENTER" style="font-size: 14pt; font-weight: bold;">XX &nbsp;주식회사</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br>
+<br>
+<br></P><P>★Table-Group aClass=COVER2★</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=333></COL>
+  <COL width=249></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=21 colspan="2" align="CENTER" style="font-family: 바탕, sans-serif; font-size: 14pt;">제 XX 기 &nbsp;분기</TD>
+</TR>
+<TR>
+  <TD class=tu width=333 height=17 align="RIGHT">u★PERIODFROM2</TD>
+  <TD width=249 height=17>부터</TD>
+</TR>
+<TR>
+  <TD class=tu width=333 height=17 align="RIGHT" valign="TOP">u★PERIODTO2</TD>
+  <TD width=249 height=17 valign="TOP">까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=333></COL>
+  <COL width=249></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=21 colspan="2" align="CENTER" style="font-family: 바탕, sans-serif; font-size: 14pt;">제 XX 기 &nbsp;분기</TD>
+</TR>
+<TR>
+  <TD width=333 height=17 align="RIGHT">XXXX년 XX월 XX일</TD>
+  <TD width=249 height=17>부터</TD>
+</TR>
+<TR>
+  <TD width=333 height=17 align="RIGHT" valign="TOP">XXXX년 XX월 XX일</TD>
+  <TD width=249 height=17 valign="TOP">까지</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br>
+<br>
+<br>
+<br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER">"첨부된 분기재무제표는 당사가 작성한 것입니다."</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER">XX 주식회사 대표이사 XXX </TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=91></COL>
+  <COL width=99></COL>
+  <COL width=383></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=91 height=47 rowspan="2" align="RIGHT" valign="TOP">본점 소재지 : </TD>
+  <TD width=99 height=17 align="CENTER">(도로명주소)</TD>
+  <TD width=383 height=17></TD>
+</TR>
+<TR>
+  <TD width=99 height=17 align="CENTER">(전 &nbsp; 화)</TD>
+  <TD width=383 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P><P><br></P><P><br></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-2><a class='toc' href='90222-TOC.htm#136' name='136' target='toc'>주석</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="CENTER" valign="TOP">XXXX년 XX월 XX일 현재</TD>
+</TR>
+<TR>
+  <TD width=591 height=17 align="CENTER" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=591 height=17 valign="TOP">회사명 : XXXX</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P><P><br></P><P><br></P><P><br></P><P><br></P>
+</BODY>
+</HTML>

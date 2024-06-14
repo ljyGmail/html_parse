@@ -1,0 +1,2102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=text/html; charset=utf-8 http-equiv=Content-Type>
+<STYLE>
+ 
+  BODY 		{margin-left: 20px; width: 600px; font: 12pt 바탕; word-break:break-all;}  
+ 
+  TABLE    	{table-layout: fixed; font: 11pt 굴림; border-collapse: collapse; border-style:solid; border-color:black; COLOR:#000000; margin-bottom:6px;}
+  TABLE.nb 	{border-style:none;}
+  TH       	{font: 11pt/1.6em 굴림; background-color:#dcdcdc; border-color:gray; padding:2px 4px 0px 4px;}
+  TD       	{font: 11pt/1.6em 굴림; border-color:gray; padding:2px 4px 0px 4px;}
+
+  P 		{font: 12pt/1.6em 바탕; color:#000000; margin:0px;}
+  BODY > P 	{font: 12pt/1.6em 바탕; text-align:justify; color:#000000; margin:0px;}
+ 
+  TH > P	{font: 11pt/1.6em 굴림;} 
+  TD > P	{font: 11pt/1.6em 굴림;} 
+  
+  P.table-group {font: 11pt 굴림; text-align: center;}
+  p.img-caption	{font: 12pt 굴림; text-align: center; color: #324a58;}
+
+  p.part      	{font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-1 	{font: 18pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-2 	{font: 16pt/1.6em 바탕; text-align: left;   color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.section-3 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-4 	{font: 14pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-5 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+  p.section-6 	{font: 12pt/1.6em 바탕; text-align: left;   color: #0000ff;}
+
+  p.cover       {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.cover-title {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.correction  {font: 28pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold; white-space:nowrap;}
+  p.toc         {font: 20pt/1.6em 바탕; text-align: center; color: #0000ff; font-weight:bold;}
+  p.note        {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.caution     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.description {font: 12pt/1.6em 바탕; text-align: left;   color: #324a58;}
+  p.warning     {font: 12pt/1.6em 바탕; text-align: left;   color: #ff0000;}
+  p.comment     {font: 10pt/1.6em 굴림; text-align: left;   color: #008800; font-weight:bold;}
+  p.notice   	{font:  9pt/1.6em 바탕; text-align: left;   color: #dd0000; margin-bottom: 6px;} 
+  p.pgbrk       {height: 24px;}
+ 
+  div#notice 	{border: solid 4px green; width:600px; padding:8px; background-color:#dddddd;}  
+
+  a.toc 	{ text-decoration: none; color: blue;}
+  a.refno 	{ text-decoration: underline; color: blue;}
+
+  img.left 	{display:block; text-align:left;}
+  img.center 	{display:block; text-align:center;}
+  img.right 	{display:block; text-align:right;}</STYLE>
+
+</HEAD>
+
+<BODY bgcolor=#FFFFFF>
+<SCRIPT type="text/javascript">
+function findForm(name){
+  return document.forms[name];
+}
+
+var win_num = 0; 
+function openReportViewer(rcpNo, dcmNo){
+var frm = findForm("reportForm");
+ 	frm.action = "http://dart.fss.or.kr/dsaf001/main.do";
+	window.open("", rcpNo+win_num,  "width=1024,height=768,resizable=yes");
+	frm.rcpNo.value = rcpNo;
+	if (dcmNo) {
+	    frm.dcmNo.value = dcmNo;
+	}
+
+	frm.target  = rcpNo+win_num;
+	frm.submit();
+	win_num++;
+}
+</SCRIPT>
+
+<form name="reportForm" method="POST">
+	<input type="hidden" name="rcpNo">
+	<input type="hidden" name="dcmNo">
+</form> 
+
+<P>★문서코드 : 00715, 서식버전 : 2.7, 서식변경날짜 : 2024년 1월 12일,<br>
+&nbsp; &nbsp;문서명 : 자산양도등의등록신청서★</P>
+<P class=cover-title><a class='toc' href='00715-TOC.htm#12' name='12' target='toc'>자산양도등의등록신청서</a></P>
+
+<TABLE class=nb width=639>
+<COLGROUP>
+  <COL width=155></COL>
+  <COL width=120></COL>
+  <COL width=337></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=630 height=63 colspan="3" valign="TOP"><br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=284 height=17 colspan="2" valign="TOP">자산유동화관련 등록ㆍ신고등 현황 :</TD>
+  <TD width=337 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=630 height=86 colspan="3"><br>
+<br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=630 height=17 colspan="3">금융위원회 귀중</TD>
+</TR>
+<TR>
+  <TD width=630 height=63 colspan="3"><br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=630 height=17 colspan="3" align="CENTER">자산유동화에관한법률 제6조의 규정에 의하여 자산양도등의 등록을 신청합니다.</TD>
+</TR>
+<TR>
+  <TD width=630 height=63 colspan="3"><br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=630 height=17 colspan="3" align="RIGHT">XXXX년 XX월 XX일</TD>
+</TR>
+<TR>
+  <TD width=630 height=63 colspan="3" valign="TOP"><br>
+<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=155 height=40 align="RIGHT" valign="TOP">신 &nbsp; 청 &nbsp; 인 &nbsp;<br>
+<br></TD>
+  <TD width=466 height=40 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=155 height=40 align="RIGHT" valign="TOP">회 &nbsp; 사 &nbsp; 명 :<br>
+<br></TD>
+  <TD width=466 height=40 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=155 height=40 align="RIGHT" valign="TOP">대 표 이 사 :<br>
+<br></TD>
+  <TD width=466 height=40 colspan="2" align="RIGHT" valign="TOP">(인)</TD>
+</TR>
+<TR>
+  <TD width=155 height=70 rowspan="2" align="RIGHT" valign="TOP">본점소재지 :<br>
+<br>
+<br></TD>
+  <TD width=466 height=17 colspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=466 height=40 colspan="2" valign="TOP">(전화번호)<br>
+<br></TD>
+</TR>
+<TR>
+  <TD width=155 height=77 rowspan="3" align="RIGHT" valign="TOP">작성책임자 :</TD>
+  <TD width=466 height=17 colspan="2" valign="TOP">(담당부서)</TD>
+</TR>
+<TR>
+  <TD width=466 height=17 colspan="2" valign="TOP">(직책 및 성명) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(인)</TD>
+</TR>
+<TR>
+  <TD width=466 height=17 colspan="2" valign="TOP">(전화번호)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<P class=pgbrk></P>
+<P class=toc>목 &nbsp; &nbsp; 차</P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00715-TOC.htm#65' name='65' target='toc'>&lt;요약정보&gt;</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#68' name='68' target='toc'>1. 양도등의 개요</a></P><P style="font-size: 14pt;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[ 자산양도 등록정보 요약표 ]</P><P>★Table-Group aClass=TRN_SUMMARY★</P>
+
+<TABLE class=nb width=608>
+<COLGROUP>
+  <COL width=599></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=599 height=17 align="RIGHT" valign="TOP">(단위 : 억원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=608>
+<COLGROUP>
+  <COL width=80></COL>
+  <COL width=55></COL>
+  <COL width=53></COL>
+  <COL width=66></COL>
+  <COL width=86></COL>
+  <COL width=86></COL>
+  <COL width=119></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=80 height=319 rowspan="8" align="CENTER">양도등의<br>
+당 사 자</TD>
+  <TD width=55 height=153 rowspan="4" align="CENTER">양도인</TD>
+  <TD width=128 height=70 colspan="2" rowspan="2" align="CENTER">일반법인</TD>
+  <TD width=181 height=17 colspan="2" align="CENTER">신청인</TD>
+  <TD width=119 height=17 align="CENTER">법인등록번호</TD>
+</TR>
+<TR>
+  <TD width=181 height=40 colspan="2" align="CENTER" valign="TOP">e★TRN_COM_NM</TD>
+  <TD width=119 height=40 align="CENTER" valign="TOP">e★TRN_COM_NO |#-14|선</TD>
+</TR>
+<TR>
+  <TD width=128 height=70 colspan="2" rowspan="2" align="CENTER">유동화전문<br>
+회사(신탁)</TD>
+  <TD width=181 height=17 colspan="2" align="CENTER">SPC(신탁) 명칭</TD>
+  <TD width=119 height=17 align="CENTER">DART 접수번호</TD>
+</TR>
+<TR>
+  <TD width=181 height=40 colspan="2" align="CENTER" valign="TOP">e★TRN_SPC_NM</TD>
+  <TD width=119 height=40 align="CENTER" valign="TOP">e★TRN_DART_NO |F-14|선</TD>
+</TR>
+<TR>
+  <TD width=55 height=153 rowspan="4" align="CENTER">양수인</TD>
+  <TD width=128 height=70 colspan="2" rowspan="2" align="CENTER">일반법인</TD>
+  <TD width=181 height=17 colspan="2" align="CENTER">신청인</TD>
+  <TD width=119 height=17 align="CENTER">법인등록번호</TD>
+</TR>
+<TR>
+  <TD width=181 height=40 colspan="2" align="CENTER" valign="TOP">e★ACQ_COM_NM</TD>
+  <TD width=119 height=40 align="CENTER" valign="TOP">e★ACQ_COM_NO |#-14|선</TD>
+</TR>
+<TR>
+  <TD width=128 height=70 colspan="2" rowspan="2" align="CENTER">유동화전문<br>
+회사(신탁)</TD>
+  <TD width=181 height=17 colspan="2" align="CENTER">SPC(신탁) 명칭</TD>
+  <TD width=119 height=17 align="CENTER">DART 접수번호</TD>
+</TR>
+<TR>
+  <TD width=181 height=40 colspan="2" align="CENTER" valign="TOP">e★ACQ_SCP_NM</TD>
+  <TD width=119 height=40 align="CENTER" valign="TOP">e★ACQ_DART_NO |F-14|선</TD>
+</TR>
+<TR>
+  <TD width=80 height=40 align="CENTER">양도등의<br>
+등록원인</TD>
+  <TD width=510 height=40 colspan="6" align="LEFT">e★TRN_REG_RSN</TD>
+</TR>
+<TR>
+  <TD width=80 height=245 rowspan="4" align="CENTER">양도등의<br>
+대상자산</TD>
+  <TD width=117 height=17 colspan="2" align="CENTER">구 분</TD>
+  <TD width=66 height=17 align="CENTER">건 수</TD>
+  <TD width=86 height=17 align="CENTER">평가금액</TD>
+  <TD width=86 height=17 align="CENTER">양도등가액</TD>
+  <TD width=119 height=17 align="CENTER">비 고</TD>
+</TR>
+<TR>
+  <TD width=117 height=63 colspan="2" align="LEFT" valign="TOP">e★TRN_SEP</TD>
+  <TD width=66 height=63 align="CENTER" valign="TOP">e★TRN_ACC |P|선</TD>
+  <TD width=86 height=63 align="RIGHT" valign="TOP">e★VAL_AMT |%-6|선</TD>
+  <TD width=86 height=63 align="RIGHT" valign="TOP">e★TRN_AMT |%-6|선</TD>
+  <TD width=119 height=63 align="RIGHT" valign="TOP">e★TRN_ETC</TD>
+</TR>
+<TR>
+  <TD width=117 height=63 colspan="2" align="LEFT" valign="TOP">e★TRN_SEP</TD>
+  <TD width=66 height=63 align="CENTER" valign="TOP">e★TRN_ACC |P|선</TD>
+  <TD width=86 height=63 align="RIGHT" valign="TOP">e★VAL_AMT |%-6|선</TD>
+  <TD width=86 height=63 align="RIGHT" valign="TOP">e★TRN_AMT |%-6|선</TD>
+  <TD width=119 height=63 align="RIGHT" valign="TOP">e★TRN_ETC</TD>
+</TR>
+<TR>
+  <TD width=117 height=63 colspan="2" align="CENTER">합 계</TD>
+  <TD width=66 height=63 align="CENTER" valign="TOP">e★TOT_ACC |P|선</TD>
+  <TD width=86 height=63 align="RIGHT" valign="TOP">e★TOT_VAL_AMT |%-6|선</TD>
+  <TD width=86 height=63 align="RIGHT" valign="TOP">e★TOT_TRN_AMT |%-6|선</TD>
+  <TD width=119 height=63 align="RIGHT" valign="TOP">e★TOT_ETC</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">실사기관</TD>
+  <TD width=510 height=17 colspan="6" align="LEFT">e★SUR_ORG</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">자산확정일</TD>
+  <TD class=tu width=510 height=17 colspan="6" align="CENTER">u★AST_SET_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">양도기일</TD>
+  <TD class=tu width=510 height=17 colspan="6" align="CENTER">u★TRN_DT |달력|선</TD>
+</TR>
+<TR>
+  <TD width=80 height=40 align="CENTER">양도등의<br>
+목 &nbsp; &nbsp; 적</TD>
+  <TD width=510 height=40 colspan="6" align="LEFT">e★TRN_RSN</TD>
+</TR>
+<TR>
+  <TD width=80 height=17 align="CENTER">향후계획</TD>
+  <TD width=510 height=17 colspan="6" align="LEFT">e★AFT_PLN</TD>
+</TR>
+<TR>
+  <TD width=80 height=86 align="CENTER">기 &nbsp; &nbsp;타</TD>
+  <TD width=510 height=86 colspan="6" valign="TOP"> - 양도등의 대상자산과 관련된 자산유동화계획 등록현황<br>
+&nbsp; &nbsp;o 등록인명 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (자산보유자 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)<br>
+&nbsp; &nbsp;o 최초 등록번호 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(최초 등록일 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; )<br>
+&nbsp; &nbsp;&lt; 변경 등록번호 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(변경 등록인 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ) &gt;</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#167' name='167' target='toc'>2. 양도등 대상자산(유동화자산)에 관한 요약정보</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#170' name='170' target='toc'>3. 투자자보호에 관한 사항</a></P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00715-TOC.htm#174' name='174' target='toc'>I. 양도등의 개요</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#177' name='177' target='toc'>1. 관련자산의 유동화계획 등에 관한 사항</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=40 align="CENTER">최초 등록일<br>
+(변경 등록일)</TH>
+  <TH width=111 height=40 align="CENTER">등록번호<br>
+(변경 등록번호)</TH>
+  <TH width=111 height=40 align="CENTER">등록인명</TH>
+  <TH width=111 height=40 align="CENTER">자산보유자명</TH>
+  <TH width=111 height=40 align="CENTER">비 &nbsp;고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#201' name='201' target='toc'>2. 등록인에 관한 사항</a></P>
+
+<TABLE border=1 width=598>
+<COLGROUP>
+  <COL width=153></COL>
+  <COL width=427></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=153 height=17 align="CENTER">구 &nbsp; &nbsp;분</TH>
+  <TH width=427 height=17 align="CENTER">내 &nbsp; &nbsp; &nbsp;용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=153 height=17 align="CENTER" valign="TOP">회 &nbsp;사 &nbsp;명</TD>
+  <TD width=427 height=17></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 align="CENTER" valign="TOP">설립연월일</TD>
+  <TD width=427 height=17></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 align="CENTER" valign="TOP">대 &nbsp;표 &nbsp;자</TD>
+  <TD width=427 height=17></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 align="CENTER" valign="TOP">본점소재지</TD>
+  <TD width=427 height=17 align="RIGHT">(전화번호 : &nbsp; &nbsp; &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=153 height=17 align="CENTER" valign="TOP">목 적 사 업</TD>
+  <TD width=427 height=17></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 align="CENTER" valign="TOP">자 본 총 액</TD>
+  <TD width=427 height=17 align="RIGHT">(1주 또는 1좌당 액면가액 : &nbsp; &nbsp; &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=153 height=17 align="CENTER" valign="TOP">주요주주(출자자등)</TD>
+  <TD width=427 height=17></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 align="CENTER" valign="TOP">존 속 기 간</TD>
+  <TD width=427 height=17></TD>
+</TR>
+<TR>
+  <TD width=153 height=109 align="CENTER">등 록 원 인<br>
+(법 제6조)</TD>
+  <TD width=427 height=109>①제1항 제1호에 의한 양도 ( &nbsp;), 신탁 ( &nbsp;)<br>
+②제1항 제2호에 의한 양도 ( &nbsp;), 반환 ( &nbsp;)<br>
+③제2항 제1호에 의한 양도 ( &nbsp;), 반환 ( &nbsp;) <br>
+④제2항 제2호에 의한 질권ㆍ저당권의 설정 ( &nbsp;), 해지( &nbsp;) <br>
+⑤제2항 제3호에 의한 신탁 ( &nbsp;), 반환 ( &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=153 height=17 align="CENTER" valign="TOP">기 타 사 항</TD>
+  <TD width=427 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#243' name='243' target='toc'>3. 양수인등에 관한 사항</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 valign="TOP">[등록원인 : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=147></COL>
+  <COL width=435></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=147 height=17 align="CENTER" valign="TOP">구 &nbsp; &nbsp;분</TH>
+  <TH width=435 height=17 align="CENTER" valign="TOP">내 &nbsp; &nbsp; &nbsp;용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=147 height=17 align="CENTER" valign="TOP">회 &nbsp;사 &nbsp;명</TD>
+  <TD width=435 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=147 height=17 align="CENTER" valign="TOP">설립연월일</TD>
+  <TD width=435 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=147 height=17 align="CENTER" valign="TOP">대 &nbsp;표 &nbsp;자</TD>
+  <TD width=435 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=147 height=17 align="CENTER" valign="TOP">본점소재지</TD>
+  <TD width=435 height=17 align="RIGHT" valign="TOP">(전화번호 : &nbsp; &nbsp; &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=147 height=17 align="CENTER" valign="TOP">목 적 사 업</TD>
+  <TD width=435 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=147 height=17 align="CENTER" valign="TOP">자 본 총 액</TD>
+  <TD width=435 height=17 align="RIGHT" valign="TOP">(1주 또는 1좌당 액면가액 : &nbsp; &nbsp; &nbsp;)</TD>
+</TR>
+<TR>
+  <TD width=147 height=17 align="CENTER" valign="TOP">주요주주(출자자등)</TD>
+  <TD width=435 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=147 height=17 align="CENTER" valign="TOP">존 속 기 간</TD>
+  <TD width=435 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=147 height=17 align="CENTER" valign="TOP">기 타 사 항</TD>
+  <TD width=435 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#289' name='289' target='toc'>4. 양도등의 대상자산에 대한 요약</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=591></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=591 height=17 align="RIGHT" valign="TOP">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=599>
+<COLGROUP>
+  <COL width=63></COL>
+  <COL width=91></COL>
+  <COL width=143></COL>
+  <COL width=156></COL>
+  <COL width=101></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=163 height=47 colspan="2" rowspan="2" align="CENTER">구 &nbsp; &nbsp;분</TH>
+  <TH width=143 height=47 rowspan="2" align="CENTER">건 &nbsp; &nbsp;수</TH>
+  <TH width=156 height=17 align="CENTER">평 가 금 액</TH>
+  <TH width=101 height=47 rowspan="2" align="CENTER">비 &nbsp; &nbsp;고</TH>
+</TR>
+<TR>
+  <TH width=156 height=17 align="CENTER">양도등가액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=163 height=47 colspan="2" rowspan="2" align="CENTER">채 &nbsp; &nbsp;권</TD>
+  <TD width=143 height=47 rowspan="2"></TD>
+  <TD width=156 height=17></TD>
+  <TD width=101 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=156 height=17></TD>
+</TR>
+<TR>
+  <TD width=163 height=47 colspan="2" rowspan="2" align="CENTER">부 동 산</TD>
+  <TD width=143 height=47 rowspan="2"></TD>
+  <TD width=156 height=17></TD>
+  <TD width=101 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=156 height=17></TD>
+</TR>
+<TR>
+  <TD width=63 height=227 rowspan="8" align="CENTER">기 &nbsp;타<br>
+재산권</TD>
+  <TD width=91 height=47 rowspan="2" align="CENTER">주권 또는<br>
+출자 증권</TD>
+  <TD width=143 height=47 rowspan="2"></TD>
+  <TD width=156 height=17></TD>
+  <TD width=101 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=156 height=17></TD>
+</TR>
+<TR>
+  <TD width=91 height=47 rowspan="2" align="CENTER">사 채 권</TD>
+  <TD width=143 height=47 rowspan="2"></TD>
+  <TD width=156 height=17></TD>
+  <TD width=101 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=156 height=17></TD>
+</TR>
+<TR>
+  <TD width=91 height=47 rowspan="2" align="CENTER">기 &nbsp; &nbsp;타</TD>
+  <TD width=143 height=47 rowspan="2"></TD>
+  <TD width=156 height=17></TD>
+  <TD width=101 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=156 height=17></TD>
+</TR>
+<TR>
+  <TD width=91 height=47 rowspan="2" align="CENTER">소 &nbsp; &nbsp;계</TD>
+  <TD width=143 height=47 rowspan="2"></TD>
+  <TD width=156 height=17></TD>
+  <TD width=101 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=156 height=17></TD>
+</TR>
+<TR>
+  <TD width=163 height=47 colspan="2" rowspan="2" align="CENTER">합 &nbsp; &nbsp;계</TD>
+  <TD width=143 height=47 rowspan="2"></TD>
+  <TD width=156 height=17></TD>
+  <TD width=101 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=156 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#365' name='365' target='toc'>5. 양도등의 목적</a></P><P style="font-size: 14pt;">가. 양도등의 목적</P><P><br></P><P style="font-size: 14pt;">나. 향후 계획</P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00715-TOC.htm#372' name='372' target='toc'>II. 양도등 대상자산(유동화자산)의 종류별 세부명세</a></P>
+
+<TABLE border=1 width=579>
+<COLGROUP>
+  <COL width=570></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=570 height=178 valign="TOP"><br>
+자산유동화업무감독규정 제12조의 규정에 의한 외부평가기관의 자산실사보고서를 함께 제출하는 경우에는 동 보고서(첨부서류 포함) 특정부분의 내용을 참조하는 방식(참조방식)으로 ①대상자산에 관한 통계분석표, 분포현황 등과 ②대상자산의 종류별(채권, 부동산, 기타 재산권 등) 세부명세의 내용을 기재할 수 있으며, 종류별 세부명세(항목 2. ∼ 4.) 작성시 해당사항이 없는 항목은 "해당사항 없음"으로 기재하고 해당 표서식을 삭제할 수 있다.<br>
+<br></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#383' name='383' target='toc'>1. 개 요 (유동화자산 총괄표, 통계분석표, 분포현황 등 포함)</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#386' name='386' target='toc'>2. 채권(債權)</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=175></COL>
+  <COL width=268></COL>
+  <COL width=130></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=175 height=17 valign="TOP">[구분 : &nbsp; &nbsp;]</TD>
+  <TD width=268 height=17 valign="TOP">[작성기준일 : &nbsp; &nbsp;]</TD>
+  <TD width=130 height=17 align="RIGHT" valign="TOP">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=47></COL>
+  <COL width=86></COL>
+  <COL width=85></COL>
+  <COL width=85></COL>
+  <COL width=85></COL>
+  <COL width=85></COL>
+  <COL width=64></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=47 height=47 rowspan="2" align="CENTER">일련<br>
+번호</TH>
+  <TH width=86 height=17 align="CENTER">고유번호</TH>
+  <TH width=85 height=17 align="CENTER">채무자</TH>
+  <TH width=85 height=17 align="CENTER">최초발생일</TH>
+  <TH width=85 height=17 align="CENTER">원 &nbsp;금</TH>
+  <TH width=85 height=17 align="CENTER">평가금액</TH>
+  <TH width=64 height=47 rowspan="2" align="CENTER">비 &nbsp;고</TH>
+</TR>
+<TR>
+  <TH width=86 height=17 align="CENTER">취급부서</TH>
+  <TH width=85 height=17 align="CENTER">이자율</TH>
+  <TH width=85 height=17 align="CENTER">만 기 일</TH>
+  <TH width=85 height=17 align="CENTER">잔 &nbsp;액</TH>
+  <TH width=85 height=17 align="CENTER">양도등가액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=47 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=86 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=64 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=86 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=47 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=86 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=64 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=86 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=330 height=47 colspan="4" rowspan="2" align="CENTER">합 &nbsp; &nbsp; &nbsp;계</TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=64 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=85 height=17 valign="TOP"></TD>
+  <TD width=85 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#461' name='461' target='toc'>3. 부동산</a></P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=148></COL>
+  <COL width=288></COL>
+  <COL width=137></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=148 height=17 valign="TOP">[구분 : &nbsp; &nbsp;]</TD>
+  <TD width=288 height=17 valign="TOP">[작성기준일 : &nbsp; &nbsp;]</TD>
+  <TD width=137 height=17 align="RIGHT" valign="TOP">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=33></COL>
+  <COL width=63></COL>
+  <COL width=51></COL>
+  <COL width=51></COL>
+  <COL width=39></COL>
+  <COL width=75></COL>
+  <COL width=87></COL>
+  <COL width=75></COL>
+  <COL width=45></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=33 height=70 rowspan="2" align="CENTER">일련<br>
+번호</TH>
+  <TH width=63 height=17 align="CENTER">고유번호</TH>
+  <TH width=51 height=17 align="CENTER">소유자</TH>
+  <TH width=51 height=17 align="CENTER">소재지</TH>
+  <TH width=39 height=70 rowspan="2" align="CENTER">면적</TH>
+  <TH width=75 height=70 rowspan="2" align="CENTER">선순위권리<br>
+및 그 내용</TH>
+  <TH width=87 height=17 align="CENTER">공시지가등</TH>
+  <TH width=75 height=17 align="CENTER">평가금액</TH>
+  <TH width=45 height=70 rowspan="2" align="CENTER">비고</TH>
+</TR>
+<TR>
+  <TH width=63 height=40 align="CENTER">취급부서</TH>
+  <TH width=51 height=40 align="CENTER">용 &nbsp;도</TH>
+  <TH width=51 height=40 align="CENTER">지 &nbsp;번</TH>
+  <TH width=87 height=40 align="CENTER">유효담보가액</TH>
+  <TH width=75 height=40 align="CENTER">양도등가액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=33 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=51 height=17 valign="TOP"></TD>
+  <TD width=51 height=17 valign="TOP"></TD>
+  <TD width=39 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=75 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=45 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=51 height=17 valign="TOP"></TD>
+  <TD width=51 height=17 valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=33 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=51 height=17 valign="TOP"></TD>
+  <TD width=51 height=17 valign="TOP"></TD>
+  <TD width=39 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=75 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=45 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=51 height=17 valign="TOP"></TD>
+  <TD width=51 height=17 valign="TOP"></TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=357 height=47 colspan="6" rowspan="2" align="CENTER">합 &nbsp; &nbsp;계</TD>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=45 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=87 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#544' name='544' target='toc'>4. 기타 재산권</a></P><P style="font-size: 14pt;">가. 주권 또는 출자증권</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=149></COL>
+  <COL width=289></COL>
+  <COL width=135></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=149 height=17 valign="TOP">[구분 : &nbsp; &nbsp;]</TD>
+  <TD width=289 height=17 valign="TOP">[작성기준일 : &nbsp; &nbsp;]</TD>
+  <TD width=135 height=17 align="RIGHT" valign="TOP">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=33></COL>
+  <COL width=63></COL>
+  <COL width=51></COL>
+  <COL width=57></COL>
+  <COL width=63></COL>
+  <COL width=57></COL>
+  <COL width=75></COL>
+  <COL width=75></COL>
+  <COL width=45></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=33 height=47 rowspan="2" align="CENTER">일련<br>
+번호</TH>
+  <TH width=63 height=17 align="CENTER">고유번호</TH>
+  <TH width=51 height=47 rowspan="2" align="CENTER">소유자</TH>
+  <TH width=57 height=47 rowspan="2" align="CENTER">주권<br>
+번호</TH>
+  <TH width=63 height=47 rowspan="2" align="CENTER">증 &nbsp;권<br>
+발 행 인</TH>
+  <TH width=57 height=47 rowspan="2" align="CENTER">수 &nbsp;량</TH>
+  <TH width=75 height=17 align="CENTER">액면가액</TH>
+  <TH width=75 height=17 align="CENTER">평가금액</TH>
+  <TH width=45 height=47 rowspan="2" align="CENTER">비고</TH>
+</TR>
+<TR>
+  <TH width=63 height=17 align="CENTER">취급부서</TH>
+  <TH width=75 height=17 align="CENTER">취득가액</TH>
+  <TH width=75 height=17 align="CENTER">양도등가액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=33 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=51 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=57 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=57 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=45 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=33 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=51 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=57 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=57 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=45 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=369 height=47 colspan="6" rowspan="2" align="CENTER">합 &nbsp; &nbsp;계</TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=45 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">나. 사채권(社債券)</P>
+
+<TABLE class=nb width=600>
+<COLGROUP>
+  <COL width=144></COL>
+  <COL width=295></COL>
+  <COL width=134></COL>
+</COLGROUP>
+<TBODY>
+<TR>
+  <TD width=144 height=17 valign="TOP">[구분 : &nbsp; &nbsp;]</TD>
+  <TD width=295 height=17 valign="TOP">[작성기준일 : &nbsp; &nbsp;]</TD>
+  <TD width=134 height=17 align="RIGHT" valign="TOP">(단위 : )</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=33></COL>
+  <COL width=63></COL>
+  <COL width=51></COL>
+  <COL width=51></COL>
+  <COL width=63></COL>
+  <COL width=57></COL>
+  <COL width=81></COL>
+  <COL width=75></COL>
+  <COL width=45></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=33 height=47 rowspan="2" align="CENTER">일련<br>
+번호</TH>
+  <TH width=63 height=17 align="CENTER">고유번호</TH>
+  <TH width=51 height=47 rowspan="2" align="CENTER">소유자</TH>
+  <TH width=51 height=47 rowspan="2" align="CENTER">사채권<br>
+번 &nbsp;호</TH>
+  <TH width=63 height=47 rowspan="2" align="CENTER">증 &nbsp;권<br>
+발 행 인</TH>
+  <TH width=57 height=47 rowspan="2" align="CENTER">이자율</TH>
+  <TH width=81 height=17 align="CENTER">액면가액</TH>
+  <TH width=75 height=17 align="CENTER">평가금액</TH>
+  <TH width=45 height=47 rowspan="2" align="CENTER">비고</TH>
+</TR>
+<TR>
+  <TH width=63 height=17 align="CENTER">취급부서</TH>
+  <TH width=81 height=17 align="CENTER">취득가액</TH>
+  <TH width=75 height=17 align="CENTER">양도등가액</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=33 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=51 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=51 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=57 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=81 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=45 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=81 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=33 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=51 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=51 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=57 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=81 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=45 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=81 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=363 height=47 colspan="6" rowspan="2" align="CENTER">합 &nbsp; &nbsp;계</TD>
+  <TD width=81 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+  <TD width=45 height=47 rowspan="2" valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=81 height=17 valign="TOP"></TD>
+  <TD width=75 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">다. 기타</P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00715-TOC.htm#701' name='701' target='toc'>III. 양도등의 방식 및 내용 등</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#704' name='704' target='toc'>1. 양도등의 방법, 일정 및 세부내용</a></P><P><br>
+<br>
+<br>
+<br></P><P style="font-size: 14pt;">가. 양도</P>
+
+<TABLE border=1 width=648>
+<COLGROUP>
+  <COL width=51></COL>
+  <COL width=46></COL>
+  <COL width=60></COL>
+  <COL width=57></COL>
+  <COL width=69></COL>
+  <COL width=121></COL>
+  <COL width=130></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=51 height=47 rowspan="2" align="CENTER">양수인</TH>
+  <TH width=46 height=47 rowspan="2" align="CENTER">순 번</TH>
+  <TH width=60 height=47 rowspan="2" align="CENTER">자산의<br>
+종 &nbsp;류</TH>
+  <TH width=57 height=47 rowspan="2" align="CENTER">구 분</TH>
+  <TH width=69 height=47 rowspan="2" align="CENTER">일련번호</TH>
+  <TH width=121 height=17 align="CENTER">계약일자</TH>
+  <TH width=130 height=47 rowspan="2" align="CENTER">대금지급의<br>
+방 &nbsp; &nbsp; &nbsp; &nbsp;법</TH>
+  <TH width=42 height=47 rowspan="2" align="CENTER">비 고</TH>
+</TR>
+<TR>
+  <TH width=121 height=17 align="CENTER">양도일자</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=51 height=347 rowspan="12"></TD>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">나. 신탁</P>
+
+<TABLE border=1 width=648>
+<COLGROUP>
+  <COL width=51></COL>
+  <COL width=46></COL>
+  <COL width=60></COL>
+  <COL width=57></COL>
+  <COL width=69></COL>
+  <COL width=121></COL>
+  <COL width=130></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=51 height=47 rowspan="2" align="CENTER">수탁인</TH>
+  <TH width=46 height=47 rowspan="2" align="CENTER">순 번</TH>
+  <TH width=60 height=47 rowspan="2" align="CENTER">자산의<br>
+종 &nbsp;류</TH>
+  <TH width=57 height=47 rowspan="2" align="CENTER">구 분</TH>
+  <TH width=69 height=47 rowspan="2" align="CENTER">일련번호</TH>
+  <TH width=121 height=17 align="CENTER">계약일자</TH>
+  <TH width=130 height=47 rowspan="2" align="CENTER">대금지급의<br>
+방 &nbsp; &nbsp; &nbsp; &nbsp;법</TH>
+  <TH width=42 height=47 rowspan="2" align="CENTER">비 고</TH>
+</TR>
+<TR>
+  <TH width=121 height=17 align="CENTER">신탁일자</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=51 height=347 rowspan="12"></TD>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">다. 반환 또는 반환받는 경우</P>
+
+<TABLE border=1 width=653>
+<COLGROUP>
+  <COL width=56></COL>
+  <COL width=46></COL>
+  <COL width=60></COL>
+  <COL width=57></COL>
+  <COL width=69></COL>
+  <COL width=121></COL>
+  <COL width=130></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=56 height=63 rowspan="2" align="CENTER">반환등의<br>
+상대방</TH>
+  <TH width=46 height=63 rowspan="2" align="CENTER">순 번</TH>
+  <TH width=60 height=63 rowspan="2" align="CENTER">자산의<br>
+종 &nbsp;류</TH>
+  <TH width=57 height=63 rowspan="2" align="CENTER">구 분</TH>
+  <TH width=69 height=63 rowspan="2" align="CENTER">일련번호</TH>
+  <TH width=121 height=17 align="CENTER">계약일자</TH>
+  <TH width=130 height=63 rowspan="2" align="CENTER">대금지급의<br>
+방 &nbsp; &nbsp; &nbsp; &nbsp;법</TH>
+  <TH width=42 height=63 rowspan="2" align="CENTER">비 고</TH>
+</TR>
+<TR>
+  <TH width=121 height=33 align="CENTER">반환일자</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=56 height=347 rowspan="12"></TD>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">라. 질권 또는 저당권의 설정</P>
+
+<TABLE border=1 width=653>
+<COLGROUP>
+  <COL width=56></COL>
+  <COL width=46></COL>
+  <COL width=60></COL>
+  <COL width=57></COL>
+  <COL width=69></COL>
+  <COL width=121></COL>
+  <COL width=130></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=56 height=86 rowspan="2" align="CENTER">질권자ㆍ<br>
+저당권자</TH>
+  <TH width=46 height=86 rowspan="2" align="CENTER">순 번</TH>
+  <TH width=60 height=86 rowspan="2" align="CENTER">자산의<br>
+종 &nbsp;류</TH>
+  <TH width=57 height=86 rowspan="2" align="CENTER">구 분</TH>
+  <TH width=69 height=86 rowspan="2" align="CENTER">일련번호</TH>
+  <TH width=121 height=17 align="CENTER">계약일자</TH>
+  <TH width=130 height=86 rowspan="2" align="CENTER">설정의 사유<br>
+및 내용 등</TH>
+  <TH width=42 height=86 rowspan="2" align="CENTER">비 고</TH>
+</TR>
+<TR>
+  <TH width=121 height=56 align="CENTER">설정일자</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=56 height=347 rowspan="12"></TD>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">마. 질권 또는 저당권의 해지</P>
+
+<TABLE border=1 width=653>
+<COLGROUP>
+  <COL width=56></COL>
+  <COL width=46></COL>
+  <COL width=60></COL>
+  <COL width=57></COL>
+  <COL width=69></COL>
+  <COL width=121></COL>
+  <COL width=130></COL>
+  <COL width=42></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=56 height=86 rowspan="2" align="CENTER">질권자ㆍ<br>
+저당권자</TH>
+  <TH width=46 height=86 rowspan="2" align="CENTER">순 번</TH>
+  <TH width=60 height=86 rowspan="2" align="CENTER">자산의<br>
+종 &nbsp;류</TH>
+  <TH width=57 height=86 rowspan="2" align="CENTER">구 분</TH>
+  <TH width=69 height=86 rowspan="2" align="CENTER">일련번호</TH>
+  <TH width=121 height=17 align="CENTER">계약일자</TH>
+  <TH width=130 height=86 rowspan="2" align="CENTER">해지의 사유<br>
+및 내용 등</TH>
+  <TH width=42 height=86 rowspan="2" align="CENTER">비 고</TH>
+</TR>
+<TR>
+  <TH width=121 height=56 align="CENTER">해지일자</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=56 height=347 rowspan="12"></TD>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=46 height=167 rowspan="6"></TD>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+<TR>
+  <TD width=60 height=47 rowspan="2"></TD>
+  <TD width=57 height=47 rowspan="2"></TD>
+  <TD width=69 height=47 rowspan="2"></TD>
+  <TD width=121 height=17></TD>
+  <TD width=130 height=47 rowspan="2"></TD>
+  <TD width=42 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=121 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1117' name='1117' target='toc'>2. 양도등의 계약상 특수한 내용</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=69></COL>
+  <COL width=75></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=69></COL>
+  <COL width=63></COL>
+  <COL width=123></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=69 height=47 rowspan="2" align="CENTER">양도등의<br>
+상 대 방</TH>
+  <TH width=75 height=47 rowspan="2" align="CENTER">양도등의<br>
+방 &nbsp; &nbsp;식</TH>
+  <TH width=69 height=47 rowspan="2" align="CENTER">자산의<br>
+종 &nbsp;류</TH>
+  <TH width=69 height=47 rowspan="2" align="CENTER">구 &nbsp;분</TH>
+  <TH width=69 height=47 rowspan="2" align="CENTER">일련번호</TH>
+  <TH width=195 height=17 colspan="2" align="CENTER">계약상 특수한 사항</TH>
+</TR>
+<TR>
+  <TH width=63 height=17 align="CENTER">구 &nbsp;분</TH>
+  <TH width=123 height=17 align="CENTER">내 &nbsp;용</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=69 height=107 rowspan="4" valign="TOP"></TD>
+  <TD width=75 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=123 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=123 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=75 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=123 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=123 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=69 height=107 rowspan="4" valign="TOP"></TD>
+  <TD width=75 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=123 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=123 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=75 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=69 height=47 rowspan="2" valign="TOP"></TD>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=123 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=63 height=17 valign="TOP"></TD>
+  <TD width=123 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00715-TOC.htm#1184' name='1184' target='toc'>IV. 양도등에 따른 특례규정 적용자산의 법률상 특별효력</a></P><P><br>
+<br>
+<br>
+<br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1187' name='1187' target='toc'>1. 채권양도의 통지의 효력(법 제7조 또는 제7조의2)</a></P><P style="font-size: 14pt;">가. 법률상 특별효력의 내용</P><P><br></P><P style="font-size: 14pt;">나. 대상채권의 내역</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=47 rowspan="2" align="CENTER">양수인</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">채권의<br>
+구 &nbsp;분</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">일련번호</TH>
+  <TH width=111 height=17 align="CENTER">계약일자</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">비 &nbsp;고</TH>
+</TR>
+<TR>
+  <TH width=111 height=17 align="CENTER">양도일자</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=227 rowspan="8"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+<TR>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+<TR>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+<TR>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1239' name='1239' target='toc'>2. 저당권 취득의 특례(법 제8조제1항)</a></P><P style="font-size: 14pt;">가. 법률상 특별효력의 내용</P><P><br></P><P style="font-size: 14pt;">나. 저당권에 의해 담보된 채권의 내역</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=47 rowspan="2" align="CENTER">양수인</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">채권의<br>
+구 &nbsp;분</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">일련번호</TH>
+  <TH width=111 height=17 align="CENTER">계약일자</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">비 &nbsp;고</TH>
+</TR>
+<TR>
+  <TH width=111 height=17 align="CENTER">양도일자</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=227 rowspan="8"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+<TR>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+<TR>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+<TR>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1291' name='1291' target='toc'>3. 소유권 취득의 특례(법 제8조제2항)</a></P><P style="font-size: 14pt;">가. 법률상 특별효력의 내용</P><P><br></P><P style="font-size: 14pt;">나. 대상자산의 내역</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=47 rowspan="2" align="CENTER">양수인</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">부동산의<br>
+구 &nbsp; &nbsp; 분</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">일련번호</TH>
+  <TH width=111 height=17 align="CENTER">계약일자</TH>
+  <TH width=111 height=47 rowspan="2" align="CENTER">비 &nbsp;고</TH>
+</TR>
+<TR>
+  <TH width=111 height=17 align="CENTER">양도일자</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=227 rowspan="8"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+<TR>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+<TR>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+<TR>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+  <TD width=111 height=17></TD>
+  <TD width=111 height=47 rowspan="2"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00715-TOC.htm#1344' name='1344' target='toc'>V. 채무자에 대한 대항요건 구비여부</a></P><P><br>
+<br>
+<br>
+<br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1347' name='1347' target='toc'>1. 채무자에 대한 대항요건을 구비하는 경우</a></P><P style="font-size: 14pt;">가. 대상자산</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+  <COL width=111></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=111 height=63 align="CENTER">자산의 종류</TH>
+  <TH width=111 height=63 align="CENTER">구 &nbsp; &nbsp;분</TH>
+  <TH width=111 height=63 align="CENTER">일련번호</TH>
+  <TH width=111 height=63 align="CENTER">양도통지<br>
+내용증명<br>
+우편발송일</TH>
+  <TH width=111 height=63 align="CENTER">일간신문<br>
+공고일자</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+  <TD width=111 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">나. 통지방법 및 일정</P><P><br></P><P style="font-size: 14pt;">다. 통지가 불가능한 경우의 공고방법</P><P><br></P><P style="font-size: 14pt;">라. 기타 대항요건의 구비를 위하여 취한 조치</P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1390' name='1390' target='toc'>2. 채무자에 대한 대항요건을 구비하지 않는 경우</a></P><P style="font-size: 14pt;">가. 대상자산</P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+  <COL width=141></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=141 height=17 align="CENTER">자산의 종류</TH>
+  <TH width=141 height=17 align="CENTER">구 &nbsp; &nbsp;분</TH>
+  <TH width=141 height=17 align="CENTER">일련번호</TH>
+  <TH width=141 height=17 align="CENTER">비 &nbsp;고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+  <TD width=141 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P><P style="font-size: 14pt;">나. 대항요건을 구비하지 아니하는 이유</P><P><br></P><P style="font-size: 14pt;">다. 별도의 조치를 계획하고 있는 경우 그 내용</P><P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00715-TOC.htm#1427' name='1427' target='toc'>VI. 공시에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1430' name='1430' target='toc'>I. 유동화자산의 증빙 서류</a></P>
+<P class=section-3><a class='toc' href='00715-TOC.htm#1432' name='1432' target='toc'>1. 관리 및 공시의 개요</a></P><P><br></P>
+<P class=section-3><a class='toc' href='00715-TOC.htm#1435' name='1435' target='toc'>2. 공시 대상 서류 등</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=120></COL>
+  <COL width=120></COL>
+  <COL width=120></COL>
+  <COL width=119></COL>
+  <COL width=76></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=120 height=17 align="CENTER">서 류 명</TH>
+  <TH width=120 height=17 align="CENTER">대 상 자</TH>
+  <TH width=120 height=17 align="CENTER">공시장소</TH>
+  <TH width=119 height=17 align="CENTER">담 당 자</TH>
+  <TH width=76 height=17 align="CENTER">비 &nbsp; &nbsp;고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=119 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=119 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=119 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=119 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1477' name='1477' target='toc'>II. 유동화전문회사 관련 내부 보고 자료</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=120></COL>
+  <COL width=120></COL>
+  <COL width=120></COL>
+  <COL width=119></COL>
+  <COL width=76></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=120 height=17 align="CENTER">보고의무자</TH>
+  <TH width=120 height=17 align="CENTER">보고대상자</TH>
+  <TH width=120 height=17 align="CENTER">내 &nbsp; &nbsp;용</TH>
+  <TH width=119 height=17 align="CENTER">기 &nbsp; &nbsp;간</TH>
+  <TH width=76 height=17 align="CENTER">비 &nbsp; &nbsp;고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=119 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=119 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=119 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=120 height=17 valign="TOP"></TD>
+  <TD width=119 height=17 valign="TOP"></TD>
+  <TD width=76 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1519' name='1519' target='toc'>III. 외부 공시자료</a></P>
+<P class=section-3><a class='toc' href='00715-TOC.htm#1521' name='1521' target='toc'>1. 유동화전문회사 제출 서류</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=153></COL>
+  <COL width=153></COL>
+  <COL width=153></COL>
+  <COL width=105></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=153 height=17 align="CENTER">서 류 명</TH>
+  <TH width=153 height=17 align="CENTER">시 &nbsp; &nbsp;기</TH>
+  <TH width=153 height=17 align="CENTER">담 당 자</TH>
+  <TH width=105 height=17 align="CENTER">비 &nbsp; &nbsp;고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=105 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=105 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=105 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=105 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=section-3><a class='toc' href='00715-TOC.htm#1557' name='1557' target='toc'>2. 기타 관련기관 참고자료</a></P>
+
+<TABLE border=1 width=600>
+<COLGROUP>
+  <COL width=153></COL>
+  <COL width=210></COL>
+  <COL width=210></COL>
+</COLGROUP>
+<THEAD>
+<TR>
+  <TH width=153 height=17 align="CENTER">회 사 명</TH>
+  <TH width=210 height=17 align="CENTER">서 류 명</TH>
+  <TH width=210 height=17 align="CENTER">비 &nbsp; &nbsp;고</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=210 height=17 valign="TOP"></TD>
+  <TD width=210 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=210 height=17 valign="TOP"></TD>
+  <TD width=210 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=210 height=17 valign="TOP"></TD>
+  <TD width=210 height=17 valign="TOP"></TD>
+</TR>
+<TR>
+  <TD width=153 height=17 valign="TOP"></TD>
+  <TD width=210 height=17 valign="TOP"></TD>
+  <TD width=210 height=17 valign="TOP"></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P><br></P>
+<P class=pgbrk></P>
+<P class=section-1><a class='toc' href='00715-TOC.htm#1588' name='1588' target='toc'>VII. 기타투자자보호를 위하여 필요한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1591' name='1591' target='toc'>1. 자산실사에 관한 사항</a></P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1594' name='1594' target='toc'>2. 자산유동화계획 참여기관의 주요업무 및 담당자 등</a></P><P style="font-size: 14pt;">가. 자산유동화계획 참여자 및 주요업무에 관한 사항</P><P><br></P><P style="font-size: 14pt;">나. 주관회사의 당해 유동화구조에 대한 의견</P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1600' name='1600' target='toc'>3. 전문가의 검토의견 등</a></P><P style="font-size: 14pt;">가. 진정양도등에 관한 법률의견 등</P><P><br></P><P style="font-size: 14pt;">나. 매각회계처리(Off-Balance)에 관한 사항</P><P>1) 매각회계처리에 관한 검토의견 등</P><P><br></P><P>2) 자산양도등에 따른 양도인의 회계처리내용</P><P><br></P><P style="font-size: 14pt;">다. 기 타</P><P><br></P>
+<P class=section-2><a class='toc' href='00715-TOC.htm#1611' name='1611' target='toc'>4. 기타 투자자 참고사항</a></P><P><br></P><P><br></P>
+</BODY>
+</HTML>
